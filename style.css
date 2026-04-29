@@ -1829,3 +1829,32 @@ button:focus-visible {
   }
 }
 
+/* ── Founder Responsive Layout ───────────────────────────────── */
+.founder-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+.founder-layout > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 1024px) {
+  .founder-layout {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 3rem;
+    padding: 3.5rem;
+    text-align: left;
+  }
+  
+  .founder-layout > div:nth-child(2) {
+    align-items: flex-start;
+  }
+}
