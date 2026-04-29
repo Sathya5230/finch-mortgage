@@ -175,7 +175,7 @@
 <div class="section-label"><span>By Region</span></div>
 <h2 class="section-heading" style="margin-bottom:0.75rem;">Regional Property<br/><em>Snapshot — All NZ.</em></h2>
 <p style="color:var(--neutral-medGray);max-width:600px;margin-bottom:2.5rem;line-height:1.75;">Median house prices and year-on-year movements for all 16 New Zealand regions. Data: REINZ, CoreLogic Q2 2026.</p>
-<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:1.25rem;">
+<div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-3 lg:gap-5">
 <!-- 1 Northland -->
 <div class="reveal" style="padding:1.5rem;border:1px solid rgba(98,162,154,0.4);border-radius:1.25rem;background:var(--finch-mist);">
 <div style="font-size:0.6rem;font-weight:800;text-transform:uppercase;letter-spacing:0.12em;color:var(--finch-forest);margin-bottom:0.5rem;">Northland</div>
@@ -355,7 +355,7 @@
 <span style="font-size:0.78rem;font-weight:700;color:var(--neutral-warmGray);white-space:nowrap;">Week 17 · 28 April 2026</span>
 </div>
 <!-- Featured latest -->
-<div style="background:var(--finch-forest);border-radius:1.5rem;padding:3rem;display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start;margin-bottom:3rem;">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start mb-12" style="background:var(--finch-forest);border-radius:1.5rem;padding:2rem;">
 <div>
 <div style="display:inline-flex;align-items:center;gap:0.4rem;background:rgba(255,255,255,0.18);color:var(--finch-sage);border-radius:999px;padding:0.25rem 0.9rem;font-size:0.65rem;font-weight:800;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:1.25rem;">🟢 Latest · Week 17, 2026</div>
 <h3 style="color:white;font-size:1.55rem;font-weight:700;line-height:1.3;margin-bottom:1rem;"><a href="weekly-reports/week-17-autumn-update.html" style="color:inherit;text-decoration:none;">Autumn Market Update: Banks Hold Steady</a></h3>
@@ -392,7 +392,7 @@
 <button id="mr-filter-first" onclick="filterMR('first')" style="padding:0.4rem 1rem;border-radius:999px;border:1px solid rgba(98,162,154,0.5);background:white;color:var(--neutral-black);font-size:0.75rem;font-weight:700;cursor:pointer;">First Home</button>
 </div>
 <!-- Archive grid -->
-<div id="mr-reports-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;">
+<div id="mr-reports-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
 <a aria-label="Link icon" class="wr-card" data-cat="rates" href="weekly-reports/week-16-major-banks-cut-rates.html" style="display:flex;flex-direction:column;gap:0.65rem;padding:1.6rem;background:var(--finch-mist);border:1px solid rgba(98,162,154,0.35);border-radius:1.15rem;text-decoration:none;color:inherit;transition:box-shadow 0.2s,transform 0.2s,border-color 0.2s;">
 <div style="display:inline-flex;align-items:center;gap:0.35rem;font-size:0.62rem;font-weight:800;text-transform:uppercase;letter-spacing:0.1em;background:#EFF6FF;color:#1D4ED8;padding:0.2rem 0.65rem;border-radius:999px;width:fit-content;"><svg fill="none" height="11" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style="display:inline-block;vertical-align:middle;flex-shrink:0;" viewbox="0 0 24 24" width="11"><polyline points="23 18 13.5 8.5 8.5 13.5 1 6"></polyline><polyline points="17 18 23 18 23 12"></polyline></svg>Rates</div>
 <div style="font-size:0.68rem;color:var(--neutral-warmGray);font-weight:700;text-transform:uppercase;letter-spacing:0.08em;">Week 16 · 21 April 2026</div>
