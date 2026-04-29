@@ -1858,3 +1858,41 @@ button:focus-visible {
     align-items: flex-start;
   }
 }
+
+/* ── Global Mobile Spacing & Layout Fixes ──────────────────────── */
+@media (max-width: 768px) {
+  /* Reduce excessive container paddings */
+  .container {
+    padding-left: 1.25rem !important;
+    padding-right: 1.25rem !important;
+  }
+  
+  /* Reduce massive utility paddings */
+  .p-8, .p-10, .p-12 { 
+    padding: 1.5rem !important; 
+  }
+  .p-16, .p-24 { 
+    padding: 2rem !important; 
+  }
+  
+  /* Fix squeezed glass cards */
+  .glass-card {
+    padding: 1.5rem !important;
+  }
+  
+  /* Fix FAQ layout squeezing */
+  .faq-trigger {
+    padding: 1.25rem 1rem !important;
+    font-size: 1rem !important;
+  }
+  .faq-content {
+    padding: 0 1rem 1.25rem 1rem !important;
+  }
+  
+  /* Ensure grids stack gracefully if they weren't explicitly responsive */
+  .grid.lg-grid-cols-12, .grid.lg-grid-cols-2 {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 2rem !important;
+  }
+}
