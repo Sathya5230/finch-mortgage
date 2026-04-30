@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>First Home Buyers | Finch Mortgage NZ</title>
+<meta content="NZ's trusted mortgage broker — compare 20+ lenders, get expert home loan advice, and secure pre-approval in 24 hours. $0 broker fee. First home buyers welcome. Free consultation." name="description"/>
+<!-- Canonical -->
+<link href="https://www.finchmortgages.co.nz/" rel="canonical"/>
+<!-- hreflang -->
+<link href="https://www.finchmortgages.co.nz/" hreflang="en-NZ" rel="alternate"/>
+<link href="https://www.finchmortgages.co.nz/" hreflang="x-default" rel="alternate"/>
+<!-- Open Graph -->
+<meta content="website" property="og:type"/>
+<meta content="Mortgage Broker NZ | Best Home Loan Rates | Finch Mortgage" property="og:title"/>
+<meta content="NZ's trusted mortgage broker — compare 20+ lenders, get expert home loan advice, and secure pre-approval in 24 hours. $0 broker fee. First home buyers welcome. Free consultation." property="og:description"/>
+<meta content="https://www.finchmortgages.co.nz/" property="og:url"/>
+<meta content="https://www.finchmortgages.co.nz/images/og-default.jpg" property="og:image"/>
+<meta content="Finch Mortgage" property="og:site_name"/>
+<meta content="en_NZ" property="og:locale"/>
+<!-- Twitter Card -->
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Mortgage Broker NZ | Best Home Loan Rates | Finch Mortgage" name="twitter:title"/>
+<meta content="NZ's trusted mortgage broker — compare 20+ lenders, get expert home loan advice, and secure pre-approval in 24 hours. $0 broker fee. First home buyers welcome. Free consultation." name="twitter:description"/>
+<meta content="https://www.finchmortgages.co.nz/images/og-default.jpg" name="twitter:image"/>
+<!-- Regional GEO -->
+<meta content="NZ-AUK" name="geo.region"/>
+<meta content="Auckland, New Zealand" name="geo.placename"/>
+<meta content="-36.8509;174.7645" name="geo.position"/>
+<meta content="-36.8509, 174.7645" name="ICBM"/>
+<!-- Performance -->
+<link as="style" href="style.css" rel="preload"/>
+<link as="image" fetchpriority="high" href="images/slide1.png" rel="preload"/>
+<!-- Favicon -->
+<link href="/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="style.css" rel="stylesheet"/>
+<!-- Tailwind loaded late to avoid render-blocking -->
+<style>
+/* ── Landing page layout ── */
+.lp-wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 5rem;
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  grid-template-rows: auto auto;
+  column-gap: 3rem;
+  row-gap: 2rem;
+}
+.lp-left-top { grid-column: 1; grid-row: 1; display: flex; flex-direction: column; gap: 2rem; }
+.lp-left-bot { grid-column: 1; grid-row: 2; display: flex; flex-direction: column; gap: 2rem; }
+.lp-right { grid-column: 2; grid-row: 1 / 3; position: sticky; top: 100px; align-self: start; }
+
+/* ── Eyebrow ── */
+.lp-eyebrow {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--finch-gold);
+  background: rgba(178,147,97,0.1);
+  padding: 5px 12px;
+  border-radius: 20px;
+  margin-bottom: 0.5rem;
+}
+
+/* ── Hero text ── */
+.lp-h1 {
+  font-family: var(--font-display);
+  font-size: clamp(1.75rem, 3.5vw, 2.6rem);
+  font-weight: 700;
+  color: var(--neutral-black);
+  line-height: 1.2;
+  margin-bottom: 0.75rem;
+}
+.lp-sub {
+  font-size: 1rem;
+  color: var(--neutral-medGray);
+  line-height: 1.7;
+}
+
+/* ── Bullet list ── */
+.lp-bullets { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+.lp-bullets li {
+  display: flex; align-items: flex-start; gap: 10px;
+  font-size: 15px; color: var(--neutral-black); line-height: 1.5;
+}
+.lp-chk {
+  width: 20px; height: 20px; min-width: 20px;
+  background: var(--finch-forest); border-radius: 50%;
+  display: flex; align-items: center; justify-content: center; margin-top: 1px;
+}
+.lp-chk svg { width: 10px; height: 10px; }
+
+/* ── Trust bar ── */
+.lp-trust {
+  display: flex; flex-wrap: wrap; gap: 12px;
+  background: var(--finch-mist);
+  border: 0.5px solid rgba(98,162,154,0.3);
+  border-radius: 10px;
+  padding: 14px 18px;
+}
+.lp-trust-item {
+  display: flex; align-items: center; gap: 7px;
+  font-size: 13px; color: var(--neutral-medGray);
+}
+.lp-tdot {
+  width: 6px; height: 6px; border-radius: 50%;
+  background: var(--finch-gold); flex-shrink: 0;
+}
+
+/* ── Founder card ── */
+.lp-founder {
+  display: flex; gap: 20px; align-items: flex-start;
+  background: #fff;
+  border: 0.5px solid rgba(98,162,154,0.3);
+  border-radius: 14px;
+  padding: 24px;
+}
+.lp-founder-photo {
+  width: 80px; height: 80px; min-width: 80px; border-radius: 50%;
+  background: var(--finch-mist);
+  border: 2px solid var(--finch-sage);
+  display: flex; align-items: center; justify-content: center;
+  overflow: hidden;
+}
+.lp-founder-photo svg { width: 44px; height: 44px; }
+.lp-founder-info { flex: 1; }
+.lp-founder-name { font-size: 16px; font-weight: 600; color: var(--neutral-black); margin-bottom: 2px; }
+.lp-founder-title { font-size: 12px; color: var(--finch-sage); margin-bottom: 10px; }
+.lp-founder-bio { font-size: 13px; color: var(--neutral-medGray); line-height: 1.65; margin-bottom: 12px; }
+.lp-founder-stats { display: flex; gap: 18px; }
+.lp-stat-num { font-size: 17px; font-weight: 600; color: var(--finch-sage); }
+.lp-stat-label { font-size: 11px; color: var(--neutral-medGray); }
+
+/* ── Section block ── */
+.lp-section {
+  background: #fff;
+  border: 0.5px solid rgba(98,162,154,0.3);
+  border-radius: 14px;
+  padding: 28px;
+}
+.lp-section h2 {
+  font-size: 18px; font-weight: 600;
+  color: var(--neutral-black); margin-bottom: 16px;
+}
+
+/* ── Testimonials ── */
+.lp-tcard {
+  background: var(--finch-mist);
+  border-radius: 10px;
+  padding: 16px 18px;
+  margin-bottom: 10px;
+}
+.lp-tcard:last-child { margin-bottom: 0; }
+.lp-tcard p {
+  font-size: 14px; color: var(--neutral-black);
+  line-height: 1.65; margin-bottom: 8px;
+  font-family: var(--font-display, Georgia, serif);
+}
+.lp-tname { font-size: 12px; color: var(--neutral-medGray); font-weight: 600; }
+
+/* ── FAQ ── */
+.lp-faq-item {
+  border-bottom: 0.5px solid rgba(98,162,154,0.25);
+  padding: 14px 0;
+}
+.lp-faq-item:first-child { padding-top: 0; }
+.lp-faq-item:last-child { border-bottom: none; padding-bottom: 0; }
+.lp-faq-q { font-size: 14px; font-weight: 600; color: var(--neutral-black); margin-bottom: 6px; }
+.lp-faq-a { font-size: 13px; color: var(--neutral-medGray); line-height: 1.65; }
+
+/* ── Text CTA ── */
+.lp-text-cta {
+  font-size: 15px; font-weight: 600;
+  color: var(--finch-forest);
+  text-decoration: none;
+  display: inline-flex; align-items: center; gap: 6px;
+}
+.lp-text-cta:hover { text-decoration: underline; }
+
+/* ── Sticky form card ── */
+.lp-form-card {
+  background: #fff;
+  border: 0.5px solid rgba(98,162,154,0.35);
+  border-radius: 16px;
+  padding: 28px 24px 22px;
+  box-shadow: 0 4px 24px rgba(16,68,62,0.08);
+}
+.lp-form-title { font-size: 16px; font-weight: 600; color: var(--neutral-black); margin-bottom: 18px; }
+.lp-field { margin-bottom: 12px; }
+.lp-field label { display: block; font-size: 12px; color: var(--neutral-medGray); margin-bottom: 5px; }
+.lp-field input,
+.lp-field select {
+  width: 100%; height: 40px; padding: 0 11px;
+  border: 0.5px solid rgba(98,162,154,0.5);
+  border-radius: 8px;
+  font-size: 14px; color: var(--neutral-black);
+  background: #fff;
+  font-family: var(--font-sans, system-ui, sans-serif);
+  box-sizing: border-box;
+}
+.lp-field input:focus,
+.lp-field select:focus {
+  outline: none;
+  border-color: var(--finch-sage);
+  box-shadow: 0 0 0 3px rgba(98,162,154,0.15);
+}
+.lp-submit {
+  width: 100%; padding: 13px;
+  background: var(--finch-gold); color: #fff;
+  border: none; border-radius: 9px;
+  font-size: 15px; font-weight: 600;
+  cursor: pointer; margin-top: 14px;
+  font-family: var(--font-sans, system-ui, sans-serif);
+  transition: background 0.2s;
+}
+.lp-submit:hover { background: #9e7f52; }
+.lp-form-note {
+  font-size: 11px; color: var(--neutral-medGray);
+  text-align: center; margin-top: 10px; line-height: 1.5;
+}
+
+/* ── Mobile ── */
+/* ── Mobile footer CTA ── */
+.lp-mobile-cta { display: none; }
+
+@media (max-width: 768px) {
+  .lp-wrap {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    padding: 1.5rem 1rem 2rem;
+    gap: 1.75rem;
+  }
+  .lp-left-top { grid-column: 1; grid-row: 1; }
+  .lp-right    { grid-column: 1; grid-row: 2; position: static; }
+  .lp-left-bot { grid-column: 1; grid-row: 3; }
+  .lp-founder { flex-direction: column; align-items: center; text-align: center; }
+  .lp-founder-stats { justify-content: center; }
+
+  .lp-mobile-cta {
+    display: block;
+    background: var(--finch-forest);
+    padding: 2.5rem 1.25rem 3rem;
+    text-align: center;
+  }
+  .lp-mobile-cta h2 {
+    font-family: var(--font-display);
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.3;
+    margin-bottom: 0.75rem;
+  }
+  .lp-mobile-cta p {
+    font-size: 14px;
+    color: rgba(255,255,255,0.8);
+    line-height: 1.65;
+    margin-bottom: 1.5rem;
+  }
+  .lp-mobile-cta-btn {
+    display: inline-block;
+    background: var(--finch-gold);
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 14px 28px;
+    border-radius: 9px;
+    text-decoration: none;
+    font-family: var(--font-sans, system-ui, sans-serif);
+  }
+}
+</style>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "FinancialService",
+  "name": "Finch Mortgages",
+  "url": "https://www.finchmortgages.co.nz",
+  "logo": "https://www.finchmortgages.co.nz/images/finch-logo.png",
+  "telephone": "+64273433293",
+  "email": "Mukhtar@finchmortgages.co.nz",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "17a Marlene Ave",
+    "addressLocality": "Te Atatu South, Auckland",
+    "postalCode": "0610",
+    "addressCountry": "NZ"
+  },
+  "founder": {
+    "@type": "Person",
+    "name": "Mukhtar Kiyani"
+  },
+  "description": "New Zealand's trusted independent mortgage broker. Expert advice, 20+ lenders, fast approvals."
+}</script><meta content="mortgage broker NZ, NZ mortgage broker, best mortgage broker New Zealand, home loan broker NZ, Auckland mortgage broker, Wellington mortgage broker, Christchurch mortgage broker, independent mortgage broker NZ, compare NZ mortgage lenders, best home loan rates NZ 2026, mortgage pre-approval NZ, first home buyer NZ, refinance home loan NZ, investment property loan NZ, KiwiSaver first home, NZ home loan advice, $0 broker fee NZ, Finch Mortgage, Finch Mortgages NZ, Mukhtar Kiyani mortgage broker, free mortgage consultation NZ" name="keywords"/></head>
+<body>
+<!-- ═══════════════════ MINIMAL HEADER ═══════════════════ -->
+<header style="position:fixed;top:0;left:0;right:0;z-index:100;background:#fff;border-bottom:0.5px solid rgba(98,162,154,0.2);height:72px;display:flex;align-items:center;">
+<div style="max-width:1100px;margin:0 auto;padding:0 1.5rem;width:100%;display:flex;align-items:center;justify-content:space-between;">
+  <img alt="Finch Mortgages" src="images/finch-logo.png" style="height:52px;width:auto;"/>
+  <a href="tel:+64273433293" style="display:flex;align-items:center;gap:8px;font-size:14px;font-weight:600;color:var(--finch-forest);text-decoration:none;">
+    <svg fill="none" width="16" height="16" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    027 343 3293
+  </a>
+</div>
+</header>
+<main style="padding-top:72px;">
+<div class="lp-wrap">
+
+  <!-- ── LEFT TOP (above form on mobile) ── -->
+  <div class="lp-left-top">
+
+    <!-- Hero -->
+    <div>
+      <span class="lp-eyebrow">First Home Buyers · Auckland</span>
+      <h1 class="lp-h1">Still renting in Auckland?<br>You might be closer to your first home than you think.</h1>
+      <p class="lp-sub">One free 15-minute call could show you exactly where you stand — no bank appointments, no jargon.</p>
+    </div>
+
+    <!-- Bullets -->
+    <ul class="lp-bullets">
+      <li>
+        <span class="lp-chk"><svg viewBox="0 0 10 10" fill="none"><polyline points="2,5 4,7.5 8,3" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        Find out how much you may be able to borrow — right now
+      </li>
+      <li>
+        <span class="lp-chk"><svg viewBox="0 0 10 10" fill="none"><polyline points="2,5 4,7.5 8,3" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        Understand whether your deposit is enough (and what to do if it's not)
+      </li>
+      <li>
+        <span class="lp-chk"><svg viewBox="0 0 10 10" fill="none"><polyline points="2,5 4,7.5 8,3" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        Walk away with a clear, honest plan — not a sales pitch
+      </li>
+    </ul>
+
+    <!-- Trust bar -->
+    <div class="lp-trust">
+      <div class="lp-trust-item"><span class="lp-tdot"></span>Free &amp; confidential</div>
+      <div class="lp-trust-item"><span class="lp-tdot"></span>4.9-star rated</div>
+      <div class="lp-trust-item"><span class="lp-tdot"></span>500+ Auckland families helped</div>
+      <div class="lp-trust-item"><span class="lp-tdot"></span>FSPR registered</div>
+    </div>
+
+  </div><!-- /lp-left-top -->
+
+  <!-- ── LEFT BOTTOM (below form on mobile) ── -->
+  <div class="lp-left-bot">
+
+    <!-- Founder card -->
+    <div class="lp-founder">
+      <div class="lp-founder-photo">
+        <svg viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="26" cy="20" r="10" fill="var(--finch-gold)"/>
+          <ellipse cx="26" cy="42" rx="16" ry="10" fill="var(--finch-gold)"/>
+        </svg>
+      </div>
+      <div class="lp-founder-info">
+        <div class="lp-founder-name">Mukhtar Kiyani</div>
+        <div class="lp-founder-title">Founder &amp; Mortgage Adviser, Finch Mortgage</div>
+        <div class="lp-founder-bio">I started Finch Mortgage because I watched too many Auckland families get lost in bank processes and walk away thinking they couldn't buy. I've helped hundreds of first home buyers get clear answers — and get their keys faster than they expected.</div>
+        <div class="lp-founder-stats">
+          <div><div class="lp-stat-num">500+</div><div class="lp-stat-label">Families helped</div></div>
+          <div><div class="lp-stat-num">15+</div><div class="lp-stat-label">Yrs experience</div></div>
+          <div><div class="lp-stat-num">4.9★</div><div class="lp-stat-label">Google rating</div></div>
+          <div><div class="lp-stat-num">$0</div><div class="lp-stat-label">Broker fee</div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Testimonials -->
+    <div class="lp-section">
+      <h2>What clients say</h2>
+      <div class="lp-tcard">
+        <p>"We'd been to two banks and hit dead ends. One call with Finch and we had a clear plan. Three months later we had our keys."</p>
+        <div class="lp-tname">James &amp; Mere — bought in Manurewa</div>
+      </div>
+      <div class="lp-tcard">
+        <p>"I thought we were at least a year away. After one call we understood exactly where we stood and moved much faster than expected."</p>
+        <div class="lp-tname">Sarah &amp; Tom — first home buyers, Papakura</div>
+      </div>
+      <div class="lp-tcard">
+        <p>"Completely stress-free. They handled everything and got us a rate the bank wouldn't give us directly."</p>
+        <div class="lp-tname">Priya M. — Manukau</div>
+      </div>
+    </div>
+
+    <!-- FAQ -->
+    <div class="lp-section">
+      <h2>Common questions</h2>
+      <div class="lp-faq-item">
+        <div class="lp-faq-q">Is the consultation really free?</div>
+        <div class="lp-faq-a">Yes, completely free. We're paid by the lender when your mortgage settles — not by you. You pay nothing, ever, for our advice.</div>
+      </div>
+      <div class="lp-faq-item">
+        <div class="lp-faq-q">What if I'm not ready to buy yet?</div>
+        <div class="lp-faq-a">That's absolutely fine. Knowing where you stand now means when you are ready, you're not starting from zero. Many clients book this call 6–12 months before they plan to buy.</div>
+      </div>
+      <div class="lp-faq-item">
+        <div class="lp-faq-q">What if my deposit is small?</div>
+        <div class="lp-faq-a">There are low-deposit options, Kāinga Ora First Home Loan schemes, and lender policies many people don't know about. You may have more options than you think.</div>
+      </div>
+    </div>
+
+    <!-- Text CTA -->
+    <p style="font-size:13px;color:var(--neutral-medGray);padding-bottom:1rem;">Questions? Call us on <a href="tel:+64273433293" style="color:var(--finch-forest);font-weight:600;text-decoration:none;">027 343 3293</a> — we're happy to chat.</p>
+
+  </div><!-- /lp-left-bot -->
+
+  <!-- ── RIGHT COLUMN (sticky form) ── -->
+  <div class="lp-right">
+    <div class="lp-form-card" id="booking-form">
+      <div class="lp-form-title">Book your free 15-minute call</div>
+      <div class="lp-field">
+        <label>First name</label>
+        <input type="text" placeholder="Sarah" />
+      </div>
+      <div class="lp-field">
+        <label>Mobile number</label>
+        <input type="text" placeholder="021 000 0000" />
+      </div>
+      <div class="lp-field">
+        <label>Auckland suburb</label>
+        <input type="text" placeholder="e.g. Papakura" />
+      </div>
+      <div class="lp-field">
+        <label>Buying timeline</label>
+        <select>
+          <option value="">Select...</option>
+          <option>Within 3 months</option>
+          <option>3–6 months</option>
+          <option>6–12 months</option>
+          <option>Just exploring</option>
+        </select>
+      </div>
+      <button class="lp-submit">Yes — show me my options →</button>
+      <div class="lp-form-note">Free · No obligation · FSPR registered</div>
+    </div>
+  </div><!-- /lp-right -->
+
+</div><!-- /lp-wrap -->
+</main>
+
+<div class="lp-mobile-cta">
+  <h2>Don't spend another year paying someone else's mortgage.</h2>
+  <p>Find out where you actually stand — free, in 15 minutes, no obligation.</p>
+  <a href="#booking-form" class="lp-mobile-cta-btn">Book my free 15-minute call →</a>
+</div>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={theme:{extend:{colors:{'finch-forest':'#10443e','finch-sage':'#62a29a','finch-medium':'#32745c','finch-teal':'#62a29a','finch-gold':'#b29361','finch-mist':'#f3ede5','finch-cream':'#ede4d6','brand-gold':'#b29361','brand-amber':'#10443e','neutral-black':'#10443e','neutral-medGray':'#3a5c56','neutral-warmGray':'#7a9490','neutral-lightGray':'#aec8c4'}}}}</script>
+</body>
+</html>
