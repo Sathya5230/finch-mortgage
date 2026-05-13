@@ -607,6 +607,9 @@ nav a.active::after {
 .faq-item.active .faq-icon {
   transform: rotate(180deg);
 }
+.faq-item.active .faq-icon .vertical-line {
+  opacity: 0;
+}
 .faq-icon {
   transition: transform 0.3s ease;
   color: var(--brand-gold);
