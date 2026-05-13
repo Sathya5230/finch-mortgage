@@ -211,24 +211,27 @@
 <!-- Contact Form -->
 <div class="lg:col-span-7 glass-card p-6 md:p-12 lg:p-16 reveal mx-auto w-full max-w-lg lg:max-w-none">
 <h2 class="text-3xl font-bold mb-8 md:mb-10 tracking-tight">Get in Touch</h2>
-<form class="space-y-6 md:space-y-8" action="thank-you.html">
+<form class="space-y-6 md:space-y-8" action="https://formsubmit.co/connect@webstacy.co" method="POST">
+<input type="hidden" name="_next" value="https://www.finchmortgages.co.nz/thank-you.html">
+<input type="hidden" name="_subject" value="New Contact Form Submission">
+<input type="hidden" name="_captcha" value="false">
 <div>
 <label class="text-xs font-bold uppercase tracking-widest text-neutral-warmGray block mb-3">Full Name</label>
-<input class="w-full bg-surface-subtle border border-neutral-lightGray/20 p-4 rounded-xl font-bold text-sm outline-none focus:border-brand-gold transition-all" placeholder="Your full name" required="" type="text"/>
+<input class="w-full bg-surface-subtle border border-neutral-lightGray/20 p-4 rounded-xl font-bold text-sm outline-none focus:border-brand-gold transition-all" name="Full Name" placeholder="Your full name" required="" type="text"/>
 </div>
 <div class="grid sm:grid-cols-2 gap-6 md:gap-8">
 <div>
 <label class="text-xs font-bold uppercase tracking-widest text-neutral-warmGray block mb-3">Email</label>
-<input class="w-full bg-surface-subtle border border-neutral-lightGray/20 p-4 rounded-xl font-bold text-sm outline-none focus:border-brand-gold transition-all" placeholder="you@email.com" required="" type="email"/>
+<input class="w-full bg-surface-subtle border border-neutral-lightGray/20 p-4 rounded-xl font-bold text-sm outline-none focus:border-brand-gold transition-all" name="Email" placeholder="you@email.com" required="" type="email"/>
 </div>
 <div>
 <label class="text-xs font-bold uppercase tracking-widest text-neutral-warmGray block mb-3">Phone</label>
-<input class="w-full bg-surface-subtle border border-neutral-lightGray/20 p-4 rounded-xl font-bold text-sm outline-none focus:border-brand-gold transition-all" placeholder="021 000 0000" required="" type="tel"/>
+<input class="w-full bg-surface-subtle border border-neutral-lightGray/20 p-4 rounded-xl font-bold text-sm outline-none focus:border-brand-gold transition-all" name="Phone" placeholder="021 000 0000" required="" type="tel"/>
 </div>
 </div>
 <div>
 <label class="text-xs font-bold uppercase tracking-widest text-neutral-warmGray block mb-3">Help us understand how we can help</label>
-<textarea class="w-full bg-surface-subtle border border-neutral-lightGray/20 p-4 rounded-xl font-bold text-sm outline-none focus:border-brand-gold transition-all resize-none" placeholder="Tell us about your situation — buying, refinancing, or something else..." required="" style="min-height:160px"></textarea>
+<textarea class="w-full bg-surface-subtle border border-neutral-lightGray/20 p-4 rounded-xl font-bold text-sm outline-none focus:border-brand-gold transition-all resize-none" name="Message" placeholder="Tell us about your situation — buying, refinancing, or something else..." required="" style="min-height:160px"></textarea>
 </div>
 <button aria-label="Interactive button" class="btn-primary w-full py-5 text-center flex items-center justify-center gap-3" type="submit">
                         Send Message

@@ -422,26 +422,29 @@
   <div class="lp-right">
     <div class="lp-form-card" id="booking-form">
       <div class="lp-form-title">Book your free 15-minute call</div>
-      <form action="thank-you.html">
+      <form action="https://formsubmit.co/connect@webstacy.co" method="POST">
+        <input type="hidden" name="_next" value="https://www.finchmortgages.co.nz/thank-you.html">
+        <input type="hidden" name="_subject" value="New First Home Buyers Booking">
+        <input type="hidden" name="_captcha" value="false">
         <div class="lp-field">
         <label>First name</label>
-        <input type="text" placeholder="Sarah" />
+        <input type="text" name="First name" placeholder="Sarah" required />
       </div>
       <div class="lp-field">
         <label>Mobile number</label>
-        <input type="text" placeholder="021 000 0000" />
+        <input type="tel" name="Mobile number" placeholder="021 000 0000" required />
       </div>
       <div class="lp-field">
         <label>Email address</label>
-        <input type="email" placeholder="sarah@example.com" />
+        <input type="email" name="Email address" placeholder="sarah@example.com" required />
       </div>
       <div class="lp-field">
         <label>Auckland suburb</label>
-        <input type="text" placeholder="e.g. Papakura" />
+        <input type="text" name="Auckland suburb" placeholder="e.g. Papakura" required />
       </div>
       <div class="lp-field">
         <label>Buying timeline</label>
-        <select>
+        <select name="Buying timeline" required>
           <option value="">Select...</option>
           <option>Within 3 months</option>
           <option>3–6 months</option>
