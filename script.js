@@ -296,16 +296,18 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // --- Floating Free Consultation CTA ---
-  const subdirs = ['services','lenders','guides','calculators','blog','weekly-reports','testimonials','case-studies'];
-  const inSubdir = subdirs.some(d => window.location.pathname.includes('/' + d + '/'));
-  const contactHref = inSubdir ? '../contact.html' : 'contact.html';
-  const floatBtn = document.createElement('a');
-  floatBtn.href = contactHref;
-  floatBtn.className = 'floating-consult';
-  floatBtn.setAttribute('aria-label', 'Book a free consultation');
-  floatBtn.innerHTML =
-    '<span class="fcta-dot"></span>' +
-    '<span style="display:flex;flex-direction:column;line-height:1.25;"><span>Get Free</span><span>Consultation</span></span>' +
-    '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>';
-  document.body.appendChild(floatBtn);
+  if (!window.location.pathname.includes('thank-you.html')) {
+    const subdirs = ['services','lenders','guides','calculators','blog','weekly-reports','testimonials','case-studies'];
+    const inSubdir = subdirs.some(d => window.location.pathname.includes('/' + d + '/'));
+    const contactHref = inSubdir ? '../contact.html' : 'contact.html';
+    const floatBtn = document.createElement('a');
+    floatBtn.href = contactHref;
+    floatBtn.className = 'floating-consult';
+    floatBtn.setAttribute('aria-label', 'Book a free consultation');
+    floatBtn.innerHTML =
+      '<span class="fcta-dot"></span>' +
+      '<span style="display:flex;flex-direction:column;line-height:1.25;"><span>Get Free</span><span>Consultation</span></span>' +
+      '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>';
+    document.body.appendChild(floatBtn);
+  }
 });
