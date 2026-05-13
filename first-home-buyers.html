@@ -423,7 +423,7 @@
     <div class="lp-form-card" id="booking-form">
       <div class="lp-form-title">Book your free 15-minute call</div>
       <form action="https://formsubmit.co/connect@webstacy.co" method="POST">
-        <input type="hidden" name="_next" value="https://www.finchmortgages.co.nz/thank-you.html">
+        <input type="hidden" name="_next" id="next-url-fhb" value="">
         <input type="hidden" name="_subject" value="New First Home Buyers Booking">
         <input type="hidden" name="_captcha" value="false">
         <div class="lp-field">
@@ -454,6 +454,9 @@
       </div>
       <button class="lp-submit" type="submit">Book my free 15-minute call →</button>
       </form>
+      <script>
+        document.getElementById('next-url-fhb').value = window.location.origin + window.location.pathname.replace(/[^\/]*$/, 'thank-you.html');
+      </script>
       <div class="lp-form-note">Free · No obligation · FSPR registered</div>
       <div class="lp-form-note" style="margin-top: 6px; font-weight: 500;">We respect your privacy / won't share your details.</div>
     </div>
