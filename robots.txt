@@ -1,15 +1,62 @@
+# Finch Mortgage NZ — robots.txt
+# https://www.finchmortgages.co.nz/
+
+# ---------------------------------------------
+# Default policy — allow all well-behaved bots
+# ---------------------------------------------
 User-agent: *
 Allow: /
+Disallow: /scratch/
+Disallow: /node_modules/
+Disallow: /docs/
+Disallow: /.git/
+Disallow: /.vscode/
+Disallow: /.claude/
+Disallow: /thank-you.html
+Disallow: /fhb-thank-you.html
+Disallow: /fhb-disclaimer.html
+Disallow: /fhb-disclosure.html
+Disallow: /fhb-privacy.html
+Disallow: /fhb-terms.html
 Crawl-delay: 1
 
-# AI search crawlers — allow for citation and discovery
+# ---------------------------------------------
+# Search engine crawlers
+# ---------------------------------------------
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /images/
+Allow: /logos/
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+# ---------------------------------------------
+# AI / Generative search crawlers
+# Allowed so Finch Mortgage content can be cited
+# in ChatGPT, Claude, Perplexity, Gemini, Copilot.
+# ---------------------------------------------
 User-agent: GPTBot
 Allow: /
 
 User-agent: ChatGPT-User
 Allow: /
 
+User-agent: OAI-SearchBot
+Allow: /
+
 User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
 Allow: /
 
 User-agent: anthropic-ai
@@ -18,10 +65,46 @@ Allow: /
 User-agent: PerplexityBot
 Allow: /
 
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
 User-agent: cohere-ai
 Allow: /
 
-User-agent: Googlebot
+User-agent: Meta-ExternalAgent
 Allow: /
 
+User-agent: Amazonbot
+Allow: /
+
+User-agent: DiffBot
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+User-agent: PetalBot
+Allow: /
+
+# ---------------------------------------------
+# Resource pointers
+# ---------------------------------------------
 Sitemap: https://www.finchmortgages.co.nz/sitemap.xml
+
+# LLM / AI retrieval guidance:
+# https://www.finchmortgages.co.nz/llms.txt
+# https://www.finchmortgages.co.nz/llms.md
+
+Host: https://www.finchmortgages.co.nz
