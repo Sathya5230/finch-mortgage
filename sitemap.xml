@@ -619,4 +619,34 @@
     <priority>0.3</priority>
   </url>
 
+  <!-- ============================ -->
+  <!-- PER-LENDER REVIEW PAGES       -->
+  <!-- 25 NZ-specific lender reviews -->
+  <!-- ============================ -->
+  <url><loc>https://www.finchmortgages.co.nz/lenders/anz-home-loan-review.html</loc><lastmod>2026-05-24</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/lenders/asb-mortgage-review.html</loc><lastmod>2026-05-24</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/lenders/bnz-home-loan-review.html</loc><lastmod>2026-05-24</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/lenders/westpac-mortgage-review.html</loc><lastmod>2026-05-24</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/lenders/kiwibank-home-loan-review.html</loc><lastmod>2026-05-24</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/lenders/tsb-mortgage-review.html</loc><lastmod>2026-05-24</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/lenders/sbs-mortgage-review.html</loc><lastmod>2026-05-24</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/lenders/co-operative-bank-mortgage-review.html</loc><lastmod>2026-05-24</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/lenders/heartland-bank-mortgage-review.html</loc><lastmod>2026-05-24</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/lenders/resimac-mortgage-review.html</loc><lastmod>2026-05-24</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/lenders/pepper-money-mortgage-review.html</loc><lastmod>2026-05-24</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/lenders/avanti-finance-mortgage-review.html</loc><lastmod>2026-05-24</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/lenders/liberty-financial-mortgage-review.html</loc><lastmod>2026-05-24</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/lenders/basecorp-mortgage-review.html</loc><lastmod>2026-05-24</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/lenders/bluestone-mortgage-review.html</loc><lastmod>2026-05-24</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/lenders/first-credit-union-mortgage-review.html</loc><lastmod>2026-05-24</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/lenders/police-credit-union-mortgage-review.html</loc><lastmod>2026-05-24</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/lenders/hsbc-nz-mortgage-review.html</loc><lastmod>2026-05-24</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/lenders/icbc-nz-mortgage-review.html</loc><lastmod>2026-05-24</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/lenders/udc-finance-asset-review.html</loc><lastmod>2026-05-24</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/lenders/marac-asset-finance-review.html</loc><lastmod>2026-05-24</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/lenders/finance-now-asset-review.html</loc><lastmod>2026-05-24</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/lenders/asap-finance-mortgage-review.html</loc><lastmod>2026-05-24</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/lenders/cressida-capital-mortgage-review.html</loc><lastmod>2026-05-24</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/lenders/mitsubishi-hc-capital-review.html</loc><lastmod>2026-05-24</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+
 </urlset>
