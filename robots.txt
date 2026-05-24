@@ -18,7 +18,6 @@ Disallow: /fhb-disclaimer.html
 Disallow: /fhb-disclosure.html
 Disallow: /fhb-privacy.html
 Disallow: /fhb-terms.html
-Crawl-delay: 1
 
 # ---------------------------------------------
 # Search engine crawlers
