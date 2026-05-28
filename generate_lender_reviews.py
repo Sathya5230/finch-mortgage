@@ -768,6 +768,39 @@ def build_page(lender: dict, template_text: str) -> str:
         f'<meta content="{keywords}" name="keywords"/>',
         head,
     )
+    # Rewrite OG/Twitter tags per-lender. The template inherits values from
+    # major-banks.html, so without these substitutions every page would share
+    # the same wrong og:title/og:url/og:description.
+    head = re.sub(
+        r'<meta content=\"[^\"]*\" property=\"og:title\"/?>',
+        f'<meta content="{title}" property="og:title"/>',
+        head,
+        count=1,
+    )
+    head = re.sub(
+        r'<meta content=\"[^\"]*\" property=\"og:description\"/?>',
+        f'<meta content="{description}" property="og:description"/>',
+        head,
+        count=1,
+    )
+    head = re.sub(
+        r'<meta content=\"[^\"]*\" property=\"og:url\"/?>',
+        f'<meta content="{canonical}" property="og:url"/>',
+        head,
+        count=1,
+    )
+    head = re.sub(
+        r'<meta content=\"[^\"]*\" name=\"twitter:title\"/?>',
+        f'<meta content="{title}" name="twitter:title"/>',
+        head,
+        count=1,
+    )
+    head = re.sub(
+        r'<meta content=\"[^\"]*\" name=\"twitter:description\"/?>',
+        f'<meta content="{description}" name="twitter:description"/>',
+        head,
+        count=1,
+    )
     # Replace breadcrumb JSON-LD block with our combined schema
     # Use lambda to avoid backslash escape interpretation in JSON strings.
     head = re.sub(
