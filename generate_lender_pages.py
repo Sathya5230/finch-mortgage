@@ -175,8 +175,8 @@ def make_page(c):
   <meta name="description" content="Detailed guide to {c['title']} in New Zealand. Compare partners, understand policies, and find out if this lender type matches your mortgage needs.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
-  <script src="https://unpkg.com/lucide@latest"></script>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest" defer></script>
   <link rel="stylesheet" href="../style.css">
 </head>
 <body>
@@ -240,9 +240,9 @@ def make_page(c):
 
 </main>
 {FOOTER}
-<script src="../script.js"></script>
+<script src="../script.js" defer></script>
 <script>
-  if (typeof lucide !== 'undefined') lucide.createIcons();
+  document.addEventListener("DOMContentLoaded",function(){{if(typeof lucide!=="undefined")lucide.createIcons();}});
   function toggleFaq(btn) {{
     const body = btn.nextElementSibling;
     const icon = btn.querySelector('.faq-icon');

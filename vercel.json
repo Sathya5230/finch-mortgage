@@ -1,0 +1,17 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "finchmortgages.co.nz" }],
+      "destination": "https://www.finchmortgages.co.nz/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/testimonials.html",
+      "destination": "/testimonials/reviews.html",
+      "permanent": true
+    }
+  ]
+}
