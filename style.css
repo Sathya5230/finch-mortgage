@@ -1896,3 +1896,6 @@ button:focus-visible {
     gap: 2rem !important;
   }
 }
+
+/* LCP: above-the-fold hero must paint immediately, not wait for the JS scroll-reveal */
+.page-hero .reveal{opacity:1!important;transform:none!important;}
