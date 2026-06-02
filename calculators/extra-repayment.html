@@ -34,6 +34,7 @@
 <!-- Favicon -->
 <link href="/favicon.png" rel="icon" type="image/png"/>
 <link href="../style.css" rel="stylesheet"/>
+<link href="../tailwind.css" rel="stylesheet"/>
 <style>
         input[type="range"] {
             width: 100%;
@@ -93,7 +94,6 @@
             border-radius: 26px 0 0 0;
         }
     </style>
-<script src="https://cdn.tailwindcss.com"></script>
 <script>
     tailwind.config = {
       theme: { extend: { colors: {
@@ -371,7 +371,7 @@ src="https://www.facebook.com/tr?id=984298931136124&ev=PageView&noscript=1"
 <div class="footer-bottom"><span>© 2026 Finch Mortgages Limited. FSP1011206 | FSPR FSP1011125. All rights reserved.</span><div style="display:flex;gap:1.5rem;"><a href="../privacy.html">Privacy</a><a href="../terms.html">Terms</a><a href="../disclaimer.html">Disclaimer</a><a href="../disclosure.html">Disclosure</a></div></div>
 </div>
 </footer>
-<script src="../script.js"></script>
+<script src="../script.js" defer></script>
 <script>
         const fmt = n => '$' + Math.round(n).toLocaleString('en-NZ');
 
