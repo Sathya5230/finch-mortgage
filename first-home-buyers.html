@@ -169,9 +169,11 @@
 .lp-tcard:last-child { margin-bottom: 0; }
 .lp-tcard p {
   font-size: 14px; color: var(--neutral-black);
-  line-height: 1.65; margin-bottom: 8px;
+  line-height: 1.65; margin-bottom: 12px;
   font-family: var(--font-display, Georgia, serif);
 }
+.lp-tclient { display: flex; align-items: center; gap: 12px; }
+.lp-tavatar { width: 36px; height: 36px; border-radius: 50%; object-fit: cover; background: #ddd; flex-shrink: 0; }
 .lp-tname { font-size: 12px; color: var(--neutral-medGray); font-weight: 600; }
 
 /* ── FAQ ── */
@@ -347,10 +349,10 @@ src="https://www.facebook.com/tr?id=984298931136124&ev=PageView&noscript=1"
     <div>
       <span class="lp-eyebrow">Stop Renting. Start Building Equity.</span>
       <h1 class="lp-h1">You May Have More Options Than You Think.<br>Don't Let Another Year Pass Without Finding Out.</h1>
+      <p class="lp-sub">One free 15-minute call could show you exactly where you stand — no bank appointments, no jargon.</p>
       <video class="lp-hero-video" controls loop playsinline preload="metadata">
         <source src="finch.mp4" type="video/mp4">
       </video>
-      <p class="lp-sub">One free 15-minute call could show you exactly where you stand — no bank appointments, no jargon.</p>
     </div>
 
     <!-- Bullets -->
@@ -409,19 +411,31 @@ src="https://www.facebook.com/tr?id=984298931136124&ev=PageView&noscript=1"
       <h2>What clients say</h2>
       <div class="lp-tcard">
         <p>"We'd been to two banks and hit dead ends. One call with Finch and we had a clear plan. Three months later we had our keys."</p>
-        <div class="lp-tname">James &amp; Mere — bought in Manurewa</div>
+        <div class="lp-tclient">
+          <img src="images/james_mere.png" alt="James &amp; Mere" class="lp-tavatar" loading="lazy">
+          <div class="lp-tname">James &amp; Mere — bought in Manurewa</div>
+        </div>
       </div>
       <div class="lp-tcard">
         <p>"I thought we were at least a year away. After one call we understood exactly where we stood and moved much faster than expected."</p>
-        <div class="lp-tname">Sarah &amp; Tom — first home buyers, Papakura</div>
+        <div class="lp-tclient">
+          <img src="images/sarah_tom.png" alt="Sarah &amp; Tom" class="lp-tavatar" loading="lazy">
+          <div class="lp-tname">Sarah &amp; Tom — first home buyers, Papakura</div>
+        </div>
       </div>
       <div class="lp-tcard">
         <p>"Completely stress-free. They handled everything and got us a rate the bank wouldn't give us directly."</p>
-        <div class="lp-tname">Priya M. — Manukau</div>
+        <div class="lp-tclient">
+          <img src="images/priya.png" alt="Priya M." class="lp-tavatar" loading="lazy">
+          <div class="lp-tname">Priya M. — Manukau</div>
+        </div>
       </div>
       <div class="lp-tcard">
         <p>"Mukhtar has simply been amazing to deal with, the fastest most knowledgeable advice I was given in my enquiries and really helped along the way! Thank you so so much!"</p>
-        <div class="lp-tname">Casey</div>
+        <div class="lp-tclient">
+          <img src="images/casey.png" alt="Casey" class="lp-tavatar" loading="lazy">
+          <div class="lp-tname">Casey</div>
+        </div>
       </div>
     </div>
 
