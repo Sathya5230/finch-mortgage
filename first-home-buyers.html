@@ -84,6 +84,14 @@
   color: var(--neutral-medGray);
   line-height: 1.7;
 }
+.lp-hero-video {
+  display: block;
+  width: 100%;
+  max-width: 520px;
+  border-radius: 16px;
+  margin: 1.25rem 0;
+  box-shadow: 0 8px 32px rgba(16,68,62,0.12);
+}
 
 /* ── Bullet list ── */
 .lp-bullets { list-style: none; display: flex; flex-direction: column; gap: 10px; }
@@ -193,6 +201,9 @@
   padding: 28px 24px 22px;
   box-shadow: 0 4px 24px rgba(16,68,62,0.08);
 }
+.lp-spots-badge { display: inline-flex; align-items: center; gap: 8px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--finch-gold); background: rgba(178,147,97,0.1); border: 1px solid rgba(178,147,97,0.28); padding: 6px 14px; border-radius: 999px; margin-bottom: 14px; }
+.lp-spots-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--finch-gold); animation: lp-spots-pulse 1.8s ease-in-out infinite; }
+@keyframes lp-spots-pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.35; } }
 .lp-form-title { font-size: 16px; font-weight: 600; color: var(--neutral-black); margin-bottom: 18px; }
 .lp-field { margin-bottom: 12px; }
 .lp-field label { display: block; font-size: 12px; color: var(--neutral-medGray); margin-bottom: 5px; }
@@ -336,6 +347,9 @@ src="https://www.facebook.com/tr?id=984298931136124&ev=PageView&noscript=1"
     <div>
       <span class="lp-eyebrow">Stop Renting. Start Building Equity.</span>
       <h1 class="lp-h1">You May Have More Options Than You Think.<br>Don't Let Another Year Pass Without Finding Out.</h1>
+      <video class="lp-hero-video" autoplay muted loop playsinline preload="metadata">
+        <source src="finch.mp4" type="video/mp4">
+      </video>
       <p class="lp-sub">One free 15-minute call could show you exactly where you stand — no bank appointments, no jargon.</p>
     </div>
 
@@ -444,6 +458,7 @@ src="https://www.facebook.com/tr?id=984298931136124&ev=PageView&noscript=1"
   <!-- ── RIGHT COLUMN (sticky form) ── -->
   <div class="lp-right">
     <div class="lp-form-card" id="booking-form">
+      <div class="lp-spots-badge"><span class="lp-spots-dot"></span>3 spots left this month</div>
       <div class="lp-form-title">Get clarity on your mortgage options</div>
       <form action="https://api.web3forms.com/submit" method="POST">
         <input type="hidden" name="access_key" value="d324f726-646c-4e0b-a1f2-7117480ff013">
