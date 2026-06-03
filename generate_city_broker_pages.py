@@ -19,8 +19,22 @@ TEMPLATE = ROOT / "blog/mortgage-broker-north-shore.html"
 OUT_DIR = ROOT / "blog"
 BASE_URL = "https://www.finchmortgages.co.nz"
 
+# ISO 8601 dates for Article schema (required for Article rich results)
+ARTICLE_PUBLISHED = "2026-01-15"
+ARTICLE_MODIFIED = "2026-06-03"
+
 
 CITIES = [
+    {
+        "slug": "mortgage-broker-te-atatu",
+        "city": "Te Atatu",
+        "region": "Te Atatu &amp; West Auckland",
+        "intro_one_liner": "Finch is based right here in Te Atatu South — a genuinely local independent NZ mortgage broker arranging home loans across Te Atatu Peninsula, Te Atatu South, Henderson, Massey, and the wider West Auckland area.",
+        "suburbs": "Te Atatu South, Te Atatu Peninsula, Henderson, Massey, Glendene, Kelston, New Lynn, Green Bay, Titirangi, Ranui, Swanson, Sunnyvale, Glen Eden, Royal Heights, West Harbour, Hobsonville, Westgate, and the wider West Auckland area",
+        "market_note": "West Auckland blends established post-war suburbs with fast-growing new-build corridors through Massey, Hobsonville Point, and Westgate. New builds across these areas typically qualify for the main-bank LVR exemption (10-15% deposit) and frequently for the Kāinga Ora First Home Grant, while older weatherboard and cross-lease properties in Te Atatu and Glen Eden can attract additional lender scrutiny around insulation, Healthy Homes compliance, and title type. Knowing which lender treats each property type favourably is exactly what a local broker is for.",
+        "common_buyers": "first home buyers across Henderson, Massey, and Te Atatu combining KiwiSaver and the Kāinga Ora First Home Loan; growing families upgrading within West Auckland; self-employed tradespeople and small business owners; investors targeting West Auckland rental yield; refinancers rolling off higher 2022-2023 fixed terms",
+        "price_band": "Te Atatu standalone homes typically $900k-$1.4m, Henderson and Massey $800k-$1.2m, West Auckland townhouses and new builds $650k-$900k, Titirangi and bush-fringe homes $1m-$1.6m+",
+    },
     {
         "slug": "mortgage-broker-nz",
         "city": "New Zealand",
@@ -135,20 +149,22 @@ CITIES = [
 
 
 def title_for(c: dict) -> str:
+    # Kept under 60 characters so titles don't truncate in SERPs.
     if c["slug"] == "mortgage-broker-nz":
-        return "Mortgage Broker NZ | Independent NZ-Wide Mortgage Broker | Finch"
-    return f"Mortgage Broker {c['city']} | Independent NZ Mortgage Broker | Finch"
+        return "Mortgage Broker NZ | Independent NZ-Wide Broker | Finch"
+    return f"Mortgage Broker {c['city']} | Finch Mortgages NZ"
 
 
 def description_for(c: dict) -> str:
+    # Trimmed to land near the 150-160 character SERP sweet spot.
     if c["slug"] == "mortgage-broker-nz":
         return (
             "Independent NZ mortgage broker — Finch arranges home loans across 20+ NZ lenders for "
             "buyers anywhere in New Zealand. Free advice, $0 broker fee, fast pre-approvals."
         )
     return (
-        f"Independent {c['city']} mortgage broker — Finch helps {c['region']} buyers compare "
-        f"20+ NZ lenders for the best rate and structure. Free local advice, $0 broker fee."
+        f"Independent {c['city']} mortgage broker — Finch compares 20+ NZ lenders to find local "
+        f"buyers the sharpest rate and structure. Free advice, $0 broker fee."
     )
 
 
@@ -191,7 +207,18 @@ def schema_for(c: dict) -> str:
         "headline": f"Mortgage Broker {c['city'].replace('&amp;', '&')} — Independent NZ Advice",
         "description": description_for(c),
         "url": f"{BASE_URL}/blog/{c['slug']}.html",
+        "mainEntityOfPage": {"@type": "WebPage", "@id": f"{BASE_URL}/blog/{c['slug']}.html"},
         "inLanguage": "en-NZ",
+        "image": f"{BASE_URL}/images/finch-logo.png",
+        "datePublished": ARTICLE_PUBLISHED,
+        "dateModified": ARTICLE_MODIFIED,
+        "author": {
+            "@type": "Person",
+            "@id": f"{BASE_URL}/#mukhtar-kiyani",
+            "name": "Mukhtar Kiyani",
+            "jobTitle": "Founder & Mortgage Adviser",
+            "url": f"{BASE_URL}/about.html",
+        },
         "publisher": {
             "@type": "MortgageBroker",
             "@id": f"{BASE_URL}/#organization",
@@ -267,7 +294,7 @@ def main_body(c: dict) -> str:
           <p style="margin-bottom:2rem;">For residential home loans, Finch charges you nothing. We are paid by the lender on settlement — not by you. That fee comes from the bank's distribution budget and would otherwise stay with the bank if you walked in direct. Our independent broker obligations under the Financial Markets Conduct Act mean we are legally required to act in your best interest, not the lender's. We hold FSP1011206 (FSPR FSP1011125) and are subject to NZ regulatory oversight.</p>
 
           <h3 style="font-size:1.35rem;font-weight:700;color:var(--finch-forest);margin-bottom:1rem;margin-top:2.5rem;">First Home Buyer Support in {city}</h3>
-          <p style="margin-bottom:2rem;">We specialise in helping {city} first home buyers combine every available NZ deposit pathway — KiwiSaver withdrawal (after 3 years of contributions), Kāinga Ora First Home Grant (up to $5,000 existing / $10,000 new build), Kāinga Ora First Home Loan (5% deposit through Westpac, Kiwibank, SBS, The Co-operative Bank), family guarantees, and new-build LVR exemption. Most first home buyers find their effective deposit goes much further than they expected once we layer these properly. Read the full <a href="../guides/first-home-guide.html" style="color:var(--finch-forest);text-decoration:underline;font-weight:600;">NZ first home buyer guide</a>.</p>
+          <p style="margin-bottom:2rem;">We specialise in helping {city} first home buyers combine every available NZ deposit pathway — KiwiSaver withdrawal (after 3 years of contributions), the <a href="https://kaingaora.govt.nz/en_NZ/home-ownership/first-home-loan/" target="_blank" rel="noopener" style="color:var(--finch-forest);text-decoration:underline;font-weight:600;">Kāinga Ora First Home Loan</a> (5% deposit through Westpac, Kiwibank, SBS, The Co-operative Bank), family guarantees, and new-build LVR exemption set by the <a href="https://www.rbnz.govt.nz/regulation-and-supervision/banks/macro-prudential-policy/loan-to-value-ratio-restrictions" target="_blank" rel="noopener" style="color:var(--finch-forest);text-decoration:underline;font-weight:600;">Reserve Bank's LVR rules</a>. Most first home buyers find their effective deposit goes much further than they expected once we layer these properly. Read the full <a href="../guides/first-home-guide.html" style="color:var(--finch-forest);text-decoration:underline;font-weight:600;">NZ first home buyer guide</a>.</p>
 
           <h3 style="font-size:1.35rem;font-weight:700;color:var(--finch-forest);margin-bottom:1rem;margin-top:2.5rem;">Refinance &amp; Restructure for {city} Homeowners</h3>
           <p style="margin-bottom:1rem;">If your fixed term is rolling off in the next 60 days, you're paying the loyalty tax. Refinancing through Finch typically captures a sharper rate plus 0.50-0.90% cashback (up to $20,000 depending on lender and loan size). We model your full economics — break fees, cashback clawback on existing loan, new cashback, legal costs — before recommending any move. Use our <a href="../calculators/refinance-savings.html" style="color:var(--finch-forest);text-decoration:underline;font-weight:600;">refinance savings calculator</a> to ballpark the benefit.</p>

@@ -16,11 +16,15 @@ TEMPLATE = ROOT / "blog/mortgage-tips.html"
 OUT_DIR = ROOT / "blog"
 BASE_URL = "https://www.finchmortgages.co.nz"
 
+# ISO 8601 dates for Article rich-result eligibility
+ARTICLE_PUBLISHED = "2026-01-15"
+ARTICLE_MODIFIED = "2026-06-03"
+
 
 POSTS = [
     {
         "slug": "how-long-mortgage-approval-takes-nz",
-        "title": "How Long Does a Mortgage Approval Take in New Zealand? (2026 Timeline)",
+        "title": "How Long Does a Mortgage Approval Take in NZ? (2026)",
         "h1": "How Long Does a Mortgage Approval Take in NZ?",
         "intro_pull": "From first conversation to settlement day, the typical NZ mortgage approval moves through eight stages — and most are faster than buyers expect.",
         "description": "How long mortgage approval takes in NZ — full 2026 timeline from pre-approval (5-10 working days) to settlement (4-6 weeks). Bank-by-bank turnaround comparison.",
@@ -54,7 +58,7 @@ POSTS = [
     },
     {
         "slug": "how-much-can-i-borrow-100k-salary-nz",
-        "title": "How Much Can I Borrow on $100k Salary in NZ? (2026 Lender Comparison)",
+        "title": "How Much Can I Borrow on $100k Salary in NZ? (2026)",
         "h1": "How Much Can I Borrow on a $100k Salary in NZ?",
         "intro_pull": "On a $100k NZ salary, your borrowing capacity in 2026 sits between approximately $480k and $680k — and the spread between lenders is bigger than most buyers realise.",
         "description": "How much you can borrow on a $100k NZ salary in 2026 — comparing test rates, living expenses, and lender scorecards across ANZ, ASB, BNZ, Westpac, Kiwibank, and non-banks.",
@@ -77,7 +81,7 @@ POSTS = [
     },
     {
         "slug": "mortgage-broker-vs-bank-nz",
-        "title": "Mortgage Broker vs Bank in NZ — Which is Better? (2026 Comparison)",
+        "title": "Mortgage Broker vs Bank in NZ — Which Is Better? (2026)",
         "h1": "Mortgage Broker vs Bank in NZ — Which is Better?",
         "intro_pull": "Going direct to your own bank limits you to one set of rates and one credit scorecard. A broker compares 20+ NZ lenders for free.",
         "description": "Mortgage broker vs bank in NZ — full 2026 comparison. Costs, lender access, approval rates, and which path delivers a sharper rate and faster approval.",
@@ -193,7 +197,18 @@ def schema_for(post: dict) -> str:
         "headline": post["title"],
         "description": post["description"],
         "url": f"{BASE_URL}/blog/{post['slug']}.html",
+        "mainEntityOfPage": {"@type": "WebPage", "@id": f"{BASE_URL}/blog/{post['slug']}.html"},
         "inLanguage": "en-NZ",
+        "image": f"{BASE_URL}/images/finch-logo.png",
+        "datePublished": ARTICLE_PUBLISHED,
+        "dateModified": ARTICLE_MODIFIED,
+        "author": {
+            "@type": "Person",
+            "@id": f"{BASE_URL}/#mukhtar-kiyani",
+            "name": "Mukhtar Kiyani",
+            "jobTitle": "Founder & Mortgage Adviser",
+            "url": f"{BASE_URL}/about.html",
+        },
         "publisher": {
             "@type": "MortgageBroker",
             "@id": f"{BASE_URL}/#organization",
@@ -234,6 +249,7 @@ def main_body(post: dict) -> str:
       <div class="container" style="max-width:800px;">
         <div class="prose" style="color:var(--neutral-medGray);line-height:1.8;font-size:1.05rem;">
           {sections_html}
+          <p style="margin-top:2rem;font-size:0.95rem;">Official NZ sources: the <a href="https://www.rbnz.govt.nz/" target="_blank" rel="noopener" style="color:var(--finch-forest);text-decoration:underline;font-weight:600;">Reserve Bank of New Zealand</a> for OCR and lending policy, and <a href="https://sorted.org.nz/guides/" target="_blank" rel="noopener" style="color:var(--finch-forest);text-decoration:underline;font-weight:600;">Sorted.org.nz</a> for independent, government-backed money guidance.</p>
         </div>
       </div>
     </section>

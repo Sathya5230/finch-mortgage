@@ -16,6 +16,10 @@ TEMPLATE = ROOT / "case-studies/refinance-savings.html"
 OUT_DIR = ROOT / "case-studies"
 BASE_URL = "https://www.finchmortgages.co.nz"
 
+# ISO 8601 dates for Article rich-result eligibility
+ARTICLE_PUBLISHED = "2026-01-15"
+ARTICLE_MODIFIED = "2026-06-03"
+
 
 CASE_STUDIES = [
     {
@@ -161,7 +165,18 @@ def schema_for(c: dict) -> str:
         "headline": c["title_short"],
         "description": c["summary"],
         "url": f"{BASE_URL}/case-studies/{c['slug']}.html",
+        "mainEntityOfPage": {"@type": "WebPage", "@id": f"{BASE_URL}/case-studies/{c['slug']}.html"},
         "inLanguage": "en-NZ",
+        "image": f"{BASE_URL}/images/finch-logo.png",
+        "datePublished": ARTICLE_PUBLISHED,
+        "dateModified": ARTICLE_MODIFIED,
+        "author": {
+            "@type": "Person",
+            "@id": f"{BASE_URL}/#mukhtar-kiyani",
+            "name": "Mukhtar Kiyani",
+            "jobTitle": "Founder & Mortgage Adviser",
+            "url": f"{BASE_URL}/about.html",
+        },
         "publisher": {
             "@type": "MortgageBroker",
             "@id": f"{BASE_URL}/#organization",
@@ -192,7 +207,8 @@ def keywords_for(c: dict) -> str:
 
 
 def title_for(c: dict) -> str:
-    return f"{c['title_short']} | NZ Mortgage Case Study | Finch"
+    # Kept under 60 characters so titles don't truncate in SERPs.
+    return f"{c['title_short']} | Finch"
 
 
 def main_body(c: dict) -> str:
@@ -256,6 +272,7 @@ def main_body(c: dict) -> str:
           <div class="section-label" style="margin-bottom:1rem;"><span>The Outcome</span></div>
           <h2 class="section-heading" style="margin-bottom:1.5rem;">The result.</h2>
           {outcome_html}
+          <p style="color:var(--neutral-medGray);line-height:1.8;margin-top:1.5rem;font-size:0.95rem;">Useful NZ sources: the <a href="https://www.rbnz.govt.nz/" target="_blank" rel="noopener" style="color:var(--finch-forest);text-decoration:underline;font-weight:600;">Reserve Bank of New Zealand</a> for current lending policy, and <a href="https://kaingaora.govt.nz/en_NZ/home-ownership/" target="_blank" rel="noopener" style="color:var(--finch-forest);text-decoration:underline;font-weight:600;">Kāinga Ora</a> for first-home support schemes.</p>
         </div>
       </div>
     </section>

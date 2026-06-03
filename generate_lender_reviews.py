@@ -21,6 +21,10 @@ TEMPLATE_PAGE = ROOT / "lenders/major-banks.html"
 OUT_DIR = ROOT / "lenders"
 BASE_URL = "https://www.finchmortgages.co.nz"
 
+# ISO 8601 dates for Article rich-result eligibility
+ARTICLE_PUBLISHED = "2026-01-15"
+ARTICLE_MODIFIED = "2026-06-03"
+
 # --- Lender data ---------------------------------------------------------- #
 # Each tuple drives one generated page.
 LENDERS = [
@@ -542,21 +546,35 @@ LENDERS = [
 ]
 
 
+def h1_qualifier(lender: dict) -> str:
+    # Puts the primary keyword in the H1 ("ASB Home Loan Review") while staying
+    # accurate to the lender type. Suppressed where it would read redundantly
+    # (e.g. names that already contain "Finance").
+    cat = lender["category"]
+    if cat == "specialist lender":
+        return "" if "Finance" in lender["name"] else "Asset Finance"
+    if cat in ("non-bank lender", "credit union"):
+        return "Mortgage"
+    return "Home Loan"
+
+
 def title_for(lender: dict) -> str:
+    # Kept under 60 characters so titles don't truncate in SERPs.
+    name = lender["name"]
     if lender["category"] in ("specialist lender",):
-        return f"{lender['name']} Review NZ 2026 | Asset &amp; Specialist Finance | Finch"
+        return f"{name} Review NZ 2026 | Asset Finance | Finch"
     if lender["category"] == "credit union":
-        return f"{lender['name']} Review NZ 2026 | Credit Union Lending | Finch"
+        return f"{name} Review NZ 2026 | Finch Mortgages"
     if lender["category"] == "non-bank lender":
-        return f"{lender['name']} NZ Review 2026 | Non-Bank Mortgages | Finch"
-    return f"{lender['name']} Home Loan Review NZ 2026 | Mortgage Rates &amp; Policy | Finch"
+        return f"{name} Review NZ 2026 | Non-Bank | Finch"
+    return f"{name} Home Loan Review NZ 2026 | Finch"
 
 
 def description_for(lender: dict) -> str:
+    # Trimmed to land near the 150-160 character SERP sweet spot.
     return (
-        f"Independent {lender['name']} ({lender['full_name']}) review for NZ borrowers — "
-        f"{lender['positioning']}. Compare rates, deposit requirements, policy strengths, "
-        f"and how Finch matches your scenario across 20+ NZ lenders."
+        f"Independent {lender['name']} mortgage review for NZ borrowers — compare rates, "
+        f"deposit rules, and policy strengths, plus how Finch matches you across 20+ lenders."
     )
 
 
@@ -600,7 +618,18 @@ def schema_for(lender: dict) -> str:
         "headline": f"{lender['full_name']} Review for NZ Mortgage Borrowers (2026)",
         "description": description_for(lender),
         "url": f"{BASE_URL}/lenders/{lender['slug']}.html",
+        "mainEntityOfPage": {"@type": "WebPage", "@id": f"{BASE_URL}/lenders/{lender['slug']}.html"},
         "inLanguage": "en-NZ",
+        "image": f"{BASE_URL}/images/finch-logo.png",
+        "datePublished": ARTICLE_PUBLISHED,
+        "dateModified": ARTICLE_MODIFIED,
+        "author": {
+            "@type": "Person",
+            "@id": f"{BASE_URL}/#mukhtar-kiyani",
+            "name": "Mukhtar Kiyani",
+            "jobTitle": "Founder & Mortgage Adviser",
+            "url": f"{BASE_URL}/about.html",
+        },
         "publisher": {
             "@type": "MortgageBroker",
             "@id": f"{BASE_URL}/#organization",
@@ -636,7 +665,7 @@ def main_body(lender: dict) -> str:
       <div class="reveal" style="max-width:800px;">
         <nav class="breadcrumb"><a href="../index.html">Home</a><span class="breadcrumb-sep">/</span><a href="../lenders.html">Lenders</a><span class="breadcrumb-sep">/</span><span>{name} Review</span></nav>
         <div class="page-hero-tag">{lender['tier']} · {lender['category'].title()}</div>
-        <h1>{name} <em style="font-style:italic;color:var(--finch-forest);">Review.</em></h1>
+        <h1>{f"{name} {h1_qualifier(lender)}".rstrip()} <em style="font-style:italic;color:var(--finch-forest);">Review.</em></h1>
         <p>{description_for(lender)}</p>
         <div style="display:flex;gap:1rem;flex-wrap:wrap;margin-top:1.5rem;">
           <a class="btn-primary" href="../contact.html">Compare {name} with 20+ NZ Lenders</a>
@@ -683,6 +712,9 @@ def main_body(lender: dict) -> str:
 
           <h3 style="font-size:1.35rem;font-weight:700;color:var(--finch-forest);margin-bottom:1rem;margin-top:2.5rem;">How {name} Compares Across the NZ Lender Panel</h3>
           <p style="margin-bottom:2rem;">No single NZ lender wins for every scenario. Pricing varies by week and by deal type — {name} may be sharpest one month and uncompetitive the next, while a non-bank like Resimac or Pepper Money picks up cases the main banks decline. Use our <a href="../mortgage-rates.html" style="color:var(--finch-forest);text-decoration:underline;font-weight:600;">live NZ rates comparison</a> to see where {name} sits today, then book a free consultation to match your scenario against the full panel.</p>
+
+          <h3 style="font-size:1.35rem;font-weight:700;color:var(--finch-forest);margin-bottom:1rem;margin-top:2.5rem;">The Rules Every NZ Lender Works Within</h3>
+          <p style="margin-bottom:2rem;">{name}'s deposit and serviceability settings sit inside the framework set by the Reserve Bank — the <a href="https://www.rbnz.govt.nz/regulation-and-supervision/banks/macro-prudential-policy/loan-to-value-ratio-restrictions" target="_blank" rel="noopener" style="color:var(--finch-forest);text-decoration:underline;font-weight:600;">RBNZ loan-to-value (LVR) and debt-to-income (DTI) restrictions</a> define the floor every NZ lender must work within. As an FMA-licensed financial advice provider, Finch is bound by the <a href="https://www.fma.govt.nz/" target="_blank" rel="noopener" style="color:var(--finch-forest);text-decoration:underline;font-weight:600;">Financial Markets Authority</a> Code of Conduct to recommend {name} only when it genuinely fits your scenario.</p>
 
           <h3 style="font-size:1.35rem;font-weight:700;color:var(--finch-forest);margin-bottom:1rem;margin-top:2.5rem;">Documents {name} Typically Requires</h3>
           <ul style="margin-bottom:2rem;padding-left:1.5rem;list-style:disc;">
