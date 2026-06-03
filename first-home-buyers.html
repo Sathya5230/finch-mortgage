@@ -84,14 +84,76 @@
   color: var(--neutral-medGray);
   line-height: 1.7;
 }
-.lp-hero-video {
+.lp-video-wrap {
+  position: relative;
   display: block;
   width: 100%;
   max-width: 320px;
-  border-radius: 16px;
   margin: 1.25rem auto;
   align-self: center;
+  border-radius: 16px;
+  overflow: hidden;
   box-shadow: 0 8px 32px rgba(16,68,62,0.12);
+  background: #000;
+}
+.lp-hero-video { display: block; width: 100%; height: auto; }
+
+/* big center play button */
+.lp-video-overlay {
+  position: absolute; inset: 0;
+  display: flex; align-items: center; justify-content: center;
+  background: rgba(16,68,62,0.18);
+  border: none; cursor: pointer;
+  transition: opacity 0.25s ease;
+}
+.lp-video-overlay svg {
+  width: 34px; height: 34px; color: var(--finch-forest);
+  background: #fff; border-radius: 50%; padding: 14px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.25);
+}
+.lp-video-wrap.is-playing .lp-video-overlay { opacity: 0; pointer-events: none; }
+
+/* bottom control bar */
+.lp-video-bar {
+  position: absolute; left: 0; right: 0; bottom: 0;
+  display: flex; align-items: center; gap: 10px;
+  padding: 10px 12px;
+  background: linear-gradient(to top, rgba(0,0,0,0.6), rgba(0,0,0,0));
+  opacity: 0; transition: opacity 0.25s ease;
+}
+.lp-video-wrap:hover .lp-video-bar,
+.lp-video-wrap.is-playing .lp-video-bar { opacity: 1; }
+
+.lp-vbtn {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 30px; height: 30px; flex-shrink: 0;
+  background: none; border: none; cursor: pointer; color: #fff; padding: 0;
+}
+.lp-vbtn svg { width: 20px; height: 20px; }
+.lp-ic-pause, .lp-ic-muted { display: none; }
+.lp-video-wrap.is-playing .lp-ic-play { display: none; }
+.lp-video-wrap.is-playing .lp-ic-pause { display: block; }
+.lp-video-wrap.is-muted .lp-ic-vol { display: none; }
+.lp-video-wrap.is-muted .lp-ic-muted { display: block; }
+
+.lp-vseek {
+  flex: 1; height: 4px; cursor: pointer;
+  -webkit-appearance: none; appearance: none;
+  background: rgba(255,255,255,0.3); border-radius: 4px; outline: none;
+}
+.lp-vseek::-webkit-slider-thumb {
+  -webkit-appearance: none; appearance: none;
+  width: 13px; height: 13px; border-radius: 50%;
+  background: var(--finch-gold); cursor: pointer; border: 2px solid #fff;
+}
+.lp-vseek::-moz-range-thumb {
+  width: 13px; height: 13px; border-radius: 50%;
+  background: var(--finch-gold); cursor: pointer; border: 2px solid #fff;
+}
+.lp-vtime {
+  font-size: 11px; font-weight: 600; color: #fff;
+  flex-shrink: 0; min-width: 32px; text-align: center;
+  font-variant-numeric: tabular-nums;
 }
 
 /* ── Bullet list ── */
@@ -351,9 +413,26 @@ src="https://www.facebook.com/tr?id=984298931136124&ev=PageView&noscript=1"
       <span class="lp-eyebrow">Stop Renting. Start Building Equity.</span>
       <h1 class="lp-h1">You May Have More Options Than You Think.<br>Don't Let Another Year Pass Without Finding Out.</h1>
       <p class="lp-sub">One free 15-minute call could show you exactly where you stand — no bank appointments, no jargon.</p>
-      <video class="lp-hero-video" controls loop playsinline preload="metadata">
-        <source src="finch.mp4" type="video/mp4">
-      </video>
+      <div class="lp-video-wrap" id="finchVideo">
+        <video class="lp-hero-video" loop playsinline preload="metadata">
+          <source src="finch.mp4" type="video/mp4">
+        </video>
+        <button class="lp-video-overlay" type="button" data-role="bigplay" aria-label="Play video">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+        </button>
+        <div class="lp-video-bar">
+          <button class="lp-vbtn" type="button" data-role="play" aria-label="Play">
+            <svg class="lp-ic-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+            <svg class="lp-ic-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+          </button>
+          <input class="lp-vseek" type="range" min="0" max="100" value="0" step="0.1" aria-label="Seek">
+          <span class="lp-vtime" data-role="time">0:00</span>
+          <button class="lp-vbtn" type="button" data-role="mute" aria-label="Mute">
+            <svg class="lp-ic-vol" viewBox="0 0 24 24" fill="currentColor"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3a4.5 4.5 0 0 0-2.5-4.03v8.05A4.5 4.5 0 0 0 16.5 12z"/></svg>
+            <svg class="lp-ic-muted" viewBox="0 0 24 24" fill="currentColor"><path d="M3 9v6h4l5 5V4L7 9H3zm18.3-1.3-1.4-1.4L17 9.2 14.1 6.3l-1.4 1.4L15.6 10.6 12.7 13.5l1.4 1.4L17 12l2.9 2.9 1.4-1.4L18.4 10.6z"/></svg>
+          </button>
+        </div>
+      </div>
     </div>
 
     <!-- Bullets -->
@@ -523,6 +602,53 @@ src="https://www.facebook.com/tr?id=984298931136124&ev=PageView&noscript=1"
     © 2026 Finch Mortgages Limited. All rights reserved.
   </div>
 </footer>
+
+<script>
+(function () {
+  var wrap = document.getElementById('finchVideo');
+  if (!wrap) return;
+  var video = wrap.querySelector('.lp-hero-video');
+  var seek  = wrap.querySelector('.lp-vseek');
+  var time  = wrap.querySelector('[data-role="time"]');
+  var dragging = false;
+
+  function fmt(s) {
+    s = Math.floor(s || 0);
+    return Math.floor(s / 60) + ':' + String(s % 60).padStart(2, '0');
+  }
+  function togglePlay() {
+    if (video.paused) { video.play(); } else { video.pause(); }
+  }
+  function toggleMute() {
+    video.muted = !video.muted;
+    wrap.classList.toggle('is-muted', video.muted);
+  }
+
+  wrap.querySelector('[data-role="bigplay"]').addEventListener('click', togglePlay);
+  wrap.querySelector('[data-role="play"]').addEventListener('click', togglePlay);
+  wrap.querySelector('[data-role="mute"]').addEventListener('click', toggleMute);
+  video.addEventListener('click', togglePlay);
+
+  video.addEventListener('play',  function () { wrap.classList.add('is-playing'); });
+  video.addEventListener('pause', function () { wrap.classList.remove('is-playing'); });
+
+  video.addEventListener('timeupdate', function () {
+    if (!dragging && video.duration) {
+      seek.value = (video.currentTime / video.duration) * 100;
+    }
+    time.textContent = fmt(video.currentTime);
+  });
+
+  seek.addEventListener('input', function () {
+    dragging = true;
+    if (video.duration) {
+      video.currentTime = (seek.value / 100) * video.duration;
+      time.textContent = fmt(video.currentTime);
+    }
+  });
+  seek.addEventListener('change', function () { dragging = false; });
+})();
+</script>
 
 </body>
 </html>
