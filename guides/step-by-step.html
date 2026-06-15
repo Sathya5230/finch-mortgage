@@ -28,24 +28,114 @@
 
 
 <link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/><link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" onload="this.onload=null;this.rel='stylesheet'"/><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"/></noscript><link href="../style.css" rel="stylesheet"/>
-<script type="application/ld+json">{
+<script type="application/ld+json">
+{
   "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
+  "@graph": [
     {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://www.finchmortgages.co.nz"
+      "@type": "MortgageBroker",
+      "@id": "https://www.finchmortgages.co.nz/#organization",
+      "name": "Finch Mortgages",
+      "url": "https://www.finchmortgages.co.nz/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.finchmortgages.co.nz/images/finch-logo.png"
+      }
     },
     {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Guides",
-      "item": "https://www.finchmortgages.co.nz/guides"
+      "@type": "Person",
+      "@id": "https://www.finchmortgages.co.nz/about.html#mukhtar-kiyani",
+      "name": "Mukhtar Kiyani",
+      "jobTitle": "Director & Financial Adviser",
+      "url": "https://www.finchmortgages.co.nz/about.html",
+      "worksFor": {
+        "@id": "https://www.finchmortgages.co.nz/#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.finchmortgages.co.nz/guides/step-by-step.html#breadcrumbs",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.finchmortgages.co.nz/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Guides",
+          "item": "https://www.finchmortgages.co.nz/guides/how-mortgage-works.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "NZ Home Buying — Step-by-Step Guide",
+          "item": "https://www.finchmortgages.co.nz/guides/step-by-step.html"
+        }
+      ]
+    },
+    {
+      "@type": "HowTo",
+      "@id": "https://www.finchmortgages.co.nz/guides/step-by-step.html#howto",
+      "name": "NZ Home Buying: Step-by-Step Guide",
+      "description": "Buying a home in NZ — the complete step-by-step process from deposit to settlement, including pre-approval, offers, conditions and key dates from Finch Mortgage.",
+      "inLanguage": "en-NZ",
+      "publisher": {
+        "@id": "https://www.finchmortgages.co.nz/#organization"
+      },
+      "author": {
+        "@id": "https://www.finchmortgages.co.nz/about.html#mukhtar-kiyani"
+      },
+      "step": [
+        {
+          "@type": "HowToStep",
+          "name": "Assess Your Financial Position",
+          "text": "Understand your financial position including income, expenses, and deposit.",
+          "url": "https://www.finchmortgages.co.nz/guides/step-by-step.html#step1"
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Get Pre-Approval",
+          "text": "Secure conditional commitment from a lender up to your borrowing limit.",
+          "url": "https://www.finchmortgages.co.nz/guides/step-by-step.html#step2"
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Search for a Property",
+          "text": "Bid at auction or make conditional offers on target properties.",
+          "url": "https://www.finchmortgages.co.nz/guides/step-by-step.html#step3"
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Make an Offer",
+          "text": "Sign a Sale and Purchase Agreement with desired conditions.",
+          "url": "https://www.finchmortgages.co.nz/guides/step-by-step.html#step4"
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Full Loan Approval",
+          "text": "Lender orders property valuation and issues formal Letter of Offer.",
+          "url": "https://www.finchmortgages.co.nz/guides/step-by-step.html#step5"
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Legal Process",
+          "text": "Solicitor handles LIM report and title checks, prepares mortgage transfer.",
+          "url": "https://www.finchmortgages.co.nz/guides/step-by-step.html#step6"
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Settlement & Keys",
+          "text": "Funds are transferred, property title is registered, and keys are collected.",
+          "url": "https://www.finchmortgages.co.nz/guides/step-by-step.html#step7"
+        }
+      ]
     }
   ]
-}</script><meta content="NZ home buying process step by step, buying a house NZ steps 2026, how to buy a house NZ, NZ mortgage process step by step, property settlement NZ, NZ home loan steps, sale and purchase agreement NZ, NZ property buying guide, pre-approval to settlement NZ, NZ first home process, auction bidding NZ, conditional offer NZ, conveyancing NZ" name="keywords"/><!-- Meta Pixel Code -->
+}
+</script><meta content="NZ home buying process step by step, buying a house NZ steps 2026, how to buy a house NZ, NZ mortgage process step by step, property settlement NZ, NZ home loan steps, sale and purchase agreement NZ, NZ property buying guide, pre-approval to settlement NZ, NZ first home process, auction bidding NZ, conditional offer NZ, conveyancing NZ" name="keywords"/><!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?

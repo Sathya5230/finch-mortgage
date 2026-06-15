@@ -35,24 +35,74 @@
 
 
 <link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/><link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" onload="this.onload=null;this.rel='stylesheet'"/><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"/></noscript><link href="../style.css" rel="stylesheet"/>
-<script type="application/ld+json">{
+<script type="application/ld+json">
+{
   "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
+  "@graph": [
     {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://www.finchmortgages.co.nz"
+      "@type": "MortgageBroker",
+      "@id": "https://www.finchmortgages.co.nz/#organization",
+      "name": "Finch Mortgages",
+      "url": "https://www.finchmortgages.co.nz/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.finchmortgages.co.nz/images/finch-logo.png"
+      }
     },
     {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Guides",
-      "item": "https://www.finchmortgages.co.nz/guides"
+      "@type": "Person",
+      "@id": "https://www.finchmortgages.co.nz/about.html#mukhtar-kiyani",
+      "name": "Mukhtar Kiyani",
+      "jobTitle": "Director & Financial Adviser",
+      "url": "https://www.finchmortgages.co.nz/about.html",
+      "worksFor": {
+        "@id": "https://www.finchmortgages.co.nz/#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.finchmortgages.co.nz/guides/first-home-guide.html#breadcrumbs",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.finchmortgages.co.nz/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Guides",
+          "item": "https://www.finchmortgages.co.nz/guides/how-mortgage-works.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "First Home Buyer Guide NZ 2026 Mortgage",
+          "item": "https://www.finchmortgages.co.nz/guides/first-home-guide.html"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://www.finchmortgages.co.nz/guides/first-home-guide.html#article",
+      "headline": "First Home Buyer Guide NZ 2026 Mortgage",
+      "description": "The complete NZ first home buyer guide for 2026 — deposit, KiwiSaver, First Home Grant, pre-approval, and step-by-step settlement from Finch Mortgage.",
+      "image": "https://www.finchmortgages.co.nz/images/og-default.jpg",
+      "datePublished": "2026-01-15",
+      "dateModified": "2026-06-15",
+      "inLanguage": "en-NZ",
+      "author": {
+        "@id": "https://www.finchmortgages.co.nz/about.html#mukhtar-kiyani"
+      },
+      "publisher": {
+        "@id": "https://www.finchmortgages.co.nz/#organization"
+      },
+      "mainEntityOfPage": "https://www.finchmortgages.co.nz/guides/first-home-guide.html"
     }
   ]
-}</script><meta content="first home buyer guide NZ 2026, how to buy first home NZ, NZ first home buying steps, KiwiSaver first home guide, First Home Grant NZ guide, NZ deposit requirements first home, Welcome Home Loan guide NZ, first home buyer checklist NZ, buying first home Auckland, NZ first home stamp duty, property purchase guide NZ, first home conveyancing NZ, building inspection NZ, LIM report NZ, settlement NZ home" name="keywords"/><!-- Meta Pixel Code -->
+}
+</script><meta content="first home buyer guide NZ 2026, how to buy first home NZ, NZ first home buying steps, KiwiSaver first home guide, First Home Grant NZ guide, NZ deposit requirements first home, Welcome Home Loan guide NZ, first home buyer checklist NZ, buying first home Auckland, NZ first home stamp duty, property purchase guide NZ, first home conveyancing NZ, building inspection NZ, LIM report NZ, settlement NZ home" name="keywords"/><!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?

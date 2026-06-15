@@ -35,24 +35,74 @@
 
 
 <link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/><link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" onload="this.onload=null;this.rel='stylesheet'"/><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"/></noscript><link href="../style.css" rel="stylesheet"/>
-<script type="application/ld+json">{
+<script type="application/ld+json">
+{
   "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
+  "@graph": [
     {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://www.finchmortgages.co.nz"
+      "@type": "MortgageBroker",
+      "@id": "https://www.finchmortgages.co.nz/#organization",
+      "name": "Finch Mortgages",
+      "url": "https://www.finchmortgages.co.nz/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.finchmortgages.co.nz/images/finch-logo.png"
+      }
     },
     {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Guides",
-      "item": "https://www.finchmortgages.co.nz/guides"
+      "@type": "Person",
+      "@id": "https://www.finchmortgages.co.nz/about.html#mukhtar-kiyani",
+      "name": "Mukhtar Kiyani",
+      "jobTitle": "Director & Financial Adviser",
+      "url": "https://www.finchmortgages.co.nz/about.html",
+      "worksFor": {
+        "@id": "https://www.finchmortgages.co.nz/#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.finchmortgages.co.nz/guides/how-mortgage-works.html#breadcrumbs",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.finchmortgages.co.nz/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Guides",
+          "item": "https://www.finchmortgages.co.nz/guides/how-mortgage-works.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "How Mortgages Work NZ 2026 | Complete Guide",
+          "item": "https://www.finchmortgages.co.nz/guides/how-mortgage-works.html"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://www.finchmortgages.co.nz/guides/how-mortgage-works.html#article",
+      "headline": "How Mortgages Work NZ 2026 | Complete Guide",
+      "description": "Everything you need to know about how NZ mortgages work — types, rates, LVR, repayments, and the full approval process. Free guide from Finch Mortgage.",
+      "image": "https://www.finchmortgages.co.nz/images/og-default.jpg",
+      "datePublished": "2026-01-15",
+      "dateModified": "2026-06-15",
+      "inLanguage": "en-NZ",
+      "author": {
+        "@id": "https://www.finchmortgages.co.nz/about.html#mukhtar-kiyani"
+      },
+      "publisher": {
+        "@id": "https://www.finchmortgages.co.nz/#organization"
+      },
+      "mainEntityOfPage": "https://www.finchmortgages.co.nz/guides/how-mortgage-works.html"
     }
   ]
-}</script><meta content="how does a mortgage work NZ, NZ mortgage explained, what is a home loan NZ, mortgage structure NZ, fixed vs floating rate NZ, NZ loan to value ratio, LVR NZ, interest rate NZ mortgage, principal and interest NZ, mortgage term NZ, NZ home loan process explained, amortisation mortgage NZ, how to get a mortgage NZ, revert rate NZ, offset mortgage NZ, floating rate NZ" name="keywords"/><!-- Meta Pixel Code -->
+}
+</script><meta content="how does a mortgage work NZ, NZ mortgage explained, what is a home loan NZ, mortgage structure NZ, fixed vs floating rate NZ, NZ loan to value ratio, LVR NZ, interest rate NZ mortgage, principal and interest NZ, mortgage term NZ, NZ home loan process explained, amortisation mortgage NZ, how to get a mortgage NZ, revert rate NZ, offset mortgage NZ, floating rate NZ" name="keywords"/><!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
