@@ -572,8 +572,9 @@ def title_for(lender: dict) -> str:
 
 def description_for(lender: dict) -> str:
     # Trimmed to land near the 150-160 character SERP sweet spot.
+    name_clean = lender['name'].split(' (')[0]
     return (
-        f"Independent {lender['name']} mortgage review for NZ borrowers — compare rates, "
+        f"Independent {name_clean} mortgage review for NZ borrowers — compare rates, "
         f"deposit rules, and policy strengths, plus how Finch matches you across 20+ lenders."
     )
 
@@ -784,64 +785,67 @@ def build_page(lender: dict, template_text: str) -> str:
 
     head = re.sub(r"<title>.*?</title>", f"<title>{title}</title>", head, count=1, flags=re.S)
     head = re.sub(
-        r'<meta content=\"[^\"]*\" name=\"description\"/?>',
-        f'<meta content="{description}" name="description"/>',
+        r'<meta\b[^>]*?name\s*=\s*["\']description["\'][^>]*?>',
+        f'<meta name="description" content="{description}"/>',
         head,
-        count=1,
+        flags=re.I
     )
     head = re.sub(
-        r'<link href=\"https://www\.finchmortgages\.co\.nz/lenders/[^\"]+\" rel=\"canonical\"/?>',
+        r'<link\b[^>]*?rel\s*=\s*["\']canonical["\'][^>]*?>',
         f'<link href="{canonical}" rel="canonical"/>',
         head,
-        count=1,
+        flags=re.I
     )
     head = re.sub(
-        r'<meta content=\"[^\"]*\" name=\"keywords\"/?>',
-        f'<meta content="{keywords}" name="keywords"/>',
+        r'<meta\b[^>]*?name\s*=\s*["\']keywords["\'][^>]*?>',
+        f'<meta name="keywords" content="{keywords}"/>',
         head,
+        flags=re.I
     )
     # Rewrite OG/Twitter tags per-lender. The template inherits values from
     # major-banks.html, so without these substitutions every page would share
     # the same wrong og:title/og:url/og:description.
     head = re.sub(
-        r'<meta content=\"[^\"]*\" property=\"og:title\"/?>',
-        f'<meta content="{title}" property="og:title"/>',
+        r'<meta\b[^>]*?property\s*=\s*["\']og:title["\'][^>]*?>',
+        f'<meta property="og:title" content="{title}"/>',
         head,
-        count=1,
+        flags=re.I
     )
     head = re.sub(
-        r'<meta content=\"[^\"]*\" property=\"og:description\"/?>',
-        f'<meta content="{description}" property="og:description"/>',
+        r'<meta\b[^>]*?property\s*=\s*["\']og:description["\'][^>]*?>',
+        f'<meta property="og:description" content="{description}"/>',
         head,
-        count=1,
+        flags=re.I
     )
     head = re.sub(
-        r'<meta content=\"[^\"]*\" property=\"og:url\"/?>',
-        f'<meta content="{canonical}" property="og:url"/>',
+        r'<meta\b[^>]*?property\s*=\s*["\']og:url["\'][^>]*?>',
+        f'<meta property="og:url" content="{canonical}"/>',
         head,
-        count=1,
+        flags=re.I
     )
     head = re.sub(
-        r'<meta content=\"[^\"]*\" name=\"twitter:title\"/?>',
-        f'<meta content="{title}" name="twitter:title"/>',
+        r'<meta\b[^>]*?name\s*=\s*["\']twitter:title["\'][^>]*?>',
+        f'<meta name="twitter:title" content="{title}"/>',
         head,
-        count=1,
+        flags=re.I
     )
     head = re.sub(
-        r'<meta content=\"[^\"]*\" name=\"twitter:description\"/?>',
-        f'<meta content="{description}" name="twitter:description"/>',
+        r'<meta\b[^>]*?name\s*=\s*["\']twitter:description["\'][^>]*?>',
+        f'<meta name="twitter:description" content="{description}"/>',
         head,
-        count=1,
+        flags=re.I
     )
-    # Replace breadcrumb JSON-LD block with our combined schema
-    # Use lambda to avoid backslash escape interpretation in JSON strings.
-    head = re.sub(
-        r"<script type=\"application/ld\+json\">.*?</script>",
-        lambda _m: schema,
-        head,
-        count=1,
-        flags=re.S,
-    )
+    # Replace breadcrumb JSON-LD block with our combined schema (or append it if not present)
+    if re.search(r"<script type=\"application/ld\+json\">.*?</script>", head, flags=re.S):
+        head = re.sub(
+            r"<script type=\"application/ld\+json\">.*?</script>",
+            lambda _m: schema,
+            head,
+            count=1,
+            flags=re.S,
+        )
+    else:
+        head = head + "\n" + schema
 
     head += "</head>"
 

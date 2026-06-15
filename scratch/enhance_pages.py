@@ -237,6 +237,14 @@ def fix_tone(text):
     return text
 
 def clean_title(title, slug, category):
+    # Preserve existing titles of good length (30-65 chars) if they aren't generic duplicates
+    if title and 30 <= len(title) <= 65:
+        if title.strip() not in (
+            "First Home Buyer NZ 2026: 5% Deposit Guide | Finch",
+            "NZ Mortgage Rate Forecast 2026 | Will Rates Fall?"
+        ):
+            return title.strip()
+
     # Strip existing brand suffix if any
     title = re.sub(r'\s*\|\s*Finch.*$', '', title, flags=re.IGNORECASE)
     title = re.sub(r'\s*—\s*Finch.*$', '', title, flags=re.IGNORECASE)
@@ -274,11 +282,20 @@ def clean_title(title, slug, category):
     else:
         new_title = f"{title} | Expert NZ Guide 2026"
         
-    if len(new_title) > 60:
-        new_title = new_title[:57] + "..."
+    if len(new_title) > 65:
+        new_title = new_title[:62] + "..."
     return new_title
 
 def clean_meta_description(desc, title, slug, category):
+    # Preserve existing descriptions of good length (110-170 chars) if they aren't generic duplicates
+    if desc and 110 <= len(desc) <= 170:
+        if desc.strip() not in (
+            "5% deposit, $10K Kāinga Ora grant, KiwiSaver withdrawal — everything NZ first home buyers need to buy a home in 2026. Check eligibility →",
+            "OCR currently at 3.25%. Will fixed mortgage rates drop further in 2026? Read our expert NZ interest rate analysis and forecasts. Compare rates →",
+            "Expert New Zealand mortgage advice from independent broker Finch. We compare 20+ banks and non-bank lenders. $0 client fee. Get pre-approved →"
+        ):
+            return desc.strip()
+
     if category == "Regional":
         city_slug = slug.replace("mortgage-broker-", "")
         city_name = city_slug.replace("-", " ").title()
@@ -296,8 +313,8 @@ def clean_meta_description(desc, title, slug, category):
     else:
         new_desc = f"Expert New Zealand mortgage advice from independent broker Finch. We compare 20+ banks and non-bank lenders. $0 client fee. Get pre-approved →"
         
-    if len(new_desc) > 155:
-        new_desc = new_desc[:152] + "..."
+    if len(new_desc) > 170:
+        new_desc = new_desc[:167] + "..."
     return new_desc
 
 def generate_faq_html_and_schema(faq_list):

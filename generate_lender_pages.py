@@ -166,13 +166,163 @@ def make_page(c):
           </div>
         </div>"""
 
+    # Build Schema
+    import json
+    faq_entities = []
+    for f in c["faqs"]:
+        faq_entities.append({
+            "@type": "Question",
+            "name": f["q"],
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": f["a"]
+            }
+        })
+    schema_dict = {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "MortgageBroker",
+          "@id": "https://www.finchmortgages.co.nz/#organization",
+          "name": "Finch Mortgage",
+          "alternateName": "Finch Mortgages",
+          "url": "https://www.finchmortgages.co.nz/",
+          "logo": "https://www.finchmortgages.co.nz/images/finch-logo.png",
+          "image": "https://www.finchmortgages.co.nz/images/finch-logo.png",
+          "telephone": "+64273433293",
+          "email": "Mukhtar@finchmortgages.co.nz",
+          "priceRange": "$0 broker fee",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "17a Marlene Ave",
+            "addressLocality": "Te Atatu South",
+            "addressRegion": "Auckland",
+            "postalCode": "0610",
+            "addressCountry": "NZ"
+          },
+          "areaServed": {
+            "@type": "Country",
+            "name": "New Zealand"
+          },
+          "founder": {
+            "@type": "Person",
+            "name": "Mukhtar Kiyani"
+          },
+          "foundingDate": "2010",
+          "sameAs": [
+            "https://www.finchmortgages.co.nz/about.html",
+            "https://www.finchmortgages.co.nz/contact.html"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://www.finchmortgages.co.nz/#website",
+          "url": "https://www.finchmortgages.co.nz/",
+          "name": "Finch Mortgage",
+          "publisher": {
+            "@id": "https://www.finchmortgages.co.nz/#organization"
+          },
+          "inLanguage": "en-NZ",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://www.finchmortgages.co.nz/blog.html?q={search_term_string}"
+            },
+            "query-input": "required name=search_term_string"
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://www.finchmortgages.co.nz/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Lenders",
+              "item": "https://www.finchmortgages.co.nz/lenders.html"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": c['title'],
+              "item": f"https://www.finchmortgages.co.nz/lenders/{c['file']}"
+            }
+          ],
+          "@id": f"https://www.finchmortgages.co.nz/lenders/{c['file']}#breadcrumbs"
+        },
+        {
+          "@type": "WebPage",
+          "@id": f"https://www.finchmortgages.co.nz/lenders/{c['file']}#webpage",
+          "url": f"https://www.finchmortgages.co.nz/lenders/{c['file']}",
+          "name": f"{c['title']} in NZ | Finch Mortgage",
+          "description": f"Detailed guide to {c['title']} in New Zealand. Compare partners, understand policies, and find out if this lender type matches your mortgage needs.",
+          "inLanguage": "en-NZ",
+          "isPartOf": {
+            "@id": "https://www.finchmortgages.co.nz/#website"
+          },
+          "publisher": {
+            "@id": "https://www.finchmortgages.co.nz/#organization"
+          },
+          "breadcrumb": {
+            "@id": f"https://www.finchmortgages.co.nz/lenders/{c['file']}#breadcrumbs"
+          }
+        }
+      ]
+    }
+    if faq_entities:
+        schema_dict["@graph"].append({
+            "@type": "FAQPage",
+            "mainEntity": faq_entities
+        })
+    schema_json = f'<script type="application/ld+json">\n{json.dumps(schema_dict, indent=2, ensure_ascii=False)}\n</script>'
+
     return f"""<!DOCTYPE html>
-<html lang="en">
+<html lang="en-NZ">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{c['title']} in NZ | Finch Mortgage</title>
   <meta name="description" content="Detailed guide to {c['title']} in New Zealand. Compare partners, understand policies, and find out if this lender type matches your mortgage needs.">
+  <link rel="canonical" href="https://www.finchmortgages.co.nz/lenders/{c['file']}">
+  <link href="/favicon.png" rel="icon" type="image/png">
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{c['title']} in NZ | Finch Mortgage">
+  <meta property="og:description" content="Detailed guide to {c['title']} in New Zealand. Compare partners, understand policies, and find out if this lender type matches your mortgage needs.">
+  <meta property="og:url" content="https://www.finchmortgages.co.nz/lenders/{c['file']}">
+  <meta property="og:image" content="https://www.finchmortgages.co.nz/images/og-default.jpg">
+  <meta property="og:site_name" content="Finch Mortgage">
+  <meta property="og:locale" content="en_NZ">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{c['title']} in NZ | Finch Mortgage">
+  <meta name="twitter:description" content="Detailed guide to {c['title']} in New Zealand. Compare partners, understand policies, and find out if this lender type matches your mortgage needs.">
+  <meta name="twitter:image" content="https://www.finchmortgages.co.nz/images/og-default.jpg">
+
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {{if(f.fbq)return;n=f.fbq=function(){{n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)}};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '984298931136124');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none" alt="Facebook Pixel" src="https://www.facebook.com/tr?id=984298931136124&ev=PageView&noscript=1" /></noscript>
+  <!-- End Meta Pixel Code -->
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" onload="this.onload=null;this.rel='stylesheet'">

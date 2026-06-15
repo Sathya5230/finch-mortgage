@@ -67,6 +67,46 @@ FOOTER = """<footer class="site-footer">
 
 REPORTS = [
     {
+        "week": 20, "slug": "week-20-fixed-rates-dip", "date": "19 May 2026", "badge": "Rates", "icon": "percent",
+        "title": "1-Year Fixed Rates Dip Below 5.8%",
+        "excerpt": "Major lenders drop 1-year fixed mortgage rates below 5.8%. Discover how to leverage these new rates for your refinance or home loan.",
+        "stat_label": "1-Year Fixed Special", "stat_val": "Below 5.80%", "author": "Sarah Jenkins",
+        "city": "Auckland", "region": "Auckland Region",
+        "intro": "1-year fixed mortgage rates drop below 5.8%. Discover how to leverage these new rates for your refinance or home loan."
+    },
+    {
+        "week": 19, "slug": "week-19-spring-market-prep", "date": "12 May 2026", "badge": "Rates", "icon": "percent",
+        "title": "Spring Market Prep: Getting Pre-Approved Early",
+        "excerpt": "Prepare your finances now for the upcoming spring property flush in New Zealand. Expert advice on pre-approvals, rate locks, and securing the best home loan.",
+        "stat_label": "Pre-Approvals Processed", "stat_val": "+8.4% MoM", "author": "Sarah Jenkins",
+        "city": "Nationwide", "region": "New Zealand",
+        "intro": "Prepare your finances now for the upcoming spring property flush in New Zealand. Expert advice on pre-approvals, rate locks, and securing the best home loan."
+    },
+    {
+        "week": 18, "slug": "week-18-winter-strategies", "date": "5 May 2026", "badge": "Rates", "icon": "percent",
+        "title": "Winter Mortgage Strategies: Positioning for Pre-Approvals",
+        "excerpt": "As the colder months approach, the New Zealand property market historically experiences a cooling in listing volumes. Discover essential strategies.",
+        "stat_label": "Pre-Approval Volume", "stat_val": "+5.2% MoM", "author": "Sarah Jenkins",
+        "city": "Wellington", "region": "Wellington Region",
+        "intro": "As the colder months approach, the New Zealand property market historically experiences a cooling in listing volumes. However, for well-prepared buyers and astute investors, winter presents a unique strategic window. With less competition at open homes and sellers often more motivated, having a robust pre-approval in place is your strongest leverage."
+    },
+    {
+        "week": 17, "slug": "week-17-autumn-update", "date": "28 April 2026", "badge": "Rates", "icon": "percent",
+        "title": "Autumn Market Update: Banks Hold Steady",
+        "excerpt": "As we move deeper into the autumn season, the New Zealand mortgage market is experiencing a period of cautious stability. Read the full report.",
+        "stat_label": "Average 2-yr Fixed", "stat_val": "5.55%", "author": "Sarah Jenkins",
+        "city": "Wellington", "region": "Wellington Region",
+        "intro": "As we move deeper into the autumn season, the New Zealand mortgage market is experiencing a period of cautious stability. Ahead of the anticipated May OCR announcement from the Reserve Bank, major lenders have largely paused their rate-cutting cycles. While the aggressive drops we saw earlier in April have plateaued, the current environment presents a unique 'wait-and-see' opportunity for borrowers. Banks are currently focusing on defending their existing portfolios with competitive retention offers rather than heavily discounting public rates."
+    },
+    {
+        "week": 16, "slug": "week-16-major-banks-cut-rates", "date": "21 April 2026", "badge": "Rates", "icon": "percent",
+        "title": "Major Banks Cut Rates Further",
+        "excerpt": "Following last week's dovish signals from the Reserve Bank, major lenders have dropped their 1-year and 2-year special fixed rates by a further 15 basis points.",
+        "stat_label": "Best 1-yr Fixed", "stat_val": "5.64%", "author": "Sarah Jenkins",
+        "city": "Wellington", "region": "Wellington Region",
+        "intro": "Following last week's dovish signals from the Reserve Bank, major lenders including Westpac and BNZ have aggressively moved to capture market share, dropping their 1-year and 2-year special fixed rates by a further 15 basis points. The 1-year special rate has now touched 5.64% at select institutions, while the widely favored 2-year fixed term is settling around 5.49%. This competitive positioning by the banks reflects their internal forecasts that the Best 1-yr Fixed will be cut to 3.00% or lower in the coming quarter. For borrowers, this sudden wave of out-of-cycle rate cuts presents immediate refinancing opportunities and significantly larger borrowing capacities for buyers currently in the pre-approval phase."
+    },
+    {
         "week": 15, "slug": "week-15-ocr-hold", "date": "14 April 2026", "badge": "Rates", "icon": "trending-down",
         "title": "OCR Holds at 3.25% — But June Cut Expected",
         "excerpt": "The RBNZ held the OCR at 3.25%. We look at why banks are pricing in a June cut anyway.",
@@ -234,12 +274,46 @@ def make_report_page(r):
     deep_dive = generate_deep_dive_text()
 
     html = f"""<!DOCTYPE html>
-<html lang="en">
+<html lang="en-NZ">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Week {r['week']}: {r['title']} | Finch Weekly Report</title>
   <meta name="description" content="{r['excerpt']}">
+  <link rel="canonical" href="https://www.finchmortgages.co.nz/weekly-reports/{r['slug']}.html">
+  <link href="/favicon.png" rel="icon" type="image/png">
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Week {r['week']}: {r['title']} | Finch Weekly Report">
+  <meta property="og:description" content="{r['excerpt']}">
+  <meta property="og:url" content="https://www.finchmortgages.co.nz/weekly-reports/{r['slug']}.html">
+  <meta property="og:image" content="https://www.finchmortgages.co.nz/images/og-default.jpg">
+  <meta property="og:site_name" content="Finch Mortgage">
+  <meta property="og:locale" content="en_NZ">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Week {r['week']}: {r['title']} | Finch Weekly Report">
+  <meta name="twitter:description" content="{r['excerpt']}">
+  <meta name="twitter:image" content="https://www.finchmortgages.co.nz/images/og-default.jpg">
+
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {{if(f.fbq)return;n=f.fbq=function(){{n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)}};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '984298931136124');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none" alt="Facebook Pixel" src="https://www.facebook.com/tr?id=984298931136124&ev=PageView&noscript=1" /></noscript>
+  <!-- End Meta Pixel Code -->
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">

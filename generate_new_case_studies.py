@@ -332,6 +332,36 @@ def build_page(c: dict, template_text: str) -> str:
         count=1,
     )
     head = re.sub(
+        r'<meta content=\"[^\"]*\" property=\"og:title\"/?>',
+        f'<meta content="{title}" property="og:title"/>',
+        head,
+        count=1,
+    )
+    head = re.sub(
+        r'<meta content=\"[^\"]*\" property=\"og:description\"/?>',
+        f'<meta content="{description}" property="og:description"/>',
+        head,
+        count=1,
+    )
+    head = re.sub(
+        r'<meta content=\"[^\"]*\" property=\"og:url\"/?>',
+        f'<meta content="{canonical}" property="og:url"/>',
+        head,
+        count=1,
+    )
+    head = re.sub(
+        r'<meta content=\"[^\"]*\" name=\"twitter:title\"/?>',
+        f'<meta content="{title}" name="twitter:title"/>',
+        head,
+        count=1,
+    )
+    head = re.sub(
+        r'<meta content=\"[^\"]*\" name=\"twitter:description\"/?>',
+        f'<meta content="{description}" name="twitter:description"/>',
+        head,
+        count=1,
+    )
+    head = re.sub(
         r'<meta content=\"[^\"]*\" name=\"keywords\"/?>',
         f'<meta content="{keywords}" name="keywords"/>',
         head,
