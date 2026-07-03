@@ -18,7 +18,15 @@ BASE_URL = "https://www.finchmortgages.co.nz"
 
 # ISO 8601 dates for Article rich-result eligibility
 ARTICLE_PUBLISHED = "2026-01-15"
-ARTICLE_MODIFIED = "2026-06-03"
+ARTICLE_MODIFIED = "2026-07-03"
+
+# Slugs to (re)generate when run directly. Keep this scoped to newly added
+# entries -- existing posts accumulate hand edits (FAQ schema, freshness
+# copy) after generation, and a full re-run would blow those away.
+NEW_SLUGS = {
+    "mortgage-top-up-nz",
+    "bridging-finance-guide-nz",
+}
 
 
 POSTS = [
@@ -172,6 +180,52 @@ POSTS = [
             ("Step 5 — Check Real Reviews", "<p style=\"margin-bottom:2rem;\">Look at Google Business Profile reviews, Product Review NZ, and NoCowboys finance category. Read both the 5-star and the lower-rated reviews — the lower ones often reveal communication or follow-up issues. Aim for a broker with 20+ recent reviews averaging 4.7+ stars.</p>"),
             ("Step 6 — Test Their First Conversation", "<p style=\"margin-bottom:2rem;\">A good NZ broker spends the first 15-30 minutes <em>listening</em>: your income, your goals, your KiwiSaver, your existing debts. They explain CCCFA, LVR, test rates clearly and tailor the conversation to your level of mortgage knowledge. A poor broker jumps straight to \"send me your documents.\" Trust the first impression.</p>"),
             ("10 Questions to Ask Any NZ Mortgage Broker", "<ol style=\"margin-bottom:2rem;padding-left:1.5rem;list-style:decimal;\"><li style=\"margin-bottom:0.5rem;\">Are you FSP-registered? (Then verify it.)</li><li style=\"margin-bottom:0.5rem;\">How many lenders are on your panel?</li><li style=\"margin-bottom:0.5rem;\">Are you owned by any bank or lender?</li><li style=\"margin-bottom:0.5rem;\">How do you get paid?</li><li style=\"margin-bottom:0.5rem;\">Will you charge me anything directly?</li><li style=\"margin-bottom:0.5rem;\">What's your typical pre-approval turnaround?</li><li style=\"margin-bottom:0.5rem;\">Do you review my mortgage at every fixed-term roll-off?</li><li style=\"margin-bottom:0.5rem;\">Can I speak with a recent client as a reference?</li><li style=\"margin-bottom:0.5rem;\">What's your specialty? (First home, investment, refinance, self-employed)</li><li style=\"margin-bottom:0.5rem;\">Where's your written disclosure document?</li></ol>"),
+        ],
+    },
+    {
+        "slug": "mortgage-top-up-nz",
+        "title": "Mortgage Top-Up NZ: How It Works & When to Use One (2026)",
+        "h1": "Mortgage Top-Up in NZ — How It Works",
+        "intro_pull": "A mortgage top-up lets you borrow more against your existing home loan using built-up equity — without refinancing to a new lender or taking out a second loan.",
+        "description": "How a mortgage top-up works in NZ — using home equity to borrow more from your existing lender for renovations, debt consolidation, or an investment deposit.",
+        "keywords": [
+            "mortgage top up NZ",
+            "top up home loan NZ",
+            "how does a mortgage top up work",
+            "using equity to borrow more NZ",
+            "home loan top up calculator NZ",
+            "increase mortgage NZ",
+        ],
+        "sections": [
+            ("The Quick Answer", "<p style=\"margin-bottom:2rem;\">A mortgage top-up is an increase to your existing home loan with your current lender, secured against equity you've built up through repayments or capital growth. Unlike refinancing, you keep your existing loan structure and lender relationship — you're simply borrowing more on top. Most NZ banks will approve a top-up within 1-2 weeks for straightforward scenarios, faster than a full refinance to a new lender.</p>"),
+            ("How a Mortgage Top-Up Works in NZ", "<p style=\"margin-bottom:2rem;\">Your lender orders a registered valuation (or uses an automated valuation model for smaller amounts) to confirm your current equity position, then re-tests your income and expenses against their current serviceability rules — the same CCCFA and test-rate assessment as a new application, because you're taking on more debt. If you pass, the top-up funds are usually advanced within days of approval, either as a lump sum or drawn down as needed for a construction-style top-up.</p>"),
+            ("Common Reasons NZ Homeowners Top Up", "<ul style=\"margin-bottom:2rem;padding-left:1.5rem;list-style:disc;\"><li style=\"margin-bottom:0.5rem;\"><strong>Renovations</strong> — kitchen, bathroom, extension, or minor dwelling/granny flat build.</li><li style=\"margin-bottom:0.5rem;\"><strong>Debt consolidation</strong> — rolling higher-interest credit card, personal loan, or BNPL debt into the mortgage rate.</li><li style=\"margin-bottom:0.5rem;\"><strong>Investment property deposit</strong> — using equity in an existing home as some or all of the deposit on a second property.</li><li style=\"margin-bottom:0.5rem;\"><strong>Life events</strong> — a wedding, a vehicle, funding a business, or helping a family member with a deposit via a family guarantee-style top-up.</li></ul>"),
+            ("Top-Up vs Refinance vs Second Mortgage", "<p style=\"margin-bottom:2rem;\">A <strong>top-up</strong> stays with your current lender and current loan — fastest and usually cheapest in fees, but you don't get to shop the wider market for a sharper base rate. A <strong>refinance</strong> moves your whole loan (existing balance plus the new amount) to a different lender, which resets you onto a fresh rate and often a cashback contribution, but takes longer and involves new-lender legal and valuation costs. A <strong>second mortgage</strong> with a different, usually non-bank, lender sits behind your first mortgage and is typically used when your main bank won't approve a top-up — it comes at a materially higher interest rate and is generally a last resort rather than a first option.</p>"),
+            ("What Lenders Check Before Approving a Top-Up", "<ul style=\"margin-bottom:2rem;padding-left:1.5rem;list-style:disc;\"><li style=\"margin-bottom:0.5rem;\"><strong>Loan-to-value ratio (LVR)</strong> — the top-up amount plus your existing balance must fit within the lender's LVR limits against the property's current valuation.</li><li style=\"margin-bottom:0.5rem;\"><strong>Serviceability at today's test rate</strong> — approval is based on current stress-test rates, not the rate you locked in years ago, so your capacity may be different than when you first borrowed.</li><li style=\"margin-bottom:0.5rem;\"><strong>Purpose of funds</strong> — renovation top-ups may require quotes or a fixed-price building contract; debt consolidation top-ups may require evidence the other debts are actually paid off and closed.</li><li style=\"margin-bottom:0.5rem;\"><strong>Credit file</strong> — the same credit check as a new application applies.</li></ul>"),
+            ("How Finch Structures a Top-Up for You", "<p style=\"margin-bottom:1rem;\">Before applying with your existing bank, it's worth checking whether a top-up is actually your cheapest option — sometimes a refinance to a different lender delivers a lower blended rate plus cashback that outweighs the extra time and cost. Finch models both paths side by side using your real numbers, then submits whichever structure comes out ahead. Use our <a href=\"../calculators/borrowing-power.html\" style=\"color:var(--finch-forest);text-decoration:underline;font-weight:600;\">borrowing power calculator</a> for a starting estimate, then book a free call for a lender-specific comparison.</p>"),
+        ],
+    },
+    {
+        "slug": "bridging-finance-guide-nz",
+        "title": "Bridging Finance NZ: How It Works & When You Need It (2026)",
+        "h1": "Bridging Finance in NZ — The Complete Guide",
+        "intro_pull": "Bridging finance covers the gap when you need to buy your next home before your current one has sold — a short-term loan built specifically for that timing mismatch.",
+        "description": "How bridging finance works in NZ — open vs closed bridging loans, when buyers use them, what they cost, and how Finch structures one against your existing equity.",
+        "keywords": [
+            "bridging finance NZ",
+            "bridging loan NZ",
+            "buying before selling NZ",
+            "how does bridging finance work",
+            "open vs closed bridging loan",
+            "selling and buying at the same time NZ",
+        ],
+        "sections": [
+            ("The Quick Answer", "<p style=\"margin-bottom:2rem;\">Bridging finance is a short-term loan that lets you complete the purchase of a new property before your existing property has sold, using the equity in your current home to cover the gap. It's designed to be temporary — typically repaid in full once your existing property settles — rather than a long-term lending structure.</p>"),
+            ("Closed Bridging vs Open Bridging", "<p style=\"margin-bottom:2rem;\"><strong>Closed bridging</strong> applies when you've already got an unconditional sale agreement on your existing property with a confirmed settlement date — lenders see this as lower risk because there's a known repayment date. <strong>Open bridging</strong> applies when your existing property hasn't sold yet (or isn't even on the market), which carries more risk for the lender and is harder to get approved, usually requiring stronger equity and a clear exit plan.</p>"),
+            ("When NZ Buyers Use Bridging Finance", "<ul style=\"margin-bottom:2rem;padding-left:1.5rem;list-style:disc;\"><li style=\"margin-bottom:0.5rem;\"><strong>Buying at auction</strong> — auction purchases are unconditional, so you need certainty of funds before your current home sells.</li><li style=\"margin-bottom:0.5rem;\"><strong>Finding the right property first</strong> — in a tight market, waiting to sell before buying risks missing out on the right home.</li><li style=\"margin-bottom:0.5rem;\"><strong>Relocation</strong> — moving cities or regions where settlement timing on both ends rarely lines up perfectly.</li><li style=\"margin-bottom:0.5rem;\"><strong>Building or renovating</strong> — needing to secure land or a build contract before an existing property sells.</li></ul>"),
+            ("How Bridging Finance Is Structured", "<p style=\"margin-bottom:2rem;\">Most NZ bridging loans are structured against the equity in your existing property, sized to cover the deposit and settlement costs on the new purchase until your current home sells. Because it's short-term and higher-risk than standard lending, bridging finance carries a higher interest rate than your normal mortgage rate, and lenders will want a clear, realistic exit strategy — a genuine plan and evidence for how and when the existing property will sell. Exact pricing and available lenders vary by scenario, so ask Finch for a current, lender-specific quote rather than assuming a rate.</p>"),
+            ("Bridging Finance vs Selling First", "<p style=\"margin-bottom:2rem;\">Selling first removes bridging risk and cost entirely, but leaves you needing temporary accommodation and racing the clock to find your next home — sometimes with less negotiating leverage as a must-buy purchaser. Bridging costs more and requires a workable exit plan, but lets you secure the right property on your terms and move once, rather than twice. Which path makes sense depends on how confident you are in your existing property's sale timeline and how competitive your target market is.</p>"),
+            ("How Finch Structures a Bridging Loan for You", "<p style=\"margin-bottom:1rem;\">Not every NZ lender offers bridging finance, and appetite for open bridging in particular varies a lot bank to bank. Finch checks which lenders on our panel have current bridging appetite for your specific equity position and timeline, and structures the exit plan your lender needs to see. Book a free 15-minute call before you commit to a purchase date, so financing is confirmed before you need it.</p>"),
         ],
     },
 ]
@@ -364,11 +418,12 @@ def build_page(post: dict, template_text: str) -> str:
 
 def main() -> None:
     template_text = TEMPLATE.read_text(encoding="utf-8")
-    for post in POSTS:
+    targets = [post for post in POSTS if post["slug"] in NEW_SLUGS]
+    for post in targets:
         out_path = OUT_DIR / f"{post['slug']}.html"
         out_path.write_text(build_page(post, template_text), encoding="utf-8")
         print(f"  + {out_path.relative_to(ROOT)}")
-    print(f"\nGenerated {len(POSTS)} blog posts.")
+    print(f"\nGenerated {len(targets)} blog posts.")
 
 
 if __name__ == "__main__":

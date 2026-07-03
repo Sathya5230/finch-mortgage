@@ -1829,6 +1829,59 @@ button:focus-visible {
   }
 }
 
+/* =========================================================================
+   STICKY MOBILE CTA BAR
+   ========================================================================= */
+.mobile-sticky-cta {
+  display: none;
+}
+
+@media (max-width: 640px) {
+  .floating-consult { display: none; }
+
+  .mobile-sticky-cta {
+    display: flex;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    padding: 10px 12px calc(10px + env(safe-area-inset-bottom, 0px));
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.96);
+    backdrop-filter: blur(8px);
+    border-top: 1px solid rgba(16, 68, 62, 0.12);
+    box-shadow: 0 -6px 24px rgba(16, 68, 62, 0.12);
+  }
+
+  .mobile-sticky-cta-call,
+  .mobile-sticky-cta-book {
+    flex: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 12px 14px;
+    border-radius: 10px;
+    font-family: var(--font-body);
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+
+  .mobile-sticky-cta-call {
+    background: var(--finch-mist);
+    color: var(--finch-forest);
+    border: 1px solid rgba(16, 68, 62, 0.18);
+  }
+
+  .mobile-sticky-cta-book {
+    background: linear-gradient(135deg, #10443e 0%, #32745c 60%, #62a29a 100%);
+    color: #fff;
+  }
+}
+
 /* ── Founder Responsive Layout ───────────────────────────────── */
 .founder-layout {
   display: flex;
