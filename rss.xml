@@ -6,7 +6,7 @@
     <atom:link href="https://www.finchmortgages.co.nz/rss.xml" rel="self" type="application/rss+xml"/>
     <description>Independent NZ mortgage broker Finch Mortgages — first home buyer guides, lender comparisons, rate forecasts, and weekly NZ mortgage market reports.</description>
     <language>en-nz</language>
-    <lastBuildDate>Fri, 03 Jul 2026 18:35:42 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 03 Jul 2026 19:04:12 +0000</lastBuildDate>
     <generator>generate_rss_feed.py</generator>
     <item>
       <title>Mortgage vs Rent in Auckland 2026: The Real Numbers</title>
@@ -191,7 +191,7 @@
       <pubDate>Thu, 14 May 2026 09:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Spring Market Prep NZ 2026 | Week 19 Rate Report | Finch</title>
+      <title>Week 19: Spring Market Prep: Get Pre-Approved Early | Finch</title>
       <link>https://www.finchmortgages.co.nz/weekly-reports/week-19-spring-market-prep.html</link>
       <guid isPermaLink="true">https://www.finchmortgages.co.nz/weekly-reports/week-19-spring-market-prep.html</guid>
       <description>Prepare your finances now for the upcoming spring property flush in New Zealand. Expert advice on pre-approvals, rate locks, and securing the best home loan.</description>
@@ -205,7 +205,7 @@
       <pubDate>Thu, 07 May 2026 09:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Winter Strategies NZ 2026 | Week 18 Rate Report | Finch</title>
+      <title>Week 18: Winter Mortgage Strategies for Pre-Approval | Finch</title>
       <link>https://www.finchmortgages.co.nz/weekly-reports/week-18-winter-strategies.html</link>
       <guid isPermaLink="true">https://www.finchmortgages.co.nz/weekly-reports/week-18-winter-strategies.html</guid>
       <description>As the colder months approach, the New Zealand property market historically experiences a cooling in listing volumes. Discover essential strategies.</description>
@@ -226,7 +226,7 @@
       <pubDate>Thu, 30 Apr 2026 09:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Autumn Update NZ 2026 | Week 17 Rate Report | Finch</title>
+      <title>Week 17: Autumn Market Update: Banks Hold Steady | Finch</title>
       <link>https://www.finchmortgages.co.nz/weekly-reports/week-17-autumn-update.html</link>
       <guid isPermaLink="true">https://www.finchmortgages.co.nz/weekly-reports/week-17-autumn-update.html</guid>
       <description>As we move deeper into the autumn season, the New Zealand mortgage market is experiencing a period of cautious stability. Read the full report.</description>
@@ -240,7 +240,7 @@
       <pubDate>Thu, 23 Apr 2026 09:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Week 16: Major Banks Cut Rates Further | Finch Weekly Report</title>
+      <title>Week 16: Major Banks Cut Rates Further | Finch</title>
       <link>https://www.finchmortgages.co.nz/weekly-reports/week-16-major-banks-cut-rates.html</link>
       <guid isPermaLink="true">https://www.finchmortgages.co.nz/weekly-reports/week-16-major-banks-cut-rates.html</guid>
       <description>Following last week's dovish signals from the Reserve Bank, major lenders have dropped their 1-year and 2-year special fixed rates by a further 15 basis points.</description>
@@ -261,10 +261,10 @@
       <pubDate>Wed, 15 Apr 2026 09:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Ocr Hold NZ 2026 | Week 15 Rate Report | Finch</title>
+      <title>Week 15: OCR Holds at 3.25% — But June Cut Expected | Finch</title>
       <link>https://www.finchmortgages.co.nz/weekly-reports/week-15-ocr-hold.html</link>
       <guid isPermaLink="true">https://www.finchmortgages.co.nz/weekly-reports/week-15-ocr-hold.html</guid>
-      <description>The RBNZ held the OCR — what it signals for NZ fixed mortgage rates and when to lock in. Finch Mortgages weekly analysis.</description>
+      <description>The RBNZ held the OCR at 3.25%. We look at why banks are pricing in a June cut anyway.</description>
       <pubDate>Tue, 14 Apr 2026 09:00:00 +0000</pubDate>
     </item>
     <item>
@@ -278,7 +278,7 @@
       <title>Week 14: ANZ Slashes 2-Year Fixed to 5.69% | Finch</title>
       <link>https://www.finchmortgages.co.nz/weekly-reports/week-14-anz-rates.html</link>
       <guid isPermaLink="true">https://www.finchmortgages.co.nz/weekly-reports/week-14-anz-rates.html</guid>
-      <description>ANZ's latest home loan rate moves and how other NZ banks responded. Compare your options with Finch Mortgages' weekly report.</description>
+      <description>ANZ's surprise rate cut caught the market off guard. We break down the 2-year sweet spot.</description>
       <pubDate>Tue, 07 Apr 2026 09:00:00 +0000</pubDate>
     </item>
     <item>
@@ -296,10 +296,10 @@
       <pubDate>Wed, 01 Apr 2026 09:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Canterbury Surge NZ 2026 | Week 13 Rate Report | Finch</title>
+      <title>Week 13: Canterbury Surges: +6.8% YoY Growth | Finch</title>
       <link>https://www.finchmortgages.co.nz/weekly-reports/week-13-canterbury-surge.html</link>
       <guid isPermaLink="true">https://www.finchmortgages.co.nz/weekly-reports/week-13-canterbury-surge.html</guid>
-      <description>Canterbury's property surge: why Christchurch buyers are moving fast and what it means for prices. Finch weekly market report.</description>
+      <description>Canterbury is outperforming every other region in NZ. We look at the South Island boom.</description>
       <pubDate>Tue, 31 Mar 2026 09:00:00 +0000</pubDate>
     </item>
     <item>
@@ -310,10 +310,10 @@
       <pubDate>Thu, 26 Mar 2026 09:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Rental Yields NZ 2026 | Week 12 Rate Report | Finch</title>
+      <title>Week 12: Rental Yields Rise: Portfolio Strategies | Finch</title>
       <link>https://www.finchmortgages.co.nz/weekly-reports/week-12-rental-yields.html</link>
       <guid isPermaLink="true">https://www.finchmortgages.co.nz/weekly-reports/week-12-rental-yields.html</guid>
-      <description>Where NZ rental yields are strongest in 2026 and what investors should know before buying. Finch Mortgages weekly market report.</description>
+      <description>Wellington gross yields hit 5.2%. With rates falling, the investor case is strengthening.</description>
       <pubDate>Tue, 24 Mar 2026 09:00:00 +0000</pubDate>
     </item>
     <item>
@@ -327,7 +327,7 @@
       <title>Week 11: First Home Grant Extended to 2027 | Finch</title>
       <link>https://www.finchmortgages.co.nz/weekly-reports/week-11-first-home-grant.html</link>
       <guid isPermaLink="true">https://www.finchmortgages.co.nz/weekly-reports/week-11-first-home-grant.html</guid>
-      <description>First Home Grant changes and what NZ buyers can still access in 2026: Kāinga Ora loans, KiwiSaver and 5% deposit paths. Finch.</description>
+      <description>Government extends First Home Grant eligibility. Price caps raised in major centres.</description>
       <pubDate>Tue, 17 Mar 2026 09:00:00 +0000</pubDate>
     </item>
     <item>
@@ -345,10 +345,10 @@
       <pubDate>Thu, 12 Mar 2026 09:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Week 10: RBNZ March OCR Cut Breakdown | Finch Weekly Report</title>
+      <title>Week 10: RBNZ March OCR Cut Breakdown | Finch</title>
       <link>https://www.finchmortgages.co.nz/weekly-reports/week-10-ocr-cut-march.html</link>
       <guid isPermaLink="true">https://www.finchmortgages.co.nz/weekly-reports/week-10-ocr-cut-march.html</guid>
-      <description>The RBNZ's March OCR cut explained: how fast banks passed it on and what it means for fixing your mortgage. Finch weekly report.</description>
+      <description>The March 25bps cut was anticipated. We track which lenders moved and what's next.</description>
       <pubDate>Tue, 10 Mar 2026 09:00:00 +0000</pubDate>
     </item>
     <item>
@@ -359,10 +359,10 @@
       <pubDate>Thu, 05 Mar 2026 09:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Bay Of Plenty NZ 2026 | Week 9 Rate Report | Finch</title>
+      <title>Week 9: Bay of Plenty Leads North Island Growth | Finch</title>
       <link>https://www.finchmortgages.co.nz/weekly-reports/week-9-bay-of-plenty.html</link>
       <guid isPermaLink="true">https://www.finchmortgages.co.nz/weekly-reports/week-9-bay-of-plenty.html</guid>
-      <description>Bay of Plenty property market update: Tauranga prices, rental demand and lending trends. Finch Mortgages weekly report.</description>
+      <description>Tauranga volumes are up 22%. Lower rates and lifestyle demand attract buyers back.</description>
       <pubDate>Tue, 03 Mar 2026 09:00:00 +0000</pubDate>
     </item>
     <item>
@@ -905,59 +905,59 @@
       <pubDate>Thu, 15 Jan 2026 09:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Summer Sales Slump NZ 2026 | Week 3 Rate Report | Finch</title>
+      <title>Week 3: Summer Sales Slump: Opportunity or Warning? | Finch</title>
       <link>https://www.finchmortgages.co.nz/weekly-reports/week-3-summer-sales-slump.html</link>
       <guid isPermaLink="true">https://www.finchmortgages.co.nz/weekly-reports/week-3-summer-sales-slump.html</guid>
-      <description>NZ's summer property sales slump explained: what fewer listings mean for buyers, sellers and mortgage rates. Finch weekly report.</description>
+      <description>Volumes dipped sharply over January. We analyze the traditional holiday slowdown.</description>
       <pubDate>Thu, 01 Jan 2026 09:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Mortgage Stress Testing NZ 2026 | Week 2 Rate Report | Finch</title>
+      <title>Week 2: Bank Stress Test Rates Fall Below 7.5% | Finch</title>
       <link>https://www.finchmortgages.co.nz/weekly-reports/week-2-mortgage-stress-testing.html</link>
       <guid isPermaLink="true">https://www.finchmortgages.co.nz/weekly-reports/week-2-mortgage-stress-testing.html</guid>
-      <description>How NZ banks stress-test your mortgage in 2026, what servicing rates they use, and how to pass. Expert analysis from Finch.</description>
+      <description>Unadvertised policy shifts are suddenly increasing borrowing power by up to 15%.</description>
       <pubDate>Thu, 01 Jan 2026 09:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Year Ahead 2026 NZ 2026 | Week 1 Rate Report | Finch</title>
+      <title>Week 1: The Year Ahead: 2026 Mortgage Forecast | Finch</title>
       <link>https://www.finchmortgages.co.nz/weekly-reports/week-1-year-ahead-2026.html</link>
       <guid isPermaLink="true">https://www.finchmortgages.co.nz/weekly-reports/week-1-year-ahead-2026.html</guid>
-      <description>What 2026 holds for NZ mortgage rates, house prices and lending rules. Finch's year-ahead outlook for buyers and refinancers.</description>
+      <description>Our comprehensive outlook for the NZ property market and interest rate curve for 2026.</description>
       <pubDate>Thu, 01 Jan 2026 09:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Interest Deductibility NZ 2026 | Week 8 Rate Report | Finch</title>
+      <title>Week 8: Interest Deductibility at 100% — One Year In | Finch</title>
       <link>https://www.finchmortgages.co.nz/weekly-reports/week-8-interest-deductibility.html</link>
       <guid isPermaLink="true">https://www.finchmortgages.co.nz/weekly-reports/week-8-interest-deductibility.html</guid>
-      <description>Interest deductibility rules for NZ property investors in 2026 and what they mean for your cash flow. Finch weekly market report.</description>
+      <description>A year since full deductibility was restored, we review the impact on investor demand.</description>
       <pubDate>Thu, 01 Jan 2026 09:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Floating Vs Fixed NZ 2026 | Week 6 Rate Report | Finch</title>
+      <title>Week 6: Floating vs Fixed: Which Strategy Wins? | Finch</title>
       <link>https://www.finchmortgages.co.nz/weekly-reports/week-6-floating-vs-fixed.html</link>
       <guid isPermaLink="true">https://www.finchmortgages.co.nz/weekly-reports/week-6-floating-vs-fixed.html</guid>
-      <description>Floating or fixed in 2026? This week's NZ rate moves, wholesale swap trends and what they mean for your mortgage. Finch report.</description>
+      <description>With OCR cuts expected, many borrowers are torn. We model out four interest rate scenarios.</description>
       <pubDate>Thu, 01 Jan 2026 09:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>New Build Exemptions NZ 2026 | Week 5 Rate Report | Finch</title>
+      <title>Week 5: New Build Exemptions Driving Construction | Finch</title>
       <link>https://www.finchmortgages.co.nz/weekly-reports/week-5-new-build-exemptions.html</link>
       <guid isPermaLink="true">https://www.finchmortgages.co.nz/weekly-reports/week-5-new-build-exemptions.html</guid>
-      <description>Why new builds are exempt from LVR and DTI caps — and how NZ buyers can use it. Finch Mortgages weekly market report.</description>
+      <description>Why LVR exemptions on new builds are keeping the construction sector alive.</description>
       <pubDate>Thu, 01 Jan 2026 09:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Dti Caps Bite NZ 2026 | Week 4 Rate Report | Finch</title>
+      <title>Week 4: DTI Caps Fully Active: Who Is Affected? | Finch</title>
       <link>https://www.finchmortgages.co.nz/weekly-reports/week-4-dti-caps-bite.html</link>
       <guid isPermaLink="true">https://www.finchmortgages.co.nz/weekly-reports/week-4-dti-caps-bite.html</guid>
-      <description>Debt-to-income caps are reshaping NZ borrowing power in 2026. See how DTI rules affect your mortgage and what to do. Finch report.</description>
+      <description>Debt-to-Income rules are now binding. We explain how this impacts your borrowing multiple.</description>
       <pubDate>Thu, 01 Jan 2026 09:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>KiwiSaver Strategies for 2026 Home Buyers | Finch Report</title>
+      <title>Week 7: KiwiSaver Strategies for 2026 Buyers | Finch</title>
       <link>https://www.finchmortgages.co.nz/weekly-reports/week-7-kiwisaver-tips.html</link>
       <guid isPermaLink="true">https://www.finchmortgages.co.nz/weekly-reports/week-7-kiwisaver-tips.html</guid>
-      <description>KiwiSaver strategies for 2026 first home buyers: withdrawal rules, timing and traps to avoid. Finch Mortgages weekly report.</description>
+      <description>Contribution thresholds, withdrawal timing, and government matching broken down.</description>
       <pubDate>Thu, 01 Jan 2026 09:00:00 +0000</pubDate>
     </item>
   </channel>

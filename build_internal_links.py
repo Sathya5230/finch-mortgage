@@ -139,7 +139,7 @@ print(f"lenders.html: linked {len(reviews)} reviews")
 # ---------------------------------------------------------------- 2. blog.html
 block = section(
     "All Guides & Articles",
-    "Every Finch Mortgage guide, market explainer and regional broker page in one place.",
+    "Every Finch Mortgages guide, market explainer and regional broker page in one place.",
     [(None, [(f"blog/{slug}", label) for slug, label in blog_posts])],
     bg="white",
 )

@@ -18,6 +18,11 @@
       "source": "/testimonials.html",
       "destination": "/testimonials/reviews.html",
       "permanent": true
+    },
+    {
+      "source": "/refinance.html",
+      "destination": "/calculators/refinance-savings.html",
+      "permanent": true
     }
   ],
   "headers": [

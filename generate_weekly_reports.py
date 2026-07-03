@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 """
-Generates 15 weekly market reports for Finch Mortgage.
-Each report is deeply expanded with procedural macroeconomic deep dives to reach ~1500 words.
+Generates weekly market reports for Finch Mortgages.
 """
 
 import os
@@ -78,7 +77,7 @@ REPORTS = [
     },
     {
         "week": 19, "slug": "week-19-spring-market-prep", "date": "12 May 2026", "badge": "Rates", "icon": "percent",
-        "title": "Spring Market Prep: Getting Pre-Approved Early",
+        "title": "Spring Market Prep: Get Pre-Approved Early",
         "excerpt": "Prepare your finances now for the upcoming spring property flush in New Zealand. Expert advice on pre-approvals, rate locks, and securing the best home loan.",
         "stat_label": "Pre-Approvals Processed", "stat_val": "+8.4% MoM", "author": "Sarah Jenkins",
         "city": "Nationwide", "region": "New Zealand",
@@ -86,7 +85,7 @@ REPORTS = [
     },
     {
         "week": 18, "slug": "week-18-winter-strategies", "date": "5 May 2026", "badge": "Rates", "icon": "percent",
-        "title": "Winter Mortgage Strategies: Positioning for Pre-Approvals",
+        "title": "Winter Mortgage Strategies for Pre-Approval",
         "excerpt": "As the colder months approach, the New Zealand property market historically experiences a cooling in listing volumes. Discover essential strategies.",
         "stat_label": "Pre-Approval Volume", "stat_val": "+5.2% MoM", "author": "Sarah Jenkins",
         "city": "Wellington", "region": "Wellington Region",
@@ -230,36 +229,62 @@ REPORTS = [
     }
 ]
 
-def generate_deep_dive_text():
-    """Generates procedural deep dive paragraphs to reach the 1500 word depth."""
-    return """
-<h3>The Macroeconomic Context: Why This Matters</h3>
-<p>To fully grasp the implications of this week’s developments, we must zoom out and observe the broader macroeconomic superstructure governing the New Zealand financial system. The Reserve Bank acts as the primary thermostat for economic velocity, adjusting the OCR to balance employment mandates against inflation targets. When wholesale rates shift, the cost of capital for tier-one commercial banks adjusts within milliseconds on the swap market. However, the transmission mechanism to retail borrowers—the everyday homeowners holding mortgages—is subject to intense corporate strategizing. Banks must balance their internal net interest margin (NIM) preservation against the primal need to defend their market share of the trillion-dollar residential loan book. This friction is precisely why we see 'special' rate anomalies, unadvertised cashbacks, and sudden policy shifts that create brief, highly lucrative windows for borrowers who are ready to strike.</p>
+# Per-badge "what this means for you" guidance. Deliberately generic and
+# advice-oriented (never a new numeric/factual market claim) so it's safe to
+# reuse across reports -- personalised per report via {city}/{stat_label}/
+# {stat_val} substitution, which combined with each report's already-unique
+# intro/excerpt keeps every page genuinely distinct rather than duplicate
+# boilerplate. Replaces the old generate_deep_dive_text()/PADDING_TEXT pair,
+# which appended ~1500 words of identical filler to every single report
+# regardless of topic -- a duplicate-content risk across all 20 pages.
+# "Rates" carries 10 of the 20 reports -- three rotating variants (picked by
+# week number below), each built around that week's actual stat_label/stat_val
+# rather than generic phrasing, so same-badge reports stay genuinely distinct
+# rather than differing only by the {city} token.
+RATES_VARIANTS = [
+    """<h2>What This Means for Your Mortgage</h2>
+<p>This week's {stat_label} figure — {stat_val} — is exactly the kind of movement worth checking against before you accept your bank's automatic rollover rate on your next fixed-term renewal; the rate you're quietly moved to is rarely their sharpest offer. Compare what {city} borrowers are actually being offered across the panel of NZ lenders, not just your current bank's rate card.</p>
+<p>Use our <a href="../calculators/refinance-savings.html">refinance savings calculator</a> to see whether a switch covers its own costs, or book a free 15-minute call and we'll pull live pricing for your specific loan size and structure.</p>""",
+    """<h2>What This Means for Your Mortgage</h2>
+<p>A shift like {stat_label} moving to {stat_val} rarely shows up identically at every lender — some reprice within days, others hold their existing book for weeks longer. If you're {city}-based and due to refix soon, it's worth checking where each lender actually sits today rather than assuming they've all moved together.</p>
+<p>Book a free 15-minute call and we'll check current pricing across our panel against your specific loan, or run your numbers first through the <a href="../calculators/mortgage-calculator.html">mortgage calculator</a>.</p>""",
+    """<h2>What This Means for Your Mortgage</h2>
+<p>Whenever {stat_label} moves this way — now sitting at {stat_val} — the practical question for {city} borrowers isn't the headline figure itself, it's whether your own bank has actually passed it through to your specific loan yet. Many haven't, by the time you read this.</p>
+<p>Ask us to check your current rate against live panel pricing before you refix or accept a renewal offer — it costs nothing and takes one call.</p>""",
+]
 
-<h3>Yield Curve Inversions and Wholesale Pressures</h3>
-<p>Currently, the yield curve exhibits a classic inversion, historically a leading indicator of an impending shift in monetary policy. In an inverted environment, short-term liquidity is paradoxically more expensive than long-term capital commitments. For the borrower, this translates to 6-month and 1-year fixed rates remaining somewhat sticky and elevated, while 3-year and 5-year fixed tranches look mathematically cheaper on surface-level analysis. The trap inherent in an inverted curve is the temptation of perceived long-term safety. Locking in a longer duration today may circumvent immediate cashflow pain, but it inherently surrenders the flexibility required to capture the downward repricing phase that the inverted curve itself is actively forecasting. Our internal modeling aggressively favors a segmented, split-maturity approach—hedging short-term liquidity risk while maintaining optionality for the expected easing cycle.</p>
 
-<h3>Debt-to-Income (DTI) Ratios and Servicing Sensitivities</h3>
-<p>It is impossible to analyze current market dynamics without addressing the structural governance of Debt-to-Income (DTI) frameworks that now dominate credit assessment protocols. Historically, the primary constraint on borrower acquisition was the Loan-to-Value Ratio (LVR), a metric entirely focused on equity buffers and asset valuation defense. The systemic pivot toward DTIs represents a fundamental shift in regulatory philosophy: from asset protection to income preservation. A rigid 6.0x multiple cap on gross household income fundamentally shifts the power dynamic. It penalizes asset-rich but low-cashflow demographics while heavily rewarding dual-income households, irrespective of their accumulated equity. As a direct consequence, we are witnessing a rapid escalation in applications flowing toward agile, non-bank lending institutions whose mandate does not strictly bind them to these algorithmic income multipliers.</p>
+GUIDANCE_BY_BADGE = {
+    "Forecast": """<h2>What This Means for Your Mortgage</h2>
+<p>Trying to time the exact bottom of a rate cycle is a losing game even for professional traders — the more reliable strategy is making sure your own pre-approval, deposit, and loan structure are ready to move whenever the right property or the right rate window appears, rather than reacting after the fact.</p>
+<p>If you're planning a purchase in {city} over the coming months, get your <a href="../services/pre-approval.html">pre-approval</a> sorted now so you're not starting that process from zero when the timing lines up.</p>""",
+    "Regional": """<h2>What This Means for Your Mortgage</h2>
+<p>National averages rarely reflect what's actually happening on your street. {city} and the wider {region} market moves on its own local drivers — infrastructure, migration, and lender appetite for that specific area all shift independently of the headline national figures.</p>
+<p>A local read matters more than a national one when it comes to what you'll actually be offered. Talk to us about how {city}'s conditions specifically affect your borrowing power and lender options.</p>""",
+    "Investors": """<h2>What This Means for Your Mortgage</h2>
+<p>For investors, every rate and policy shift runs through two filters: debt-to-income caps and rental income treatment, both of which vary meaningfully by lender. A change that looks minor on the surface can move your effective borrowing capacity by a lot once those two filters are applied.</p>
+<p>Check your own numbers with our <a href="../calculators/dti-calculator.html">DTI ratio calculator</a>, or book a call if you're weighing up a purchase in {city} against your current portfolio structure.</p>""",
+    "First Home": """<h2>What This Means for Your Mortgage</h2>
+<p>For first home buyers, small policy and pricing shifts often matter more than they do for other borrowers, since you're typically working with a tighter deposit and less flexibility to absorb a worse rate. It's worth re-checking your KiwiSaver withdrawal, Kāinga Ora First Home Loan eligibility, and deposit pathway whenever conditions move.</p>
+<p>Read our <a href="../guides/first-home-guide.html">first home buyer guide</a> for the full NZ playbook, or book a free call to see how this affects your specific {city} purchase plan.</p>""",
+    "Market": """<h2>What This Means for Your Mortgage</h2>
+<p>Market sentiment shifts like this tend to move buyer competition before they move prices — which means the practical advantage goes to whoever is genuinely ready to act, not just watching from the sidelines.</p>
+<p>If you're weighing up a move in {city}, the highest-leverage thing you can do right now is get a real, lender-specific pre-approval in place rather than relying on an online estimate.</p>""",
+    "Regulations": """<h2>What This Means for Your Mortgage</h2>
+<p>Regulatory changes like this affect every lender differently in the first few months — some move quickly to adjust policy, others lag behind, which briefly creates real gaps between what different NZ banks will approve for the same borrower.</p>
+<p>If you're unsure how a policy shift like this actually applies to your situation in {city}, that's exactly the kind of question worth a free 15-minute call rather than guessing from a headline.</p>""",
+    "Specialist": """<h2>What This Means for Your Mortgage</h2>
+<p>Specialist scenarios — self-employed income, credit history issues, non-standard security, or anything outside a clean PAYE application — are exactly where policy differences between lenders matter most. The same file that gets declined at one bank can be a straightforward approval at another.</p>
+<p>If your situation in {city} doesn't fit a standard application, talk to us before you apply anywhere — we'll tell you honestly which lenders are actually a fit.</p>""",
+}
 
-<h3>Regional Divergence and the Multi-Speed Housing Market</h3>
-<p>The era of a ubiquitous, synchronized 'New Zealand Property Market' is decisively over. The data clearly indicates we have transitioned into a multi-speed, highly localized ecosystem. Tier-one urban centers behave distinctly from provincial agricultural hubs, which in turn diverge wildly from tourism and lifestyle micro-economies. Analyzing national median prices is increasingly futile for the individual borrower. Capital growth is now hyper-dependent on localized infrastructure pipelines, regional civic employment stability, and micro-zoning changes resulting from recent medium-density resourcing edicts. Astute property investors are no longer relying on passive, rising-tide capital gains; instead, the focus has entirely shifted to active yield manufacturing. This involves strategic renovations, subsidiary dwelling additions, and navigating complex cross-lease title structures to force equity generation irrespective of the broader macroeconomic climate.</p>
 
-<h3>The Strategic Playbook for Borrowers This Quarter</h3>
-<p>Given the volatility and complexity of the current landscape, passivity is the most expensive stance a borrower can take. The delta between an optimized loan structure and a default 'roll-over' strategy can eclipse tens of thousands of dollars over a standard three-year fixing cycle. If your fixed term expires within the next 120 days, the preparation phase must begin immediately. <strong>First</strong>, demand a holistic reassessment of your property’s current valuation—banks routinely under-calculate equity positions based on outdated automated valuation models (AVMs), artificially holding you in higher risk tiers and locking you out of premium rate discounts. <strong>Second</strong>, consolidate unsecured, high-interest consumer debt back into the primary residential facility to dramatically improve your servicing ratios under the new DTI calculators. <strong>Finally</strong>, challenge the retention teams. Loyalty to a single financial institution in this environment rarely yields a premium; competitive tension is the required catalyst to force banks to release their unadvertised, discretionary pricing authorities.</p>
-
-<h3>Looking Ahead: Navigating the Next 90 Days</h3>
-<p>As we project forward into the ensuing quarter, volatility will remain the dominant theme. Geopolitical supply chain disruptions continue to pose latent inflationary threats that could momentarily spook wholesale rate markets. Concurrently, domestic unemployment data is trending upward, a localized deflationary force that applying immense pressure on the central bank to accelerate their easing timeline. For the individual borrower, attempting to time the absolute bottom of the rate cycle is a statistical fallacy. The objective is not perfection, but optimization. Ensure your financial architecture is defensive enough to withstand delayed rate cuts, yet agile enough to break and re-fix if the market drops precipitously faster than the curve suggests. The Finch Mortgage advisory team remains committed to actively monitoring these systemic shifts, providing you with the real-time data required to execute your property strategies with total confidence.</p>
-"""
-
-# Boilerplate paragraphs to pad length to 1500 words
-PADDING_TEXT = """
-<p>Furthermore, evaluating the intersection of global monetary easing with localized fiscal policy constraints presents a labyrinthine challenge for institutional credit risk teams. Systemic liquidity is migrating across international borders at unprecedented velocity, forcing domestic retail banks to aggressively hedge their forward funding requirements. When a central bank signals a qualitative tightening or loosening bias, the ripple effects permeate through the entire mortgage origination lifecycle. The retail borrower often perceives an interest rate as a static, arbitrary product offering. In reality, it is a highly volatile, living derivative of international bond yield spreads, domestic employment expectations, and algorithmic risk apportionment models. Our proprietary function as independent advisors is to intercede within this complex matrix, insulating the client from the underlying market turbulence while extracting the most mathematically efficient debt structuring possible under the current regulatory schema.</p>
-
-<p>The imperative of constructing resilient, anti-fragile household balance sheets has never been more pronounced. We operate in an economic epoch where generational real estate wealth is created not merely through asset acquisition, but through the sophisticated manipulation of debt instruments over multi-decade horizons. The strategic deployment of revolving credit facilities, offset accounts, and staggered fixed-term maturity dates transcends simple budgeting—it represents active treasury management at the household level. As the compliance burden associated with the Credit Contracts and Consumer Finance Act (CCCFA) forces a retreat to hyper-conservative conservatism among tier-one lenders, the premium on expert, independent financial advocacy grows exponentially. Navigating the modern mortgage matrix relies intrinsically upon recognizing these subtle algorithmic triggers and positioning applications to perfectly align with the specific, opaque criteria currently favored by the credit syndicates.</p>
-
-<p>Concluding our analysis, we reiterate that the fundamental drivers of New Zealand real estate remain structurally sound despite cyclical interest rate perturbations. The geographic limitations of an island nation, combined with consistent net positive migration vectors and systemic under-building over rolling ten-year averages, construct an absolute floor under long-term asset values. The short-term fluctuations generated by reserve bank interventions present tactical buying windows for the prepared investor. We emphasize caution, rigorous stress-testing of personal cash flow reserves, and an uncompromising commitment to long-term holding strategies. Those who treat property investment as an extended duration utility rather than a short-term speculative vehicle will inevitably weather these cyclical storms, emerging with radically compounded equity positions when the monetary cycle inevitably transitions back to a neutral or expansionary stance.</p>
-"""
+def make_context_section(r):
+    if r["badge"] == "Rates":
+        template = RATES_VARIANTS[r["week"] % len(RATES_VARIANTS)]
+    else:
+        template = GUIDANCE_BY_BADGE.get(r["badge"], GUIDANCE_BY_BADGE["Market"])
+    return template.format(city=r["city"], region=r["region"], stat_label=r["stat_label"], stat_val=r["stat_val"])
 
 def get_iso_date(date_str):
     try:
@@ -327,7 +352,7 @@ def make_weekly_report_schema(r):
                     "@type": "WebPage",
                     "@id": f"{url}#webpage"
                 },
-                "headline": f"Week {r['week']}: {r['title']} | Finch Weekly Report",
+                "headline": f"Week {r['week']}: {r['title']} | Finch",
                 "description": r['excerpt'],
                 "image": "https://www.finchmortgages.co.nz/images/og-default.jpg",
                 "datePublished": published_date,
@@ -345,7 +370,7 @@ def make_weekly_report_schema(r):
                 "@type": "WebPage",
                 "@id": f"{url}#webpage",
                 "url": url,
-                "name": f"Week {r['week']}: {r['title']} | Finch Weekly Report",
+                "name": f"Week {r['week']}: {r['title']} | Finch",
                 "description": r['excerpt'],
                 "inLanguage": "en-NZ",
                 "breadcrumb": {
@@ -369,7 +394,7 @@ def make_report_page(r):
     prev_link = f'<a href="{REPORTS[curr_idx+1]["slug"]}.html" style="color:var(--finch-forest);font-weight:700;font-size:0.85rem;text-decoration:none;">&larr; Older: Week {REPORTS[curr_idx+1]["week"]}</a>' if curr_idx < len(REPORTS)-1 else '<span></span>'
     next_link = f'<a href="{REPORTS[curr_idx-1]["slug"]}.html" style="color:var(--finch-forest);font-weight:700;font-size:0.85rem;text-decoration:none;">Newer: Week {REPORTS[curr_idx-1]["week"]} &rarr;</a>' if curr_idx > 0 else '<span></span>'
 
-    deep_dive = generate_deep_dive_text()
+    context_section = make_context_section(r)
     schema_json = make_weekly_report_schema(r)
 
     html = f"""<!DOCTYPE html>
@@ -377,7 +402,7 @@ def make_report_page(r):
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Week {r['week']}: {r['title']} | Finch Weekly Report</title>
+  <title>Week {r['week']}: {r['title']} | Finch</title>
   <meta name="description" content="{r['excerpt']}">
   <link rel="canonical" href="https://www.finchmortgages.co.nz/weekly-reports/{r['slug']}.html">
   <link href="/favicon.png" rel="icon" type="image/png">
@@ -386,16 +411,16 @@ def make_report_page(r):
   
   <!-- Open Graph -->
   <meta property="og:type" content="article">
-  <meta property="og:title" content="Week {r['week']}: {r['title']} | Finch Weekly Report">
+  <meta property="og:title" content="Week {r['week']}: {r['title']} | Finch">
   <meta property="og:description" content="{r['excerpt']}">
   <meta property="og:url" content="https://www.finchmortgages.co.nz/weekly-reports/{r['slug']}.html">
   <meta property="og:image" content="https://www.finchmortgages.co.nz/images/og-default.jpg">
-  <meta property="og:site_name" content="Finch Mortgage">
+  <meta property="og:site_name" content="Finch Mortgages">
   <meta property="og:locale" content="en_NZ">
   
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Week {r['week']}: {r['title']} | Finch Weekly Report">
+  <meta name="twitter:title" content="Week {r['week']}: {r['title']} | Finch">
   <meta name="twitter:description" content="{r['excerpt']}">
   <meta name="twitter:image" content="https://www.finchmortgages.co.nz/images/og-default.jpg">
 
@@ -451,6 +476,7 @@ def make_report_page(r):
           <i data-lucide="{r['icon']}" size="14"></i> {r['badge']} · {r['city']}, {r['region']}
         </div>
         <h1 style="color:white;font-family:var(--font-display);font-size:clamp(2rem,4vw,3.5rem);font-weight:700;line-height:1.15;margin-bottom:1.5rem;">{r['title']}</h1>
+        <p class="freshness-signal" style="font-size:0.85rem;color:rgba(255,255,255,0.65);margin-bottom:1rem;font-weight:600;">Last updated: July 2026</p>
         <div style="display:flex;align-items:center;gap:1.5rem;color:rgba(255,255,255,0.7);font-size:0.85rem;">
           <span style="display:flex;align-items:center;gap:0.4rem;"><i data-lucide="calendar" size="14"></i> {r['date']}</span>
           <span style="display:flex;align-items:center;gap:0.4rem;"><i data-lucide="user" size="14"></i> {r['author']}</span>
@@ -466,7 +492,8 @@ def make_report_page(r):
       
       <!-- Main Content -->
       <div class="article-content" style="flex:1;min-width:320px;background:white;padding:3rem;border-radius:1.5rem;border:1px solid rgba(181,206,176,0.3);">
-        
+
+        <h2>This Week at a Glance</h2>
         <p style="font-size:1.25rem;color:var(--neutral-black);font-weight:600;line-height:1.6;margin-bottom:2.5rem;font-style:italic;">
           "{r['intro']}"
         </p>
@@ -481,8 +508,7 @@ def make_report_page(r):
           </div>
         </div>
 
-        {deep_dive}
-        {PADDING_TEXT}
+        {context_section}
 
         <!-- Post-article Navigation -->
         <div style="display:flex;align-items:center;justify-content:space-between;margin-top:4rem;padding-top:2rem;border-top:1px solid rgba(181,206,176,0.4);">
