@@ -6,7 +6,7 @@
     <atom:link href="https://www.finchmortgages.co.nz/rss.xml" rel="self" type="application/rss+xml"/>
     <description>Independent NZ mortgage broker Finch Mortgages — first home buyer guides, lender comparisons, rate forecasts, and weekly NZ mortgage market reports.</description>
     <language>en-nz</language>
-    <lastBuildDate>Fri, 03 Jul 2026 19:04:12 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 03 Jul 2026 20:48:25 +0000</lastBuildDate>
     <generator>generate_rss_feed.py</generator>
     <item>
       <title>Mortgage vs Rent in Auckland 2026: The Real Numbers</title>
@@ -601,6 +601,13 @@
       <link>https://www.finchmortgages.co.nz/blog/mortgage-broker-christchurch.html</link>
       <guid isPermaLink="true">https://www.finchmortgages.co.nz/blog/mortgage-broker-christchurch.html</guid>
       <description>Independent Christchurch mortgage broker — Finch compares 20+ NZ lenders to find local buyers the sharpest rate and structure. Free advice, $0 broker fee.</description>
+      <pubDate>Thu, 15 Jan 2026 09:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Reverse Mortgage NZ: How It Works &amp; Who It Suits (2026)</title>
+      <link>https://www.finchmortgages.co.nz/blog/reverse-mortgage-nz.html</link>
+      <guid isPermaLink="true">https://www.finchmortgages.co.nz/blog/reverse-mortgage-nz.html</guid>
+      <description>How a reverse mortgage works in NZ — eligibility, how much equity you can release, what it costs over time, and the alternatives worth considering first.</description>
       <pubDate>Thu, 15 Jan 2026 09:00:00 +0000</pubDate>
     </item>
     <item>

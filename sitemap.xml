@@ -218,6 +218,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://www.finchmortgages.co.nz/guides/mortgage-glossary-nz.html</loc>
+    <lastmod>2026-07-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://www.finchmortgages.co.nz/guides/step-by-step.html</loc>
     <lastmod>2026-07-03</lastmod>
     <changefreq>monthly</changefreq>
@@ -694,6 +700,7 @@
   <url><loc>https://www.finchmortgages.co.nz/case-studies/second-home-holiday-home-purchase.html</loc><lastmod>2026-07-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://www.finchmortgages.co.nz/case-studies/mortgagee-sale-purchase-finance.html</loc><lastmod>2026-07-04</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.finchmortgages.co.nz/case-studies/high-dti-young-professional-approved.html</loc><lastmod>2026-07-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/reverse-mortgage-nz.html</loc><lastmod>2026-07-05</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
 
   <!-- ============================ -->
   <!-- PREVIOUSLY MISSING PAGES     -->
@@ -745,6 +752,7 @@
   <!-- NEW TOOLS                    -->
   <!-- ============================ -->
   <url><loc>https://www.finchmortgages.co.nz/calculators/dti-calculator.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/calculators/rental-yield-calculator.html</loc><lastmod>2026-07-05</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
 
   <!-- ============================ -->
   <!-- NEW AUCKLAND SUBURB PAGES    -->

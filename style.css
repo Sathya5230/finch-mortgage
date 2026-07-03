@@ -1839,6 +1839,10 @@ button:focus-visible {
 @media (max-width: 640px) {
   .floating-consult { display: none; }
 
+  body {
+    padding-bottom: calc(74px + env(safe-area-inset-bottom, 0px));
+  }
+
   .mobile-sticky-cta {
     display: flex;
     position: fixed;

@@ -18,14 +18,13 @@ BASE_URL = "https://www.finchmortgages.co.nz"
 
 # ISO 8601 dates for Article rich-result eligibility
 ARTICLE_PUBLISHED = "2026-01-15"
-ARTICLE_MODIFIED = "2026-07-03"
+ARTICLE_MODIFIED = "2026-07-05"
 
 # Slugs to (re)generate when run directly. Keep this scoped to newly added
 # entries -- existing posts accumulate hand edits (FAQ schema, freshness
 # copy) after generation, and a full re-run would blow those away.
 NEW_SLUGS = {
-    "mortgage-top-up-nz",
-    "bridging-finance-guide-nz",
+    "reverse-mortgage-nz",
 }
 
 
@@ -226,6 +225,29 @@ POSTS = [
             ("How Bridging Finance Is Structured", "<p style=\"margin-bottom:2rem;\">Most NZ bridging loans are structured against the equity in your existing property, sized to cover the deposit and settlement costs on the new purchase until your current home sells. Because it's short-term and higher-risk than standard lending, bridging finance carries a higher interest rate than your normal mortgage rate, and lenders will want a clear, realistic exit strategy — a genuine plan and evidence for how and when the existing property will sell. Exact pricing and available lenders vary by scenario, so ask Finch for a current, lender-specific quote rather than assuming a rate.</p>"),
             ("Bridging Finance vs Selling First", "<p style=\"margin-bottom:2rem;\">Selling first removes bridging risk and cost entirely, but leaves you needing temporary accommodation and racing the clock to find your next home — sometimes with less negotiating leverage as a must-buy purchaser. Bridging costs more and requires a workable exit plan, but lets you secure the right property on your terms and move once, rather than twice. Which path makes sense depends on how confident you are in your existing property's sale timeline and how competitive your target market is.</p>"),
             ("How Finch Structures a Bridging Loan for You", "<p style=\"margin-bottom:1rem;\">Not every NZ lender offers bridging finance, and appetite for open bridging in particular varies a lot bank to bank. Finch checks which lenders on our panel have current bridging appetite for your specific equity position and timeline, and structures the exit plan your lender needs to see. Book a free 15-minute call before you commit to a purchase date, so financing is confirmed before you need it.</p>"),
+        ],
+    },
+    {
+        "slug": "reverse-mortgage-nz",
+        "title": "Reverse Mortgage NZ: How It Works & Who It Suits (2026)",
+        "h1": "Reverse Mortgage in NZ — How It Works",
+        "intro_pull": "A reverse mortgage lets homeowners aged 60+ release cash from their home's equity without making regular repayments — but it isn't the right fit for everyone.",
+        "description": "How a reverse mortgage works in NZ — eligibility, how much equity you can release, what it costs over time, and the alternatives worth considering first.",
+        "keywords": [
+            "reverse mortgage NZ",
+            "what is a reverse mortgage",
+            "reverse mortgage calculator NZ",
+            "equity release NZ retirees",
+            "reverse mortgage eligibility NZ",
+            "reverse mortgage vs equity release",
+        ],
+        "sections": [
+            ("The Quick Answer", "<p style=\"margin-bottom:2rem;\">A reverse mortgage lets homeowners, typically aged 60 and over, borrow against the equity in their home without making regular principal or interest repayments. Instead, the interest compounds and is added to the loan balance, with the full amount — loan plus accumulated interest — usually repaid when the home is eventually sold, the borrower moves into long-term care, or passes away. It's a way to access home equity for living costs or one-off expenses in retirement without needing to sell or move.</p>"),
+            ("Who a Reverse Mortgage Is For", "<p style=\"margin-bottom:2rem;\">Reverse mortgages are aimed at older New Zealanders who are equity-rich but income-limited — often retirees relying on NZ Super who want to stay in their own home rather than downsize, but need extra cash for renovations, healthcare, debt repayment, helping family, or simply topping up day-to-day living costs. Minimum age requirements typically start around 60, with the maximum amount you can borrow generally increasing with age, since lenders factor in life expectancy and how long interest will compound before the loan is likely to be repaid.</p>"),
+            ("How Much You Can Release", "<p style=\"margin-bottom:2rem;\">The amount available depends on your age, your home's value, and the specific lender's policy — older borrowers can typically access a higher percentage of their home's equity than younger ones, since the expected loan term is shorter. Most NZ reverse mortgage providers also cap the maximum loan-to-value ratio well below 100%, deliberately leaving an equity buffer so the loan balance is unlikely to exceed the home's value even after years of compounding interest.</p>"),
+            ("What It Actually Costs", "<p style=\"margin-bottom:2rem;\">Reverse mortgage interest rates in NZ are typically higher than a standard owner-occupier home loan rate, reflecting the lender's higher risk and the lack of regular repayments. Because unpaid interest compounds onto the loan balance rather than being paid down, the total amount owed can grow substantially over a long loan term — this compounding effect is the single most important thing to understand and model before taking one out. Reputable NZ reverse mortgage providers include a \"no negative equity guarantee,\" meaning you (or your estate) will never owe more than the home is worth when it's sold, regardless of how much interest has compounded.</p>"),
+            ("Alternatives Worth Considering First", "<ul style=\"margin-bottom:2rem;padding-left:1.5rem;list-style:disc;\"><li style=\"margin-bottom:0.5rem;\"><strong>Downsizing</strong> — selling and buying a smaller property releases equity immediately without ongoing compounding interest.</li><li style=\"margin-bottom:0.5rem;\"><strong>A standard home equity top-up</strong> — if you have income to service regular repayments, a conventional top-up or revolving credit facility is usually cheaper over time than a reverse mortgage.</li><li style=\"margin-bottom:0.5rem;\"><strong>Family assistance or a family loan</strong> — some families prefer an informal or formally documented loan arrangement instead of lender-charged compounding interest.</li><li style=\"margin-bottom:0.5rem;\"><strong>Renting out a room or minor dwelling</strong> — for some homeowners, boarder or granny-flat income can cover the shortfall a reverse mortgage would otherwise be used for.</li></ul>"),
+            ("Questions to Ask Before Taking One Out", "<p style=\"margin-bottom:1rem;\">NZ reverse mortgage providers are required to ensure you get independent legal advice before settlement, precisely because the compounding-cost and long-term-equity trade-offs need to be fully understood. Before proceeding, it's worth getting clarity on: the exact interest rate and how it compounds, whether the loan is portable if you move house, what happens if you outlive the lender's assumptions, and how the no-negative-equity guarantee is structured. Finch can talk you through whether a reverse mortgage or one of the alternatives above better fits your situation — book a free 15-minute call to discuss it with no obligation.</p>"),
         ],
     },
 ]
