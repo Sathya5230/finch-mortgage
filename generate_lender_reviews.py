@@ -575,7 +575,7 @@ def description_for(lender: dict) -> str:
     name_clean = lender['name'].split(' (')[0]
     return (
         f"Independent {name_clean} mortgage review for NZ borrowers — compare rates, "
-        f"deposit rules, and policy strengths, plus how Finch matches you across 20+ lenders."
+        f"deposit rules, and how Finch matches you across 20+ lenders."
     )
 
 

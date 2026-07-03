@@ -7,7 +7,7 @@
   <!-- ============================ -->
   <url>
     <loc>https://www.finchmortgages.co.nz/</loc>
-    <lastmod>2026-06-02</lastmod>
+    <lastmod>2026-07-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -691,8 +691,28 @@
   <url><loc>https://www.finchmortgages.co.nz/weekly-reports/week-20-fixed-rates-dip.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
 
   <!-- ============================ -->
-  <!-- NEW TOPIC BLOG POSTS          -->
+  <!-- TOPIC BLOG POSTS (previously missing from sitemap) -->
   <!-- ============================ -->
+  <url><loc>https://www.finchmortgages.co.nz/blog/anz-vs-asb-vs-bnz-vs-westpac-home-loans.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/break-fixed-mortgage-break-fees-nz.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/bright-line-test-nz-2026.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/build-vs-buy-nz.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/buying-at-auction-nz-finance-ready.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/co-owning-home-friends-family-nz.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/dti-calculator-debt-to-income-nz.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/first-home-buyer-mistakes-nz.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/first-home-partner-scheme-explained.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/fixed-rate-ending-refix-guide-nz.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/granny-flats-minor-dwellings-finance-nz.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/hidden-costs-buying-house-nz.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/income-needed-500k-700k-1m-mortgage-nz.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-cashback-offers-nz.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-document-checklist-nz.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-vs-rent-auckland.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/nz-mortgage-rates-history.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/offset-vs-revolving-credit-mortgage-nz.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/using-home-equity-investment-property-nz.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/work-visa-home-loan-nz.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-top-up-nz.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://www.finchmortgages.co.nz/blog/bridging-finance-guide-nz.html</loc><lastmod>2026-07-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
 
