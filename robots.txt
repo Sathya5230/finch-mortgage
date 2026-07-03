@@ -1,4 +1,4 @@
-# Finch Mortgage NZ — robots.txt
+# Finch Mortgages NZ — robots.txt
 # https://www.finchmortgages.co.nz/
 
 # ---------------------------------------------
@@ -40,7 +40,7 @@ Allow: /
 
 # ---------------------------------------------
 # AI / Generative search crawlers
-# Allowed so Finch Mortgage content can be cited
+# Allowed so Finch Mortgages content can be cited
 # in ChatGPT, Claude, Perplexity, Gemini, Copilot.
 # ---------------------------------------------
 User-agent: GPTBot
@@ -101,6 +101,9 @@ Allow: /
 # Resource pointers
 # ---------------------------------------------
 Sitemap: https://www.finchmortgages.co.nz/sitemap.xml
+
+# RSS feed — NZ mortgage blog & weekly rate reports
+# https://www.finchmortgages.co.nz/rss.xml
 
 # LLM / AI retrieval guidance:
 # https://www.finchmortgages.co.nz/llms.txt
