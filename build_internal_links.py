@@ -205,4 +205,80 @@ block = section(
 inject(os.path.join(ROOT, "case-studies.html"), block)
 print(f"case-studies.html: linked {len(cases)} case studies")
 
+# ---------------------------------------------------------------- 7. service-city pages (locations/)
+SERVICES_META = [
+    {"slug": "home-loan", "name": "Home Loan", "title": "Home Loans & Buying a Home"},
+    {"slug": "first-home-buyer", "name": "First Home Buyer", "title": "First Home Buyer Mortgages"},
+    {"slug": "refinance", "name": "Refinance", "title": "Refinance & Restructure Mortgage"},
+    {"slug": "investment-property", "name": "Investment Property", "title": "Investment Property Loans"},
+    {"slug": "self-employed", "name": "Self Employed", "title": "Self-Employed Home Loans"},
+    {"slug": "pre-approval", "name": "Pre-Approval", "title": "Mortgage Pre-Approvals"},
+]
+SERVICE_NAMES = {s["slug"]: s["title"] for s in SERVICES_META}
+SERVICE_NAME_SHORT = {s["slug"]: s["name"] for s in SERVICES_META}
+
+# Load CITIES from city_data to get friendly display names and slugs
+from city_data import CITIES
+CITY_NAMES = {}
+for c in CITIES:
+    clean_slug = c["slug"].replace("mortgage-broker-", "")
+    CITY_NAMES[clean_slug] = c["city"].replace("&amp;", "&").replace("&amp; ", "& ")
+
+# Target cities (12 requested ones)
+TARGET_CITIES = {
+    "auckland-city", "wellington", "christchurch", "hamilton", "tauranga", 
+    "dunedin", "queenstown", "napier-hawkes-bay", "palmerston-north", 
+    "nelson", "whangarei-northland", "manukau"
+}
+
+# Parse filenames in locations/ directory
+service_cities = []  # (filename, label, service_slug, city_slug)
+for p in sorted(glob.glob(os.path.join(ROOT, "locations", "*.html"))):
+    b = os.path.basename(p)
+    if b == "index.html":
+        continue
+    # Find matching service prefix
+    for s in SERVICE_NAME_SHORT.keys():
+        if b.startswith(s + "-"):
+            city_slug = b[len(s) + 1 : -5]  # remove service prefix and ".html"
+            service_cities.append((b, clean(title_of(p)), s, city_slug))
+            break
+
+# Inject cross links into each locations/*.html file
+for filename, label, s_slug, c_slug in service_cities:
+    # Sibling Services in the same city
+    sib_services = [
+        (f"{s_meta['slug']}-{c_slug}.html", f"{s_meta['name']} in {CITY_NAMES.get(c_slug, c_slug)}")
+        for s_meta in SERVICES_META if s_meta['slug'] != s_slug
+    ]
+    
+    # Sibling Cities for the same service
+    sib_cities = [
+        (f"{s_slug}-{city_item}.html", f"{SERVICE_NAME_SHORT[s_slug]} in {CITY_NAMES.get(city_item, city_item)}")
+        for city_item in TARGET_CITIES if city_item != c_slug
+    ]
+    
+    # Matching city broker page link (e.g. blog/mortgage-broker-wellington.html)
+    city_page_filename = f"mortgage-broker-{c_slug}.html"
+    
+    groups = [
+        ("Core Service & City Guides", [
+            (f"../services/{s_slug}.html", f"{SERVICE_NAMES[s_slug]} Hub"),
+            (f"../blog/{city_page_filename}", f"{CITY_NAMES.get(c_slug, c_slug)} Mortgage Broker Guide")
+        ]),
+        (f"Other Mortgage Services in {CITY_NAMES.get(c_slug, c_slug)}", sib_services),
+        (f"{SERVICE_NAMES[s_slug]} in Other NZ Cities", sib_cities)
+    ]
+    
+    block = section(
+        f"Explore Local Mortgage Services",
+        "Compare home loan options, restructure your existing mortgage, or connect with our local advisers.",
+        groups,
+        bg="var(--finch-mist)"
+    )
+    
+    inject(os.path.join(ROOT, "locations", filename), block)
+
+print(f"service-city pages: cross-linked {len(service_cities)} locations")
+
 print("\nDone.")
