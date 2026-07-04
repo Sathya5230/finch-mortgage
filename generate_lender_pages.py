@@ -148,7 +148,7 @@ def make_page(c):
           <div style="width:64px;height:64px;background:var(--finch-mist);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--finch-forest);font-weight:800;font-size:1.5rem;border:1px solid rgba(181,206,176,0.5);">{l['initial']}</div>
           <h3 style="font-size:1.25rem;font-weight:700;color:var(--neutral-black);">{l['name']}</h3>
           <p style="font-size:0.85rem;color:var(--neutral-medGray);line-height:1.6;flex-grow:1;">{l['desc']}</p>
-          <a href="{l['url']}" target="_blank" rel="nofollow" style="font-size:0.85rem;font-weight:700;color:var(--finch-forest);text-decoration:none;display:inline-flex;align-items:center;gap:0.4rem;margin-top:0.5rem;">Visit Website <i data-lucide="external-link" size="14"></i></a>
+          <a href="{l['url']}" target="_blank" rel="noopener" style="font-size:0.85rem;font-weight:700;color:var(--finch-forest);text-decoration:none;display:inline-flex;align-items:center;gap:0.4rem;margin-top:0.5rem;">Visit Website <i data-lucide="external-link" size="14"></i></a>
         </div>"""
     
     # Build FAQs
