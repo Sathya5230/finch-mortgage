@@ -101,18 +101,7 @@
     }
   ]
 }</script><!-- Meta Pixel Code -->
-<script>
-(function(){var d=false;function l(){if(d)return;d=true;
-!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
-document,'script','https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '984298931136124');fbq('track', 'PageView');}
-['pointerdown','scroll','keydown','touchstart'].forEach(function(e){
-window.addEventListener(e,l,{passive:true,once:true});});
-setTimeout(l,4000);})();
-</script>
+<script>!function(){var e=!1;function n(){var n,t,o,c,a,s;e||(e=!0,n=window,t=document,o="script",n.fbq||(c=n.fbq=function(){c.callMethod?c.callMethod.apply(c,arguments):c.queue.push(arguments)},n._fbq||(n._fbq=c),c.push=c,c.loaded=!0,c.version="2.0",c.queue=[],(a=t.createElement(o)).async=!0,a.src="https://connect.facebook.net/en_US/fbevents.js",(s=t.getElementsByTagName(o)[0]).parentNode.insertBefore(a,s)),fbq("init","984298931136124"),fbq("track","PageView"))}["pointerdown","scroll","keydown","touchstart"].forEach(function(e){window.addEventListener(e,n,{passive:!0,once:!0})}),setTimeout(n,4e3)}();</script>
 <noscript><img alt="Facebook Pixel" height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=984298931136124&ev=PageView&noscript=1"
 /></noscript>
@@ -326,38 +315,5 @@ src="https://www.facebook.com/tr?id=984298931136124&ev=PageView&noscript=1"
 </div>
 </footer>
 <script src="../script.js" defer></script>
-<script>
-const price = document.getElementById('c-price');
-  const dep   = document.getElementById('c-deposit');
-  const rate  = document.getElementById('c-rate');
-  const term  = document.getElementById('c-term');
-
-  function fmt(n){ return '$' + Math.round(n).toLocaleString('en-NZ'); }
-
-  function calc() {
-    const P = parseFloat(price.value)||650000;
-    const d = parseFloat(dep.value)/100;
-    const r = parseFloat(rate.value)/100;
-    const t = parseInt(term.value);
-    const loan = P * (1 - d);
-    const wRate = r / 52;
-    const wN = t * 52;
-    const weekly = loan * wRate * Math.pow(1+wRate,wN) / (Math.pow(1+wRate,wN)-1);
-    const totalCost = weekly * wN;
-    const totalInt = totalCost - loan;
-
-    document.getElementById('c-dep-pct').textContent = Math.round(d*100) + '%';
-    document.getElementById('c-dep-amt').textContent = fmt(P*d);
-    document.getElementById('c-rate-lbl').textContent = parseFloat(rate.value).toFixed(2) + '%';
-    document.getElementById('c-term-lbl').textContent = t + ' years';
-    document.getElementById('c-loan').textContent = fmt(loan);
-    document.getElementById('c-weekly').textContent = fmt(weekly);
-    document.getElementById('c-fortnightly').textContent = fmt(weekly*2);
-    document.getElementById('c-monthly').textContent = fmt(weekly*52/12);
-    document.getElementById('c-total-int').textContent = fmt(totalInt);
-    document.getElementById('c-total-cost').textContent = fmt(totalCost);
-  }
-  [price,dep,rate,term].forEach(el => el.addEventListener('input', calc));
-  calc();
-</script>
+<script>const price=document.getElementById("c-price"),dep=document.getElementById("c-deposit"),rate=document.getElementById("c-rate"),term=document.getElementById("c-term");function fmt(t){return"$"+Math.round(t).toLocaleString("en-NZ")}function calc(){const t=parseFloat(price.value)||65e4,e=parseFloat(dep.value)/100,n=parseFloat(rate.value)/100,o=parseInt(term.value),c=t*(1-e),m=n/52,d=52*o,l=c*m*Math.pow(1+m,d)/(Math.pow(1+m,d)-1),a=l*d,r=a-c;document.getElementById("c-dep-pct").textContent=Math.round(100*e)+"%",document.getElementById("c-dep-amt").textContent=fmt(t*e),document.getElementById("c-rate-lbl").textContent=parseFloat(rate.value).toFixed(2)+"%",document.getElementById("c-term-lbl").textContent=o+" years",document.getElementById("c-loan").textContent=fmt(c),document.getElementById("c-weekly").textContent=fmt(l),document.getElementById("c-fortnightly").textContent=fmt(2*l),document.getElementById("c-monthly").textContent=fmt(52*l/12),document.getElementById("c-total-int").textContent=fmt(r),document.getElementById("c-total-cost").textContent=fmt(a)}[price,dep,rate,term].forEach(t=>t.addEventListener("input",calc)),calc();</script>
 </body></html>

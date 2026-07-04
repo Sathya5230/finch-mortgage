@@ -152,18 +152,7 @@
   "datePublished": "2026-01-15",
   "dateModified": "2026-07-04"
 }</script><!-- Meta Pixel Code -->
-<script>
-(function(){var d=false;function l(){if(d)return;d=true;
-!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
-document,'script','https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '984298931136124');fbq('track', 'PageView');}
-['pointerdown','scroll','keydown','touchstart'].forEach(function(e){
-window.addEventListener(e,l,{passive:true,once:true});});
-setTimeout(l,4000);})();
-</script>
+<script>!function(){var e=!1;function n(){var n,t,o,c,a,s;e||(e=!0,n=window,t=document,o="script",n.fbq||(c=n.fbq=function(){c.callMethod?c.callMethod.apply(c,arguments):c.queue.push(arguments)},n._fbq||(n._fbq=c),c.push=c,c.loaded=!0,c.version="2.0",c.queue=[],(a=t.createElement(o)).async=!0,a.src="https://connect.facebook.net/en_US/fbevents.js",(s=t.getElementsByTagName(o)[0]).parentNode.insertBefore(a,s)),fbq("init","984298931136124"),fbq("track","PageView"))}["pointerdown","scroll","keydown","touchstart"].forEach(function(e){window.addEventListener(e,n,{passive:!0,once:!0})}),setTimeout(n,4e3)}();</script>
 <noscript><img alt="Facebook Pixel" height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=984298931136124&ev=PageView&noscript=1"
 /></noscript>
@@ -917,25 +906,6 @@ src="https://www.facebook.com/tr?id=984298931136124&ev=PageView&noscript=1"
 </div>
 </footer>
 <script src="script.js" defer></script>
-<script>
-// Hero calculator
-  const priceEl = document.getElementById('hero-price');
-  const depositEl = document.getElementById('hero-deposit');
-  const depValEl = document.getElementById('hero-dep-val');
-  const resultEl = document.getElementById('hero-result');
-  function calcHero() {
-    const price = parseFloat(priceEl.value) || 650000;
-    const dep = parseFloat(depositEl.value) / 100;
-    const loan = price * (1 - dep);
-    const r = 0.065 / 52;
-    const n = 30 * 52;
-    const weekly = loan * r * Math.pow(1+r,n) / (Math.pow(1+r,n)-1);
-    depValEl.textContent = Math.round(depositEl.value) + '%';
-    resultEl.textContent = '$' + Math.round(weekly).toLocaleString();
-  }
-  priceEl.addEventListener('input', calcHero);
-  depositEl.addEventListener('input', calcHero);
-  calcHero();
-</script>
+<script>const priceEl=document.getElementById("hero-price"),depositEl=document.getElementById("hero-deposit"),depValEl=document.getElementById("hero-dep-val"),resultEl=document.getElementById("hero-result");function calcHero(){const e=.00125,t=(parseFloat(priceEl.value)||65e4)*(1-parseFloat(depositEl.value)/100)*e*Math.pow(1+e,1560)/(Math.pow(1+e,1560)-1);depValEl.textContent=Math.round(depositEl.value)+"%",resultEl.textContent="$"+Math.round(t).toLocaleString()}priceEl.addEventListener("input",calcHero),depositEl.addEventListener("input",calcHero),calcHero();</script>
 </body>
 </html>

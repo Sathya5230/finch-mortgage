@@ -36,65 +36,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/><link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" onload="this.onload=null;this.rel='stylesheet'"/><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"/></noscript><link href="../style.css" rel="stylesheet"/>
 <link href="../tailwind.css" rel="stylesheet"/>
-<style>
-        input[type="range"] {
-            width: 100%;
-            accent-color: var(--finch-gold);
-            height: 6px;
-            background: rgba(98,162,154,0.2);
-            border-radius: 8px;
-            appearance: none;
-            cursor: pointer;
-        }
-        input[type="range"]::-webkit-slider-thumb {
-            appearance: none;
-            width: 20px;
-            height: 20px;
-            border-radius: 50%;
-            background: var(--finch-gold);
-            cursor: pointer;
-            box-shadow: 0 2px 8px rgba(178,147,97,0.35);
-            transition: transform 0.15s ease, box-shadow 0.15s ease;
-        }
-        input[type="range"]::-webkit-slider-thumb:hover {
-            transform: scale(1.2);
-            box-shadow: 0 4px 16px rgba(178,147,97,0.5);
-        }
-        input[type="range"]#extra-range::-webkit-slider-thumb {
-            background: var(--finch-forest);
-            box-shadow: 0 2px 8px rgba(16,68,62,0.35);
-        }
-
-        .chart-container {
-            width: 100%;
-            height: 52px;
-            position: relative;
-            border-radius: 26px;
-            background: rgba(98,162,154,0.12);
-            display: flex;
-            align-items: center;
-            overflow: hidden;
-            margin-top: 1rem;
-            border: 1px solid rgba(98,162,154,0.2);
-        }
-
-        .chart-fill {
-            height: 100%;
-            background: linear-gradient(90deg, var(--finch-gold) 0%, #d4aa7a 100%);
-            width: 70%;
-            border-radius: 26px 0 0 26px;
-            transition: width 0.5s cubic-bezier(0.23,1,0.32,1);
-            position: relative;
-        }
-        .chart-fill::after {
-            content: '';
-            position: absolute;
-            top: 0; left: 0; right: 0;
-            height: 50%;
-            background: rgba(255,255,255,0.15);
-            border-radius: 26px 0 0 0;
-        }
-    </style>
+<style>input[type=range]{width:100%;accent-color:var(--finch-gold);height:6px;background:rgba(98,162,154,.2);border-radius:8px;appearance:none;cursor:pointer}input[type=range]::-webkit-slider-thumb{appearance:none;width:20px;height:20px;border-radius:50%;background:var(--finch-gold);cursor:pointer;box-shadow:0 2px 8px rgba(178,147,97,.35);transition:transform .15s ease,box-shadow .15s ease}input[type=range]::-webkit-slider-thumb:hover{transform:scale(1.2);box-shadow:0 4px 16px rgba(178,147,97,.5)}input[type=range]#extra-range::-webkit-slider-thumb{background:var(--finch-forest);box-shadow:0 2px 8px rgba(16,68,62,.35)}.chart-container{width:100%;height:52px;position:relative;border-radius:26px;background:rgba(98,162,154,.12);display:flex;align-items:center;overflow:hidden;margin-top:1rem;border:1px solid rgba(98,162,154,.2)}.chart-fill{height:100%;background:linear-gradient(90deg,var(--finch-gold) 0,#d4aa7a 100%);width:70%;border-radius:26px 0 0 26px;transition:width .5s cubic-bezier(.23,1,.32,1);position:relative}.chart-fill::after{content:'';position:absolute;top:0;left:0;right:0;height:50%;background:rgba(255,255,255,.15);border-radius:26px 0 0 0}</style>
 <script>
     tailwind.config = {
       theme: { extend: { colors: {
@@ -176,18 +118,7 @@
     }
   ]
 }</script><!-- Meta Pixel Code -->
-<script>
-(function(){var d=false;function l(){if(d)return;d=true;
-!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
-document,'script','https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '984298931136124');fbq('track', 'PageView');}
-['pointerdown','scroll','keydown','touchstart'].forEach(function(e){
-window.addEventListener(e,l,{passive:true,once:true});});
-setTimeout(l,4000);})();
-</script>
+<script>!function(){var e=!1;function n(){var n,t,o,c,a,s;e||(e=!0,n=window,t=document,o="script",n.fbq||(c=n.fbq=function(){c.callMethod?c.callMethod.apply(c,arguments):c.queue.push(arguments)},n._fbq||(n._fbq=c),c.push=c,c.loaded=!0,c.version="2.0",c.queue=[],(a=t.createElement(o)).async=!0,a.src="https://connect.facebook.net/en_US/fbevents.js",(s=t.getElementsByTagName(o)[0]).parentNode.insertBefore(a,s)),fbq("init","984298931136124"),fbq("track","PageView"))}["pointerdown","scroll","keydown","touchstart"].forEach(function(e){window.addEventListener(e,n,{passive:!0,once:!0})}),setTimeout(n,4e3)}();</script>
 <noscript><img alt="Facebook Pixel" height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=984298931136124&ev=PageView&noscript=1"
 /></noscript>
@@ -424,82 +355,6 @@ src="https://www.facebook.com/tr?id=984298931136124&ev=PageView&noscript=1"
 </div>
 </footer>
 <script src="../script.js" defer></script>
-<script>
-        const fmt = n => '$' + Math.round(n).toLocaleString('en-NZ');
-
-        function calcResults(balance, annualRate, termYears, extra) {
-            const r = annualRate / 100 / 12;
-            const n = termYears * 12;
-            const stdPayment = r === 0 ? balance / n : balance * r * Math.pow(1 + r, n) / (Math.pow(1 + r, n) - 1);
-
-            // Total interest without extra
-            const totalInterestStd = stdPayment * n - balance;
-
-            // Simulate with extra payment
-            let bal = balance;
-            let totalInterestExtra = 0;
-            let monthsExtra = 0;
-            const payment = stdPayment + extra;
-            while (bal > 0 && monthsExtra < n) {
-                const interest = bal * r;
-                const principal = Math.min(payment - interest, bal);
-                totalInterestExtra += interest;
-                bal -= principal;
-                monthsExtra++;
-                if (principal <= 0) break;
-            }
-
-            return {
-                oldInterest: totalInterestStd,
-                interestSaved: totalInterestStd - totalInterestExtra,
-                newMonths: monthsExtra,
-                savedMonths: n - monthsExtra,
-                stdPayment
-            };
-        }
-
-        function fmtMonths(m) {
-            const y = Math.floor(m / 12);
-            const mo = m % 12;
-            if (y === 0) return mo + ' Mo';
-            if (mo === 0) return y + ' Yr' + (y !== 1 ? 's' : '');
-            return y + ' Yr' + (y !== 1 ? 's' : '') + ', ' + mo + ' Mo';
-        }
-
-        function update() {
-            const balance = +document.getElementById('balance-range').value;
-            const rate = +document.getElementById('rate-range').value;
-            const term = +document.getElementById('term-range').value;
-            const extra = +document.getElementById('extra-range').value;
-
-            document.getElementById('balance-value').textContent = fmt(balance);
-            document.getElementById('rate-value').textContent = rate.toFixed(2) + '%';
-            document.getElementById('term-value').textContent = term + ' Year' + (term !== 1 ? 's' : '');
-            document.getElementById('extra-value').textContent = fmt(extra);
-
-            const res = calcResults(balance, rate, term, extra);
-
-            document.getElementById('interest-saved').textContent = fmt(res.interestSaved);
-            document.getElementById('old-interest').textContent = fmt(res.oldInterest);
-            document.getElementById('new-term').textContent = fmtMonths(res.newMonths);
-
-            document.getElementById('time-saved').textContent = 'Saved ' + fmtMonths(res.savedMonths);
-
-            // Update time saved visualization
-            const pct = (res.newMonths / (term * 12)) * 100;
-            const fill = document.querySelector('.chart-fill');
-            if (fill) fill.style.width = pct.toFixed(1) + '%';
-
-            // Update original term label
-            const termLabel = document.querySelector('.flex.justify-between.text-xs span:last-child');
-            if (termLabel) termLabel.textContent = 'Original ' + term + ' Year' + (term !== 1 ? 's' : '');
-        }
-
-        ['balance-range', 'rate-range', 'term-range', 'extra-range'].forEach(id => {
-            document.getElementById(id).addEventListener('input', update);
-        });
-
-        update();
-    </script>
+<script>const fmt=t=>"$"+Math.round(t).toLocaleString("en-NZ");function calcResults(t,e,n,o){const a=e/100/12,d=12*n,r=0===a?t/d:t*a*Math.pow(1+a,d)/(Math.pow(1+a,d)-1),l=r*d-t;let m=t,s=0,c=0;const u=r+o;for(;m>0&&c<d;){const t=m*a,e=Math.min(u-t,m);if(s+=t,m-=e,c++,e<=0)break}return{oldInterest:l,interestSaved:l-s,newMonths:c,savedMonths:d-c,stdPayment:r}}function fmtMonths(t){const e=Math.floor(t/12),n=t%12;return 0===e?n+" Mo":0===n?e+" Yr"+(1!==e?"s":""):e+" Yr"+(1!==e?"s":"")+", "+n+" Mo"}function update(){const t=+document.getElementById("balance-range").value,e=+document.getElementById("rate-range").value,n=+document.getElementById("term-range").value,o=+document.getElementById("extra-range").value;document.getElementById("balance-value").textContent=fmt(t),document.getElementById("rate-value").textContent=e.toFixed(2)+"%",document.getElementById("term-value").textContent=n+" Year"+(1!==n?"s":""),document.getElementById("extra-value").textContent=fmt(o);const a=calcResults(t,e,n,o);document.getElementById("interest-saved").textContent=fmt(a.interestSaved),document.getElementById("old-interest").textContent=fmt(a.oldInterest),document.getElementById("new-term").textContent=fmtMonths(a.newMonths),document.getElementById("time-saved").textContent="Saved "+fmtMonths(a.savedMonths);const d=a.newMonths/(12*n)*100,r=document.querySelector(".chart-fill");r&&(r.style.width=d.toFixed(1)+"%");const l=document.querySelector(".flex.justify-between.text-xs span:last-child");l&&(l.textContent="Original "+n+" Year"+(1!==n?"s":""))}["balance-range","rate-range","term-range","extra-range"].forEach(t=>{document.getElementById(t).addEventListener("input",update)}),update();</script>
 </body>
 </html>

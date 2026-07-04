@@ -101,18 +101,7 @@
     }
   ]
 }</script><!-- Meta Pixel Code -->
-<script>
-(function(){var d=false;function l(){if(d)return;d=true;
-!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
-document,'script','https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '984298931136124');fbq('track', 'PageView');}
-['pointerdown','scroll','keydown','touchstart'].forEach(function(e){
-window.addEventListener(e,l,{passive:true,once:true});});
-setTimeout(l,4000);})();
-</script>
+<script>!function(){var e=!1;function n(){var n,t,o,c,a,s;e||(e=!0,n=window,t=document,o="script",n.fbq||(c=n.fbq=function(){c.callMethod?c.callMethod.apply(c,arguments):c.queue.push(arguments)},n._fbq||(n._fbq=c),c.push=c,c.loaded=!0,c.version="2.0",c.queue=[],(a=t.createElement(o)).async=!0,a.src="https://connect.facebook.net/en_US/fbevents.js",(s=t.getElementsByTagName(o)[0]).parentNode.insertBefore(a,s)),fbq("init","984298931136124"),fbq("track","PageView"))}["pointerdown","scroll","keydown","touchstart"].forEach(function(e){window.addEventListener(e,n,{passive:!0,once:!0})}),setTimeout(n,4e3)}();</script>
 <noscript><img alt="Facebook Pixel" height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=984298931136124&ev=PageView&noscript=1"
 /></noscript>
@@ -319,34 +308,5 @@ src="https://www.facebook.com/tr?id=984298931136124&ev=PageView&noscript=1"
 </div>
 </footer>
 <script src="../script.js" defer></script>
-<script>
-const rsBalance = document.getElementById('rs-balance');
-  const rsTerm    = document.getElementById('rs-term');
-  const rsCurrent = document.getElementById('rs-current');
-  const rsNew     = document.getElementById('rs-new');
-  function fmt(n){return '$'+Math.round(n).toLocaleString();}
-  function calcRS(){
-    const bal = parseFloat(rsBalance.value)||480000;
-    const t   = parseInt(rsTerm.value)||25;
-    const rC  = parseFloat(rsCurrent.value)/100;
-    const rN  = parseFloat(rsNew.value)/100;
-    const n   = t*12;
-    const mC  = rC/12; const mN = rN/12;
-    const pmtC = bal * mC * Math.pow(1+mC,n) / (Math.pow(1+mC,n)-1);
-    const pmtN = bal * mN * Math.pow(1+mN,n) / (Math.pow(1+mN,n)-1);
-    const monthly = pmtC - pmtN;
-    const annual = monthly * 12;
-    const total = annual * t;
-    document.getElementById('rs-cur-lbl').textContent = parseFloat(rsCurrent.value).toFixed(2)+'%';
-    document.getElementById('rs-new-lbl').textContent = parseFloat(rsNew.value).toFixed(2)+'%';
-    document.getElementById('rs-cur-pmt').textContent = fmt(pmtC);
-    document.getElementById('rs-new-pmt').textContent = fmt(pmtN);
-    document.getElementById('rs-monthly-save').textContent = monthly>0 ? fmt(monthly) : fmt(0);
-    document.getElementById('rs-sub').textContent = monthly>0 ? 'You could save '+fmt(monthly)+'/month' : 'Lower your current rate to see savings';
-    document.getElementById('rs-annual').textContent = monthly>0 ? fmt(annual)+'/yr' : '-';
-    document.getElementById('rs-total').textContent = monthly>0 ? fmt(total)+' total' : '-';
-  }
-  [rsBalance,rsTerm,rsCurrent,rsNew].forEach(el=>el.addEventListener('input',calcRS));
-  calcRS();
-</script>
+<script>const rsBalance=document.getElementById("rs-balance"),rsTerm=document.getElementById("rs-term"),rsCurrent=document.getElementById("rs-current"),rsNew=document.getElementById("rs-new");function fmt(t){return"$"+Math.round(t).toLocaleString()}function calcRS(){const t=parseFloat(rsBalance.value)||48e4,e=parseInt(rsTerm.value)||25,n=12*e,r=parseFloat(rsCurrent.value)/100/12,o=parseFloat(rsNew.value)/100/12,a=t*r*Math.pow(1+r,n)/(Math.pow(1+r,n)-1),s=t*o*Math.pow(1+o,n)/(Math.pow(1+o,n)-1),l=a-s,m=12*l,u=m*e;document.getElementById("rs-cur-lbl").textContent=parseFloat(rsCurrent.value).toFixed(2)+"%",document.getElementById("rs-new-lbl").textContent=parseFloat(rsNew.value).toFixed(2)+"%",document.getElementById("rs-cur-pmt").textContent=fmt(a),document.getElementById("rs-new-pmt").textContent=fmt(s),document.getElementById("rs-monthly-save").textContent=fmt(l>0?l:0),document.getElementById("rs-sub").textContent=l>0?"You could save "+fmt(l)+"/month":"Lower your current rate to see savings",document.getElementById("rs-annual").textContent=l>0?fmt(m)+"/yr":"-",document.getElementById("rs-total").textContent=l>0?fmt(u)+" total":"-"}[rsBalance,rsTerm,rsCurrent,rsNew].forEach(t=>t.addEventListener("input",calcRS)),calcRS();</script>
 </body></html>

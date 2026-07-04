@@ -114,18 +114,7 @@
   ]
 }</script>
 <!-- Meta Pixel Code -->
-<script>
-(function(){var d=false;function l(){if(d)return;d=true;
-!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
-document,'script','https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '984298931136124');fbq('track', 'PageView');}
-['pointerdown','scroll','keydown','touchstart'].forEach(function(e){
-window.addEventListener(e,l,{passive:true,once:true});});
-setTimeout(l,4000);})();
-</script>
+<script>!function(){var e=!1;function n(){var n,t,o,c,a,s;e||(e=!0,n=window,t=document,o="script",n.fbq||(c=n.fbq=function(){c.callMethod?c.callMethod.apply(c,arguments):c.queue.push(arguments)},n._fbq||(n._fbq=c),c.push=c,c.loaded=!0,c.version="2.0",c.queue=[],(a=t.createElement(o)).async=!0,a.src="https://connect.facebook.net/en_US/fbevents.js",(s=t.getElementsByTagName(o)[0]).parentNode.insertBefore(a,s)),fbq("init","984298931136124"),fbq("track","PageView"))}["pointerdown","scroll","keydown","touchstart"].forEach(function(e){window.addEventListener(e,n,{passive:!0,once:!0})}),setTimeout(n,4e3)}();</script>
 <noscript><img alt="Facebook Pixel" height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=984298931136124&ev=PageView&noscript=1"
 /></noscript>
@@ -218,52 +207,7 @@ src="https://www.facebook.com/tr?id=984298931136124&ev=PageView&noscript=1"
 <h1>Real Results for<br/><em style="font-style:italic;color:var(--finch-forest);">Real New Zealanders.</em></h1>
 <p>Every client situation is different. These case studies show how Finch finds creative solutions where others say no — and delivers outcomes that genuinely change lives.</p>
 </section>
-<style>
-    .cs-accordion {
-      border: 1.5px solid rgba(98,162,154,0.2);
-      border-radius: 1.25rem;
-      overflow: hidden;
-      background: white;
-      margin-bottom: 1.5rem;
-      transition: box-shadow 0.25s, border-color 0.25s;
-    }
-    .cs-accordion:hover { box-shadow: 0 8px 32px rgba(16,68,62,0.1); border-color: rgba(98,162,154,0.4); }
-    .cs-accordion.cs-open { border-color: var(--finch-sage); box-shadow: 0 12px 40px rgba(16,68,62,0.13); }
-    .cs-header {
-      padding: 2rem 2.5rem;
-      display: flex; align-items: center; gap: 2rem; flex-wrap: wrap;
-    }
-    .cs-header-left { flex: 1; min-width: 200px; }
-    .cs-header-stats { display: flex; gap: 2rem; flex-shrink: 0; align-items: center; }
-    .cs-stat-big { text-align: center; }
-    .cs-stat-big-num { font-size: 1.75rem; font-weight: 800; color: var(--finch-forest); line-height: 1; }
-    .cs-stat-big-lbl { font-size: 0.65rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.07em; color: var(--neutral-medGray); margin-top: 0.2rem; }
-    .cs-expand-btn {
-      width: 100%; text-align: left; background: rgba(98,162,154,0.06);
-      border: none; border-top: 1.5px solid rgba(98,162,154,0.15);
-      padding: 1rem 2.5rem; display: flex; align-items: center; justify-content: space-between;
-      cursor: pointer; font-size: 0.8rem; font-weight: 700; text-transform: uppercase;
-      letter-spacing: 0.07em; color: var(--finch-forest); transition: background 0.2s;
-    }
-    .cs-expand-btn:hover { background: rgba(98,162,154,0.12); }
-    .cs-expand-chevron { transition: transform 0.3s cubic-bezier(0.23,1,0.32,1); }
-    .cs-open .cs-expand-chevron { transform: rotate(180deg); }
-    .cs-detail {
-      max-height: 0; overflow: hidden;
-      transition: max-height 0.5s cubic-bezier(0.23,1,0.32,1);
-    }
-    .cs-detail-inner { padding: 2.5rem; border-top: 1.5px solid rgba(98,162,154,0.15); }
-    .cs-detail-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; margin-bottom: 2rem; }
-    @media (max-width: 680px) { .cs-detail-grid { grid-template-columns: 1fr; } .cs-header { flex-direction: column; } .cs-header-stats { flex-wrap: wrap; gap: 1rem; } }
-    .cs-detail-section h4 { font-size: 0.7rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; color: var(--finch-sage); margin-bottom: 0.75rem; }
-    .cs-detail-section p, .cs-detail-section li { font-size: 0.95rem; color: var(--neutral-medGray); line-height: 1.75; }
-    .cs-detail-section ul { padding-left: 1.25rem; }
-    .cs-detail-section li { margin-bottom: 0.3rem; }
-    .cs-quote { background: var(--finch-mist); border-left: 3px solid var(--finch-gold); border-radius: 0 0.75rem 0.75rem 0; padding: 1.25rem 1.5rem; margin: 1.5rem 0; }
-    .cs-quote blockquote { font-style: italic; color: var(--neutral-black); line-height: 1.7; font-size: 0.975rem; }
-    .cs-quote cite { display: block; margin-top: 0.5rem; font-size: 0.75rem; font-weight: 700; color: var(--finch-forest); font-style: normal; }
-    .cs-read-link { display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.85rem; font-weight: 700; color: var(--finch-forest); text-decoration: none; border-bottom: 2px solid var(--finch-sage); padding-bottom: 0.1rem; }
-  </style>
+<style>.cs-accordion{border:1.5px solid rgba(98,162,154,.2);border-radius:1.25rem;overflow:hidden;background:#fff;margin-bottom:1.5rem;transition:box-shadow .25s,border-color .25s}.cs-accordion:hover{box-shadow:0 8px 32px rgba(16,68,62,.1);border-color:rgba(98,162,154,.4)}.cs-accordion.cs-open{border-color:var(--finch-sage);box-shadow:0 12px 40px rgba(16,68,62,.13)}.cs-header{padding:2rem 2.5rem;display:flex;align-items:center;gap:2rem;flex-wrap:wrap}.cs-header-left{flex:1;min-width:200px}.cs-header-stats{display:flex;gap:2rem;flex-shrink:0;align-items:center}.cs-stat-big{text-align:center}.cs-stat-big-num{font-size:1.75rem;font-weight:800;color:var(--finch-forest);line-height:1}.cs-stat-big-lbl{font-size:.65rem;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--neutral-medGray);margin-top:.2rem}.cs-expand-btn{width:100%;text-align:left;background:rgba(98,162,154,.06);border:none;border-top:1.5px solid rgba(98,162,154,.15);padding:1rem 2.5rem;display:flex;align-items:center;justify-content:space-between;cursor:pointer;font-size:.8rem;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--finch-forest);transition:background .2s}.cs-expand-btn:hover{background:rgba(98,162,154,.12)}.cs-expand-chevron{transition:transform .3s cubic-bezier(.23,1,.32,1)}.cs-open .cs-expand-chevron{transform:rotate(180deg)}.cs-detail{max-height:0;overflow:hidden;transition:max-height .5s cubic-bezier(.23,1,.32,1)}.cs-detail-inner{padding:2.5rem;border-top:1.5px solid rgba(98,162,154,.15)}.cs-detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;margin-bottom:2rem}@media (max-width:680px){.cs-detail-grid{grid-template-columns:1fr}.cs-header{flex-direction:column}.cs-header-stats{flex-wrap:wrap;gap:1rem}}.cs-detail-section h4{font-size:.7rem;font-weight:800;text-transform:uppercase;letter-spacing:.1em;color:var(--finch-sage);margin-bottom:.75rem}.cs-detail-section li,.cs-detail-section p{font-size:.95rem;color:var(--neutral-medGray);line-height:1.75}.cs-detail-section ul{padding-left:1.25rem}.cs-detail-section li{margin-bottom:.3rem}.cs-quote{background:var(--finch-mist);border-left:3px solid var(--finch-gold);border-radius:0 .75rem .75rem 0;padding:1.25rem 1.5rem;margin:1.5rem 0}.cs-quote blockquote{font-style:italic;color:var(--neutral-black);line-height:1.7;font-size:.975rem}.cs-quote cite{display:block;margin-top:.5rem;font-size:.75rem;font-weight:700;color:var(--finch-forest);font-style:normal}.cs-read-link{display:inline-flex;align-items:center;gap:.4rem;font-size:.85rem;font-weight:700;color:var(--finch-forest);text-decoration:none;border-bottom:2px solid var(--finch-sage);padding-bottom:.1rem}</style>
 <section style="padding:1rem 0 6rem;background:white;">
 <div class="container" style="max-width:860px;">
 <!-- ── Case Study 1 ── -->
@@ -696,23 +640,7 @@ src="https://www.facebook.com/tr?id=984298931136124&ev=PageView&noscript=1"
 </div>
 </div>
 </section>
-<script>
-    function toggleCs(btn) {
-      const accordion = btn.closest('.cs-accordion');
-      const detail = accordion.querySelector('.cs-detail');
-      const isOpen = accordion.classList.contains('cs-open');
-      document.querySelectorAll('.cs-accordion').forEach(a => {
-        a.classList.remove('cs-open');
-        a.querySelector('.cs-detail').style.maxHeight = '0';
-        a.querySelector('.cs-expand-btn span').textContent = 'Expand Full Story';
-      });
-      if (!isOpen) {
-        accordion.classList.add('cs-open');
-        detail.style.maxHeight = detail.scrollHeight + 'px';
-        btn.querySelector('span').textContent = 'Collapse Story';
-      }
-    }
-  </script>
+<script>function toggleCs(e){const t=e.closest(".cs-accordion"),s=t.querySelector(".cs-detail"),c=t.classList.contains("cs-open");document.querySelectorAll(".cs-accordion").forEach(e=>{e.classList.remove("cs-open"),e.querySelector(".cs-detail").style.maxHeight="0",e.querySelector(".cs-expand-btn span").textContent="Expand Full Story"}),c||(t.classList.add("cs-open"),s.style.maxHeight=s.scrollHeight+"px",e.querySelector("span").textContent="Collapse Story")}</script>
 <section style="padding:5rem 0;">
 <div class="container"><div class="cta-section reveal">
 <h2>Your success story<br/>starts here.</h2>

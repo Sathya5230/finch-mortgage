@@ -101,18 +101,7 @@
     }
   ]
 }</script><!-- Meta Pixel Code -->
-<script>
-(function(){var d=false;function l(){if(d)return;d=true;
-!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
-document,'script','https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '984298931136124');fbq('track', 'PageView');}
-['pointerdown','scroll','keydown','touchstart'].forEach(function(e){
-window.addEventListener(e,l,{passive:true,once:true});});
-setTimeout(l,4000);})();
-</script>
+<script>!function(){var e=!1;function n(){var n,t,o,c,a,s;e||(e=!0,n=window,t=document,o="script",n.fbq||(c=n.fbq=function(){c.callMethod?c.callMethod.apply(c,arguments):c.queue.push(arguments)},n._fbq||(n._fbq=c),c.push=c,c.loaded=!0,c.version="2.0",c.queue=[],(a=t.createElement(o)).async=!0,a.src="https://connect.facebook.net/en_US/fbevents.js",(s=t.getElementsByTagName(o)[0]).parentNode.insertBefore(a,s)),fbq("init","984298931136124"),fbq("track","PageView"))}["pointerdown","scroll","keydown","touchstart"].forEach(function(e){window.addEventListener(e,n,{passive:!0,once:!0})}),setTimeout(n,4e3)}();</script>
 <noscript><img alt="Facebook Pixel" height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=984298931136124&ev=PageView&noscript=1"
 /></noscript>
@@ -324,34 +313,5 @@ src="https://www.facebook.com/tr?id=984298931136124&ev=PageView&noscript=1"
 </div>
 </footer>
 <script src="../script.js" defer></script>
-<script>
-function fmt(n){ return '$' + Math.round(n/1000)*1000 < 0 ? '$0' : '$' + Math.round(n/1000)*1000; }
-  function calcBP(){
-    const inc1 = parseFloat(document.getElementById('bp-inc1').value)||0;
-    const inc2 = parseFloat(document.getElementById('bp-inc2').value)||0;
-    const exp  = parseFloat(document.getElementById('bp-exp').value)||0;
-    const debt = parseFloat(document.getElementById('bp-debt').value)||0;
-    const deps = parseInt(document.getElementById('bp-dep').value)||0;
-    const totalIncome = inc1 + inc2;
-    const monthlyIncome = totalIncome / 12;
-    const depAllowance = deps * 450;
-    const netMonthly = monthlyIncome - exp - debt - depAllowance;
-    // Stress test at 8% (typical NZ assessment rate)
-    const assessRate = 0.08 / 12;
-    const n = 30 * 12;
-    const maxMonthly = netMonthly * 0.65;
-    const borrow = maxMonthly * (Math.pow(1+assessRate,n)-1) / (assessRate * Math.pow(1+assessRate,n));
-    const borrowRnd = Math.max(0, Math.round(borrow/10000)*10000);
-    const price = Math.round(borrowRnd / 0.8 / 10000) * 10000;
-    const deposit = price - borrowRnd;
-    const wRate = 0.065/52, wN=30*52;
-    const weekly = borrowRnd > 0 ? borrowRnd * wRate * Math.pow(1+wRate,wN)/(Math.pow(1+wRate,wN)-1) : 0;
-
-    document.getElementById('bp-result').textContent = borrowRnd > 0 ? '~$' + borrowRnd.toLocaleString() : 'Reassess inputs';
-    document.getElementById('bp-price').textContent = '~$' + price.toLocaleString();
-    document.getElementById('bp-deposit').textContent = '~$' + deposit.toLocaleString();
-    document.getElementById('bp-weekly').textContent = '~$' + Math.round(weekly).toLocaleString() + '/wk';
-  }
-  calcBP();
-</script>
+<script>function fmt(e){return"$"+1e3*Math.round(e/1e3)<0?"$0":"$"+1e3*Math.round(e/1e3)}function calcBP(){const e=.08/12,t=.65*(((parseFloat(document.getElementById("bp-inc1").value)||0)+(parseFloat(document.getElementById("bp-inc2").value)||0))/12-(parseFloat(document.getElementById("bp-exp").value)||0)-(parseFloat(document.getElementById("bp-debt").value)||0)-450*(parseInt(document.getElementById("bp-dep").value)||0))*(Math.pow(1+e,360)-1)/(e*Math.pow(1+e,360)),n=Math.max(0,1e4*Math.round(t/1e4)),o=1e4*Math.round(n/.8/1e4),a=o-n,d=.00125,l=n>0?n*d*Math.pow(1.00125,1560)/(Math.pow(1.00125,1560)-1):0;document.getElementById("bp-result").textContent=n>0?"~$"+n.toLocaleString():"Reassess inputs",document.getElementById("bp-price").textContent="~$"+o.toLocaleString(),document.getElementById("bp-deposit").textContent="~$"+a.toLocaleString(),document.getElementById("bp-weekly").textContent="~$"+Math.round(l).toLocaleString()+"/wk"}calcBP();</script>
 </body></html>

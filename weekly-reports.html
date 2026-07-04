@@ -31,74 +31,7 @@
 <link href="/favicon.png" rel="icon" type="image/png"/>
 
 <link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/><link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" onload="this.onload=null;this.rel='stylesheet'"/><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"/></noscript><link href="style.css" rel="stylesheet"/>
-<style>
-    .report-card {
-      background: white;
-      border: 1px solid rgba(98,162,154,0.35);
-      border-radius: 1.25rem;
-      padding: 2rem;
-      display: flex;
-      flex-direction: column;
-      gap: 0.75rem;
-      transition: box-shadow 0.2s, transform 0.2s, border-color 0.2s;
-      text-decoration: none;
-      color: inherit;
-    }
-    .report-card:hover {
-      box-shadow: 0 8px 30px rgba(16,68,62,0.1);
-      transform: translateY(-3px);
-      border-color: var(--finch-forest);
-    }
-    .report-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.4rem;
-      font-size: 0.65rem;
-      font-weight: 800;
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-      padding: 0.25rem 0.75rem;
-      border-radius: 999px;
-      width: fit-content;
-    }
-    .badge-latest { background: var(--finch-forest); color: white; }
-    .badge-rates  { background: #EFF6FF; color: #1D4ED8; }
-    .badge-region { background: #FFF7ED; color: #C2410C; }
-    .badge-invest { background: #F0FDF4; color: #15803D; }
-    .badge-first  { background: #FDF4FF; color: #7E22CE; }
-    .report-week {
-      font-size: 0.7rem;
-      color: var(--neutral-warmGray);
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-    }
-    .report-title {
-      font-size: 1.1rem;
-      font-weight: 700;
-      color: var(--neutral-black);
-      line-height: 1.35;
-    }
-    .report-excerpt {
-      font-size: 0.83rem;
-      color: var(--neutral-medGray);
-      line-height: 1.65;
-    }
-    .report-meta {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      font-size: 0.75rem;
-      color: var(--neutral-warmGray);
-      margin-top: auto;
-      padding-top: 0.75rem;
-      border-top: 1px solid rgba(98,162,154,0.3);
-    }
-    .report-meta strong {
-      color: var(--finch-forest);
-      font-weight: 700;
-    }
-  </style>
+<style>.report-card{background:#fff;border:1px solid rgba(98,162,154,.35);border-radius:1.25rem;padding:2rem;display:flex;flex-direction:column;gap:.75rem;transition:box-shadow .2s,transform .2s,border-color .2s;text-decoration:none;color:inherit}.report-card:hover{box-shadow:0 8px 30px rgba(16,68,62,.1);transform:translateY(-3px);border-color:var(--finch-forest)}.report-badge{display:inline-flex;align-items:center;gap:.4rem;font-size:.65rem;font-weight:800;text-transform:uppercase;letter-spacing:.12em;padding:.25rem .75rem;border-radius:999px;width:fit-content}.badge-latest{background:var(--finch-forest);color:#fff}.badge-rates{background:#eff6ff;color:#1d4ed8}.badge-region{background:#fff7ed;color:#c2410c}.badge-invest{background:#f0fdf4;color:#15803d}.badge-first{background:#fdf4ff;color:#7e22ce}.report-week{font-size:.7rem;color:var(--neutral-warmGray);font-weight:700;text-transform:uppercase;letter-spacing:.1em}.report-title{font-size:1.1rem;font-weight:700;color:var(--neutral-black);line-height:1.35}.report-excerpt{font-size:.83rem;color:var(--neutral-medGray);line-height:1.65}.report-meta{display:flex;align-items:center;justify-content:space-between;font-size:.75rem;color:var(--neutral-warmGray);margin-top:auto;padding-top:.75rem;border-top:1px solid rgba(98,162,154,.3)}.report-meta strong{color:var(--finch-forest);font-weight:700}</style>
 <script type="application/ld+json">{
   "@context": "https://schema.org",
   "@graph": [
@@ -204,18 +137,7 @@
   ]
 }</script>
 <!-- Meta Pixel Code -->
-<script>
-(function(){var d=false;function l(){if(d)return;d=true;
-!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
-document,'script','https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '984298931136124');fbq('track', 'PageView');}
-['pointerdown','scroll','keydown','touchstart'].forEach(function(e){
-window.addEventListener(e,l,{passive:true,once:true});});
-setTimeout(l,4000);})();
-</script>
+<script>!function(){var e=!1;function n(){var n,t,o,c,a,s;e||(e=!0,n=window,t=document,o="script",n.fbq||(c=n.fbq=function(){c.callMethod?c.callMethod.apply(c,arguments):c.queue.push(arguments)},n._fbq||(n._fbq=c),c.push=c,c.loaded=!0,c.version="2.0",c.queue=[],(a=t.createElement(o)).async=!0,a.src="https://connect.facebook.net/en_US/fbevents.js",(s=t.getElementsByTagName(o)[0]).parentNode.insertBefore(a,s)),fbq("init","984298931136124"),fbq("track","PageView"))}["pointerdown","scroll","keydown","touchstart"].forEach(function(e){window.addEventListener(e,n,{passive:!0,once:!0})}),setTimeout(n,4e3)}();</script>
 <noscript><img alt="Facebook Pixel" height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=984298931136124&ev=PageView&noscript=1"
 /></noscript>
@@ -531,26 +453,6 @@ src="https://www.facebook.com/tr?id=984298931136124&ev=PageView&noscript=1"
 </div>
 </footer>
 <script src="script.js" defer></script>
-<script>
-// Category filter
-  function filterReports(cat) {
-    const cards = document.querySelectorAll('#reports-grid .report-card');
-    const btns  = document.querySelectorAll('[id^="filter-"]');
-    btns.forEach(b => {
-      b.style.background = 'white';
-      b.style.color = 'var(--neutral-black)';
-      b.style.borderColor = 'rgba(98,162,154,0.5)';
-    });
-    const active = document.getElementById('filter-' + cat);
-    if (active) {
-      active.style.background = 'var(--finch-forest)';
-      active.style.color = 'white';
-      active.style.borderColor = 'var(--finch-forest)';
-    }
-    cards.forEach(card => {
-      card.style.display = (cat === 'all' || card.dataset.category === cat) ? '' : 'none';
-    });
-  }
-</script>
+<script>function filterReports(e){const r=document.querySelectorAll("#reports-grid .report-card");document.querySelectorAll('[id^="filter-"]').forEach(e=>{e.style.background="white",e.style.color="var(--neutral-black)",e.style.borderColor="rgba(98,162,154,0.5)"});const t=document.getElementById("filter-"+e);t&&(t.style.background="var(--finch-forest)",t.style.color="white",t.style.borderColor="var(--finch-forest)"),r.forEach(r=>{r.style.display="all"===e||r.dataset.category===e?"":"none"})}</script>
 </body>
 </html>

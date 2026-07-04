@@ -30,64 +30,7 @@
 
 
 <link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/><link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" onload="this.onload=null;this.rel='stylesheet'"/><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"/></noscript><link href="style.css" rel="stylesheet"/>
-<style>
-    .hub-card {
-      background: white;
-      border: 1px solid rgba(98,162,154,0.4);
-      border-radius: 1.25rem;
-      padding: 3rem 2rem;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      text-decoration: none;
-      color: inherit;
-      transition: box-shadow 0.2s, transform 0.2s, border-color 0.2s;
-    }
-    .hub-card:hover {
-      box-shadow: 0 16px 40px rgba(16,68,62,0.1);
-      transform: translateY(-6px);
-      border-color: var(--finch-forest);
-    }
-    .hub-icon {
-      width: 72px;
-      height: 72px;
-      background: var(--finch-mist);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--finch-forest);
-      margin-bottom: 1.5rem;
-      border: 1px solid rgba(98,162,154,0.5);
-    }
-    .hub-title {
-      font-size: 1.5rem;
-      font-weight: 700;
-      color: var(--neutral-black);
-      margin-bottom: 1rem;
-    }
-    .hub-desc {
-      font-size: 0.95rem;
-      color: var(--neutral-medGray);
-      line-height: 1.6;
-      margin-bottom: 2rem;
-      flex-grow: 1;
-    }
-    .hub-btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      font-size: 0.85rem;
-      font-weight: 800;
-      color: var(--finch-forest);
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-    }
-    .hub-card:hover .hub-btn {
-      text-decoration: underline;
-    }
-  </style>
+<style>.hub-card{background:#fff;border:1px solid rgba(98,162,154,.4);border-radius:1.25rem;padding:3rem 2rem;display:flex;flex-direction:column;align-items:center;text-align:center;text-decoration:none;color:inherit;transition:box-shadow .2s,transform .2s,border-color .2s}.hub-card:hover{box-shadow:0 16px 40px rgba(16,68,62,.1);transform:translateY(-6px);border-color:var(--finch-forest)}.hub-icon{width:72px;height:72px;background:var(--finch-mist);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--finch-forest);margin-bottom:1.5rem;border:1px solid rgba(98,162,154,.5)}.hub-title{font-size:1.5rem;font-weight:700;color:var(--neutral-black);margin-bottom:1rem}.hub-desc{font-size:.95rem;color:var(--neutral-medGray);line-height:1.6;margin-bottom:2rem;flex-grow:1}.hub-btn{display:inline-flex;align-items:center;gap:.5rem;font-size:.85rem;font-weight:800;color:var(--finch-forest);text-transform:uppercase;letter-spacing:.05em}.hub-card:hover .hub-btn{text-decoration:underline}</style>
 <script type="application/ld+json">{
   "@context": "https://schema.org",
   "@graph": [
@@ -192,18 +135,7 @@
   ]
 }</script>
 <!-- Meta Pixel Code -->
-<script>
-(function(){var d=false;function l(){if(d)return;d=true;
-!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
-document,'script','https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '984298931136124');fbq('track', 'PageView');}
-['pointerdown','scroll','keydown','touchstart'].forEach(function(e){
-window.addEventListener(e,l,{passive:true,once:true});});
-setTimeout(l,4000);})();
-</script>
+<script>!function(){var e=!1;function n(){var n,t,o,c,a,s;e||(e=!0,n=window,t=document,o="script",n.fbq||(c=n.fbq=function(){c.callMethod?c.callMethod.apply(c,arguments):c.queue.push(arguments)},n._fbq||(n._fbq=c),c.push=c,c.loaded=!0,c.version="2.0",c.queue=[],(a=t.createElement(o)).async=!0,a.src="https://connect.facebook.net/en_US/fbevents.js",(s=t.getElementsByTagName(o)[0]).parentNode.insertBefore(a,s)),fbq("init","984298931136124"),fbq("track","PageView"))}["pointerdown","scroll","keydown","touchstart"].forEach(function(e){window.addEventListener(e,n,{passive:!0,once:!0})}),setTimeout(n,4e3)}();</script>
 <noscript><img alt="Facebook Pixel" height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=984298931136124&ev=PageView&noscript=1"
 /></noscript>

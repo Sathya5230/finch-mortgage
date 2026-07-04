@@ -130,18 +130,7 @@
     }
   ]
 }</script><!-- Meta Pixel Code -->
-<script>
-(function(){var d=false;function l(){if(d)return;d=true;
-!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
-document,'script','https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '984298931136124');fbq('track', 'PageView');}
-['pointerdown','scroll','keydown','touchstart'].forEach(function(e){
-window.addEventListener(e,l,{passive:true,once:true});});
-setTimeout(l,4000);})();
-</script>
+<script>!function(){var e=!1;function n(){var n,t,o,c,a,s;e||(e=!0,n=window,t=document,o="script",n.fbq||(c=n.fbq=function(){c.callMethod?c.callMethod.apply(c,arguments):c.queue.push(arguments)},n._fbq||(n._fbq=c),c.push=c,c.loaded=!0,c.version="2.0",c.queue=[],(a=t.createElement(o)).async=!0,a.src="https://connect.facebook.net/en_US/fbevents.js",(s=t.getElementsByTagName(o)[0]).parentNode.insertBefore(a,s)),fbq("init","984298931136124"),fbq("track","PageView"))}["pointerdown","scroll","keydown","touchstart"].forEach(function(e){window.addEventListener(e,n,{passive:!0,once:!0})}),setTimeout(n,4e3)}();</script>
 <noscript><img alt="Facebook Pixel" height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=984298931136124&ev=PageView&noscript=1"
 /></noscript>
@@ -352,36 +341,5 @@ src="https://www.facebook.com/tr?id=984298931136124&ev=PageView&noscript=1"
 </div>
 </footer>
 <script src="../script.js" defer></script>
-<script>
-  function calcDTI(){
-    const inc  = parseFloat(document.getElementById('dti-inc').value)||0;
-    const loan = parseFloat(document.getElementById('dti-loan').value)||0;
-    const mort = parseFloat(document.getElementById('dti-mort').value)||0;
-    const debt = parseFloat(document.getElementById('dti-debt').value)||0;
-    const cap  = parseFloat(document.getElementById('dti-type').value)||6;
-    const totalDebt = loan + mort + debt;
-    const dti = inc > 0 ? totalDebt / inc : 0;
-    const capDebt = inc * cap;
-    const headroom = capDebt - totalDebt;
-
-    const resultEl = document.getElementById('dti-result');
-    const subEl = document.getElementById('dti-sub');
-    resultEl.textContent = inc > 0 ? dti.toFixed(1) + 'x' : '—';
-
-    if (inc <= 0) {
-      subEl.textContent = 'Enter your income to calculate';
-    } else if (dti <= cap) {
-      subEl.textContent = 'Under the ' + cap + 'x cap — within standard lending';
-      resultEl.style.color = 'var(--finch-forest)';
-    } else {
-      subEl.textContent = 'Above the ' + cap + 'x cap — needs lender exemption headroom or a new-build';
-      resultEl.style.color = '#b5462f';
-    }
-
-    document.getElementById('dti-totaldebt').textContent = '~$' + Math.round(totalDebt).toLocaleString();
-    document.getElementById('dti-cap').textContent = cap + '.0x income';
-    document.getElementById('dti-headroom').textContent = (headroom >= 0 ? '~$' + Math.round(headroom).toLocaleString() : '−$' + Math.round(Math.abs(headroom)).toLocaleString() + ' over cap');
-  }
-  calcDTI();
-</script>
+<script>function calcDTI(){const t=parseFloat(document.getElementById("dti-inc").value)||0,e=parseFloat(document.getElementById("dti-loan").value)||0,n=parseFloat(document.getElementById("dti-mort").value)||0,o=parseFloat(document.getElementById("dti-debt").value)||0,d=parseFloat(document.getElementById("dti-type").value)||6,a=e+n+o,l=t>0?a/t:0,c=t*d-a,m=document.getElementById("dti-result"),r=document.getElementById("dti-sub");m.textContent=t>0?l.toFixed(1)+"x":"—",t<=0?r.textContent="Enter your income to calculate":l<=d?(r.textContent="Under the "+d+"x cap — within standard lending",m.style.color="var(--finch-forest)"):(r.textContent="Above the "+d+"x cap — needs lender exemption headroom or a new-build",m.style.color="#b5462f"),document.getElementById("dti-totaldebt").textContent="~$"+Math.round(a).toLocaleString(),document.getElementById("dti-cap").textContent=d+".0x income",document.getElementById("dti-headroom").textContent=c>=0?"~$"+Math.round(c).toLocaleString():"−$"+Math.round(Math.abs(c)).toLocaleString()+" over cap"}calcDTI();</script>
 </body></html>

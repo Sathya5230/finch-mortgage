@@ -130,18 +130,7 @@
     }
   ]
 }</script><!-- Meta Pixel Code -->
-<script>
-(function(){var d=false;function l(){if(d)return;d=true;
-!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
-document,'script','https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '984298931136124');fbq('track', 'PageView');}
-['pointerdown','scroll','keydown','touchstart'].forEach(function(e){
-window.addEventListener(e,l,{passive:true,once:true});});
-setTimeout(l,4000);})();
-</script>
+<script>!function(){var e=!1;function n(){var n,t,o,c,a,s;e||(e=!0,n=window,t=document,o="script",n.fbq||(c=n.fbq=function(){c.callMethod?c.callMethod.apply(c,arguments):c.queue.push(arguments)},n._fbq||(n._fbq=c),c.push=c,c.loaded=!0,c.version="2.0",c.queue=[],(a=t.createElement(o)).async=!0,a.src="https://connect.facebook.net/en_US/fbevents.js",(s=t.getElementsByTagName(o)[0]).parentNode.insertBefore(a,s)),fbq("init","984298931136124"),fbq("track","PageView"))}["pointerdown","scroll","keydown","touchstart"].forEach(function(e){window.addEventListener(e,n,{passive:!0,once:!0})}),setTimeout(n,4e3)}();</script>
 <noscript><img alt="Facebook Pixel" height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=984298931136124&ev=PageView&noscript=1"
 /></noscript>
@@ -302,36 +291,5 @@ src="https://www.facebook.com/tr?id=984298931136124&ev=PageView&noscript=1"
 </div>
 </footer>
 <script src="../script.js" defer></script>
-<script>
-  function calcYield(){
-    const price = parseFloat(document.getElementById('ry-price').value)||0;
-    const weeklyRent = parseFloat(document.getElementById('ry-rent').value)||0;
-    const rates = parseFloat(document.getElementById('ry-rates').value)||0;
-    const maint = parseFloat(document.getElementById('ry-maint').value)||0;
-    const mgmtPct = parseFloat(document.getElementById('ry-mgmt').value)||0;
-
-    const annualRent = weeklyRent * 52;
-    const mgmtFee = annualRent * (mgmtPct / 100);
-    const totalCosts = rates + maint + mgmtFee;
-    const grossYield = price > 0 ? (annualRent / price) * 100 : 0;
-    const netYield = price > 0 ? ((annualRent - totalCosts) / price) * 100 : 0;
-
-    document.getElementById('ry-gross').textContent = price > 0 ? grossYield.toFixed(1) + '%' : '—';
-    document.getElementById('ry-annual-rent').textContent = '~$' + Math.round(annualRent).toLocaleString();
-    document.getElementById('ry-costs').textContent = '~$' + Math.round(totalCosts).toLocaleString();
-    document.getElementById('ry-net').textContent = price > 0 ? netYield.toFixed(1) + '%' : '—';
-
-    const subEl = document.getElementById('ry-sub');
-    if (price <= 0) {
-      subEl.textContent = 'Enter a purchase price to calculate';
-    } else if (grossYield >= 6) {
-      subEl.textContent = 'Strong yield — typical of regional NZ markets';
-    } else if (grossYield >= 4) {
-      subEl.textContent = 'Moderate yield — typical of many NZ metro suburbs';
-    } else {
-      subEl.textContent = 'Lower yield — common in premium main-centre locations';
-    }
-  }
-  calcYield();
-</script>
+<script>function calcYield(){const e=parseFloat(document.getElementById("ry-price").value)||0,t=52*(parseFloat(document.getElementById("ry-rent").value)||0),n=(parseFloat(document.getElementById("ry-rates").value)||0)+(parseFloat(document.getElementById("ry-maint").value)||0)+t*((parseFloat(document.getElementById("ry-mgmt").value)||0)/100),o=e>0?t/e*100:0,a=e>0?(t-n)/e*100:0;document.getElementById("ry-gross").textContent=e>0?o.toFixed(1)+"%":"—",document.getElementById("ry-annual-rent").textContent="~$"+Math.round(t).toLocaleString(),document.getElementById("ry-costs").textContent="~$"+Math.round(n).toLocaleString(),document.getElementById("ry-net").textContent=e>0?a.toFixed(1)+"%":"—";const l=document.getElementById("ry-sub");l.textContent=e<=0?"Enter a purchase price to calculate":o>=6?"Strong yield — typical of regional NZ markets":o>=4?"Moderate yield — typical of many NZ metro suburbs":"Lower yield — common in premium main-centre locations"}calcYield();</script>
 </body></html>
