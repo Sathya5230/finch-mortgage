@@ -8,7 +8,7 @@ NZ-specific signals search engines use for geo-targeting:
   * geo.region / geo.placename / geo.position / ICBM meta tags
   * <meta name="language" content="en-NZ">
   * <meta property="og:locale" content="en_NZ">
-  * self-referencing hreflang="en-nz" + hreflang="x-default" (from canonical)
+  * self-referencing hreflang="en-NZ" + hreflang="x-default" (from canonical)
 
 Run this as the final step of the build pipeline, e.g. after
 generate_*_pages.py and build_internal_links.py.
@@ -58,7 +58,7 @@ def process(path: Path) -> bool:
         if canonical:
             url = canonical.group(1)
             add += (
-                f'<link href="{url}" hreflang="en-nz" rel="alternate"/>'
+                f'<link href="{url}" hreflang="en-NZ" rel="alternate"/>'
                 f'<link href="{url}" hreflang="x-default" rel="alternate"/>'
             )
 

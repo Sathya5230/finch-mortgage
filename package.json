@@ -8,7 +8,10 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:css": "npx tailwindcss@3 -c tailwind.config.js -i tailwind.src.css -o tailwind.css --minify"
+    "build:css": "npx tailwindcss@3 -c tailwind.config.js -i tailwind.src.css -o tailwind.css --minify",
+    "build:style": "npx clean-css-cli -o style.css style.src.css",
+    "build:js": "npx terser script.src.js -c -m -o script.js",
+    "build": "npm run build:css && npm run build:style && npm run build:js"
   },
   "keywords": [],
   "author": "",

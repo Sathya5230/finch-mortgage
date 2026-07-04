@@ -279,6 +279,39 @@ for filename, label, s_slug, c_slug in service_cities:
     
     inject(os.path.join(ROOT, "locations", filename), block)
 
+# ---------------------------------------------------------------- 8. individual blog post cross-links
+# Windowed round-robin so every post picks up multiple inbound links, not just
+# the one from blog.html's hub list. City pages already get their own
+# cross-linking in step 3 (same START/END markers, would be clobbered here).
+location_slugs = {slug for slug, _ in locations}
+non_location_posts = [(slug, label) for slug, label in blog_posts if slug not in location_slugs]
+n = len(non_location_posts)
+for i, (slug, label) in enumerate(non_location_posts):
+    sib = [non_location_posts[(i + j) % n] for j in range(1, 5) if n > 1]
+    links = [("../blog.html", "All Guides & Articles")] + [(f"../blog/{s2}", l2) for s2, l2 in sib]
+    block = section(
+        "Related Guides",
+        "More mortgage guidance from Finch to help you plan your next move.",
+        [(None, links)],
+        bg="white",
+    )
+    inject(os.path.join(ROOT, "blog", slug), block)
+print(f"blog posts: cross-linked {n} posts")
+
+# ---------------------------------------------------------------- 9. individual case study cross-links
+n = len(cases)
+for i, (slug, label) in enumerate(cases):
+    sib = [cases[(i + j) % n] for j in range(1, 5) if n > 1]
+    links = [("../case-studies.html", "All Case Studies")] + [(f"../case-studies/{s2}", l2) for s2, l2 in sib]
+    block = section(
+        "Related Case Studies",
+        "More real New Zealand borrower outcomes structured by Finch.",
+        [(None, links)],
+        bg="var(--finch-mist)",
+    )
+    inject(os.path.join(ROOT, "case-studies", slug), block)
+print(f"case studies: cross-linked {n} case studies")
+
 print(f"service-city pages: cross-linked {len(service_cities)} locations")
 
 print("\nDone.")
