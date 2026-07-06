@@ -63,7 +63,7 @@ SERVICES = [
     },
     {
         "slug": "self-employed",
-        "name": "Self Employed",
+        "name": "Self-Employed Mortgage",
         "title": "Self-Employed Home Loans",
         "tagline": "Secure finance using smart profit declarations and low-doc pathways.",
     },
@@ -364,8 +364,9 @@ def build_page_html(c: dict, s: dict, template_text: str) -> str:
     slug = f"{s['slug']}-{c['slug'].replace('mortgage-broker-', '')}"
     canonical = f"{BASE_URL}/locations/{slug}.html"
     
+    article = "an" if service_name[0] in "AEIOU" else "a"
     title = f"{service_name} in {city.replace('&amp;', '&')} | Finch Mortgages NZ"
-    description = f"Looking for a {service_name} in {city.replace('&amp;', '&')}? Finch compares 20+ NZ lenders to get you approved fast. $0 broker fee. Secure your loan →"
+    description = f"Looking for {article} {service_name} in {city.replace('&amp;', '&')}? Finch compares 20+ NZ lenders to get you approved fast. $0 broker fee. Secure your loan →"
     
     prose = get_service_prose(s["slug"], city, c["suburbs"], c["price_band"], c["market_note"])
     

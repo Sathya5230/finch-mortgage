@@ -148,15 +148,23 @@ The blog post and the calculator page target near-identical query variants ("how
 - Specialist/bad-credit lenders → `/lenders/specialist-lenders.html`
 - **Note**: Do not add content for lenders that don't actually operate in NZ retail mortgage lending (e.g. ING NZ does not offer home loans as of July 2026) — verify lender presence before creating pages targeting a specific bank/lender name.
 
-## Keyword Cannibalization Check (live issues, July 2026)
+## Keyword Cannibalization Check — RESOLVED 2026-07-06
 
-| Cluster | Competing Pages | Recommendation |
+All 5 known clusters below were fixed via a full seomachine enhancement pass (differentiated titles/meta/H1, added cross-links). Re-verify with real GSC data once connected.
+
+| Cluster | Competing Pages | Fix applied |
 |---|---|---|
-| First home buyer | `/guides/first-home-guide.html`, `/blog/first-home-buyer-guide-nz.html`, `/services/first-home-buyer.html` | Guide = pillar; others link in |
-| Mortgage rates | `/mortgage-rates.html`, `/blog/interest-rates-guide.html`, `/blog/current-mortgage-rates-nz-explained.html` | Rates page = pillar for live comparison; posts differentiate on angle (explainer/history) |
-| Borrowing power | `/blog/how-much-can-i-borrow.html`, `/calculators/borrowing-power.html` | Blog = informational pillar; calculator = tool, cross-link don't compete |
-| Refinance | `/guides/refinance-guide.html`, `/services/refinance.html` | Guide = informational pillar; service = commercial/booking intent |
-| Non-bank lenders | `/lenders.html`, `/lenders/non-bank-lenders.html` | Non-bank-lenders page = pillar for specific queries; hub = category overview only |
+| First home buyer | `/guides/first-home-guide.html`, `/blog/first-home-buyer-guide-nz.html`, `/services/first-home-buyer.html` | Blog post retitled to "First Home Buyer Journey NZ: Deposit to Settlement" (step-by-step angle) vs. guide's topical-reference angle; `/guides/step-by-step.html` kept as the general (non-FHB) buyer-process pillar |
+| Mortgage rates | `/mortgage-rates.html`, `/blog/interest-rates-guide.html`, `/blog/current-mortgage-rates-nz-explained.html` | `/mortgage-rates.html` expanded from ~263 words with new educational content to properly earn pillar status; stale 2025 rate tables in both blog posts replaced with links to the live rates page instead of invented numbers |
+| Borrowing power | `/blog/how-much-can-i-borrow.html`, `/calculators/borrowing-power.html` | Added missing cross-link from calculator back to the blog pillar (titles were already well-differentiated) |
+| Refinance | `/guides/refinance-guide.html`, `/services/refinance.html` | Already well-differentiated — no change needed |
+| Non-bank lenders | `/lenders.html`, `/lenders/non-bank-lenders.html` | `non-bank-lenders.html` repositioned as the pillar for "best non-bank/tier 2 lenders NZ" queries; hub page kept broad "compare all categories" framing, added explicit cross-link |
+
+## Sitewide Technical Fixes (2026-07-06)
+
+- **167 pages had wrong self-referencing structured data**: 134 pages (all of `locations/`, `case-studies/`, and most of `blog/`) had `hreflang` tags pointing at `blog/mortgage-broker-north-shore.html` instead of themselves; 33 `mortgage-broker-[suburb].html` posts had JSON-LD `url`/`@id` fields with the same wrong self-reference. All fixed by deriving the correct URL from each page's own (already-correct) canonical tag.
+- **9 blog posts had leftover duplicate JSON-LD** (a second `BlogPosting` block describing `mortgage-tips.html` instead of themselves, plus an off-topic `FAQPage` block with stale rate claims) — removed, keeping only the correct on-topic blocks.
+- **~30 pages had stale "2025" dates** presented as current in July 2026 (article date badges, rate tables, forward-looking language) — corrected to match each page's own `datePublished`/`dateModified`, or replaced invented-looking rate figures with links to `/mortgage-rates.html`.
 
 ## Usage Guidelines
 
