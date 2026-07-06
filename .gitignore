@@ -22,3 +22,27 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# seomachine (SEO content workspace) — credentials, cache, working drafts
+.venv-seomachine/
+__pycache__/
+*.py[cod]
+data_sources/config/.env
+data_sources/config/*_credentials.json
+data_sources/config/*_config.json
+data_sources/cache/*
+!data_sources/cache/.gitkeep
+credentials/
+*.key
+*.pem
+topics/*
+!topics/.gitkeep
+!topics/example-topic-idea.md
+research/*
+!research/.gitkeep
+drafts/*
+!drafts/.gitkeep
+published/*
+!published/.gitkeep
+rewrites/*
+!rewrites/.gitkeep

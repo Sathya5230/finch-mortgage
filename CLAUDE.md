@@ -63,6 +63,29 @@ Invoke all skills via the `Skill` tool before responding.
 |-------|---------|
 | `code-reviewer` | PR reviews, code quality checks, security scanning |
 
+### Marketing (from seomachine, added July 2026)
+26 additional skills covering copywriting, CRO, pricing, email, paid ads, etc. — see `.claude/skills/` for the full list. Use when the task is clearly marketing/conversion strategy rather than SEO/dev (e.g. `copywriting`, `pricing-strategy`, `email-sequence`, `content-strategy`).
+
+## SEO Content Workspace (seomachine)
+
+This repo also includes [seomachine](https://github.com/TheCraigHewitt/seomachine), a Claude Code workspace for long-form SEO content, integrated 2026-07-06. It adds:
+
+- **Commands** (`.claude/commands/`): `/research`, `/write`, `/optimize`, `/rewrite`, `/analyze-existing`, `/article`, `/cluster`, `/performance-review`, `/publish-draft`, plus landing-page and research-specific commands.
+- **Agents** (`.claude/agents/`): content-analyzer, seo-optimizer, meta-creator, internal-linker, keyword-mapper, editor, headline-generator, cro-analyst, landing-page-optimizer, performance.
+- **Context** (`context/`): brand-voice, features, internal-links-map, target-keywords, style-guide, seo-guidelines — all customized for Finch Mortgages (not the original Castos template). Read these before generating blog content.
+- **Data sources** (`data_sources/`): Python modules for GA4, Google Search Console, and DataForSEO. Python env lives in `.venv-seomachine/` (gitignored) — activate with `source .venv-seomachine/bin/activate` before running any `data_sources/modules/*.py` or root-level `research_*.py` / `seo_*.py` scripts.
+- **Working directories** (`drafts/`, `research/`, `topics/`, `rewrites/`, `published/`, `output/`): gitignored except `.gitkeep`.
+
+**Important — skill overlap**: seomachine ships its own `seo-audit`, `programmatic-seo`, and `schema-markup` skills. These were **not** installed to avoid clobbering this project's existing customized versions of the same names (see SEO table above) — only non-overlapping seomachine skills were merged in.
+
+**GSC/GA4 credentials are not yet configured.** `data_sources/config/.env` is scaffolded with `GSC_SITE_URL` and company info pre-filled, but `GA4_CREDENTIALS_PATH`/`GSC_CREDENTIALS_PATH` need a real Google Cloud service account JSON key, which only the site owner can create:
+1. console.cloud.google.com → create/select a project → enable "Google Search Console API" (and "Google Analytics Data API" for GA4)
+2. Create a service account → generate a JSON key → save to `./credentials/gsc-credentials.json` (gitignored)
+3. In Search Console (search.google.com/search-console) → Settings → Users and permissions → add the service account's email as a user
+4. Fill in `data_sources/config/.env` with the credential paths
+
+Until that's done, do not fabricate or assume GSC/GA4 data — a prior incident in this project involved acting on an unverifiable, partially-fabricated "GSC report" pasted into chat. Only trust data pulled live through `data_sources/modules/google_search_console.py` with real configured credentials, or numbers the user confirms directly from the GSC UI.
+
 ## Key Conventions
 
 - Pure static site — no build step, no framework. Keep it that way unless explicitly asked.

@@ -67,7 +67,8 @@ KEYWORDS = {
         "mortgage repayment calculator NZ, borrowing power calculator NZ, "
         "refinance savings calculator NZ, extra repayment calculator NZ, "
         "free mortgage tools NZ, NZ property calculator, home loan tools NZ, "
-        "how much can I borrow NZ calculator, mortgage payment estimator NZ"
+        "how much can I borrow NZ calculator, mortgage payment estimator NZ, "
+        "first home buyer calculator NZ"
     ),
 
     # ── Lenders hub ────────────────────────────────────────────────────────
@@ -98,7 +99,8 @@ KEYWORDS = {
         "Westpac home loan rates 2026, Kiwibank mortgage rates 2026, "
         "NZ fixed mortgage rates, NZ floating mortgage rates, OCR NZ 2026, "
         "RBNZ interest rate, NZ 1 year fixed rate, NZ 2 year fixed rate, "
-        "compare mortgage rates NZ, best mortgage rate NZ, NZ rate tracker"
+        "compare mortgage rates NZ, best mortgage rate NZ, NZ rate tracker, "
+        "home loan rates comparison NZ"
     ),
 
     # ── Refinance hub ──────────────────────────────────────────────────────
@@ -288,7 +290,8 @@ KEYWORDS = {
         "NZ borrowing limit calculator, income vs mortgage NZ, "
         "maximum home loan NZ, NZ lending criteria calculator, "
         "how much mortgage can I get NZ, DTI calculator NZ, "
-        "NZ bank borrowing capacity, free borrowing calculator NZ"
+        "NZ bank borrowing capacity, free borrowing calculator NZ, "
+        "first home buyer calculator NZ, first home buyer affordability NZ"
     ),
 
     "calculators/refinance-savings.html": (
