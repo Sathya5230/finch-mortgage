@@ -5,7 +5,7 @@ This document outlines Finch Mortgages' key services, benefits, and differentiat
 ## Core Value Propositions
 
 ### 1. **Independent Lender Comparison**
-- **Service**: Finch compares 20+ NZ lenders — major banks (ANZ, ASB, BNZ, Kiwibank, Westpac, TSB) and non-bank/specialist lenders (Resimac, Pepper Money, Liberty Financial, Avanti Finance, Heartland Bank, credit unions, and others) — rather than representing one bank.
+- **Service**: Finch compares 20+ NZ lenders — major banks (ANZ, ASB, BNZ, Westpac, TSB) and non-bank/specialist lenders (Resimac, Pepper Money, Liberty Financial, Avanti Finance, Heartland Bank, credit unions, and others) — rather than representing one bank.
 - **Benefit**: The recommendation fits the client's situation, not one bank's current risk appetite.
 - **Conversion Angle**: "We compare NZ's banks and non-bank lenders side by side, so you get the option that actually fits — not just what one bank is willing to offer this month."
 

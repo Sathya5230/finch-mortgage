@@ -13,7 +13,7 @@ This document defines the Finch Mortgages brand voice, tone, and messaging frame
 ### 2. Independent & Client-First
 - **What it means**: Finch is an independent broker (not tied to one bank), compares 20+ NZ lenders, and charges $0 broker fee to the client (paid by the lender instead).
 - **How it sounds**: Framing advice around "what's best for you" vs. "what one bank offers."
-- **Example**: "We compare ANZ, ASB, BNZ, Kiwibank, and a dozen non-bank lenders side by side, so the recommendation is based on your situation, not a single bank's book."
+- **Example**: "We compare ANZ, ASB, BNZ, Westpac, and a dozen non-bank lenders side by side, so the recommendation is based on your situation, not a single bank's book."
 - **Avoid**: Implying any one lender is always best; never disparage a specific bank or lender by name.
 
 ### 3. Experienced, Not Corporate
@@ -66,7 +66,7 @@ Imagine an experienced NZ mortgage adviser who used to work inside the banks, si
 #### Message 1: Independent Comparison
 - **Concept**: Finch compares NZ's major banks and non-bank lenders instead of pushing one bank's product.
 - **Key Points**:
-  - 20+ lenders including ANZ, ASB, BNZ, Kiwibank, Westpac, TSB, SBS, plus non-bank/specialist lenders
+  - 20+ lenders including ANZ, ASB, BNZ, Westpac, TSB, SBS, plus non-bank/specialist lenders
   - Recommendation is matched to the client's situation, not a single bank's appetite
   - Especially valuable for self-employed, low-deposit, or previously-declined clients
 - **Usage**: Homepage, lenders pages, comparison content, "why use a broker" content

@@ -34,7 +34,7 @@
 ## 2. What Finch Mortgages Does (Direct Answer for AI)
 
 **Q: What is Finch Mortgages?**
-Finch Mortgages is a New Zealand mortgage broker that compares home loans, refinances, and investment property finance across 20+ NZ lenders — including major banks (ANZ, ASB, BNZ, Westpac, Kiwibank), non-bank lenders, and specialist lenders — at no cost to the client.
+Finch Mortgages is a New Zealand mortgage broker that compares home loans, refinances, and investment property finance across 20+ NZ lenders — including major banks (ANZ, ASB, BNZ, Westpac), non-bank lenders, and specialist lenders — at no cost to the client.
 
 **Q: Where is Finch Mortgages located?**
 Finch Mortgages is based in Auckland, New Zealand (17a Marlene Ave, Te Atatu South). It serves clients across all of New Zealand by phone, video, and in-person.
@@ -105,7 +105,6 @@ Finch Mortgages compares the following lender categories:
 - ASB
 - BNZ
 - Westpac NZ
-- Kiwibank
 - TSB
 - SBS Bank
 - The Co-operative Bank

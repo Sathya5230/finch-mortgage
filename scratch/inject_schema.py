@@ -139,7 +139,7 @@ def build_lenders_html():
     bc = breadcrumbs([("Home", f"{SITE}/"), ("Lenders", url)])
     bc["@id"] = url + "#breadcrumbs"
     page = webpage(url, "NZ Mortgage Lenders — Compare Banks & Non-Banks",
-                   "Compare 20+ NZ mortgage lenders — ANZ, BNZ, Kiwibank, ASB, Westpac, credit unions, and specialist lenders. Finch finds the best home loan rate for your situation.",
+                   "Compare 20+ NZ mortgage lenders — ANZ, BNZ, ASB, Westpac, credit unions, and specialist lenders. Finch finds the best home loan rate for your situation.",
                    breadcrumb=True,
                    extras={"@type": ["CollectionPage", "WebPage"]})
     return graph([ORG, website(), bc, page])
@@ -149,8 +149,8 @@ def build_mortgage_rates_html():
     url = f"{SITE}/mortgage-rates.html"
     bc = breadcrumbs([("Home", f"{SITE}/"), ("Mortgage rates", url)])
     bc["@id"] = url + "#breadcrumbs"
-    page = webpage(url, "Current NZ Mortgage Rates — Compare ANZ, BNZ, Kiwibank",
-                   "Compare today's NZ mortgage rates across ANZ, BNZ, Kiwibank, ASB, Westpac and more. OCR updates, rate trends, and expert analysis — updated weekly by Finch Mortgage.",
+    page = webpage(url, "Current NZ Mortgage Rates — Compare Major Banks",
+                   "Compare today's NZ mortgage rates across ANZ, BNZ, ASB, Westpac and more. OCR updates, rate trends, and expert analysis — updated weekly by Finch Mortgage.",
                    breadcrumb=True,
                    extras={"@type": ["WebPage"], "datePublished": "2024-01-01", "dateModified": "2026-05-19"})
     return graph([ORG, website(), bc, page])

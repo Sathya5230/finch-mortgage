@@ -44,7 +44,7 @@ Each cluster maps to an existing pillar page (guide, service, or hub) plus suppo
 ### Cluster Keywords
 1. home loan rates comparison NZ — `/mortgage-rates.html` (gap-filled July 2026)
 2. current mortgage rates NZ — `/mortgage-rates.html`, `/blog/current-mortgage-rates-nz-explained.html`
-3. ANZ / ASB / BNZ / Kiwibank / Westpac home loan rates — `/mortgage-rates.html`, `/lenders/[bank]-*-review.html`
+3. ANZ / ASB / BNZ / Westpac home loan rates — `/mortgage-rates.html`, `/lenders/[bank]-*-review.html`
 4. fixed vs floating mortgage NZ — `/blog/fixed-vs-floating-mortgage-nz.html`
 5. best time to fix mortgage NZ — `/blog/best-time-to-fix-mortgage-nz.html`
 6. OCR NZ / RBNZ interest rate — `/blog/how-ocr-affects-mortgages-nz.html`, weekly reports
@@ -142,7 +142,7 @@ The blog post and the calculator page target near-identical query variants ("how
 ---
 
 ## Lender-Specific Keywords (map to `/lenders/`)
-- ANZ, ASB, BNZ, Westpac, Kiwibank, TSB → `/lenders/major-banks.html` + individual review pages
+- ANZ, ASB, BNZ, Westpac, TSB → `/lenders/major-banks.html` + individual review pages
 - Resimac, Pepper Money, Liberty Financial, Avanti Finance, Heartland Bank → `/lenders/non-bank-lenders.html` + individual review pages
 - SBS Bank, NZCU, credit unions → `/lenders/credit-unions.html`
 - Specialist/bad-credit lenders → `/lenders/specialist-lenders.html`

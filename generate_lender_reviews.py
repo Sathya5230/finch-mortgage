@@ -117,28 +117,6 @@ LENDERS = [
         ],
     },
     {
-        "slug": "kiwibank-home-loan-review",
-        "name": "Kiwibank",
-        "full_name": "Kiwibank Limited",
-        "category": "major bank",
-        "tier": "Tier 1",
-        "founded": "2002",
-        "positioning": "New Zealand's only majority Crown-owned major bank",
-        "specialties": "first home buyers, low-deposit Welcome Home Loan, owner-occupier lending",
-        "best_for": "first home buyers wanting the Kāinga Ora First Home Loan 5% pathway with a NZ-owned bank",
-        "pros": [
-            "Strong Kāinga Ora First Home Loan partner — accepts 5% deposit",
-            "Welcoming policies for first home buyers",
-            "NZ-owned and locally focused",
-            "Competitive carded rates",
-        ],
-        "cons": [
-            "Smaller branch footprint than other Tier 1 banks",
-            "Investor lending appetite more constrained",
-            "Some processing slower than ANZ/ASB in peak periods",
-        ],
-    },
-    {
         "slug": "tsb-mortgage-review",
         "name": "TSB",
         "full_name": "TSB Bank",
@@ -700,7 +678,7 @@ def main_body(lender: dict) -> str:
       <div class="container" style="max-width:800px;">
         <div class="prose" style="color:var(--neutral-medGray);line-height:1.8;font-size:1.05rem;">
           <h2 style="font-size:2rem;font-weight:700;color:var(--neutral-black);margin-bottom:1.5rem;font-family:var(--font-display);letter-spacing:-0.02em;">{full_name} — NZ Mortgage Review (2026)</h2>
-          <p style="margin-bottom:2rem;">{full_name} is {lender['positioning']}. For New Zealand borrowers, the lender's specialties include {lender['specialties']}. As an independent NZ mortgage broker, Finch arranges loans through {name} alongside the full panel of registered NZ banks (ANZ, ASB, BNZ, Westpac, Kiwibank, TSB, SBS, The Co-operative Bank, Heartland) and the specialist non-bank market — so we can recommend {name} only when their offer genuinely beats the alternatives for your scenario.</p>
+          <p style="margin-bottom:2rem;">{full_name} is {lender['positioning']}. For New Zealand borrowers, the lender's specialties include {lender['specialties']}. As an independent NZ mortgage broker, Finch arranges loans through {name} alongside the full panel of registered NZ banks (ANZ, ASB, BNZ, Westpac, TSB, SBS, The Co-operative Bank, Heartland) and the specialist non-bank market — so we can recommend {name} only when their offer genuinely beats the alternatives for your scenario.</p>
 
           <h3 style="font-size:1.35rem;font-weight:700;color:var(--finch-forest);margin-bottom:1rem;margin-top:2.5rem;">Who {name} Suits Best</h3>
           <p style="margin-bottom:2rem;">{name} suits {lender['best_for']}. We see strongest outcomes when the client's income profile, deposit position, and intended property align with {name}'s current scorecard. Outside those scenarios, another NZ lender will usually price sharper or move faster — which is why we compare every option before recommending.</p>
@@ -742,7 +720,7 @@ def main_body(lender: dict) -> str:
         <h2 class="section-heading" style="margin-bottom:2.5rem;">Other NZ lender reviews &amp; resources</h2>
         <div class="cols-3" style="gap:1.5rem;">
           <a href="../lenders.html" style="display:block;padding:1.5rem;background:var(--finch-mist);border-radius:1rem;text-decoration:none;color:var(--neutral-black);"><strong style="display:block;color:var(--finch-forest);margin-bottom:0.5rem;">All NZ Lenders</strong><span style="font-size:0.9rem;color:var(--neutral-medGray);">Browse every NZ lender reviewed.</span></a>
-          <a href="../lenders/major-banks.html" style="display:block;padding:1.5rem;background:var(--finch-mist);border-radius:1rem;text-decoration:none;color:var(--neutral-black);"><strong style="display:block;color:var(--finch-forest);margin-bottom:0.5rem;">NZ Major Banks</strong><span style="font-size:0.9rem;color:var(--neutral-medGray);">ANZ, ASB, BNZ, Westpac, Kiwibank.</span></a>
+          <a href="../lenders/major-banks.html" style="display:block;padding:1.5rem;background:var(--finch-mist);border-radius:1rem;text-decoration:none;color:var(--neutral-black);"><strong style="display:block;color:var(--finch-forest);margin-bottom:0.5rem;">NZ Major Banks</strong><span style="font-size:0.9rem;color:var(--neutral-medGray);">ANZ, ASB, BNZ, Westpac.</span></a>
           <a href="../lenders/non-bank-lenders.html" style="display:block;padding:1.5rem;background:var(--finch-mist);border-radius:1rem;text-decoration:none;color:var(--neutral-black);"><strong style="display:block;color:var(--finch-forest);margin-bottom:0.5rem;">NZ Non-Bank Lenders</strong><span style="font-size:0.9rem;color:var(--neutral-medGray);">Resimac, Pepper, Liberty, Avanti.</span></a>
           <a href="../mortgage-rates.html" style="display:block;padding:1.5rem;background:var(--finch-mist);border-radius:1rem;text-decoration:none;color:var(--neutral-black);"><strong style="display:block;color:var(--finch-forest);margin-bottom:0.5rem;">Live NZ Mortgage Rates</strong><span style="font-size:0.9rem;color:var(--neutral-medGray);">Current carded and broker rates.</span></a>
           <a href="../services/home-loan.html" style="display:block;padding:1.5rem;background:var(--finch-mist);border-radius:1rem;text-decoration:none;color:var(--neutral-black);"><strong style="display:block;color:var(--finch-forest);margin-bottom:0.5rem;">NZ Home Loan Service</strong><span style="font-size:0.9rem;color:var(--neutral-medGray);">Independent NZ broker advice.</span></a>

@@ -60,11 +60,11 @@ This document catalogs key pages on finchmortgages.co.nz for strategic internal 
 ## Lender Pages (`/lenders/`)
 
 - `/lenders.html` — lenders hub (overview of all lender categories)
-- `/lenders/major-banks.html` — ANZ, ASB, BNZ, Westpac, Kiwibank, TSB
+- `/lenders/major-banks.html` — ANZ, ASB, BNZ, Westpac, TSB
 - `/lenders/non-bank-lenders.html` — Resimac, Pepper Money, Liberty Financial, Avanti Finance, etc.
 - `/lenders/credit-unions.html` — NZCU, SBS Bank, First Credit Union, Police Credit Union
 - `/lenders/specialist-lenders.html` — low-doc/high-LVR/credit-impaired specialist lenders
-- Individual lender review pages: `/lenders/anz-home-loan-review.html`, `/lenders/asb-mortgage-review.html`, `/lenders/bnz-home-loan-review.html`, `/lenders/kiwibank-home-loan-review.html`, `/lenders/westpac-mortgage-review.html`, `/lenders/sbs-mortgage-review.html`, `/lenders/heartland-bank-mortgage-review.html`, `/lenders/resimac-mortgage-review.html`, `/lenders/pepper-money-mortgage-review.html`, `/lenders/liberty-financial-mortgage-review.html`, and others (see `/lenders/` directory for the full list)
+- Individual lender review pages: `/lenders/anz-home-loan-review.html`, `/lenders/asb-mortgage-review.html`, `/lenders/bnz-home-loan-review.html`, `/lenders/westpac-mortgage-review.html`, `/lenders/sbs-mortgage-review.html`, `/lenders/heartland-bank-mortgage-review.html`, `/lenders/resimac-mortgage-review.html`, `/lenders/pepper-money-mortgage-review.html`, `/lenders/liberty-financial-mortgage-review.html`, and others (see `/lenders/` directory for the full list)
 - **When to Link**: When a specific lender is named in blog content — link to its dedicated review page, not just the hub, when one exists
 - **Anchor Text Examples**: "[Lender] home loan review", "compare NZ bank mortgages", "non-bank lending options"
 

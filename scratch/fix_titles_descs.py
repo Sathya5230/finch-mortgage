@@ -35,8 +35,8 @@ REWRITES = {
         "Every mortgage service under one roof — home loans, first home buyer, refinance, pre-approval, investment, construction, commercial, asset finance and self-employed.",
     ),
     "mortgage-rates.html": (
-        "NZ Mortgage Rates 2026 | Compare ANZ BNZ Kiwibank | Finch",
-        "Compare today's NZ mortgage rates across ANZ, BNZ, Kiwibank, ASB, Westpac and more. Live updates, OCR commentary, and expert analysis from Finch Mortgage.",
+        "NZ Mortgage Rates 2026 | Compare Major Bank Rates | Finch",
+        "Compare today's NZ mortgage rates across ANZ, BNZ, ASB, Westpac and more. Live updates, OCR commentary, and expert analysis from Finch Mortgage.",
     ),
     "refinance.html": (
         "Refinance Calculator NZ | Save on Your Mortgage | Finch",
@@ -222,7 +222,7 @@ REWRITES = {
     ),
     "weekly-reports/week-16-major-banks-cut-rates.html": (
         None,
-        "Finch Mortgage NZ Week 16: major banks cut mortgage rates — ANZ, ASB, BNZ, Westpac, and Kiwibank moves and what borrowers should do now.",
+        "Finch Mortgage NZ Week 16: major banks cut mortgage rates — ANZ, ASB, BNZ, and Westpac moves and what borrowers should do now.",
     ),
     "weekly-reports/week-17-autumn-update.html": (
         None,

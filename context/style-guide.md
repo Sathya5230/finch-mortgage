@@ -13,7 +13,7 @@ This guide defines writing conventions, formatting standards, and editorial guid
 **Product/Brand Names**:
 - Finch Mortgages / Finch — always capitalized
 - Mukhtar Kiyani — full name on first mention per page, "Mukhtar" thereafter
-- Lender names use their own official capitalization: ANZ, ASB, BNZ, Kiwibank, Westpac, TSB, SBS Bank
+- Lender names use their own official capitalization: ANZ, ASB, BNZ, Westpac, TSB, SBS Bank
 
 **Industry Terms**:
 - First Home Grant, Welcome Home Loan, KiwiSaver — proper nouns, always capitalized

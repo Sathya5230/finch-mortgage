@@ -79,8 +79,7 @@ CATEGORIES = [
             {"initial": "A", "name": "ANZ", "desc": "New Zealand's largest mortgage lender. Highly competitive on 1-year and 2-year fixed rates. Strong property investor packages.", "url": "https://www.anz.co.nz/"},
             {"initial": "AS", "name": "ASB", "desc": "Market leaders in construction lending and turnaround times. Often the first major bank to announce rate cuts in a falling market.", "url": "https://www.asb.co.nz/"},
             {"initial": "B", "name": "BNZ", "desc": "Excellent tailorable loan structures. Highly preferred for self-employed professionals, doctors, and small business owners.", "url": "https://www.bnz.co.nz/"},
-            {"initial": "W", "name": "Westpac", "desc": "Focuses heavily on sustainable lending. Offers low or zero-interest loans for warm, healthy home upgrades and EVs.", "url": "https://www.westpac.co.nz/"},
-            {"initial": "K", "name": "Kiwibank", "desc": "100% locally owned. Frequently presents excellent switching cash contributions and highly competitive short-term specials.", "url": "https://www.kiwibank.co.nz/"}
+            {"initial": "W", "name": "Westpac", "desc": "Focuses heavily on sustainable lending. Offers low or zero-interest loans for warm, healthy home upgrades and EVs.", "url": "https://www.westpac.co.nz/"}
         ],
         "faqs": [
             {"q": "How much deposit do I need for a major bank?", "a": "Under current RBNZ rules, banks generally require a 20% deposit for an owner-occupied existing home, though they can lend to a small proportion of borrowers with as little as 5-10%. For new builds, 10% is usually sufficient. Investors typically need 35%."},

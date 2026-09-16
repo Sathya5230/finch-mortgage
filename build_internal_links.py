@@ -180,7 +180,7 @@ guide_links = [
     ("../lenders.html", "Compare Lenders"),
     ("../lenders/asb-mortgage-review.html", "ASB Review"),
     ("../lenders/anz-home-loan-review.html", "ANZ Review"),
-    ("../lenders/kiwibank-home-loan-review.html", "Kiwibank Review"),
+    ("../lenders/westpac-mortgage-review.html", "Westpac Review"),
 ]
 for p in sorted(glob.glob(os.path.join(ROOT, "guides", "*.html"))):
     block = section(

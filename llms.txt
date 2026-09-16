@@ -68,7 +68,7 @@ Real client scenarios covering: bank declines and second opinions, bad credit / 
 
 ## Lender Categories
 
-- [Major banks (ANZ, ASB, BNZ, Westpac, Kiwibank)](https://www.finchmortgages.co.nz/lenders/major-banks.html)
+- [Major banks (ANZ, ASB, BNZ, Westpac)](https://www.finchmortgages.co.nz/lenders/major-banks.html)
 - [Non-bank lenders (Resimac, Pepper, Avanti, Bluestone, Liberty)](https://www.finchmortgages.co.nz/lenders/non-bank-lenders.html)
 - [Specialist lenders (low-doc, self-employed, credit-impaired)](https://www.finchmortgages.co.nz/lenders/specialist-lenders.html)
 - [Credit unions](https://www.finchmortgages.co.nz/lenders/credit-unions.html)

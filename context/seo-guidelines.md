@@ -149,7 +149,7 @@ Primary keyword MUST appear in:
 
 **Examples** (matching existing site pattern):
 - ✅ "First Home Buyer Mortgage NZ | 5% Deposit Loans | Finch"
-- ✅ "NZ Mortgage Rates 2026 | Compare ANZ BNZ Kiwibank | Finch"
+- ✅ "NZ Mortgage Rates 2026 | Compare Major Bank Rates | Finch"
 - ❌ "Mortgage Tips and Tricks" (too vague, no keyword, not NZ-specific)
 - ❌ "The Ultimate Comprehensive Guide to Everything About Getting a Mortgage in New Zealand Successfully" (too long)
 
@@ -169,7 +169,7 @@ Primary keyword MUST appear in:
 
 **Examples**:
 - ✅ "Learn how much deposit you need to buy your first home in NZ. KiwiSaver, First Home Grant, and low-deposit lenders explained. Get your estimate today." (159 chars)
-- ✅ "Compare NZ mortgage rates across ANZ, ASB, BNZ, and Kiwibank. Live rate updates and expert OCR analysis. Find your best rate now." (150 chars)
+- ✅ "Compare NZ mortgage rates across ANZ, ASB, BNZ, and Westpac. Live rate updates and expert OCR analysis. Find your best rate now." (151 chars)
 - ❌ "This is a blog post about mortgages where we discuss many mortgage-related topics." (vague, no value prop, no CTA)
 
 ### URL Slug

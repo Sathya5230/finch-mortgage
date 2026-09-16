@@ -75,7 +75,7 @@ KEYWORDS = {
     "lenders.html": (
         "NZ mortgage lenders, compare NZ home loan lenders, "
         "ANZ mortgage NZ, ASB home loan NZ, BNZ mortgage NZ, "
-        "Westpac home loan NZ, Kiwibank mortgage NZ, TSB mortgage NZ, "
+        "Westpac home loan NZ, TSB mortgage NZ, "
         "non-bank mortgage lender NZ, specialist lender NZ, credit union mortgage NZ, "
         "best mortgage lender NZ 2026, NZ bank vs non-bank mortgage, "
         "SBS Bank mortgage NZ, Heartland Bank mortgage NZ, Resimac NZ"
@@ -96,7 +96,7 @@ KEYWORDS = {
         "NZ mortgage rates 2026, current mortgage rates NZ, "
         "home loan interest rates NZ today, ANZ mortgage rates 2026, "
         "ASB mortgage rates 2026, BNZ mortgage rates 2026, "
-        "Westpac home loan rates 2026, Kiwibank mortgage rates 2026, "
+        "Westpac home loan rates 2026, "
         "NZ fixed mortgage rates, NZ floating mortgage rates, OCR NZ 2026, "
         "RBNZ interest rate, NZ 1 year fixed rate, NZ 2 year fixed rate, "
         "compare mortgage rates NZ, best mortgage rate NZ, NZ rate tracker, "
@@ -352,7 +352,7 @@ KEYWORDS = {
     # ── Lender pages ───────────────────────────────────────────────────────
     "lenders/major-banks.html": (
         "NZ major bank mortgages, ANZ mortgage NZ 2026, ASB mortgage NZ 2026, "
-        "BNZ mortgage NZ 2026, Westpac mortgage NZ 2026, Kiwibank mortgage NZ 2026, "
+        "BNZ mortgage NZ 2026, Westpac mortgage NZ 2026, "
         "TSB mortgage NZ, big bank home loan NZ, "
         "NZ bank home loan comparison, ANZ vs ASB vs BNZ, "
         "bank mortgage rates NZ, major bank lending criteria NZ"

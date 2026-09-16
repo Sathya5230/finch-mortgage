@@ -23,6 +23,11 @@
       "source": "/refinance.html",
       "destination": "/calculators/refinance-savings.html",
       "permanent": true
+    },
+    {
+      "source": "/lenders/kiwibank-home-loan-review.html",
+      "destination": "/lenders/major-banks.html",
+      "permanent": true
     }
   ],
   "headers": [
