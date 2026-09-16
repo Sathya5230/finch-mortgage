@@ -28,6 +28,76 @@
       "source": "/lenders/kiwibank-home-loan-review.html",
       "destination": "/lenders/major-banks.html",
       "permanent": true
+    },
+    {
+      "source": "/lenders/asb-mortgage-review.html",
+      "destination": "/lenders/major-banks.html",
+      "permanent": true
+    },
+    {
+      "source": "/lenders/westpac-mortgage-review.html",
+      "destination": "/lenders/major-banks.html",
+      "permanent": true
+    },
+    {
+      "source": "/lenders/tsb-mortgage-review.html",
+      "destination": "/lenders/major-banks.html",
+      "permanent": true
+    },
+    {
+      "source": "/lenders/hsbc-nz-mortgage-review.html",
+      "destination": "/lenders/major-banks.html",
+      "permanent": true
+    },
+    {
+      "source": "/lenders/icbc-nz-mortgage-review.html",
+      "destination": "/lenders/major-banks.html",
+      "permanent": true
+    },
+    {
+      "source": "/lenders/resimac-mortgage-review.html",
+      "destination": "/lenders/non-bank-lenders.html",
+      "permanent": true
+    },
+    {
+      "source": "/lenders/bluestone-mortgage-review.html",
+      "destination": "/lenders/non-bank-lenders.html",
+      "permanent": true
+    },
+    {
+      "source": "/lenders/asap-finance-mortgage-review.html",
+      "destination": "/lenders/specialist-lenders.html",
+      "permanent": true
+    },
+    {
+      "source": "/lenders/finance-now-asset-review.html",
+      "destination": "/lenders/specialist-lenders.html",
+      "permanent": true
+    },
+    {
+      "source": "/lenders/marac-asset-finance-review.html",
+      "destination": "/lenders/specialist-lenders.html",
+      "permanent": true
+    },
+    {
+      "source": "/lenders/mitsubishi-hc-capital-review.html",
+      "destination": "/lenders/specialist-lenders.html",
+      "permanent": true
+    },
+    {
+      "source": "/lenders/udc-finance-asset-review.html",
+      "destination": "/lenders/specialist-lenders.html",
+      "permanent": true
+    },
+    {
+      "source": "/lenders/first-credit-union-mortgage-review.html",
+      "destination": "/lenders/credit-unions.html",
+      "permanent": true
+    },
+    {
+      "source": "/lenders/police-credit-union-mortgage-review.html",
+      "destination": "/lenders/credit-unions.html",
+      "permanent": true
     }
   ],
   "headers": [

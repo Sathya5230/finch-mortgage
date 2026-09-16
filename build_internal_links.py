@@ -18,6 +18,19 @@ CAT_FROM_SUFFIX = {
     "Non-Bank Mortgages": "Non-Bank Lenders",
     "Asset & Specialist Finance": "Specialist Lenders",
     "Credit Union Lending": "Credit Unions",
+    "Major Bank": "Major Banks",
+    "Registered Bank": "Major Banks",
+    "Non-Bank Lender": "Non-Bank Lenders",
+    "Non-Bank Specialist": "Non-Bank Lenders",
+    "Non-Bank Fund": "Non-Bank Lenders",
+    "Non-Bank Deposit Taker": "Non-Bank Lenders",
+    "Property Finance": "Specialist Lenders",
+    "Specialist Lender": "Specialist Lenders",
+    "Sme & Commercial Finance": "Specialist Lenders",
+    "Consumer & Property Finance": "Specialist Lenders",
+    "Mortgage & P2P Finance": "Specialist Lenders",
+    "Non-Bank Real Estate": "Specialist Lenders",
+    "Credit Union": "Credit Unions",
 }
 CAT_HUB = {
     "Major Banks": "lenders/major-banks.html",
@@ -178,9 +191,9 @@ guide_links = [
     ("../calculators/borrowing-power.html", "Borrowing Power"),
     ("../calculators/extra-repayment.html", "Extra Repayment"),
     ("../lenders.html", "Compare Lenders"),
-    ("../lenders/asb-mortgage-review.html", "ASB Review"),
+    ("../lenders/bnz-home-loan-review.html", "BNZ Review"),
     ("../lenders/anz-home-loan-review.html", "ANZ Review"),
-    ("../lenders/westpac-mortgage-review.html", "Westpac Review"),
+    ("../lenders/heartland-bank-mortgage-review.html", "Heartland Bank Review"),
 ]
 for p in sorted(glob.glob(os.path.join(ROOT, "guides", "*.html"))):
     block = section(
