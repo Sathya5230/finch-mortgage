@@ -205,11 +205,13 @@ src="https://www.facebook.com/tr?id=984298931136124&ev=PageView&noscript=1"
   border: 1px solid #e1ebe8;
   border-radius: 10px;
   padding: 1.05rem 1.25rem;
+  font-family: inherit;
   font-size: 0.95rem;
   font-weight: 500;
   color: #10443e;
   outline: none;
   transition: all 0.2s ease;
+  box-sizing: border-box;
 }
 .contact-input-box::placeholder {
   color: #9cb1ad;
@@ -318,28 +320,33 @@ src="https://www.facebook.com/tr?id=984298931136124&ev=PageView&noscript=1"
     <form action="https://api.web3forms.com/submit" method="POST">
       <input type="hidden" name="access_key" value="d324f726-646c-4e0b-a1f2-7117480ff013">
       <input type="hidden" name="redirect" id="next-url" value="">
-      <input type="hidden" name="subject" value="New Contact Form Submission">
+      <input type="hidden" name="subject" value="New Contact Form Submission - Finch Mortgages">
       <input type="hidden" name="from_name" value="Finch Mortgages Website">
       <input type="checkbox" name="botcheck" style="display:none;" tabindex="-1" autocomplete="off">
 
-      <div style="margin-bottom:1.5rem;">
+      <div style="margin-bottom:1.25rem;">
         <label style="display:block; font-size:0.72rem; font-weight:800; text-transform:uppercase; letter-spacing:0.08em; color:#7a9490; margin-bottom:0.5rem;">NAME</label>
-        <input class="contact-input-box" name="Name" placeholder="Sarah" required="" type="text"/>
+        <input class="contact-input-box" name="name" placeholder="Sarah" required="" type="text"/>
       </div>
 
-      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:1.25rem; margin-bottom:1.5rem;">
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:1.25rem; margin-bottom:1.25rem;">
         <div>
           <label style="display:block; font-size:0.72rem; font-weight:800; text-transform:uppercase; letter-spacing:0.08em; color:#7a9490; margin-bottom:0.5rem;">MOBILE NUMBER</label>
-          <input class="contact-input-box" name="Mobile number" placeholder="021 000 0000" required="" type="tel"/>
+          <input class="contact-input-box" name="phone" placeholder="021 000 0000" type="tel"/>
         </div>
         <div>
           <label style="display:block; font-size:0.72rem; font-weight:800; text-transform:uppercase; letter-spacing:0.08em; color:#7a9490; margin-bottom:0.5rem;">EMAIL ADDRESS</label>
-          <input class="contact-input-box" name="Email address" placeholder="sarah@example.com" required="" type="email"/>
+          <input class="contact-input-box" name="email" placeholder="sarah@example.com" required="" type="email"/>
         </div>
       </div>
 
+      <div style="margin-bottom:1.5rem;">
+        <label style="display:block; font-size:0.72rem; font-weight:800; text-transform:uppercase; letter-spacing:0.08em; color:#7a9490; margin-bottom:0.5rem;">MESSAGE</label>
+        <textarea class="contact-input-box" name="message" placeholder="Tell us how we can help with your mortgage or home loan..." required="" rows="4" style="resize:vertical; min-height:110px;"></textarea>
+      </div>
+
       <button class="contact-submit-btn" type="submit">
-        GET CLARITY ON YOUR MORTGAGE OPTIONS →
+        SUBMIT FORM →
       </button>
 
       <div style="text-align:center; margin-top:1.5rem;">
@@ -348,7 +355,12 @@ src="https://www.facebook.com/tr?id=984298931136124&ev=PageView&noscript=1"
       </div>
     </form>
     <script>
-      document.getElementById('next-url').value = window.location.origin + window.location.pathname.replace(/[^\/]*$/, 'thank-you.html');
+      if (window.location.protocol.startsWith('http')) {
+        document.getElementById('next-url').value = window.location.origin + '/thank-you.html';
+      } else {
+        var nextInput = document.getElementById('next-url');
+        if (nextInput) nextInput.remove();
+      }
     </script>
   </div>
 </div>
