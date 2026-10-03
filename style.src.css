@@ -1906,3 +1906,53 @@ button:focus-visible {
 
 /* LCP: above-the-fold hero must paint immediately, not wait for the JS scroll-reveal */
 .page-hero .reveal{opacity:1!important;transform:none!important;}
+
+
+/* Lead-capture form controls. Previously defined only in an inline <style>
+   on contact.html; the inline forms injected sitewide by inject_local_seo.py
+   reference these classes, so they must be global. */
+.contact-input-box {
+  width: 100%;
+  background: #f2f6f5;
+  border: 1px solid #e1ebe8;
+  border-radius: 10px;
+  padding: 1.05rem 1.25rem;
+  font-family: inherit;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #10443e;
+  outline: none;
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+}
+.contact-input-box::placeholder { color: #9cb1ad; }
+.contact-input-box:focus {
+  border-color: #b29361;
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(178, 147, 97, 0.15);
+}
+.contact-submit-btn {
+  width: 100%;
+  background: #10443e;
+  color: #ffffff;
+  border-radius: 10px;
+  padding: 1.15rem;
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  margin-top: 2rem;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 16px rgba(16, 68, 62, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.contact-submit-btn:hover {
+  background: #0c3330;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(16, 68, 62, 0.25);
+}
