@@ -297,9 +297,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // --- Floating Free Consultation CTA ---
   if (!window.location.pathname.includes('thank-you.html')) {
-    const subdirs = ['services','lenders','guides','calculators','blog','weekly-reports','testimonials','case-studies'];
-    const inSubdir = subdirs.some(d => window.location.pathname.includes('/' + d + '/'));
-    const contactHref = inSubdir ? '../contact.html' : 'contact.html';
+    // Root-absolute: relative paths 404'd on /locations/* which was missing from the old subdir list.
+    const contactHref = '/contact.html';
     const floatBtn = document.createElement('a');
     floatBtn.href = contactHref;
     floatBtn.className = 'floating-consult';
