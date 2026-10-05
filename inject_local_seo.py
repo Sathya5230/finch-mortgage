@@ -630,7 +630,7 @@ SERVICE_LOCAL_FRAME = {
 
 SERVICE_LOCAL_LEAD = {
     "home-loan": "Lender appetite is not uniform across New Zealand. Before we approach anyone on your behalf, here is the {city} detail that shapes which lender is likely to say yes.",
-    "first-home-buyer": "Deposit requirements, LVR exemptions and First Home Grant eligibility all play out differently by region. Here is what matters in {city}.",
+    "first-home-buyer": "Deposit requirements, LVR exemptions and First Home Loan eligibility all play out differently by region. Here is what matters in {city}.",
     "investment-property": "Yield, lender appetite and DTI treatment vary sharply by region. Here is the {city} context we work with.",
     "pre-approval": "A pre-approval is only as good as the lender behind it. Here is the {city} detail that decides which lender to approach first.",
     "refinance": "What you can switch to depends on your property type and location as much as your income. Here is the {city} picture.",
@@ -643,42 +643,121 @@ def _city_lookup():
     return {c["slug"].replace("mortgage-broker-", ""): c for c in city_data.CITIES}
 
 
-def local_content_block(svc, city_slug, city_row):
+SERVICE_HOW = {
+    "home-loan": ("../services/home-loan.html", "home loan guide",
+                  "../calculators/borrowing-power.html", "borrowing power calculator",
+                  "We look at your income, deposit and the property you want in {city}, then shortlist the lenders most likely to approve and price it well. Pre-approval, valuation and loan structure are handled for you through to settlement."),
+    "first-home-buyer": ("../services/first-home-buyer.html", "first home buyer guide",
+                         "../calculators/borrowing-power.html", "borrowing power calculator",
+                         "We start with your real deposit, including KiwiSaver and any First Home Loan eligibility, then match you with lenders that suit first home buyers in {city}. You get a pre-approval you can bid with."),
+    "investment-property": ("../services/investment-property.html", "investment property guide",
+                            "../calculators/rental-yield-calculator.html", "rental yield calculator",
+                            "We model your portfolio's equity, DTI headroom and each lender's rental assessment, then structure the {city} purchase so it supports your next one rather than blocking it."),
+    "pre-approval": ("../services/pre-approval.html", "pre-approval guide",
+                     "../calculators/borrowing-power.html", "borrowing power calculator",
+                     "We gather your documents once, test your application against the lenders that suit your situation and the {city} properties you're looking at, and get a written pre-approval you can rely on at auction or tender."),
+    "refinance": ("../services/refinance.html", "refinance guide",
+                  "../calculators/refinance-savings.html", "refinance savings calculator",
+                  "We compare your current bank's offer with other lenders, net off break fees, legal costs and any cashback clawback, and only recommend switching your {city} mortgage when the numbers clearly work."),
+    "self-employed": ("../services/self-employed.html", "self-employed lending guide",
+                      "../calculators/borrowing-power.html", "borrowing power calculator",
+                      "We work with your accountant to present your business income the way each lender assesses it, then approach the bank or non-bank lender most likely to say yes for your {city} purchase or refinance."),
+}
+
+# Each service shows a different pair of city cards so same-city pages don't repeat each other.
+SERVICE_GLANCE = {
+    "home-loan": ("market", "areas"),
+    "first-home-buyer": ("price", "who"),
+    "investment-property": ("market", "price"),
+    "pre-approval": ("price", "areas"),
+    "refinance": ("who", "areas"),
+    "self-employed": ("who", "market"),
+}
+
+CARD = ('<div style="background:white;border-radius:1rem;padding:1.5rem;border:1px solid rgba(181,206,176,0.4);">'
+        '<h3 style="font-size:1.05rem;margin-bottom:0.75rem;color:var(--finch-forest);">{h}</h3>'
+        '<p style="font-size:0.95rem;line-height:1.75;color:var(--neutral-medGray);margin:0;">{p}</p></div>')
+
+FAQ_ITEM_HTML = """    <div class="faq-item" style="border:1px solid rgba(180,178,169,0.2);border-radius:1rem;background:white;overflow:hidden;">
+      <button class="faq-trigger" style="width:100%;text-align:left;padding:1.25rem 1.5rem;display:flex;justify-content:space-between;align-items:center;font-weight:700;font-size:1.05rem;background:none;border:none;cursor:pointer;color:var(--neutral-black);">
+        <span>{q}</span>
+        <svg fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" style="transition:transform 0.3s;" viewbox="0 0 24 24" width="16"><polyline points="6 9 12 15 18 9"></polyline></svg>
+      </button>
+      <div class="faq-content" style="display:none;padding:0 1.5rem 1.25rem 1.5rem;color:var(--neutral-medGray);line-height:1.7;font-size:0.95rem;border-top:1px solid rgba(180,178,169,0.1);padding-top:1rem;">
+        <p>{a}</p>
+      </div>
+    </div>"""
+
+
+def pick_specific(items, key, limit):
+    """Prefer items tagged for the fewest services, so sibling service pages for one city diverge."""
+    matched = [(len(tags.split()), i, a, b) for i, (a, tags, b) in enumerate(items) if key in tags.split()]
+    chosen = sorted(sorted(matched)[:limit], key=lambda m: m[1])
+    return [(a, b) for _, _, a, b in chosen]
+
+
+def city_body_block(svc, city_slug, city_row):
+    from html import escape
+    from location_content import LOCAL, SERVICE_KEYS
+    local, key = LOCAL[city_slug], SERVICE_KEYS[svc]
     city = city_row["city"]
-    frame = SERVICE_LOCAL_FRAME[svc].format(city=city)
-    lead = SERVICE_LOCAL_LEAD[svc].format(city=city)
-    return f"""<section style="padding:4rem 0;background:var(--finch-mist);border-top:1px solid rgba(180,178,169,0.15);">
+    factors = pick_specific(local["factors"], key, 4)
+    faqs = pick_specific(local["faqs"], key, 4)
+    guide, guide_label, calc, calc_label, how = SERVICE_HOW[svc]
+    label = SERVICES[svc][0]
+
+    factor_cards = "\n".join(CARD.format(h=escape(h, False), p=escape(p, False)) for h, p in factors)
+    glance = {
+        "market": CARD.format(h=f"The {city} market", p=city_row["market_note"]),
+        "who": CARD.format(h=f"Who we typically help in {city}",
+                           p=f"We regularly arrange finance for {city_row['common_buyers']}."),
+        "price": CARD.format(h=f"Typical {city} price bands",
+                             p=f"Indicatively, {city_row['price_band']}. Indicative ranges only, not a valuation."),
+        "areas": CARD.format(h=f"Areas we cover around {city}", p=f"{city_row['suburbs']}."),
+    }
+    city_cards = "\n".join(glance[k] for k in SERVICE_GLANCE[svc])
+    faq_items = "\n".join(FAQ_ITEM_HTML.format(q=escape(q, False), a=escape(a, False)) for q, a in faqs)
+
+    return f"""<section style="padding:4rem 0;background:var(--finch-mist);">
 <div class="container" style="max-width:1000px;">
 <div class="section-label"><span>Local knowledge</span></div>
-<h2 class="section-heading" style="margin-bottom:1.25rem;">{frame}</h2>
-<p style="color:var(--neutral-medGray);line-height:1.8;margin-bottom:2rem;">{lead}</p>
+<h2 class="section-heading" style="margin-bottom:1.25rem;">{SERVICE_LOCAL_FRAME[svc].format(city=city)}</h2>
+<p style="color:var(--neutral-medGray);line-height:1.8;margin-bottom:2rem;">{SERVICE_LOCAL_LEAD[svc].format(city=city)}</p>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem;margin-bottom:2.5rem;">
+{factor_cards}
+</div>
+<h2 class="section-heading" style="margin-bottom:1.25rem;font-size:1.5rem;">{city} at a glance</h2>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem;">
+{city_cards}
+</div>
+</div>
+</section>
 
-<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem;margin-bottom:2rem;">
-<div style="background:white;border-radius:1rem;padding:1.5rem;border:1px solid rgba(181,206,176,0.4);">
-<h3 style="font-size:1.05rem;margin-bottom:0.75rem;color:var(--finch-forest);">The {city} market</h3>
-<p style="font-size:0.95rem;line-height:1.75;color:var(--neutral-medGray);margin:0;">{city_row['market_note']}</p>
+<section style="padding:3.5rem 0;background:white;">
+<div class="container" style="max-width:800px;">
+<h2 class="section-heading" style="margin-bottom:1rem;font-size:1.5rem;">How Finch handles your {label.lower()} in {city}</h2>
+<p style="color:var(--neutral-medGray);line-height:1.8;margin-bottom:1rem;">{how.format(city=city)}</p>
+<p style="color:var(--neutral-medGray);line-height:1.8;margin:0;">Our advice costs you nothing: the lender pays us on settlement. For the full detail, read our <a href="{guide}" style="color:var(--finch-forest);font-weight:600;">{guide_label}</a> or try the <a href="{calc}" style="color:var(--finch-forest);font-weight:600;">{calc_label}</a>.</p>
 </div>
-<div style="background:white;border-radius:1rem;padding:1.5rem;border:1px solid rgba(181,206,176,0.4);">
-<h3 style="font-size:1.05rem;margin-bottom:0.75rem;color:var(--finch-forest);">Typical {city} price bands</h3>
-<p style="font-size:0.95rem;line-height:1.75;color:var(--neutral-medGray);margin:0;">Indicatively, {city_row['price_band']}.</p>
-<p style="font-size:0.78rem;color:var(--neutral-warmGray);margin:0.75rem 0 0;">Indicative ranges only — not a valuation. Ask us for current figures for your target street.</p>
-</div>
-</div>
+</section>
 
-<div style="background:white;border-radius:1rem;padding:1.75rem;border:1px solid rgba(181,206,176,0.4);margin-bottom:1.5rem;">
-<h3 style="font-size:1.05rem;margin-bottom:0.75rem;color:var(--finch-forest);">Who we typically help in {city}</h3>
-<p style="font-size:0.95rem;line-height:1.75;color:var(--neutral-medGray);margin:0;">We regularly arrange finance for {city_row['common_buyers']}.</p>
-</div>
-
-<div style="background:white;border-radius:1rem;padding:1.75rem;border:1px solid rgba(181,206,176,0.4);">
-<h3 style="font-size:1.05rem;margin-bottom:0.75rem;color:var(--finch-forest);">Areas we cover around {city}</h3>
-<p style="font-size:0.95rem;line-height:1.75;color:var(--neutral-medGray);margin:0;">{city_row['suburbs']}.</p>
+<section style="padding:4rem 0;background:white;border-top:1px solid rgba(180,178,169,0.15);">
+<div class="container" style="max-width:800px;">
+<h2 id="faq-section" style="font-family:var(--font-display);font-size:2rem;color:var(--neutral-black);margin-bottom:1.5rem;text-align:center;">{label} FAQ for {city}</h2>
+<div class="faq-accordion" style="display:flex;flex-direction:column;gap:1rem;margin-bottom:2rem;">
+{faq_items}
 </div>
 </div>
 </section>"""
 
 
 def pass_location_local_content():
+    """Replace the templated body, old local cards and generic FAQ with city-specific content.
+
+    The span from <!-- Body --> to <!-- Related NZ Resources --> was ~80% identical across
+    cities for each service; everything in it is now drawn from location_content.py.
+    """
+    from location_content import LOCAL
     rows = _city_lookup()
     loc_dir = os.path.join(ROOT, "locations")
     count, missing = 0, set()
@@ -689,17 +768,22 @@ def pass_location_local_content():
         if not svc:
             continue
         row = rows.get(city)
-        if not row:
+        if not row or city not in LOCAL:
             missing.add(city)
             continue
         fp = os.path.join(loc_dir, fn)
         html = open(fp, encoding="utf-8").read()
-        block = local_content_block(svc, city, row)
-        # Sit it above the FAQ so the page leads with local substance.
-        anchor = "<!-- Local FAQ Section -->"
-        if anchor not in html:
-            anchor = "<!-- FINCH-LEADFORM:START -->"
-        new, did = insert_before(html, anchor, "LOCALCONTENT", block)
+        block = city_body_block(svc, city, row)
+        new, did = marker_replace(html, "CITYBODY", block)
+        if new is None:
+            start, end = "<!-- Body -->", "<!-- Related NZ Resources -->"
+            a, b = html.find(start), html.find(end)
+            if a < 0 or b < a:
+                missing.add(fn)
+                continue
+            new = (html[:a] + start + "\n<!-- FINCH-CITYBODY:START -->\n" + block
+                   + "\n<!-- FINCH-CITYBODY:END -->\n\n  " + html[b:])
+            did = True
         if did:
             open(fp, "w", encoding="utf-8").write(new)
             count += 1
@@ -877,6 +961,10 @@ def main():
 
     print(f"  footer NAP + click-to-call ... {pass_footer_nap():>3} pages")
     print(f"  leadtrack.js tag ............. {pass_leadtrack():>3} pages")
+    lc, lc_missing = pass_location_local_content()
+    print(f"  location city-specific body .. {lc:>3} pages")
+    if lc_missing:
+        print(f"  ! no city content for: {lc_missing}")
     loc = pass_locations()
     print(f"  location JSON-LD ............. {loc['schema']:>3} pages")
     print(f"  location per-city geo meta ... {loc['geo']:>3} pages")
@@ -886,10 +974,6 @@ def main():
     print(f"  service lead forms ........... {pass_services():>3} pages")
     print(f"  lender hub JSON-LD ........... {pass_lender_schema():>3} pages")
     print(f"  city hub ItemList ............ {pass_locations_hub():>3} locations listed")
-    lc, lc_missing = pass_location_local_content()
-    print(f"  location city-specific content {lc:>3} pages")
-    if lc_missing:
-        print(f"  ! no city_data row for: {lc_missing}")
     brk = pass_broker_city_pages()
     print(f"  broker-city local schema ..... {brk['schema']:>3} pages")
     print(f"  broker-city lead forms ....... {brk['form']:>3} pages")

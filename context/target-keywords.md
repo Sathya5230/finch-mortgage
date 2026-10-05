@@ -166,6 +166,13 @@ All 5 known clusters below were fixed via a full seomachine enhancement pass (di
 - **9 blog posts had leftover duplicate JSON-LD** (a second `BlogPosting` block describing `mortgage-tips.html` instead of themselves, plus an off-topic `FAQPage` block with stale rate claims) — removed, keeping only the correct on-topic blocks.
 - **~30 pages had stale "2025" dates** presented as current in July 2026 (article date badges, rate tables, forward-looking language) — corrected to match each page's own `datePublished`/`dateModified`, or replaced invented-looking rate figures with links to `/mortgage-rates.html`.
 
+## Local City Pages — Metas & Doorway Fix (2026-10-05)
+
+- **Title pattern** (`retitle_city_pages.py`, head-only, per-page unique): exact local query first, e.g. `Mortgage Broker {City} | $0 Fee, 20+ Lenders`, `Home Loans {City} | Compare 20+ NZ Lenders`, `First Home Buyer {City} | KiwiSaver & Low Deposit`. Descriptions name 2–3 real suburbs from `city_data.py`.
+- **Location page body** (`locations/{service}-{city}.html`): templated prose and FAQ replaced by a `FINCH-CITYBODY` block built from `location_content.py` (city factors/FAQs tagged by service). Within-service overlap fell from ~79% to 31–36%.
+- **Intent gaps from keyword research** (guest tier, no volumes): "independent mortgage broker NZ", "best mortgage broker Auckland", Chinese/Indian-community broker queries in Auckland, "how much does a mortgage broker cost NZ" (check `/blog/mortgage-broker-fees-nz.html` covers it).
+- **Do not reference the First Home Grant as available** — it closed to new applications in May 2024. Some blog posts still mention it and need review.
+
 ## Usage Guidelines
 
 ### When Writing New Content
@@ -176,5 +183,5 @@ All 5 known clusters below were fixed via a full seomachine enhancement pass (di
 5. Update this file when `generate_lender_pages.py`, `generate_service_city_pages.py`, or `generate_topic_blogs.py` add new pages
 
 ### Maintenance
-**Last Updated**: 2026-07-06
+**Last Updated**: 2026-10-05
 **Next Review**: Quarterly, or after any GSC-verified ranking data becomes available

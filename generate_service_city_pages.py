@@ -47,7 +47,7 @@ SERVICES = [
         "slug": "first-home-buyer",
         "name": "First Home Buyer",
         "title": "First Home Buyer Mortgages",
-        "tagline": "Navigate KiwiSaver, Home Start grants, and low-deposit options easily.",
+        "tagline": "Navigate KiwiSaver withdrawals, the First Home Loan and low-deposit options.",
     },
     {
         "slug": "refinance",
