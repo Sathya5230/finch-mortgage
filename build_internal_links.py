@@ -172,6 +172,15 @@ for slug, label in locations:
     inject(os.path.join(ROOT, "blog", slug), block)
 print(f"city pages: cross-linked {len(locations)} locations")
 
+block = section(
+    "Mortgage Brokers Across New Zealand",
+    "Local mortgage broker support in other regions — same independent, $0-fee advice nationwide.",
+    [(None, [(f"../blog/{s}", l) for s, l in locations])],
+    bg="var(--finch-mist)",
+)
+inject(os.path.join(ROOT, "locations", "index.html"), block)
+print(f"locations hub: linked {len(locations)} city pages")
+
 # ---------------------------------------------------------------- 4. review pages
 for slug, label, cat in reviews:
     sib = [(s2, l2) for s2, l2, c2 in reviews if c2 == cat and s2 != slug]

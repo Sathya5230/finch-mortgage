@@ -20,21 +20,25 @@ OUT_DIR = ROOT / "blog"
 BASE_URL = "https://www.finchmortgages.co.nz"
 
 # ISO 8601 dates for Article schema (required for Article rich results)
-ARTICLE_PUBLISHED = "2026-01-15"
-ARTICLE_MODIFIED = "2026-07-03"
+ARTICLE_PUBLISHED = "2026-10-06"
+ARTICLE_MODIFIED = "2026-10-06"
 
 # Slugs to (re)generate when run directly. Keep this scoped to newly added
 # entries -- existing pages accumulate hand edits (FAQ schema tweaks, freshness
 # copy) after generation, and a full re-run would blow those away.
 NEW_SLUGS = {
-    "mortgage-broker-rotorua",
-    "mortgage-broker-new-plymouth-taranaki",
-    "mortgage-broker-invercargill-southland",
-    "mortgage-broker-whanganui",
-    "mortgage-broker-gisborne",
-    "mortgage-broker-masterton-wairarapa",
-    "mortgage-broker-pukekohe-franklin",
-    "mortgage-broker-orewa-hibiscus-coast",
+    "mortgage-broker-lower-hutt",
+    "mortgage-broker-upper-hutt",
+    "mortgage-broker-porirua",
+    "mortgage-broker-kapiti-coast",
+    "mortgage-broker-hastings",
+    "mortgage-broker-mount-maunganui-papamoa",
+    "mortgage-broker-taupo",
+    "mortgage-broker-timaru",
+    "mortgage-broker-blenheim-marlborough",
+    "mortgage-broker-cambridge",
+    "mortgage-broker-rolleston-selwyn",
+    "mortgage-broker-rangiora-kaiapoi",
 }
 
 FAQ_SCHEMA = """<script type="application/ld+json">
@@ -80,6 +84,7 @@ FAQ_SCHEMA = """<script type="application/ld+json">
 
 
 from city_data import CITIES
+from fix_city_page_heads import fix_head
 
 
 def title_for(c: dict) -> str:
@@ -176,6 +181,25 @@ def schema_for(c: dict) -> str:
     )
 
 
+H3 = 'style="font-size:1.35rem;font-weight:700;color:var(--finch-forest);margin-bottom:1rem;margin-top:2.5rem;"'
+LINK = 'style="color:var(--finch-forest);text-decoration:underline;font-weight:600;"'
+
+
+def optional_sections(c: dict) -> str:
+    # Newer towns omit price_band: we only publish price figures we can source.
+    city = c["city"]
+    out = []
+    if c.get("lending_note"):
+        out.append(f'<h3 {H3}>What NZ Lenders Look At in {city}</h3>\n'
+                   f'          <p style="margin-bottom:2rem;">{c["lending_note"]}</p>')
+    if c.get("price_band"):
+        out.append(f'<h3 {H3}>Typical {city} Property Price Bands (2026)</h3>\n'
+                   f'          <p style="margin-bottom:2rem;">{c["price_band"]}. Knowing which deposit pathway works best for each band — Kāinga Ora First Home Loan, family guarantee, new-build LVR exemption, or standard 20% deposit — is part of how we match you to the right lender.</p>')
+    if c.get("parent_slug"):
+        out.append(f'<p style="margin-bottom:2rem;">Looking more widely? See our <a href="{c["parent_slug"]}.html" {LINK}>{c["parent_label"]}</a> page for the surrounding region.</p>')
+    return "\n\n          ".join(out) + ("\n" if out else "")
+
+
 def main_body(c: dict) -> str:
     city = c["city"]
     region = c["region"]
@@ -187,7 +211,7 @@ def main_body(c: dict) -> str:
         <nav class="breadcrumb"><a href="../index.html">Home</a><span class="breadcrumb-sep">/</span><a href="../blog.html">Blog</a><span class="breadcrumb-sep">/</span><span>Mortgage Broker {city}</span></nav>
         <div class="page-hero-tag">Local NZ Coverage · {region}</div>
         <h1>Mortgage Broker<br/><em style="font-style:italic;color:var(--finch-forest);">{city}.</em></h1>
-        <p class="freshness-signal" style="font-size:0.85rem;color:var(--neutral-warmGray);margin-top:0.5rem;font-weight:600;">Last updated: July 2026</p>
+        <p class="freshness-signal" style="font-size:0.85rem;color:var(--neutral-warmGray);margin-top:0.5rem;font-weight:600;">Last updated: October 2026</p>
         <p>{c['intro_one_liner']}</p>
         <div style="display:flex;gap:1rem;flex-wrap:wrap;margin-top:1.5rem;">
           <a class="btn-primary" href="../contact.html">Book a Free 15-Minute Call</a>
@@ -212,9 +236,7 @@ def main_body(c: dict) -> str:
           <h3 style="font-size:1.35rem;font-weight:700;color:var(--finch-forest);margin-bottom:1rem;margin-top:2.5rem;">Who Finch Helps in {city}</h3>
           <p style="margin-bottom:2rem;">Our typical {city} clients include {c['common_buyers']}. We work with PAYE professionals and complex self-employed scenarios alike, including LTCs, trusts, and partnership entities — and we know which NZ lender's scorecard treats each scenario most favourably.</p>
 
-          <h3 style="font-size:1.35rem;font-weight:700;color:var(--finch-forest);margin-bottom:1rem;margin-top:2.5rem;">Typical {city} Property Price Bands (2026)</h3>
-          <p style="margin-bottom:2rem;">{c['price_band']}. Knowing which deposit pathway works best for each band — Kāinga Ora First Home Loan, family guarantee, new-build LVR exemption, or standard 20% deposit — is part of how we match you to the right lender.</p>
-
+          {optional_sections(c)}
           <h3 style="font-size:1.35rem;font-weight:700;color:var(--finch-forest);margin-bottom:1rem;margin-top:2.5rem;">How the Finch Process Works for {city} Buyers</h3>
           <ol style="margin-bottom:2rem;padding-left:1.5rem;list-style:decimal;">
             <li style="margin-bottom:0.5rem;"><strong>Free 15-minute discovery call</strong> — by phone or Zoom, no obligation.</li>
@@ -345,7 +367,7 @@ def build_page(c: dict, template_text: str) -> str:
     template_main_start = template_text.find("<main")
     body_open = template_text[template_body_start: template_main_start]
 
-    return head + "\n" + body_open + main_body(c) + footer
+    return fix_head(head + "\n" + body_open + main_body(c) + footer, f"{c['slug']}.html")
 
 
 def main() -> None:
