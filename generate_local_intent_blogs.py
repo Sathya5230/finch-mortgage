@@ -17,7 +17,7 @@ so the markup has a single source of truth.
 Compliance: explains mechanisms only. No invented rates, no named lender
 policies, no approval-odds claims — per context/brand-voice.md.
 
-Run:  python3 generate_local_intent_blogs.py
+Run:  python3 generate_local_intent_blogs.py [posts_module]   (default: local_intent_posts)
 """
 
 from __future__ import annotations
@@ -125,8 +125,8 @@ def schema_for(post: dict) -> str:
             "mainEntityOfPage": {"@id": f"{url}#article"},
             "inLanguage": "en-NZ",
             "image": f"{BASE_URL}/images/finch-logo.png",
-            "datePublished": ARTICLE_PUBLISHED,
-            "dateModified": ARTICLE_MODIFIED,
+            "datePublished": post.get("published", ARTICLE_PUBLISHED),
+            "dateModified": post.get("published", ARTICLE_MODIFIED),
             "articleSection": post.get("section_label", "Mortgages"),
             "keywords": ", ".join(post["keywords"]),
             "author": {
@@ -329,7 +329,10 @@ def build_page(post: dict, template_text: str) -> str:
 
 
 def main() -> None:
-    from local_intent_posts import POSTS
+    import importlib
+    import sys
+    # Post batches live in separate data modules; default is the original local-intent set.
+    POSTS = importlib.import_module(sys.argv[1] if len(sys.argv) > 1 else "local_intent_posts").POSTS
 
     template_text = TEMPLATE.read_text(encoding="utf-8")
     slugs = set()
