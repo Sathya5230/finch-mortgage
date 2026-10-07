@@ -297,7 +297,7 @@ POSTS = [
         "lead_service": "Construction Loan",
         "about": ["Construction loans", "Building a house", "New build finance", "Progress payments"],
         "intro_pull": "A construction loan doesn't pay out all at once. The lender releases money in stages as your build progresses, and you pay interest only on what's been drawn. Here's how it works from deposit to code compliance certificate.",
-        "description": "How construction loans work in NZ: progress payments, drawdown stages, interest during the build, fixed-price contracts and the new-build LVR exemption explained.",
+        "description": "How construction loans work in NZ: progress payments, drawdown stages, interest during the build, fixed-price contracts and the new-build LVR exemption.",
         "keywords": [
             "construction loan NZ",
             "progress payments building NZ",

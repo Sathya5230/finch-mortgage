@@ -295,7 +295,7 @@
   </url>
   <url>
     <loc>https://www.finchmortgages.co.nz/blog/will-mortgage-rates-drop-nz-2026.html</loc>
-    <lastmod>2026-10-03</lastmod>
+    <lastmod>2026-10-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -443,12 +443,6 @@
   </url>
   <url>
     <loc>https://www.finchmortgages.co.nz/weekly-reports/week-12-rental-yields.html</loc>
-    <lastmod>2026-10-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.finchmortgages.co.nz/weekly-reports/week-11-first-home-grant.html</loc>
     <lastmod>2026-10-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -891,4 +885,5 @@
   <url><loc>https://www.finchmortgages.co.nz/blog/refinance-after-separation-buy-out-partner-nz.html</loc><lastmod>2026-10-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://www.finchmortgages.co.nz/blog/new-bank-wont-refinance-mortgage-nz.html</loc><lastmod>2026-10-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://www.finchmortgages.co.nz/blog/refinance-rental-property-investment-loans-nz.html</loc><lastmod>2026-10-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/first-home-grant-nz-closed-alternatives.html</loc><lastmod>2026-10-07</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
 </urlset>

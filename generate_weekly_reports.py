@@ -140,14 +140,6 @@ REPORTS = [
         "intro": "Property investors operating in the Manawatu and wider Wellington regions are seeing a perfect storm of favorable metrics: rising gross rental yields colliding with rapidly falling debt servicing costs. In Palmerston North and greater Wellington, gross yields have breached the 5.2% threshold for the first time since the height of the pandemic in 2020. This is largely the result of constrained new build supply intersecting with robust tenant demand, particularly in the student and government contracting sectors. As 2-year fixed wholesale rates compress toward the mid-5s, the cashflow calculations for leveraged property investment are turning positive much earlier in the hold cycle than models predicted just six months ago."
     },
     {
-        "week": 11, "slug": "week-11-first-home-grant", "date": "17 March 2026", "badge": "First Home", "icon": "key",
-        "title": "First Home Grant Extended to 2027",
-        "excerpt": "Government extends First Home Grant eligibility. Price caps raised in major centres.",
-        "stat_label": "Grant Max", "stat_val": "$20,000", "author": "Sarah Jenkins",
-        "city": "Hamilton", "region": "Waikato",
-        "intro": "In a massive win for young buyers navigating the Waikato and northern markets, the government has officially formally extended the First Home Grant allocation parameters through to March 2027. More importantly, localized price caps have been adjusted upward to reflect the reality of current valuations. In Hamilton and the wider Waikato area, the price cap for an existing property has been lifted to $725,000, pulling hundreds of entry-level listings back into eligibility scope for single and joint purchasers. Couples purchasing a new build can still access up to $20,000 in free government grants, a critical capital injection that often bridges the final gap to a 10% deposit."
-    },
-    {
         "week": 10, "slug": "week-10-ocr-cut-march", "date": "10 March 2026", "badge": "Rates", "icon": "percent",
         "title": "RBNZ March OCR Cut Breakdown",
         "excerpt": "The March 25bps cut was anticipated. We track which lenders moved and what's next.",

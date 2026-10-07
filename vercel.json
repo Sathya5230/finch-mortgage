@@ -15,6 +15,11 @@
       "permanent": true
     },
     {
+      "source": "/weekly-reports/week-11-first-home-grant.html",
+      "destination": "/blog/first-home-grant-nz-closed-alternatives.html",
+      "permanent": true
+    },
+    {
       "source": "/testimonials.html",
       "destination": "/testimonials/reviews.html",
       "permanent": true

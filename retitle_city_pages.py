@@ -31,9 +31,12 @@ SERVICE_DESC = {
     "pre-approval": "Get mortgage pre-approval in {c} before you bid. Finch compares 20+ NZ lenders for buyers in {s}. Free advice, $0 broker fee.",
 }
 
-BROKER_TITLES = ["Mortgage Broker {c} | $0 Fee, 20+ NZ Lenders | Finch", "Mortgage Broker {c} | $0 Fee, 20+ Lenders", "Mortgage Broker {c} | $0 Fee | Finch", "Mortgage Broker {c} | Finch"]
-BROKER_DESC = "Independent {c} mortgage broker covering {s}. Finch compares 20+ NZ lenders for rate and structure. $0 broker fee."
-BROKER_DESC_NZ = "Independent NZ mortgage broker. Finch compares 20+ lenders for buyers anywhere in New Zealand. Free advice, $0 broker fee, fast pre-approvals."
+# "Mortgage adviser {city}" is searched separately from "mortgage broker {city}" in NZ, so titles carry both.
+BROKER_TITLES = ["Mortgage Broker {c} | $0 Fee Mortgage Adviser | Finch", "Mortgage Broker {c} | Mortgage Adviser | Finch", "Mortgage Broker {c} | $0 Fee | Finch", "Mortgage Broker {c} | Finch"]
+BROKER_DESC = "Independent {c} mortgage broker and adviser covering {s}. Compare 20+ NZ lenders with Finch. $0 broker fee."
+BROKER_DESC_NZ = "Online NZ mortgage broker and adviser. Finch arranges home loans by phone and video for buyers anywhere in New Zealand across 20+ lenders. $0 broker fee."
+# The homepage targets "mortgage broker Auckland & NZ"; these pages take distinct angles so they don't compete with it.
+CITY_LABEL = {"mortgage-broker-auckland-city": "Central Auckland"}
 
 
 def fit(options, limit, **kw):
@@ -85,12 +88,12 @@ def main():
         path = ROOT / "blog" / f"{c['slug']}.html"
         if not path.exists():
             continue
-        city = html.unescape(c["city"])
+        city = CITY_LABEL.get(c["slug"], html.unescape(c["city"]))
         if c["slug"] == "mortgage-broker-nz":
-            title, desc = "Mortgage Broker NZ | Independent, $0 Fee | Finch", BROKER_DESC_NZ
+            title, desc = "Online Mortgage Broker NZ | Nationwide, $0 Fee | Finch", BROKER_DESC_NZ
         else:
             title = fit(BROKER_TITLES, 60, c=city)
-            desc = desc_fit(BROKER_DESC, c)
+            desc = desc_fit(BROKER_DESC, dict(c, city=city))
         jobs.append((path, title, desc))
 
     for path in sorted((ROOT / "locations").glob("*.html")):

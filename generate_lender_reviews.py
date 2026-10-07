@@ -549,7 +549,12 @@ def title_for(lender: dict) -> str:
     name = lender["name"]
     qual = h1_qualifier(lender)
     cat_cap = lender["category"].title()
-    return f"{name} {qual} Review 2026 | {cat_cap} | Finch"
+    if name.endswith("Loans"):
+        qual = ""
+    base = " ".join(x for x in (name, qual, "Review 2026") if x)
+    full = f"{base} | {cat_cap} | Finch"
+    # Drop the category segment rather than let the title truncate in results.
+    return full if len(full) <= 60 else f"{base} | Finch"
 
 
 def description_for(lender: dict) -> str:
