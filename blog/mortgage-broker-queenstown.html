@@ -77,7 +77,7 @@
     "url": "https://www.finchmortgages.co.nz/about.html"
   },
   "publisher": {
-    "@type": "MortgageBroker",
+    "@type": "FinancialService",
     "@id": "https://www.finchmortgages.co.nz/#organization",
     "name": "Finch Mortgages",
     "url": "https://www.finchmortgages.co.nz/",
@@ -108,7 +108,7 @@
       "name": "How does a local mortgage broker help me in my region?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "A local broker understands regional market conditions, localized bank valuation hurdles (like seismic registers or land classifications), and coordinates with local real estate agents and solicitors to speed up pre-approval."
+        "text": "A local broker knows how lenders view your area, including valuation issues such as earthquake-prone buildings or land classifications, and works with local agents and lawyers to keep your purchase on track."
       }
     },
     {
@@ -124,7 +124,7 @@
       "name": "Can a broker negotiate a better interest rate than a bank direct?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Banks reserve their sharpest rate discounts and cashback contributions for the broker channel. A broker compares 20+ lenders side-by-side to construct a competitive rate package you won't get walking in direct."
+        "text": "Often, yes. A broker can compare offers from many lenders at once and ask them to sharpen their pricing. Sometimes your own bank's offer is the best one, and a good broker will tell you so."
       }
     },
     {
@@ -132,7 +132,7 @@
       "name": "How does a family guarantee work to buy a home?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "A family guarantee allows parents to secure up to 20% of your home loan against the equity in their own property. This bridges your deposit gap without requiring parents to give you cash, avoiding low-equity bank premiums."
+        "text": "A family guarantee lets a family member use the equity in their own home as extra security for part of your loan. It can cover a deposit gap without them handing over cash, and may help you avoid low-equity charges."
       }
     }
   ]
@@ -144,13 +144,34 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": [
-        "MortgageBroker",
-        "FinancialService"
-      ],
+      "@type": "FinancialService",
       "@id": "https://www.finchmortgages.co.nz/#organization",
       "name": "Finch Mortgages",
       "legalName": "Finch Mortgages Limited",
+      "alternateName": [
+        "Finch Mortgage",
+        "Finch Mortgages NZ",
+        "Finch Mortgage NZ",
+        "finchmortgages.co.nz"
+      ],
+      "description": "Independent New Zealand mortgage broker based in Te Atatu South, Auckland. Compares 23 lenders for home loans, first home buyers, refinancing and investment property, with no broker fee on residential home loans.",
+      "founder": {
+        "@id": "https://www.finchmortgages.co.nz/#mukhtar-kiyani"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "New Zealand"
+      },
+      "knowsAbout": [
+        "Home loans",
+        "First home buyer mortgages",
+        "KiwiSaver first home withdrawal",
+        "Kāinga Ora First Home Loan",
+        "Mortgage refinancing",
+        "Mortgage pre-approval",
+        "Investment property lending",
+        "Self-employed mortgages"
+      ],
       "url": "https://www.finchmortgages.co.nz/",
       "logo": "https://www.finchmortgages.co.nz/images/finch-logo.png",
       "image": "https://www.finchmortgages.co.nz/images/finch-logo.png",
@@ -338,7 +359,7 @@
 <p>Finch is an independent NZ mortgage broker arranging home loans across the Queenstown Lakes and Central Otago region — from Queenstown and Frankton to Arrowtown, Wānaka, and Cromwell.</p>
 <div style="display:flex;gap:1rem;flex-wrap:wrap;margin-top:1.5rem;">
 <a class="btn-primary" href="../contact.html">Book a Free 15-Minute Call</a>
-<a class="btn-secondary" href="../mortgage-rates.html">View Live NZ Rates</a>
+<a class="btn-secondary" href="../mortgage-rates.html">View NZ Rates</a>
 </div>
 </div>
 </section>
@@ -347,31 +368,31 @@
 <div class="container" style="max-width:800px;">
 <div class="prose" style="color:var(--neutral-medGray);line-height:1.8;font-size:1.05rem;">
 <h2 style="font-size:2rem;font-weight:700;color:var(--neutral-black);margin-bottom:1.5rem;font-family:var(--font-display);letter-spacing:-0.02em;">Why You Need an Independent Mortgage Broker in Queenstown</h2>
-<p style="margin-bottom:2rem;">Walking directly into your own bank limits your options to that single lender's pricing, scorecard, and product range. As an independent NZ mortgage broker covering Queenstown &amp; Central Otago, Finch compares your scenario across the full panel of <strong>ANZ, ASB, BNZ, Westpac, TSB, SBS, The Co-operative Bank, Heartland</strong>, plus specialist non-bank lenders including <strong>Resimac, Pepper Money, Avanti Finance, Liberty Financial, Basecorp, and Bluestone</strong>. Because each NZ lender's policy, test rate, and credit appetite differs week-to-week, knowing which one wins for your specific situation can be the difference between a clean approval at a sharp rate and a frustrating decline.</p>
-<h3 style="font-size:1.35rem;font-weight:700;color:var(--finch-forest);margin-bottom:1rem;margin-top:2.5rem;">Queenstown &amp; Queenstown &amp; Central Otago — Local Market Notes</h3>
+<p style="margin-bottom:2rem;">If you go straight to your own bank, you only see that bank's rates and lending rules. As an independent mortgage broker covering Queenstown &amp; Central Otago, Finch compares your situation across our <a href="../lenders.html" style="color:var(--finch-forest);text-decoration:underline;font-weight:600;">panel of 23 lenders</a>. That includes banks such as <strong>ANZ, BNZ, SBS Bank, The Co-operative Bank and Heartland Bank</strong>, and specialist lenders such as <strong>Pepper Money, Avanti Finance, Liberty Financial and Basecorp Finance</strong>. Lenders change their rules and rates often, and the right choice can mean a quick approval at a good rate instead of a decline.</p>
+<h3 style="font-size:1.35rem;font-weight:700;color:var(--finch-forest);margin-bottom:1rem;margin-top:2.5rem;">Queenstown &amp; Central Otago — Local Market Notes</h3>
 <p style="margin-bottom:2rem;">Queenstown Lakes property assessment is shaped by district plan controls, sloped-site engineering, and a higher proportion of holiday-home and short-term-rental buyers. Some NZ lenders apply additional caution to short-term-let dependent income or to specific Queenstown Lakes zones; others lend confidently with the right documentation. Median sale prices here are amongst the highest in NZ.</p>
 <h3 style="font-size:1.35rem;font-weight:700;color:var(--finch-forest);margin-bottom:1rem;margin-top:2.5rem;">Suburbs &amp; Areas We Cover Across Queenstown &amp; Central Otago</h3>
 <p style="margin-bottom:2rem;">We arrange mortgages for clients across Queenstown CBD, Frankton, Arthurs Point, Fernhill, Goldfield Heights, Kelvin Heights, Lake Hayes Estate, Jacks Point, Arrowtown, Wānaka, Albert Town, Lake Hāwea, Cromwell, Alexandra, Clyde, and the wider Central Otago.</p>
 <h3 style="font-size:1.35rem;font-weight:700;color:var(--finch-forest);margin-bottom:1rem;margin-top:2.5rem;">Who Finch Helps in Queenstown</h3>
-<p style="margin-bottom:2rem;">Our typical Queenstown clients include owner-occupiers relocating for lifestyle and remote work; holiday-home buyers; tourism and hospitality operators; investors targeting short-term rental yield; commercial property buyers across Queenstown's retail and hospitality sectors. We work with PAYE professionals and complex self-employed scenarios alike, including LTCs, trusts, and partnership entities — and we know which NZ lender's scorecard treats each scenario most favourably.</p>
+<p style="margin-bottom:2rem;">Our typical Queenstown clients include owner-occupiers relocating for lifestyle and remote work; holiday-home buyers; tourism and hospitality operators; investors targeting short-term rental yield; commercial property buyers across Queenstown's retail and hospitality sectors. We help salary and wage earners and self-employed people alike, including those trading through companies, look-through companies (LTCs), trusts and partnerships. We know which lenders are most likely to approve each kind of income.</p>
 <h3 style="font-size:1.35rem;font-weight:700;color:var(--finch-forest);margin-bottom:1rem;margin-top:2.5rem;">Typical Queenstown Property Price Bands (2026)</h3>
-<p style="margin-bottom:2rem;">Queenstown standalone homes typically $1.5m-$3m+, Frankton townhouses $850k-$1.4m, Wānaka standalone $1.2m-$2.5m, Cromwell $750k-$1.2m. Knowing which deposit pathway works best for each band — Kāinga Ora First Home Loan, family guarantee, new-build LVR exemption, or standard 20% deposit — is part of how we match you to the right lender.</p>
+<p style="margin-bottom:2rem;">Queenstown standalone homes typically $1.5m-$3m+, Frankton townhouses $850k-$1.4m, Wānaka standalone $1.2m-$2.5m, Cromwell $750k-$1.2m. These are indicative ranges only, not valuations. Your price range affects which deposit option suits you best, whether that's the First Home Loan, a family guarantee, a new build or a standard 20% deposit.</p>
 <h3 style="font-size:1.35rem;font-weight:700;color:var(--finch-forest);margin-bottom:1rem;margin-top:2.5rem;">How the Finch Process Works for Queenstown Buyers</h3>
 <ol style="margin-bottom:2rem;padding-left:1.5rem;list-style:decimal;">
 <li style="margin-bottom:0.5rem;"><strong>Free 15-minute discovery call</strong> — by phone or Zoom, no obligation.</li>
 <li style="margin-bottom:0.5rem;"><strong>Document gathering</strong> — we send you a tailored checklist for Queenstown.</li>
-<li style="margin-bottom:0.5rem;"><strong>Lender match</strong> — we model your scenario across every NZ lender and recommend the strongest 1-2 options.</li>
+<li style="margin-bottom:0.5rem;"><strong>Lender match</strong> — we compare your situation across our lender panel and recommend the best one or two options.</li>
 <li style="margin-bottom:0.5rem;"><strong>Pre-approval</strong> — typically issued within 5-10 working days for clean scenarios.</li>
 <li style="margin-bottom:0.5rem;"><strong>House hunting in Queenstown</strong> — bid at auction or negotiate by private treaty with certainty.</li>
 <li style="margin-bottom:0.5rem;"><strong>Full approval &amp; settlement</strong> — typically 4-6 weeks from accepted offer.</li>
 <li style="margin-bottom:0.5rem;"><strong>Ongoing reviews</strong> — at every fixed-term roll-off and annually.</li>
 </ol>
 <h3 style="font-size:1.35rem;font-weight:700;color:var(--finch-forest);margin-bottom:1rem;margin-top:2.5rem;">What Finch Costs (Spoiler: $0 to You)</h3>
-<p style="margin-bottom:2rem;">For residential home loans, Finch charges you nothing. We are paid by the lender on settlement — not by you. That fee comes from the bank's distribution budget and would otherwise stay with the bank if you walked in direct. Our independent broker obligations under the Financial Markets Conduct Act mean we are legally required to act in your best interest, not the lender's. We hold FSP1011206 (FSPR FSP1011125) and are subject to NZ regulatory oversight.</p>
+<p style="margin-bottom:2rem;">For residential home loans, Finch charges you nothing. The lender pays us a commission when your loan settles, and we disclose it in writing before you act on our advice. New Zealand law requires financial advisers to put your interests first. Finch Mortgages (FSP1011125) is an Authorised Body under the Financial Advice Provider licence held by Finsure New Zealand Limited (FSP1005389). Read our <a href="../disclosure.html" style="color:var(--finch-forest);text-decoration:underline;font-weight:600;">disclosure statement</a>.</p>
 <h3 style="font-size:1.35rem;font-weight:700;color:var(--finch-forest);margin-bottom:1rem;margin-top:2.5rem;">First Home Buyer Support in Queenstown</h3>
-<p style="margin-bottom:2rem;">We specialise in helping Queenstown first home buyers combine every available NZ deposit pathway — KiwiSaver withdrawal (after 3 years of contributions), the <a href="https://kaingaora.govt.nz/en_NZ/home-ownership/first-home-loan/" rel="noopener" style="color:var(--finch-forest);text-decoration:underline;font-weight:600;" target="_blank">Kāinga Ora First Home Loan</a> (5% deposit through Westpac, SBS, The Co-operative Bank), family guarantees, and new-build LVR exemption set by the <a href="https://www.rbnz.govt.nz/regulation-and-supervision/banks/macro-prudential-policy/loan-to-value-ratio-restrictions" rel="noopener" style="color:var(--finch-forest);text-decoration:underline;font-weight:600;" target="_blank">Reserve Bank's LVR rules</a>. Most first home buyers find their effective deposit goes much further than they expected once we layer these properly. Read the full <a href="../guides/first-home-guide.html" style="color:var(--finch-forest);text-decoration:underline;font-weight:600;">NZ first home buyer guide</a>. Or see our <a href="../locations/first-home-buyer-queenstown.html" style="color:var(--finch-forest);text-decoration:underline;font-weight:600;">first home buyer page for Queenstown</a>.</p>
+<p style="margin-bottom:2rem;">We help Queenstown first home buyers make the most of every deposit option. That can include a KiwiSaver withdrawal (once you've been a member for three years), the <a href="https://kaingaora.govt.nz/en_NZ/home-ownership/first-home-loan/" rel="noopener" style="color:var(--finch-forest);text-decoration:underline;font-weight:600;" target="_blank">Kāinga Ora First Home Loan</a> (from a 5% deposit, through participating lenders), a family guarantee, or the new-build exemption under the <a href="https://www.rbnz.govt.nz/regulation-and-supervision/banks/macro-prudential-policy/loan-to-value-ratio-restrictions" rel="noopener" style="color:var(--finch-forest);text-decoration:underline;font-weight:600;" target="_blank">Reserve Bank's LVR rules</a>. Used together, these often stretch a deposit further than people expect. Read the full <a href="../guides/first-home-guide.html" style="color:var(--finch-forest);text-decoration:underline;font-weight:600;">NZ first home buyer guide</a>. Or see our <a href="../locations/first-home-buyer-queenstown.html" style="color:var(--finch-forest);text-decoration:underline;font-weight:600;">first home buyer page for Queenstown</a>.</p>
 <h3 style="font-size:1.35rem;font-weight:700;color:var(--finch-forest);margin-bottom:1rem;margin-top:2.5rem;">Refinance &amp; Restructure for Queenstown Homeowners</h3>
-<p style="margin-bottom:1rem;">If your fixed term is rolling off in the next 60 days, you're paying the loyalty tax. Refinancing through Finch typically captures a sharper rate plus 0.50-0.90% cashback (up to $20,000 depending on lender and loan size). We model your full economics — break fees, cashback clawback on existing loan, new cashback, legal costs — before recommending any move. Use our <a href="../calculators/refinance-savings.html" style="color:var(--finch-forest);text-decoration:underline;font-weight:600;">refinance savings calculator</a> to ballpark the benefit.</p>
+<p style="margin-bottom:1rem;">If your fixed term ends in the next 60 days, it's a good time to check whether your bank's renewal offer is competitive. Some lenders offer cashback when you switch, but it usually comes with conditions, and leaving early can mean break fees or repaying an earlier cashback. We work out the full cost before recommending any move. Use our <a href="../calculators/refinance-savings.html" style="color:var(--finch-forest);text-decoration:underline;font-weight:600;">refinance savings calculator</a> for a quick estimate.</p>
 </div>
 </div>
 </section>
@@ -383,7 +404,7 @@
 <svg fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" style="transition:transform 0.3s;" viewbox="0 0 24 24" width="16"><polyline points="6 9 12 15 18 9"></polyline></svg>
 </button>
 <div class="faq-content" style="display:none;padding:0 1.5rem 1.25rem 1.5rem;color:var(--neutral-medGray);line-height:1.7;font-size:0.95rem;border-top:1px solid rgba(180,178,169,0.1);padding-top:1rem;">
-<p>A local broker understands regional market conditions, localized bank valuation hurdles (like seismic registers or land classifications), and coordinates with local real estate agents and solicitors to speed up pre-approval.</p>
+<p>A local broker knows how lenders view your area, including valuation issues such as earthquake-prone buildings or land classifications, and works with local agents and lawyers to keep your purchase on track.</p>
 </div>
 </div>
 <div class="faq-item" style="border:1px solid rgba(180,178,169,0.2);border-radius:1rem;background:white;overflow:hidden;">
@@ -401,7 +422,7 @@
 <svg fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" style="transition:transform 0.3s;" viewbox="0 0 24 24" width="16"><polyline points="6 9 12 15 18 9"></polyline></svg>
 </button>
 <div class="faq-content" style="display:none;padding:0 1.5rem 1.25rem 1.5rem;color:var(--neutral-medGray);line-height:1.7;font-size:0.95rem;border-top:1px solid rgba(180,178,169,0.1);padding-top:1rem;">
-<p>Yes. Banks reserve their sharpest rate discounts and cashback contributions for the broker channel. A broker compares 20+ lenders side-by-side to construct a competitive rate package you won't get walking in direct.</p>
+<p>Often, yes. A broker can compare offers from many lenders at once and ask them to sharpen their pricing. Sometimes your own bank's offer is the best one, and a good broker will tell you so.</p>
 </div>
 </div>
 <div class="faq-item" style="border:1px solid rgba(180,178,169,0.2);border-radius:1rem;background:white;overflow:hidden;">
@@ -410,7 +431,7 @@
 <svg fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" style="transition:transform 0.3s;" viewbox="0 0 24 24" width="16"><polyline points="6 9 12 15 18 9"></polyline></svg>
 </button>
 <div class="faq-content" style="display:none;padding:0 1.5rem 1.25rem 1.5rem;color:var(--neutral-medGray);line-height:1.7;font-size:0.95rem;border-top:1px solid rgba(180,178,169,0.1);padding-top:1rem;">
-<p>A family guarantee allows parents to secure up to 20% of your home loan against the equity in their own property. This bridges your deposit gap without requiring parents to give you cash, avoiding low-equity bank premiums.</p>
+<p>A family guarantee lets a family member use the equity in their own home as extra security for part of your loan. It can cover a deposit gap without them handing over cash, and may help you avoid low-equity charges.</p>
 </div>
 </div>
 </div>
@@ -437,7 +458,7 @@
 <a href="../calculators/borrowing-power.html" style="display:block;padding:1.5rem;background:var(--finch-mist);border-radius:1rem;text-decoration:none;color:var(--neutral-black);"><strong style="display:block;color:var(--finch-forest);margin-bottom:0.5rem;">Borrowing Power</strong><span style="font-size:0.9rem;color:var(--neutral-medGray);">See how much NZ banks will lend you.</span></a>
 <a href="../calculators/mortgage-calculator.html" style="display:block;padding:1.5rem;background:var(--finch-mist);border-radius:1rem;text-decoration:none;color:var(--neutral-black);"><strong style="display:block;color:var(--finch-forest);margin-bottom:0.5rem;">NZ Mortgage Calculator</strong><span style="font-size:0.9rem;color:var(--neutral-medGray);">Estimate repayments at NZ rates.</span></a>
 <a href="../guides/first-home-guide.html" style="display:block;padding:1.5rem;background:var(--finch-mist);border-radius:1rem;text-decoration:none;color:var(--neutral-black);"><strong style="display:block;color:var(--finch-forest);margin-bottom:0.5rem;">NZ First Home Buyer Guide</strong><span style="font-size:0.9rem;color:var(--neutral-medGray);">Complete NZ FHB playbook.</span></a>
-<a href="../mortgage-rates.html" style="display:block;padding:1.5rem;background:var(--finch-mist);border-radius:1rem;text-decoration:none;color:var(--neutral-black);"><strong style="display:block;color:var(--finch-forest);margin-bottom:0.5rem;">Live NZ Mortgage Rates</strong><span style="font-size:0.9rem;color:var(--neutral-medGray);">Current carded and broker rates.</span></a>
+<a href="../mortgage-rates.html" style="display:block;padding:1.5rem;background:var(--finch-mist);border-radius:1rem;text-decoration:none;color:var(--neutral-black);"><strong style="display:block;color:var(--finch-forest);margin-bottom:0.5rem;">NZ Mortgage Rates</strong><span style="font-size:0.9rem;color:var(--neutral-medGray);">Current carded and broker rates.</span></a>
 <a href="../lenders.html" style="display:block;padding:1.5rem;background:var(--finch-mist);border-radius:1rem;text-decoration:none;color:var(--neutral-black);"><strong style="display:block;color:var(--finch-forest);margin-bottom:0.5rem;">NZ Lender Directory</strong><span style="font-size:0.9rem;color:var(--neutral-medGray);">All 20+ NZ lenders reviewed.</span></a>
 </div>
 </div>
@@ -450,7 +471,7 @@
 <p>Book a free 15-minute consultation. No obligation, no cost — just honest NZ-specific advice.</p>
 <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
 <a class="btn-cta-white" href="../contact.html">Book a Free Call →</a>
-<a class="btn-cta-outline" href="../mortgage-rates.html">View Live NZ Rates</a>
+<a class="btn-cta-outline" href="../mortgage-rates.html">View NZ Rates</a>
 </div>
 </div>
 </div>
@@ -472,7 +493,7 @@ Call 027 343 3293 now
 <ul style="list-style:none;padding:0;margin:0;color:rgba(255,255,255,0.78);font-size:0.9rem;line-height:2;">
 <li>✓ We compare 20+ NZ banks and non-bank lenders</li>
 <li>✓ The lender pays us — our advice costs you nothing</li>
-<li>✓ Registered financial adviser, FSP FSP1011206</li>
+<li>✓ Registered financial adviser (FSP1011206)</li>
 <li>✓ Same-day reply on weekdays</li>
 </ul>
 </div>
@@ -528,7 +549,7 @@ Call 027 343 3293 now
 <div class="footer-col"><h4>Company</h4><a href="../about.html">About Us</a><a href="../contact.html">Contact</a><a href="../map.html">Our Location</a><a href="../locations/index.html">Service Locations</a></div>
 </div>
 <!-- FINCH-NAP:START -->
-<div class="footer-nap" itemscope itemtype="https://schema.org/MortgageBroker" style="border-top:1px solid rgba(255,255,255,0.12);margin-top:2rem;padding-top:1.75rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1.5rem;font-size:0.88rem;line-height:1.7;">
+<div class="footer-nap" itemscope itemtype="https://schema.org/FinancialService" style="border-top:1px solid rgba(255,255,255,0.12);margin-top:2rem;padding-top:1.75rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1.5rem;font-size:0.88rem;line-height:1.7;">
 <div>
 <strong itemprop="name" style="display:block;font-size:0.95rem;margin-bottom:0.35rem;">Finch Mortgages Limited</strong>
 <span itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">

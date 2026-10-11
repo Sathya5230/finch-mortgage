@@ -32,11 +32,12 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/><link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" onload="this.onload=null;this.rel='stylesheet'"/><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"/></noscript><link href="style.css" rel="stylesheet"/>
 <style>.report-card{background:#fff;border:1px solid rgba(98,162,154,.35);border-radius:1.25rem;padding:2rem;display:flex;flex-direction:column;gap:.75rem;transition:box-shadow .2s,transform .2s,border-color .2s;text-decoration:none;color:inherit}.report-card:hover{box-shadow:0 8px 30px rgba(16,68,62,.1);transform:translateY(-3px);border-color:var(--finch-forest)}.report-badge{display:inline-flex;align-items:center;gap:.4rem;font-size:.65rem;font-weight:800;text-transform:uppercase;letter-spacing:.12em;padding:.25rem .75rem;border-radius:999px;width:fit-content}.badge-latest{background:var(--finch-forest);color:#fff}.badge-rates{background:#eff6ff;color:#1d4ed8}.badge-region{background:#fff7ed;color:#c2410c}.badge-invest{background:#f0fdf4;color:#15803d}.badge-first{background:#fdf4ff;color:#7e22ce}.report-week{font-size:.7rem;color:var(--neutral-warmGray);font-weight:700;text-transform:uppercase;letter-spacing:.1em}.report-title{font-size:1.1rem;font-weight:700;color:var(--neutral-black);line-height:1.35}.report-excerpt{font-size:.83rem;color:var(--neutral-medGray);line-height:1.65}.report-meta{display:flex;align-items:center;justify-content:space-between;font-size:.75rem;color:var(--neutral-warmGray);margin-top:auto;padding-top:.75rem;border-top:1px solid rgba(98,162,154,.3)}.report-meta strong{color:var(--finch-forest);font-weight:700}</style>
-<script type="application/ld+json">{
+<script type="application/ld+json">
+{
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "MortgageBroker",
+      "@type": "FinancialService",
       "@id": "https://www.finchmortgages.co.nz/#organization",
       "name": "Finch Mortgages",
       "alternateName": "Finch Mortgages",
@@ -60,10 +61,9 @@
       },
       "founder": {
         "@type": "Person",
-        "name": "Mukhtar Kiyani"
+        "name": "Mukhtar Kiyani",
+        "@id": "https://www.finchmortgages.co.nz/#mukhtar-kiyani"
       },
-      "datePublished": "2024-01-01",
-      "dateModified": "2026-05-19",
       "sameAs": [
         "https://www.finchmortgages.co.nz/about.html",
         "https://www.finchmortgages.co.nz/contact.html"
@@ -77,15 +77,7 @@
       "publisher": {
         "@id": "https://www.finchmortgages.co.nz/#organization"
       },
-      "inLanguage": "en-NZ",
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": {
-          "@type": "EntryPoint",
-          "urlTemplate": "https://www.finchmortgages.co.nz/blog.html?q={search_term_string}"
-        },
-        "query-input": "required name=search_term_string"
-      }
+      "inLanguage": "en-NZ"
     },
     {
       "@type": "BreadcrumbList",
@@ -113,7 +105,7 @@
       "@id": "https://www.finchmortgages.co.nz/weekly-reports.html#webpage",
       "url": "https://www.finchmortgages.co.nz/weekly-reports.html",
       "name": "Weekly NZ Mortgage Market Reports",
-      "description": "Weekly NZ mortgage market reports \u2014 OCR commentary, fixed/floating rate moves, lender promotions, and Auckland property market trends.",
+      "description": "Weekly NZ mortgage market reports — OCR commentary, fixed/floating rate moves, lender promotions, and Auckland property market trends.",
       "inLanguage": "en-NZ",
       "isPartOf": {
         "@id": "https://www.finchmortgages.co.nz/#website"
@@ -135,7 +127,8 @@
       }
     }
   ]
-}</script>
+}
+</script>
 <!-- Meta Pixel Code -->
 <script>!function(){var e=!1;function n(){var n,t,o,c,a,s;e||(e=!0,n=window,t=document,o="script",n.fbq||(c=n.fbq=function(){c.callMethod?c.callMethod.apply(c,arguments):c.queue.push(arguments)},n._fbq||(n._fbq=c),c.push=c,c.loaded=!0,c.version="2.0",c.queue=[],(a=t.createElement(o)).async=!0,a.src="https://connect.facebook.net/en_US/fbevents.js",(s=t.getElementsByTagName(o)[0]).parentNode.insertBefore(a,s)),fbq("init","984298931136124"),fbq("track","PageView"))}["pointerdown","scroll","keydown","touchstart"].forEach(function(e){window.addEventListener(e,n,{passive:!0,once:!0})}),setTimeout(n,4e3)}();</script>
 <noscript><img alt="Facebook Pixel" height="1" width="1" style="display:none"
@@ -232,7 +225,7 @@ src="https://www.facebook.com/tr?id=984298931136124&ev=PageView&noscript=1"
 <svg fill="none" height="13" stroke="currentColor" stroke-linecap="round" stroke-width="1.5" style="display:inline-block;vertical-align:middle;flex-shrink:0;" viewbox="0 0 24 24" width="13"><rect height="18" rx="2" width="18" x="3" y="3"></rect></svg> Published Every Week · 2026
       </div>
 <h1 style="color:white;font-family:var(--font-display);font-size:clamp(2rem,4.5vw,3.25rem);font-weight:700;line-height:1.1;margin-bottom:1rem;">Weekly NZ Mortgage<br/><em style="color:var(--finch-sage);font-style:italic;font-weight:400;">Market Reports.</em></h1>
-<p style="color:rgba(255,255,255,0.75);max-width:560px;line-height:1.75;">Every week, Finch's advisors analyse the latest OCR signals, lender rate movements, property market shifts, and key news — and distil it into a plain-English report for NZ borrowers.</p>
+<p style="color:rgba(255,255,255,0.75);max-width:560px;line-height:1.75;">Every week, Finch's advisers analyse the latest OCR signals, lender rate movements, property market shifts, and key news — and distil it into a plain-English report for NZ borrowers.</p>
 </div>
 </section>
 <!-- ── LATEST REPORT (FEATURED) ── -->
@@ -279,7 +272,7 @@ src="https://www.facebook.com/tr?id=984298931136124&ev=PageView&noscript=1"
 </div>
 </div>
 <div style="background:rgba(255,255,255,0.08);border:1px solid rgba(98,162,154,0.2);border-radius:1rem;padding:1.25rem;">
-<div style="font-size:0.65rem;font-weight:800;text-transform:uppercase;letter-spacing:0.12em;color:var(--finch-sage);margin-bottom:0.6rem;">Finch Advisor View</div>
+<div style="font-size:0.65rem;font-weight:800;text-transform:uppercase;letter-spacing:0.12em;color:var(--finch-sage);margin-bottom:0.6rem;">Finch Adviser View</div>
 <p style="color:rgba(255,255,255,0.8);font-size:0.82rem;line-height:1.65;font-style:italic;">"Rates are dropping quickly at the short end of the curve. Lenders are aggressively fighting for quality refinances and pre-approvals ahead of the winter slowdown."</p>
 </div>
 </div>
@@ -412,7 +405,7 @@ src="https://www.facebook.com/tr?id=984298931136124&ev=PageView&noscript=1"
 <div class="report-badge badge-rates"><svg fill="none" height="11" stroke="currentColor" stroke-linecap="round" stroke-width="1.5" style="display:inline-block;vertical-align:middle;flex-shrink:0;" viewbox="0 0 24 24" width="11"><rect height="18" rx="2" width="18" x="3" y="3"></rect></svg> Market</div>
 <div class="report-week">Week 3 · 20 Jan 2026</div>
 <div class="report-title">Summer Sales Slump: Opportunity or Warning?</div>
-<div class="report-excerpt">Volumes dipped sharply over January. We analyze the traditional holiday slowdown.</div>
+<div class="report-excerpt">Volumes dipped sharply over January. We analyse the traditional holiday slowdown.</div>
 <div class="report-meta"><span><svg fill="none" height="12" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" style="display:inline-block;vertical-align:middle;flex-shrink:0;" viewbox="0 0 24 24" width="12"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> 6 min read</span><strong>Sales Vol: -12% MoM</strong></div>
 </a>
 <a aria-label="Link icon" class="report-card" data-category="rates" href="weekly-reports/week-2-mortgage-stress-testing.html">
@@ -444,7 +437,7 @@ src="https://www.facebook.com/tr?id=984298931136124&ev=PageView&noscript=1"
 <div class="footer-col"><h4>Company</h4><a href="about.html">About Us</a><a href="contact.html">Contact</a><a href="map.html">Our Location</a><a href="locations/index.html">Service Locations</a></div>
 </div>
 <!-- FINCH-NAP:START -->
-<div class="footer-nap" itemscope itemtype="https://schema.org/MortgageBroker" style="border-top:1px solid rgba(255,255,255,0.12);margin-top:2rem;padding-top:1.75rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1.5rem;font-size:0.88rem;line-height:1.7;">
+<div class="footer-nap" itemscope itemtype="https://schema.org/FinancialService" style="border-top:1px solid rgba(255,255,255,0.12);margin-top:2rem;padding-top:1.75rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1.5rem;font-size:0.88rem;line-height:1.7;">
 <div>
 <strong itemprop="name" style="display:block;font-size:0.95rem;margin-bottom:0.35rem;">Finch Mortgages Limited</strong>
 <span itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">

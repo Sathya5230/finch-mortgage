@@ -131,7 +131,7 @@ def schema_for(post: dict) -> str:
             "keywords": ", ".join(post["keywords"]),
             "author": {
                 "@type": "Person",
-                "@id": f"{BASE_URL}/about.html#mukhtar",
+                "@id": f"{BASE_URL}/#mukhtar-kiyani",
                 "name": "Mukhtar Kiyani",
                 "jobTitle": "Mortgage Adviser & Founder",
                 "url": f"{BASE_URL}/about.html",
@@ -141,7 +141,7 @@ def schema_for(post: dict) -> str:
             "about": [{"@type": "Thing", "name": t} for t in post.get("about", ["New Zealand mortgages"])],
         },
         {
-            "@type": ["MortgageBroker", "FinancialService"],
+            "@type": "FinancialService",
             "@id": f"{BASE_URL}/#organization",
             "name": BIZ["name"],
             "legalName": BIZ["legal_name"],

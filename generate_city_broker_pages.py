@@ -51,7 +51,7 @@ FAQ_SCHEMA = """<script type="application/ld+json">
       "name": "How does a local mortgage broker help me in my region?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "A local broker understands regional market conditions, localized bank valuation hurdles (like seismic registers or land classifications), and coordinates with local real estate agents and solicitors to speed up pre-approval."
+        "text": "A local broker knows how lenders view your area, including valuation issues such as earthquake-prone buildings or land classifications, and works with local agents and lawyers to keep your purchase on track."
       }
     },
     {
@@ -67,7 +67,7 @@ FAQ_SCHEMA = """<script type="application/ld+json">
       "name": "Can a broker negotiate a better interest rate than a bank direct?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Banks reserve their sharpest rate discounts and cashback contributions for the broker channel. A broker compares 20+ lenders side-by-side to construct a competitive rate package you won't get walking in direct."
+        "text": "Often, yes. A broker can compare offers from many lenders at once and ask them to sharpen their pricing. Sometimes your own bank's offer is the best one, and a good broker will tell you so."
       }
     },
     {
@@ -75,7 +75,7 @@ FAQ_SCHEMA = """<script type="application/ld+json">
       "name": "How does a family guarantee work to buy a home?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "A family guarantee allows parents to secure up to 20% of your home loan against the equity in their own property. This bridges your deposit gap without requiring parents to give you cash, avoiding low-equity bank premiums."
+        "text": "A family guarantee lets a family member use the equity in their own home as extra security for part of your loan. It can cover a deposit gap without them handing over cash, and may help you avoid low-equity charges."
       }
     }
   ]
@@ -159,7 +159,7 @@ def schema_for(c: dict) -> str:
             "url": f"{BASE_URL}/about.html",
         },
         "publisher": {
-            "@type": "MortgageBroker",
+            "@type": "FinancialService",
             "@id": f"{BASE_URL}/#organization",
             "name": "Finch Mortgages",
             "url": f"{BASE_URL}/",
@@ -194,7 +194,7 @@ def optional_sections(c: dict) -> str:
                    f'          <p style="margin-bottom:2rem;">{c["lending_note"]}</p>')
     if c.get("price_band"):
         out.append(f'<h3 {H3}>Typical {city} Property Price Bands (2026)</h3>\n'
-                   f'          <p style="margin-bottom:2rem;">{c["price_band"]}. Knowing which deposit pathway works best for each band — Kāinga Ora First Home Loan, family guarantee, new-build LVR exemption, or standard 20% deposit — is part of how we match you to the right lender.</p>')
+                   f'          <p style="margin-bottom:2rem;">{c["price_band"]}. These are indicative ranges only, not valuations. Your price range affects which deposit option suits you best, whether that\'s the First Home Loan, a family guarantee, a new build or a standard 20% deposit.</p>')
     if c.get("parent_slug"):
         out.append(f'<p style="margin-bottom:2rem;">Looking more widely? See our <a href="{c["parent_slug"]}.html" {LINK}>{c["parent_label"]}</a> page for the surrounding region.</p>')
     return "\n\n          ".join(out) + ("\n" if out else "")
@@ -203,6 +203,8 @@ def optional_sections(c: dict) -> str:
 def main_body(c: dict) -> str:
     city = c["city"]
     region = c["region"]
+    # Regions like "Hamilton &amp; Waikato" already start with the city name.
+    market_heading = region if region.startswith(city) else f"{city} &amp; {region}"
     return textwrap.dedent(f"""
     <main style="padding-top:80px;">
     <!-- Hero -->
@@ -215,7 +217,7 @@ def main_body(c: dict) -> str:
         <p>{c['intro_one_liner']}</p>
         <div style="display:flex;gap:1rem;flex-wrap:wrap;margin-top:1.5rem;">
           <a class="btn-primary" href="../contact.html">Book a Free 15-Minute Call</a>
-          <a class="btn-secondary" href="../mortgage-rates.html">View Live NZ Rates</a>
+          <a class="btn-secondary" href="../mortgage-rates.html">View NZ Rates</a>
         </div>
       </div>
     </section>
@@ -225,23 +227,23 @@ def main_body(c: dict) -> str:
       <div class="container" style="max-width:800px;">
         <div class="prose" style="color:var(--neutral-medGray);line-height:1.8;font-size:1.05rem;">
           <h2 style="font-size:2rem;font-weight:700;color:var(--neutral-black);margin-bottom:1.5rem;font-family:var(--font-display);letter-spacing:-0.02em;">Why You Need an Independent Mortgage Broker in {city}</h2>
-          <p style="margin-bottom:2rem;">Walking directly into your own bank limits your options to that single lender's pricing, scorecard, and product range. As an independent NZ mortgage broker covering {region}, Finch compares your scenario across the full panel of <strong>ANZ, ASB, BNZ, Westpac, TSB, SBS, The Co-operative Bank, Heartland</strong>, plus specialist non-bank lenders including <strong>Resimac, Pepper Money, Avanti Finance, Liberty Financial, Basecorp, and Bluestone</strong>. Because each NZ lender's policy, test rate, and credit appetite differs week-to-week, knowing which one wins for your specific situation can be the difference between a clean approval at a sharp rate and a frustrating decline.</p>
+          <p style="margin-bottom:2rem;">If you go straight to your own bank, you only see that bank's rates and lending rules. As an independent mortgage broker covering {region}, Finch compares your situation across our <a href="../lenders.html" style="color:var(--finch-forest);text-decoration:underline;font-weight:600;">panel of 23 lenders</a>. That includes banks such as <strong>ANZ, BNZ, SBS Bank, The Co-operative Bank and Heartland Bank</strong>, and specialist lenders such as <strong>Pepper Money, Avanti Finance, Liberty Financial and Basecorp Finance</strong>. Lenders change their rules and rates often, and the right choice can mean a quick approval at a good rate instead of a decline.</p>
 
-          <h3 style="font-size:1.35rem;font-weight:700;color:var(--finch-forest);margin-bottom:1rem;margin-top:2.5rem;">{city} &amp; {region} — Local Market Notes</h3>
+          <h3 style="font-size:1.35rem;font-weight:700;color:var(--finch-forest);margin-bottom:1rem;margin-top:2.5rem;">{market_heading} — Local Market Notes</h3>
           <p style="margin-bottom:2rem;">{c['market_note']}</p>
 
           <h3 style="font-size:1.35rem;font-weight:700;color:var(--finch-forest);margin-bottom:1rem;margin-top:2.5rem;">Suburbs &amp; Areas We Cover Across {region}</h3>
           <p style="margin-bottom:2rem;">We arrange mortgages for clients across {c['suburbs']}.</p>
 
           <h3 style="font-size:1.35rem;font-weight:700;color:var(--finch-forest);margin-bottom:1rem;margin-top:2.5rem;">Who Finch Helps in {city}</h3>
-          <p style="margin-bottom:2rem;">Our typical {city} clients include {c['common_buyers']}. We work with PAYE professionals and complex self-employed scenarios alike, including LTCs, trusts, and partnership entities — and we know which NZ lender's scorecard treats each scenario most favourably.</p>
+          <p style="margin-bottom:2rem;">Our typical {city} clients include {c['common_buyers']}. We help salary and wage earners and self-employed people alike, including those trading through companies, look-through companies (LTCs), trusts and partnerships. We know which lenders are most likely to approve each kind of income.</p>
 
           {optional_sections(c)}
           <h3 style="font-size:1.35rem;font-weight:700;color:var(--finch-forest);margin-bottom:1rem;margin-top:2.5rem;">How the Finch Process Works for {city} Buyers</h3>
           <ol style="margin-bottom:2rem;padding-left:1.5rem;list-style:decimal;">
             <li style="margin-bottom:0.5rem;"><strong>Free 15-minute discovery call</strong> — by phone or Zoom, no obligation.</li>
             <li style="margin-bottom:0.5rem;"><strong>Document gathering</strong> — we send you a tailored checklist for {city}.</li>
-            <li style="margin-bottom:0.5rem;"><strong>Lender match</strong> — we model your scenario across every NZ lender and recommend the strongest 1-2 options.</li>
+            <li style="margin-bottom:0.5rem;"><strong>Lender match</strong> — we compare your situation across our lender panel and recommend the best one or two options.</li>
             <li style="margin-bottom:0.5rem;"><strong>Pre-approval</strong> — typically issued within 5-10 working days for clean scenarios.</li>
             <li style="margin-bottom:0.5rem;"><strong>House hunting in {city}</strong> — bid at auction or negotiate by private treaty with certainty.</li>
             <li style="margin-bottom:0.5rem;"><strong>Full approval &amp; settlement</strong> — typically 4-6 weeks from accepted offer.</li>
@@ -249,13 +251,13 @@ def main_body(c: dict) -> str:
           </ol>
 
           <h3 style="font-size:1.35rem;font-weight:700;color:var(--finch-forest);margin-bottom:1rem;margin-top:2.5rem;">What Finch Costs (Spoiler: $0 to You)</h3>
-          <p style="margin-bottom:2rem;">For residential home loans, Finch charges you nothing. We are paid by the lender on settlement — not by you. That fee comes from the bank's distribution budget and would otherwise stay with the bank if you walked in direct. Our independent broker obligations under the Financial Markets Conduct Act mean we are legally required to act in your best interest, not the lender's. We hold FSP1011206 (FSPR FSP1011125) and are subject to NZ regulatory oversight.</p>
+          <p style="margin-bottom:2rem;">For residential home loans, Finch charges you nothing. The lender pays us a commission when your loan settles, and we disclose it in writing before you act on our advice. New Zealand law requires financial advisers to put your interests first. Finch Mortgages (FSP1011125) is an Authorised Body under the Financial Advice Provider licence held by Finsure New Zealand Limited (FSP1005389). Read our <a href="../disclosure.html" style="color:var(--finch-forest);text-decoration:underline;font-weight:600;">disclosure statement</a>.</p>
 
           <h3 style="font-size:1.35rem;font-weight:700;color:var(--finch-forest);margin-bottom:1rem;margin-top:2.5rem;">First Home Buyer Support in {city}</h3>
-          <p style="margin-bottom:2rem;">We specialise in helping {city} first home buyers combine every available NZ deposit pathway — KiwiSaver withdrawal (after 3 years of contributions), the <a href="https://kaingaora.govt.nz/en_NZ/home-ownership/first-home-loan/" target="_blank" rel="noopener" style="color:var(--finch-forest);text-decoration:underline;font-weight:600;">Kāinga Ora First Home Loan</a> (5% deposit through Westpac, SBS, The Co-operative Bank), family guarantees, and new-build LVR exemption set by the <a href="https://www.rbnz.govt.nz/regulation-and-supervision/banks/macro-prudential-policy/loan-to-value-ratio-restrictions" target="_blank" rel="noopener" style="color:var(--finch-forest);text-decoration:underline;font-weight:600;">Reserve Bank's LVR rules</a>. Most first home buyers find their effective deposit goes much further than they expected once we layer these properly. Read the full <a href="../guides/first-home-guide.html" style="color:var(--finch-forest);text-decoration:underline;font-weight:600;">NZ first home buyer guide</a>.</p>
+          <p style="margin-bottom:2rem;">We help {city} first home buyers make the most of every deposit option. That can include a KiwiSaver withdrawal (once you've been a member for three years), the <a href="https://kaingaora.govt.nz/en_NZ/home-ownership/first-home-loan/" target="_blank" rel="noopener" style="color:var(--finch-forest);text-decoration:underline;font-weight:600;">Kāinga Ora First Home Loan</a> (from a 5% deposit, through participating lenders), a family guarantee, or the new-build exemption under the <a href="https://www.rbnz.govt.nz/regulation-and-supervision/banks/macro-prudential-policy/loan-to-value-ratio-restrictions" target="_blank" rel="noopener" style="color:var(--finch-forest);text-decoration:underline;font-weight:600;">Reserve Bank's LVR rules</a>. Used together, these often stretch a deposit further than people expect. Read the full <a href="../guides/first-home-guide.html" style="color:var(--finch-forest);text-decoration:underline;font-weight:600;">NZ first home buyer guide</a>.</p>
 
           <h3 style="font-size:1.35rem;font-weight:700;color:var(--finch-forest);margin-bottom:1rem;margin-top:2.5rem;">Refinance &amp; Restructure for {city} Homeowners</h3>
-          <p style="margin-bottom:1rem;">If your fixed term is rolling off in the next 60 days, you're paying the loyalty tax. Refinancing through Finch typically captures a sharper rate plus 0.50-0.90% cashback (up to $20,000 depending on lender and loan size). We model your full economics — break fees, cashback clawback on existing loan, new cashback, legal costs — before recommending any move. Use our <a href="../calculators/refinance-savings.html" style="color:var(--finch-forest);text-decoration:underline;font-weight:600;">refinance savings calculator</a> to ballpark the benefit.</p>
+          <p style="margin-bottom:1rem;">If your fixed term ends in the next 60 days, it's a good time to check whether your bank's renewal offer is competitive. Some lenders offer cashback when you switch, but it usually comes with conditions, and leaving early can mean break fees or repaying an earlier cashback. We work out the full cost before recommending any move. Use our <a href="../calculators/refinance-savings.html" style="color:var(--finch-forest);text-decoration:underline;font-weight:600;">refinance savings calculator</a> for a quick estimate.</p>
         </div>
       </div>
     </section>
@@ -270,7 +272,7 @@ def main_body(c: dict) -> str:
           <a href="../calculators/borrowing-power.html" style="display:block;padding:1.5rem;background:var(--finch-mist);border-radius:1rem;text-decoration:none;color:var(--neutral-black);"><strong style="display:block;color:var(--finch-forest);margin-bottom:0.5rem;">Borrowing Power</strong><span style="font-size:0.9rem;color:var(--neutral-medGray);">See how much NZ banks will lend you.</span></a>
           <a href="../calculators/mortgage-calculator.html" style="display:block;padding:1.5rem;background:var(--finch-mist);border-radius:1rem;text-decoration:none;color:var(--neutral-black);"><strong style="display:block;color:var(--finch-forest);margin-bottom:0.5rem;">NZ Mortgage Calculator</strong><span style="font-size:0.9rem;color:var(--neutral-medGray);">Estimate repayments at NZ rates.</span></a>
           <a href="../guides/first-home-guide.html" style="display:block;padding:1.5rem;background:var(--finch-mist);border-radius:1rem;text-decoration:none;color:var(--neutral-black);"><strong style="display:block;color:var(--finch-forest);margin-bottom:0.5rem;">NZ First Home Buyer Guide</strong><span style="font-size:0.9rem;color:var(--neutral-medGray);">Complete NZ FHB playbook.</span></a>
-          <a href="../mortgage-rates.html" style="display:block;padding:1.5rem;background:var(--finch-mist);border-radius:1rem;text-decoration:none;color:var(--neutral-black);"><strong style="display:block;color:var(--finch-forest);margin-bottom:0.5rem;">Live NZ Mortgage Rates</strong><span style="font-size:0.9rem;color:var(--neutral-medGray);">Current carded and broker rates.</span></a>
+          <a href="../mortgage-rates.html" style="display:block;padding:1.5rem;background:var(--finch-mist);border-radius:1rem;text-decoration:none;color:var(--neutral-black);"><strong style="display:block;color:var(--finch-forest);margin-bottom:0.5rem;">NZ Mortgage Rates</strong><span style="font-size:0.9rem;color:var(--neutral-medGray);">Current carded and broker rates.</span></a>
           <a href="../lenders.html" style="display:block;padding:1.5rem;background:var(--finch-mist);border-radius:1rem;text-decoration:none;color:var(--neutral-black);"><strong style="display:block;color:var(--finch-forest);margin-bottom:0.5rem;">NZ Lender Directory</strong><span style="font-size:0.9rem;color:var(--neutral-medGray);">All 20+ NZ lenders reviewed.</span></a>
         </div>
       </div>
@@ -284,7 +286,7 @@ def main_body(c: dict) -> str:
           <p>Book a free 15-minute consultation. No obligation, no cost — just honest NZ-specific advice.</p>
           <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
             <a class="btn-cta-white" href="../contact.html">Book a Free Call →</a>
-            <a class="btn-cta-outline" href="../mortgage-rates.html">View Live NZ Rates</a>
+            <a class="btn-cta-outline" href="../mortgage-rates.html">View NZ Rates</a>
           </div>
         </div>
       </div>

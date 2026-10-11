@@ -63,15 +63,21 @@ def clean(label):
 
 
 # ---------------------------------------------------------------- gather data
+# Category comes from the lender data; titles were shortened and most no longer
+# carry a category suffix, which dumped 16 of 23 lenders into "Specialist".
+from generate_lender_reviews import LENDERS
+LENDER_CATEGORY = {f"{l['slug']}.html": l["category"].title() for l in LENDERS}
+
 reviews = []  # (slug, label, category)
 for p in sorted(glob.glob(os.path.join(ROOT, "lenders", "*-review.html"))):
     t = title_of(p)
-    suffix = t.split(" | ")
-    cat = "Specialist Lenders"
-    for part in suffix:
-        if part.strip() in CAT_FROM_SUFFIX:
-            cat = CAT_FROM_SUFFIX[part.strip()]
-            break
+    cat = CAT_FROM_SUFFIX.get(LENDER_CATEGORY.get(os.path.basename(p), ""))
+    if cat is None:
+        cat = "Specialist Lenders"
+        for part in t.split(" | "):
+            if part.strip() in CAT_FROM_SUFFIX:
+                cat = CAT_FROM_SUFFIX[part.strip()]
+                break
     reviews.append((os.path.basename(p), clean(t), cat))
 
 CAT_ORDER = ["Major Banks", "Non-Bank Lenders", "Specialist Lenders", "Credit Unions"]
@@ -140,7 +146,7 @@ groups = []
 for cat in CAT_ORDER:
     links = [(f"lenders/{slug}", label) for slug, label, c in reviews if c == cat]
     if links:
-        groups.append((cat, links))
+        groups.append((cat, [(CAT_HUB[cat], f"All {cat} →")] + links))
 block = section(
     "Browse All Lender Reviews",
     "In-depth, independent reviews of every major bank, non-bank, specialist and credit-union lender we work with across New Zealand.",
@@ -184,7 +190,9 @@ print(f"locations hub: linked {len(locations)} city pages")
 # ---------------------------------------------------------------- 4. review pages
 for slug, label, cat in reviews:
     sib = [(s2, l2) for s2, l2, c2 in reviews if c2 == cat and s2 != slug]
-    links = [("../lenders.html", "All Lenders Hub")] + [(s2, l2) for s2, l2 in sib]
+    # The category hub link keeps hubs with few members (Credit Unions) from being orphaned.
+    links = ([("../lenders.html", "All Lenders Hub"), (os.path.basename(CAT_HUB[cat]), f"{cat} Hub")]
+             + [(s2, l2) for s2, l2 in sib])
     block = section(
         f"Compare Other {cat}",
         "See how this lender stacks up against the alternatives before you choose.",
@@ -277,7 +285,7 @@ for filename, label, s_slug, c_slug in service_cities:
     # Sibling Cities for the same service
     sib_cities = [
         (f"{s_slug}-{city_item}.html", f"{SERVICE_NAME_SHORT[s_slug]} in {CITY_NAMES.get(city_item, city_item)}")
-        for city_item in TARGET_CITIES if city_item != c_slug
+        for city_item in sorted(TARGET_CITIES) if city_item != c_slug  # sets iterate in random order
     ]
     
     # Matching city broker page link (e.g. blog/mortgage-broker-wellington.html)

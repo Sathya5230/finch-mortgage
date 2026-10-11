@@ -66,7 +66,7 @@
   "inLanguage": "en-NZ",
   "author": {
     "@type": "Person",
-    "@id": "https://www.finchmortgages.co.nz/about.html#mukhtar",
+    "@id": "https://www.finchmortgages.co.nz/#mukhtar-kiyani",
     "name": "Mukhtar Kiyani",
     "jobTitle": "Mortgage Adviser & Founder",
     "url": "https://www.finchmortgages.co.nz/about.html",
@@ -75,7 +75,7 @@
     }
   },
   "publisher": {
-    "@type": "MortgageBroker",
+    "@type": "FinancialService",
     "@id": "https://www.finchmortgages.co.nz/#organization",
     "name": "Finch Mortgages",
     "url": "https://www.finchmortgages.co.nz/",
@@ -111,7 +111,7 @@
       "name": "How does a local mortgage broker help me in my region?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "A local broker understands regional market conditions, localized bank valuation hurdles (like seismic registers or land classifications), and coordinates with local real estate agents and solicitors to speed up pre-approval."
+        "text": "A local broker knows how lenders view your area, including valuation issues such as earthquake-prone buildings or land classifications, and works with local agents and lawyers to keep your purchase on track."
       }
     },
     {
@@ -127,7 +127,7 @@
       "name": "Can a broker negotiate a better interest rate than a bank direct?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Banks reserve their sharpest rate discounts and cashback contributions for the broker channel. A broker compares 20+ lenders side-by-side to construct a competitive rate package you won't get walking in direct."
+        "text": "Often, yes. A broker can compare offers from many lenders at once and ask them to sharpen their pricing. Sometimes your own bank's offer is the best one, and a good broker will tell you so."
       }
     },
     {
@@ -135,7 +135,7 @@
       "name": "How does a family guarantee work to buy a home?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "A family guarantee allows parents to secure up to 20% of your home loan against the equity in their own property. This bridges your deposit gap without requiring parents to give you cash, avoiding low-equity bank premiums."
+        "text": "A family guarantee lets a family member use the equity in their own home as extra security for part of your loan. It can cover a deposit gap without them handing over cash, and may help you avoid low-equity charges."
       }
     }
   ]
@@ -148,13 +148,34 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": [
-        "MortgageBroker",
-        "FinancialService"
-      ],
+      "@type": "FinancialService",
       "@id": "https://www.finchmortgages.co.nz/#organization",
       "name": "Finch Mortgages",
       "legalName": "Finch Mortgages Limited",
+      "alternateName": [
+        "Finch Mortgage",
+        "Finch Mortgages NZ",
+        "Finch Mortgage NZ",
+        "finchmortgages.co.nz"
+      ],
+      "description": "Independent New Zealand mortgage broker based in Te Atatu South, Auckland. Compares 23 lenders for home loans, first home buyers, refinancing and investment property, with no broker fee on residential home loans.",
+      "founder": {
+        "@id": "https://www.finchmortgages.co.nz/#mukhtar-kiyani"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "New Zealand"
+      },
+      "knowsAbout": [
+        "Home loans",
+        "First home buyer mortgages",
+        "KiwiSaver first home withdrawal",
+        "Kāinga Ora First Home Loan",
+        "Mortgage refinancing",
+        "Mortgage pre-approval",
+        "Investment property lending",
+        "Self-employed mortgages"
+      ],
       "url": "https://www.finchmortgages.co.nz/",
       "logo": "https://www.finchmortgages.co.nz/images/finch-logo.png",
       "image": "https://www.finchmortgages.co.nz/images/finch-logo.png",
@@ -343,16 +364,16 @@
 <div class="container" style="padding-bottom:6rem;">
 <div class="article-layout">
 <div class="article-body blog-article-body">
-<p>West Auckland is in the absolute throes of a colossal residential renaissance. Fueled by unprecedented infrastructural upgrades—including the widening of the Northwestern motorway and the immense gravitational pull of a modernized City Rail Link—suburbs that were just a decade ago considered remote outposts are now rapidly expanding, highly desirable urban hubs. Whether you are seeking a vast, isolated lifestyle block enveloped in the Waitakere ranges or a brand-new terrace development in the geographic center of Henderson, securing a mortgage "Out West" requires specialized, localized lending knowledge.</p>
+<p>West Auckland is in the absolute throes of a colossal residential renaissance. Fueled by unprecedented infrastructural upgrades—including the widening of the Northwestern motorway and the immense gravitational pull of a modernised City Rail Link—suburbs that were just a decade ago considered remote outposts are now rapidly expanding, highly desirable urban hubs. Whether you are seeking a vast, isolated lifestyle block enveloped in the Waitakere ranges or a brand-new terrace development in the geographic centre of Henderson, securing a mortgage "Out West" requires specialised, localised lending knowledge.</p>
 <h2 id="henderson">High-Density Lending &amp; The Henderson Transformation</h2>
-<p>Henderson, traditionally characterized by expansive quarter-acre blocks, has transformed into a high-density epicenter. It is increasingly packed with sprawling Turnkey new builds, terraced community developments, and low-rise apartments. For first home buyers and savvy investors, this represents a golden opportunity.</p>
-<p>These new properties are exceptionally favored by retail banks. Under current Reserve Bank regulations, if you purchase a 'New Build' property (one that received its Code Compliance Certificate within the last 6 months), you are entirely exempt from the draconian LVR rules governing existing housing stock. This means buyers looking at Henderson townhouses can easily access premium 10% or even 5% deposit lending, bypassing the grueling decades-long saving marathon.</p>
+<p>Henderson, traditionally characterised by expansive quarter-acre blocks, has transformed into a high-density epicenter. It is increasingly packed with sprawling Turnkey new builds, terraced community developments, and low-rise apartments. For first home buyers and savvy investors, this represents a golden opportunity.</p>
+<p>These new properties are exceptionally favoured by retail banks. Under current Reserve Bank regulations, if you purchase a 'New Build' property (one that received its Code Compliance Certificate within the last 6 months), you are entirely exempt from the draconian LVR rules governing existing housing stock. This means buyers looking at Henderson townhouses can easily access premium 10% or even 5% deposit lending, bypassing the grueling decades-long saving marathon.</p>
 <h2 id="waitakere">Navigating Lifestyle Lending in Waitakere</h2>
 <p>As you migrate further West, retreating from the sprawl into the Waitakere ranges, the banking rules undergo a dramatic, heavily restrictive shift. Financing a sprawling Waitakere lifestyle property—complete with native bush, septic tanks, and perhaps minor dwellings—immediately triggers specific <strong>'Lifestyle Lending'</strong> criteria.</p>
-<p>Banks view large parcels of land (typically anything over 1.5 to 2 hectares) entirely differently than residential, sewered suburban turf. Recognizing that remote blocks are far harder to quickly liquidate in a market downturn, banks rigorously restrict their lending ratios. Depending on the bank's internal risk appetites for a given month, they may demand a staggering 30% to 40% deposit to secure the loan.</p>
-<p>Furthermore, if any part of the land is zoned for productive income (like a small hobby farm or an orchard), it can aggressively blur the line between a residential home loan and a commercial business loan—the latter commanding vastly higher interest rates. Finch actively curates a rotating portfolio of banks and non-bank lenders who look favorably upon large Waitakere land holdings, restructuring the applications so they definitively fall under the far cheaper residential lending umbrella.</p>
+<p>Banks view large parcels of land (typically anything over 1.5 to 2 hectares) entirely differently than residential, sewered suburban turf. Recognising that remote blocks are far harder to quickly liquidate in a market downturn, banks rigorously restrict their lending ratios. Depending on the bank's internal risk appetites for a given month, they may demand a staggering 30% to 40% deposit to secure the loan.</p>
+<p>Furthermore, if any part of the land is zoned for productive income (like a small hobby farm or an orchard), it can aggressively blur the line between a residential home loan and a commercial business loan—the latter commanding vastly higher interest rates. Finch actively curates a rotating portfolio of banks and non-bank lenders who look favourably upon large Waitakere land holdings, restructuring the applications so they definitively fall under the far cheaper residential lending umbrella.</p>
 <h2 id="opportunities">The Broader Western Corridor Opportunities</h2>
-<p>Beyond Henderson and Waitakere, the wider Western corridor—encompassing Te Atatu, Massey, and Hobsonville Point—offers immense spectrums of housing. Te Atatu Peninsula boasts premium coastal fringes, while Hobsonville remains the poster child for masterful, high-density neighborhood planning. A West Auckland-focused broker understands the subtle valuation shifts between a cross-lease property in Massey and a freehold title in Royal Heights, ensuring your valuation reports satisfy credit panels instantly.</p>
+<p>Beyond Henderson and Waitakere, the wider Western corridor—encompassing Te Atatu, Massey, and Hobsonville Point—offers immense spectrums of housing. Te Atatu Peninsula boasts premium coastal fringes, while Hobsonville remains the poster child for masterful, high-density neighbourhood planning. A West Auckland-focused broker understands the subtle valuation shifts between a cross-lease property in Massey and a freehold title in Royal Heights, ensuring your valuation reports satisfy credit panels instantly.</p>
 </div>
 <div class="toc-sidebar">
 <h4>In This Article</h4>
@@ -377,7 +398,7 @@
 <svg fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" style="transition:transform 0.3s;" viewbox="0 0 24 24" width="16"><polyline points="6 9 12 15 18 9"></polyline></svg>
 </button>
 <div class="faq-content" style="display:none;padding:0 1.5rem 1.25rem 1.5rem;color:var(--neutral-medGray);line-height:1.7;font-size:0.95rem;border-top:1px solid rgba(180,178,169,0.1);padding-top:1rem;">
-<p>A local broker understands regional market conditions, localized bank valuation hurdles (like seismic registers or land classifications), and coordinates with local real estate agents and solicitors to speed up pre-approval.</p>
+<p>A local broker knows how lenders view your area, including valuation issues such as earthquake-prone buildings or land classifications, and works with local agents and lawyers to keep your purchase on track.</p>
 </div>
 </div>
 <div class="faq-item" style="border:1px solid rgba(180,178,169,0.2);border-radius:1rem;background:white;overflow:hidden;">
@@ -395,7 +416,7 @@
 <svg fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" style="transition:transform 0.3s;" viewbox="0 0 24 24" width="16"><polyline points="6 9 12 15 18 9"></polyline></svg>
 </button>
 <div class="faq-content" style="display:none;padding:0 1.5rem 1.25rem 1.5rem;color:var(--neutral-medGray);line-height:1.7;font-size:0.95rem;border-top:1px solid rgba(180,178,169,0.1);padding-top:1rem;">
-<p>Yes. Banks reserve their sharpest rate discounts and cashback contributions for the broker channel. A broker compares 20+ lenders side-by-side to construct a competitive rate package you won't get walking in direct.</p>
+<p>Often, yes. A broker can compare offers from many lenders at once and ask them to sharpen their pricing. Sometimes your own bank's offer is the best one, and a good broker will tell you so.</p>
 </div>
 </div>
 <div class="faq-item" style="border:1px solid rgba(180,178,169,0.2);border-radius:1rem;background:white;overflow:hidden;">
@@ -404,7 +425,7 @@
 <svg fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" style="transition:transform 0.3s;" viewbox="0 0 24 24" width="16"><polyline points="6 9 12 15 18 9"></polyline></svg>
 </button>
 <div class="faq-content" style="display:none;padding:0 1.5rem 1.25rem 1.5rem;color:var(--neutral-medGray);line-height:1.7;font-size:0.95rem;border-top:1px solid rgba(180,178,169,0.1);padding-top:1rem;">
-<p>A family guarantee allows parents to secure up to 20% of your home loan against the equity in their own property. This bridges your deposit gap without requiring parents to give you cash, avoiding low-equity bank premiums.</p>
+<p>A family guarantee lets a family member use the equity in their own home as extra security for part of your loan. It can cover a deposit gap without them handing over cash, and may help you avoid low-equity charges.</p>
 </div>
 </div>
 </div>
@@ -431,7 +452,7 @@
 <a href="../calculators/mortgage-calculator.html" style="display:block;padding:1.5rem;background:var(--finch-mist);border-radius:1rem;text-decoration:none;color:var(--neutral-black);"><strong style="display:block;color:var(--finch-forest);margin-bottom:0.5rem;">NZ Mortgage Calculator</strong><span style="font-size:0.9rem;color:var(--neutral-medGray);">Estimate repayments at current NZ rates.</span></a>
 <a href="../calculators/borrowing-power.html" style="display:block;padding:1.5rem;background:var(--finch-mist);border-radius:1rem;text-decoration:none;color:var(--neutral-black);"><strong style="display:block;color:var(--finch-forest);margin-bottom:0.5rem;">Borrowing Power</strong><span style="font-size:0.9rem;color:var(--neutral-medGray);">See how much NZ banks will lend.</span></a>
 <a href="../guides/first-home-guide.html" style="display:block;padding:1.5rem;background:var(--finch-mist);border-radius:1rem;text-decoration:none;color:var(--neutral-black);"><strong style="display:block;color:var(--finch-forest);margin-bottom:0.5rem;">NZ First Home Buyer Guide</strong><span style="font-size:0.9rem;color:var(--neutral-medGray);">Complete NZ FHB playbook.</span></a>
-<a href="../mortgage-rates.html" style="display:block;padding:1.5rem;background:var(--finch-mist);border-radius:1rem;text-decoration:none;color:var(--neutral-black);"><strong style="display:block;color:var(--finch-forest);margin-bottom:0.5rem;">Live NZ Mortgage Rates</strong><span style="font-size:0.9rem;color:var(--neutral-medGray);">Current carded and broker rates.</span></a>
+<a href="../mortgage-rates.html" style="display:block;padding:1.5rem;background:var(--finch-mist);border-radius:1rem;text-decoration:none;color:var(--neutral-black);"><strong style="display:block;color:var(--finch-forest);margin-bottom:0.5rem;">NZ Mortgage Rates</strong><span style="font-size:0.9rem;color:var(--neutral-medGray);">Current carded and broker rates.</span></a>
 <a href="../market-report.html" style="display:block;padding:1.5rem;background:var(--finch-mist);border-radius:1rem;text-decoration:none;color:var(--neutral-black);"><strong style="display:block;color:var(--finch-forest);margin-bottom:0.5rem;">NZ Market Report</strong><span style="font-size:0.9rem;color:var(--neutral-medGray);">OCR &amp; rate movements.</span></a>
 </div>
 </div>
@@ -453,7 +474,7 @@ Call 027 343 3293 now
 <ul style="list-style:none;padding:0;margin:0;color:rgba(255,255,255,0.78);font-size:0.9rem;line-height:2;">
 <li>✓ We compare 20+ NZ banks and non-bank lenders</li>
 <li>✓ The lender pays us — our advice costs you nothing</li>
-<li>✓ Registered financial adviser, FSP FSP1011206</li>
+<li>✓ Registered financial adviser (FSP1011206)</li>
 <li>✓ Same-day reply on weekdays</li>
 </ul>
 </div>
@@ -509,7 +530,7 @@ Call 027 343 3293 now
 <div class="footer-col"><h4>Company</h4><a href="../about.html">About Us</a><a href="../contact.html">Contact</a><a href="../map.html">Our Location</a><a href="../locations/index.html">Service Locations</a></div>
 </div>
 <!-- FINCH-NAP:START -->
-<div class="footer-nap" itemscope itemtype="https://schema.org/MortgageBroker" style="border-top:1px solid rgba(255,255,255,0.12);margin-top:2rem;padding-top:1.75rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1.5rem;font-size:0.88rem;line-height:1.7;">
+<div class="footer-nap" itemscope itemtype="https://schema.org/FinancialService" style="border-top:1px solid rgba(255,255,255,0.12);margin-top:2rem;padding-top:1.75rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1.5rem;font-size:0.88rem;line-height:1.7;">
 <div>
 <strong itemprop="name" style="display:block;font-size:0.95rem;margin-bottom:0.35rem;">Finch Mortgages Limited</strong>
 <span itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">

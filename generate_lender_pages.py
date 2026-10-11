@@ -79,13 +79,13 @@ CATEGORIES = [
             {"initial": "A", "name": "ANZ", "desc": "New Zealand's largest mortgage lender by book size. Highly competitive on 1-year and 2-year fixed rates with strong property investor packages.", "url": "https://www.anz.co.nz/", "review": "anz-home-loan-review.html"},
             {"initial": "B", "name": "BNZ", "desc": "Excellent tailorable TotalMoney offset structures linking up to 50 accounts. Highly preferred for self-employed professionals, doctors, and property investors.", "url": "https://www.bnz.co.nz/", "review": "bnz-home-loan-review.html"},
             {"initial": "CC", "name": "China Construction Bank", "desc": "Full registered bank in NZ backed by global institutional strength. Tailored residential mortgages, high-net-worth borrowing, and cross-border property finance.", "url": "https://nz.ccb.com/", "review": "china-construction-bank-mortgage-review.html"},
-            {"initial": "H", "name": "Heartland Bank", "desc": "NZ-operated registered bank. Market leader in home equity release and reverse mortgages, alongside competitive digital home loans.", "url": "https://www.heartland.co.nz/", "review": "heartland-bank-mortgage-review.html"},
+            {"initial": "H", "name": "Heartland Bank", "desc": "NZ-operated registered bank. Known for home equity release and reverse mortgages, plus rural and business lending.", "url": "https://www.heartland.co.nz/", "review": "heartland-bank-mortgage-review.html"},
             {"initial": "S", "name": "SBS Bank", "desc": "New Zealand customer-owned mutual bank known for market-leading first home buyer combo packages, competitive rates, and personal service.", "url": "https://www.sbsbank.co.nz/", "review": "sbs-mortgage-review.html"},
             {"initial": "C", "name": "The Co-operative Bank", "desc": "Customer-owned registered bank sharing annual profits with borrowers as direct account rebates. Consistently tops trust and satisfaction surveys.", "url": "https://www.co-operativebank.co.nz/", "review": "co-operative-bank-mortgage-review.html"}
         ],
         "faqs": [
             {"q": "How much deposit do I need for a registered bank?", "a": "Under current RBNZ rules, banks generally require a 20% deposit for an owner-occupied existing home, though they can lend to a small proportion of borrowers with as little as 5-10%. For new builds, 10% is usually sufficient. Investors typically need 35%."},
-            {"q": "Are bank mortgage rates negotiable?", "a": "Yes. While the advertised 'special' rate is often the baseline, Finch advisors frequently negotiate unadvertised discounts (5-15bps) or superior cash contributions for strong applications."},
+            {"q": "Are bank mortgage rates negotiable?", "a": "Yes. While the advertised 'special' rate is often the baseline, Finch advisers frequently negotiate unadvertised discounts (5-15bps) or superior cash contributions for strong applications."},
             {"q": "What happens if a registered bank declines me?", "a": "A decline from one bank does not mean a decline from all. Banks have different risk appetites. If main banks decline, we pivot to an approved non-bank lender structured to suit your profile."}
         ]
     },
@@ -116,7 +116,7 @@ CATEGORIES = [
         "intro": "Specialist lenders fill the gaps where traditional lending falls short. They focus heavily on property asset quality, speed of capital delivery, and bespoke structures. These lenders are essential for short-term bridging finance, rapid property flips, developing land, or commercial-residential overlaps.",
         "lenders": [
             {"initial": "C", "name": "CFML", "desc": "Established NZ mortgage fund manager providing tailored first mortgages, commercial property, and residential development loans.", "url": "https://www.cfml.nz/", "review": "cfml-mortgage-review.html"},
-            {"initial": "CR", "name": "Cressida Capital", "desc": "Boutique property financiers specializing in bespoke short-term lending, mezzanine debt, bridging, and urgent settlement deadlines.", "url": "https://www.cressida.co.nz/", "review": "cressida-capital-mortgage-review.html"},
+            {"initial": "CR", "name": "Cressida Capital", "desc": "Boutique property financiers specialising in bespoke short-term lending, mezzanine debt, bridging, and urgent settlement deadlines.", "url": "https://www.cressida.co.nz/", "review": "cressida-capital-mortgage-review.html"},
             {"initial": "D", "name": "DBR", "desc": "Experienced NZ property financiers providing short-to-medium term mortgage lending for residential bridging, refurbishment, and land.", "url": "https://www.dbr.co.nz/", "review": "dbr-property-financiers-review.html"},
             {"initial": "F", "name": "Finbase", "desc": "Modern technology-driven non-bank property lender delivering fast approvals and flexible criteria for self-employed and contract income.", "url": "https://www.finbase.co.nz/", "review": "finbase-mortgage-review.html"},
             {"initial": "FP", "name": "Funding Partners", "desc": "Private real estate funding specialist providing tailored private debt and equity solutions for property projects without bank friction.", "url": "https://www.fundingpartners.co.nz/", "review": "funding-partners-review.html"},
@@ -135,7 +135,7 @@ CATEGORIES = [
         "file": "credit-unions.html",
         "title": "Credit Unions & Customer-Owned",
         "badge": "Community Focused",
-        "intro": "Unlike corporate banks which prioritize profits for external shareholders, Credit Unions and mutual financial institutions are 100% owned by their members. They reinvest profits to offer competitive rates and lower fees. They offer a highly personalized, human approach to underwriting.",
+        "intro": "Unlike corporate banks which prioritise profits for external shareholders, Credit Unions and mutual financial institutions are 100% owned by their members. They reinvest profits to offer competitive rates and lower fees. They offer a highly personalised, human approach to underwriting.",
         "lenders": [
             {"initial": "U", "name": "Unity Credit Union Home Loans", "desc": "New Zealand's leading member-owned financial cooperative providing accessible, human-led home loans with no profit extraction by overseas shareholders.", "url": "https://unitymoney.co.nz/", "review": "unity-credit-union-review.html"},
             {"initial": "S", "name": "SBS Bank (Customer-Owned)", "desc": "Customer-owned mutual building society offering personal service, competitive fixed home loans, and famous FirstHome Combo packages.", "url": "https://www.sbsbank.co.nz/", "review": "sbs-mortgage-review.html"},
@@ -196,7 +196,7 @@ def make_page(c):
       "@context": "https://schema.org",
       "@graph": [
         {
-          "@type": "MortgageBroker",
+          "@type": "FinancialService",
           "@id": "https://www.finchmortgages.co.nz/#organization",
           "name": "Finch Mortgage",
           "alternateName": "Finch Mortgages",
@@ -236,15 +236,7 @@ def make_page(c):
           "publisher": {
             "@id": "https://www.finchmortgages.co.nz/#organization"
           },
-          "inLanguage": "en-NZ",
-          "potentialAction": {
-            "@type": "SearchAction",
-            "target": {
-              "@type": "EntryPoint",
-              "urlTemplate": "https://www.finchmortgages.co.nz/blog.html?q={search_term_string}"
-            },
-            "query-input": "required name=search_term_string"
-          }
+          "inLanguage": "en-NZ"
         },
         {
           "@type": "BreadcrumbList",
@@ -394,7 +386,7 @@ def make_page(c):
     <div class="container">
       <div style="max-width:600px;margin:0 auto;">
         <h2 style="color:white;font-size:clamp(1.75rem,3.5vw,2.5rem);font-weight:700;margin-bottom:1rem;">Match with the perfect lender today.</h2>
-        <p style="color:rgba(255,255,255,0.75);line-height:1.75;margin-bottom:2rem;">Speak to an advisor. We'll assess your situation and recommend exactly which lenders will approve your loan at the best terms.</p>
+        <p style="color:rgba(255,255,255,0.75);line-height:1.75;margin-bottom:2rem;">Speak to an adviser. We'll assess your situation and recommend exactly which lenders will approve your loan at the best terms.</p>
         <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
           <a href="../services/pre-approval.html" class="btn-primary" style="background:white;color:var(--finch-forest);">Get Pre-Approved →</a>
           <a href="../contact.html" class="btn-cta-outline">Contact Us</a>

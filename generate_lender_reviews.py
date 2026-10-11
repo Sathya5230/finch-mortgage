@@ -166,7 +166,7 @@ LENDERS = [
         "category": "property finance",
         "tier": "Tier 2 (private funder)",
         "founded": "2011",
-        "positioning": "boutique property financiers specializing in bespoke short-term lending, mezzanine debt, and bridging",
+        "positioning": "boutique property financiers specialising in bespoke short-term lending, mezzanine debt, and bridging",
         "specialties": "short-term property loans, bridging finance, land and construction funding, urgent settlements",
         "best_for": "property investors and commercial borrowers needing fast bespoke funding structures",
         "pros": [
@@ -198,7 +198,7 @@ LENDERS = [
             "Strong appetite for residential development, land, and refurbishment",
         ],
         "cons": [
-            "Specialized interest rates above standard main-bank specials",
+            "Specialised interest rates above standard main-bank specials",
             "Setup and facility inspection fees apply",
             "Primarily short-to-medium term facilities (6–24 months)",
         ],
@@ -258,7 +258,7 @@ LENDERS = [
         "specialties": "residential property finance, development funding, equity release, short-term debt solutions",
         "best_for": "developers and investors looking for bespoke private debt solutions without traditional banking obstacles",
         "pros": [
-            "Highly customized funding structures tailored to individual project milestones",
+            "Highly customised funding structures tailored to individual project milestones",
             "Commercial pragmatism and willingness to fund complex deal architecture",
             "Direct decision-making from experienced principals without lengthy committees",
             "Supports non-standard asset types and progressive drawdown requirements",
@@ -320,17 +320,17 @@ LENDERS = [
         "category": "registered bank",
         "tier": "Tier 1 (regional)",
         "founded": "1875 (roots) / 2011 (merged bank)",
-        "positioning": "a New Zealand-operated registered bank known for digital home loans, reverse mortgages, and business finance",
-        "specialties": "digital home loans, reverse mortgages (home equity release), rural finance, business mortgages",
-        "best_for": "borrowers over 60 seeking home equity release / reverse mortgages, or prime borrowers seeking low-rate digital home loans",
+        "positioning": "a New Zealand registered bank known for reverse mortgages, rural lending and business finance",
+        "specialties": "home loans, reverse mortgages (home equity release), rural finance, business mortgages",
+        "best_for": "borrowers over 60 seeking home equity release through a reverse mortgage, and borrowers with rural or business lending needs",
         "pros": [
-            "New Zealand's undisputed market leader in reverse mortgages and equity release",
-            "Aggressive low-rate digital home loans for prime borrowers who qualify",
+            "One of New Zealand's best-known reverse mortgage providers",
+            "Publishes its home loan rates on its own website",
             "Full registered bank security and RBNZ prudential supervision",
             "Locally operated with headquarters in Auckland and Christchurch",
         ],
         "cons": [
-            "Digital home loans have strict criteria (clean PAYE, 20%+ deposit only)",
+            "Announced in 2025 that it would phase out its online-only home loan",
             "Smaller physical branch network than the Big 4 banks",
             "Selective appetite for complex or non-standard property titles",
         ],
@@ -369,7 +369,7 @@ LENDERS = [
         "best_for": "developers, high-net-worth investors, and commercial property owners seeking institutional-grade non-bank capital",
         "pros": [
             "Substantial lending capacity capable of underwriting multi-million dollar projects",
-            "Flexible interest capitalization and structured drawdowns matching build schedules",
+            "Flexible interest capitalisation and structured drawdowns matching build schedules",
             "Sophisticated credit team focused on property feasibility and net asset value",
             "Rapid commercial execution compared to traditional institutional lenders",
         ],
@@ -386,7 +386,7 @@ LENDERS = [
         "category": "non-bank specialist",
         "tier": "Tier 2",
         "founded": "2000 (Australasia)",
-        "positioning": "a multi-award-winning non-bank specialist recognized for common-sense credit underwriting and transparent tiering",
+        "positioning": "a multi-award-winning non-bank specialist recognised for common-sense credit underwriting and transparent tiering",
         "specialties": "self-employed mortgages (Alt-Doc), credit recovery loans, debt consolidation, flexible LVR residential options",
         "best_for": "borrowers declined by major banks due to living expense calculations, complex income, or isolated credit blemishes",
         "pros": [
@@ -442,7 +442,7 @@ LENDERS = [
         "cons": [
             "Smaller physical branch footprint in the northern North Island",
             "Conservative servicing stress rates matching prudential bank rules",
-            "Turnaround times can lengthen during heavily publicized rate campaigns",
+            "Turnaround times can lengthen during heavily publicised rate campaigns",
         ],
     },
     {
@@ -497,7 +497,7 @@ LENDERS = [
         "tier": "Tier 2 (financial cooperative)",
         "founded": "1970s (heritage across regional credit unions)",
         "positioning": "New Zealand's leading member-owned financial cooperative providing accessible, human-led home loans",
-        "specialties": "residential mortgages, first home buyers, low-deposit lending, personalized common-sense loan assessments",
+        "specialties": "residential mortgages, first home buyers, low-deposit lending, personalised common-sense loan assessments",
         "best_for": "everyday Kiwis seeking a genuine member-owned alternative with human credit underwriters and transparent fee structures",
         "pros": [
             "100% member-owned financial cooperative with no profit extraction by overseas shareholders",
@@ -508,7 +508,7 @@ LENDERS = [
         "cons": [
             "Not a registered bank (regulated under RBNZ as a Non-Bank Deposit Taker)",
             "Smaller branch network across metropolitan centers",
-            "Conservative loan caps on unconventional or specialized property types",
+            "Conservative loan caps on unconventional or specialised property types",
         ],
     },
     {
@@ -618,7 +618,7 @@ def schema_for(lender: dict) -> str:
             "url": f"{BASE_URL}/about.html",
         },
         "publisher": {
-            "@type": "MortgageBroker",
+            "@type": "FinancialService",
             "@id": f"{BASE_URL}/#organization",
             "name": "Finch Mortgages",
             "url": f"{BASE_URL}/",
@@ -656,7 +656,7 @@ def main_body(lender: dict) -> str:
         <p>{description_for(lender)}</p>
         <div style="display:flex;gap:1rem;flex-wrap:wrap;margin-top:1.5rem;">
           <a class="btn-primary" href="../contact.html">Compare {name} with 23 NZ Lenders</a>
-          <a class="btn-secondary" href="../mortgage-rates.html">View Live NZ Rates</a>
+          <a class="btn-secondary" href="../mortgage-rates.html">View NZ Rates</a>
         </div>
       </div>
     </section>
@@ -686,10 +686,10 @@ def main_body(lender: dict) -> str:
       <div class="container" style="max-width:800px;">
         <div class="prose" style="color:var(--neutral-medGray);line-height:1.8;font-size:1.05rem;">
           <h2 style="font-size:2rem;font-weight:700;color:var(--neutral-black);margin-bottom:1.5rem;font-family:var(--font-display);letter-spacing:-0.02em;">{full_name} — NZ Mortgage Review (2026)</h2>
-          <p style="margin-bottom:2rem;">{full_name} is {lender['positioning']}. For New Zealand borrowers, the lender's specialties include {lender['specialties']}. As an independent NZ mortgage broker, Finch arranges home and property loans through our approved panel of 23 lenders — registered NZ banks (ANZ, BNZ, Heartland Bank, SBS Bank, The Co-operative Bank, China Construction Bank), specialist non-bank lenders (Avanti Finance, Basecorp Finance, Pepper Money, Liberty Financial, First Mortgage Trust, General Finance, Cressida Capital, CFML, DBR, Finbase, Funding Partners, GEM By Latitude, Pallas Capital, Southern Cross Partners, Prospa, Xceda Finance), and member-owned credit unions (Unity Credit Union) — so we recommend {name} only when their credit policy and pricing genuinely beat the alternatives for your exact situation.</p>
+          <p style="margin-bottom:2rem;">{full_name} is {lender['positioning']}. For New Zealand borrowers, the lender's specialties include {lender['specialties']}. Finch is an independent NZ mortgage broker with a panel of 23 lenders: registered banks, specialist non-bank lenders and a credit union. We only recommend {name} when its lending rules and pricing beat the alternatives for your situation. <a href="../lenders.html" style="color:var(--finch-forest);text-decoration:underline;font-weight:600;">See all 23 lenders</a>.</p>
 
           <h3 style="font-size:1.35rem;font-weight:700;color:var(--finch-forest);margin-bottom:1rem;margin-top:2.5rem;">Who {name} Suits Best</h3>
-          <p style="margin-bottom:2rem;">{name} suits {lender['best_for']}. We see strongest outcomes when the client's income profile, deposit position, and intended property align with {name}'s current credit appetite. Outside those scenarios, another lender on our 23-lender panel will usually price sharper or move faster — which is why we compare every option before recommending.</p>
+          <p style="margin-bottom:2rem;">{name} suits {lender['best_for']}. It works best when your income, deposit and property type fit {name}'s current lending rules. If they don't, another lender on our panel may be cheaper or faster, so we compare options before recommending one.</p>
 
           <h3 style="font-size:1.35rem;font-weight:700;color:var(--finch-forest);margin-bottom:1rem;margin-top:2.5rem;">{name} — Strengths</h3>
           <ul style="margin-bottom:2rem;padding-left:1.5rem;list-style:disc;">{pros_html}</ul>
@@ -698,10 +698,10 @@ def main_body(lender: dict) -> str:
           <ul style="margin-bottom:2rem;padding-left:1.5rem;list-style:disc;">{cons_html}</ul>
 
           <h3 style="font-size:1.35rem;font-weight:700;color:var(--finch-forest);margin-bottom:1rem;margin-top:2.5rem;">How {name} Compares Across Our 23 Approved Lenders</h3>
-          <p style="margin-bottom:2rem;">No single lender wins for every scenario. Pricing and policy vary based on your circumstances — registered banks provide sharp carded fixed rates for clean PAYE borrowers, while non-bank lenders like Avanti Finance, Basecorp Finance, or Pepper Money pick up cases that need common-sense credit assessments. Use our <a href="../mortgage-rates.html" style="color:var(--finch-forest);text-decoration:underline;font-weight:600;">live NZ rates comparison</a> to see current pricing, then book a free consultation to match your scenario across our full approved panel.</p>
+          <p style="margin-bottom:2rem;">No lender is best for everyone. Banks usually offer their lowest rates to borrowers with steady salary or wage income and a good deposit. Non-bank lenders such as Avanti Finance, Basecorp Finance and Pepper Money often help when your situation is less straightforward. Check <a href="../mortgage-rates.html" style="color:var(--finch-forest);text-decoration:underline;font-weight:600;">current NZ mortgage rates</a>, then book a free call and we'll compare your options across the whole panel.</p>
 
-          <h3 style="font-size:1.35rem;font-weight:700;color:var(--finch-forest);margin-bottom:1rem;margin-top:2.5rem;">The Rules Every NZ Lender Works Within</h3>
-          <p style="margin-bottom:2rem;">{name}'s deposit and serviceability settings sit inside the regulatory framework established in New Zealand — the <a href="https://www.rbnz.govt.nz/regulation-and-supervision/banks/macro-prudential-policy/loan-to-value-ratio-restrictions" target="_blank" rel="noopener" style="color:var(--finch-forest);text-decoration:underline;font-weight:600;">RBNZ loan-to-value (LVR) and debt-to-income (DTI) restrictions</a> define the baseline every lender must work within. As an FMA-licensed financial advice provider, Finch is bound by the <a href="https://www.fma.govt.nz/" target="_blank" rel="noopener" style="color:var(--finch-forest);text-decoration:underline;font-weight:600;">Financial Markets Authority</a> Code of Conduct to recommend {name} only when it genuinely fits your requirements.</p>
+          <h3 style="font-size:1.35rem;font-weight:700;color:var(--finch-forest);margin-bottom:1rem;margin-top:2.5rem;">The Rules NZ Lenders Work Within</h3>
+          <p style="margin-bottom:2rem;">In New Zealand, the <a href="https://www.rbnz.govt.nz/regulation-and-supervision/banks/macro-prudential-policy/loan-to-value-ratio-restrictions" target="_blank" rel="noopener" style="color:var(--finch-forest);text-decoration:underline;font-weight:600;">Reserve Bank's loan-to-value (LVR) and debt-to-income (DTI) restrictions</a> apply to registered banks. Non-bank lenders aren't bound by them, but every lender must follow the responsible lending rules in the Credit Contracts and Consumer Finance Act (CCCFA). Finch gives advice as an Authorised Body under the Financial Advice Provider licence held by Finsure New Zealand Limited (FSP1005389), and follows the Code of Professional Conduct for Financial Advice Services, overseen by the <a href="https://www.fma.govt.nz/" target="_blank" rel="noopener" style="color:var(--finch-forest);text-decoration:underline;font-weight:600;">Financial Markets Authority</a>. That means we only recommend {name} when it suits your needs.</p>
 
           <h3 style="font-size:1.35rem;font-weight:700;color:var(--finch-forest);margin-bottom:1rem;margin-top:2.5rem;">Documents {name} Typically Requires</h3>
           <ul style="margin-bottom:2rem;padding-left:1.5rem;list-style:disc;">
@@ -713,10 +713,10 @@ def main_body(lender: dict) -> str:
           </ul>
 
           <h3 style="font-size:1.35rem;font-weight:700;color:var(--finch-forest);margin-bottom:1rem;margin-top:2.5rem;">Service Coverage Across New Zealand</h3>
-          <p style="margin-bottom:2rem;">Finch arranges {name} property lending for clients across the country — Auckland, Wellington, Christchurch, Hamilton, Tauranga, Dunedin, Palmerston North, Napier, Nelson, Queenstown, and regional New Zealand. We manage the entire application from initial assessment through to settlement.</p>
+          <p style="margin-bottom:2rem;">Finch arranges {name} lending for clients across New Zealand, including <a href="../blog/mortgage-broker-auckland-city.html" style="color:var(--finch-forest);text-decoration:underline;font-weight:600;">Auckland</a>, <a href="../blog/mortgage-broker-wellington.html" style="color:var(--finch-forest);text-decoration:underline;font-weight:600;">Wellington</a>, <a href="../blog/mortgage-broker-christchurch.html" style="color:var(--finch-forest);text-decoration:underline;font-weight:600;">Christchurch</a>, <a href="../blog/mortgage-broker-hamilton.html" style="color:var(--finch-forest);text-decoration:underline;font-weight:600;">Hamilton</a>, <a href="../blog/mortgage-broker-tauranga.html" style="color:var(--finch-forest);text-decoration:underline;font-weight:600;">Tauranga</a>, <a href="../blog/mortgage-broker-dunedin.html" style="color:var(--finch-forest);text-decoration:underline;font-weight:600;">Dunedin</a>, <a href="../blog/mortgage-broker-palmerston-north.html" style="color:var(--finch-forest);text-decoration:underline;font-weight:600;">Palmerston North</a>, <a href="../blog/mortgage-broker-napier-hawkes-bay.html" style="color:var(--finch-forest);text-decoration:underline;font-weight:600;">Napier</a>, <a href="../blog/mortgage-broker-nelson.html" style="color:var(--finch-forest);text-decoration:underline;font-weight:600;">Nelson</a> and <a href="../blog/mortgage-broker-queenstown.html" style="color:var(--finch-forest);text-decoration:underline;font-weight:600;">Queenstown</a>. We handle the whole application, from first assessment to settlement.</p>
 
           <h3 style="font-size:1.35rem;font-weight:700;color:var(--finch-forest);margin-bottom:1rem;margin-top:2.5rem;">Should You Go Direct, or Use an Independent Broker?</h3>
-          <p style="margin-bottom:1rem;">Approaching {name} directly gives you only their proprietary products and credit criteria. Using Finch costs you nothing for residential home loans — where approved, the lender pays our commission on settlement — and you receive an objective comparison across our entire panel of 23 approved lenders. Read our real <a href="../case-studies.html" style="color:var(--finch-forest);text-decoration:underline;font-weight:600;">NZ client case studies</a> to see how we structure approvals.</p>
+          <p style="margin-bottom:1rem;">If you go to {name} directly, you only see its own products and lending rules. Through Finch, you get a comparison across our panel of 23 lenders. For residential home loans our advice is free, because the lender pays us a commission when your loan settles. Read our <a href="../case-studies.html" style="color:var(--finch-forest);text-decoration:underline;font-weight:600;">NZ client case studies</a> to see how we structure approvals.</p>
         </div>
       </div>
     </section>
@@ -730,7 +730,7 @@ def main_body(lender: dict) -> str:
           <a href="../lenders.html" style="display:block;padding:1.5rem;background:var(--finch-mist);border-radius:1rem;text-decoration:none;color:var(--neutral-black);"><strong style="display:block;color:var(--finch-forest);margin-bottom:0.5rem;">All 23 Lenders</strong><span style="font-size:0.9rem;color:var(--neutral-medGray);">Browse our full approved panel.</span></a>
           <a href="../lenders/major-banks.html" style="display:block;padding:1.5rem;background:var(--finch-mist);border-radius:1rem;text-decoration:none;color:var(--neutral-black);"><strong style="display:block;color:var(--finch-forest);margin-bottom:0.5rem;">Registered Banks</strong><span style="font-size:0.9rem;color:var(--neutral-medGray);">ANZ, BNZ, Heartland, SBS, Co-op.</span></a>
           <a href="../lenders/non-bank-lenders.html" style="display:block;padding:1.5rem;background:var(--finch-mist);border-radius:1rem;text-decoration:none;color:var(--neutral-black);"><strong style="display:block;color:var(--finch-forest);margin-bottom:0.5rem;">Non-Bank Lenders</strong><span style="font-size:0.9rem;color:var(--neutral-medGray);">Avanti, Basecorp, Pepper, Liberty, FMT.</span></a>
-          <a href="../mortgage-rates.html" style="display:block;padding:1.5rem;background:var(--finch-mist);border-radius:1rem;text-decoration:none;color:var(--neutral-black);"><strong style="display:block;color:var(--finch-forest);margin-bottom:0.5rem;">Live NZ Mortgage Rates</strong><span style="font-size:0.9rem;color:var(--neutral-medGray);">Compare registered bank fixed rates.</span></a>
+          <a href="../mortgage-rates.html" style="display:block;padding:1.5rem;background:var(--finch-mist);border-radius:1rem;text-decoration:none;color:var(--neutral-black);"><strong style="display:block;color:var(--finch-forest);margin-bottom:0.5rem;">NZ Mortgage Rates</strong><span style="font-size:0.9rem;color:var(--neutral-medGray);">Compare registered bank fixed rates.</span></a>
           <a href="../services/home-loan.html" style="display:block;padding:1.5rem;background:var(--finch-mist);border-radius:1rem;text-decoration:none;color:var(--neutral-black);"><strong style="display:block;color:var(--finch-forest);margin-bottom:0.5rem;">NZ Home Loan Service</strong><span style="font-size:0.9rem;color:var(--neutral-medGray);">Independent NZ broker advice.</span></a>
           <a href="../contact.html" style="display:block;padding:1.5rem;background:var(--finch-mist);border-radius:1rem;text-decoration:none;color:var(--neutral-black);"><strong style="display:block;color:var(--finch-forest);margin-bottom:0.5rem;">Book a Free Call</strong><span style="font-size:0.9rem;color:var(--neutral-medGray);">15-min discovery, no obligation.</span></a>
         </div>
@@ -745,7 +745,7 @@ def main_body(lender: dict) -> str:
           <p>Free 15-minute consultation. We match your scenario against our 23 approved NZ lenders — including {name} — and recommend the sharpest option.</p>
           <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
             <a class="btn-cta-white" href="../contact.html">Book a Free Call →</a>
-            <a class="btn-cta-outline" href="../mortgage-rates.html">View Live NZ Rates</a>
+            <a class="btn-cta-outline" href="../mortgage-rates.html">View NZ Rates</a>
           </div>
         </div>
       </div>

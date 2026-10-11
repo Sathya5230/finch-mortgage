@@ -26,7 +26,7 @@ KEYWORDS = {
     # ── About ──────────────────────────────────────────────────────────────
     "about.html": (
         "about Finch Mortgage NZ, Finch Mortgages team, Mukhtar Kiyani mortgage broker, "
-        "independent NZ mortgage broker, trusted mortgage advisor NZ, "
+        "independent NZ mortgage broker, trusted mortgage adviser NZ, "
         "Auckland mortgage broker team, FSPR licensed mortgage broker, "
         "FSP registered mortgage adviser NZ, experienced mortgage broker NZ, "
         "NZ mortgage broker credentials, $0 broker fee NZ, "
@@ -251,7 +251,7 @@ KEYWORDS = {
         "office property finance NZ, commercial lending NZ, "
         "NZ commercial property investment, business property loan NZ, "
         "commercial property Auckland, commercial property Wellington, "
-        "commercial mortgage advisor NZ, NZ commercial mortgage rates 2026"
+        "commercial mortgage adviser NZ, NZ commercial mortgage rates 2026"
     ),
 
     "services/asset-finance.html": (
@@ -508,21 +508,21 @@ KEYWORDS = {
 
     "blog/mortgage-broker-auckland-city.html": (
         "mortgage broker Auckland city, Auckland CBD mortgage broker, "
-        "home loan broker Auckland city, Auckland mortgage advisor, "
+        "home loan broker Auckland city, Auckland mortgage adviser, "
         "best mortgage broker Auckland CBD, Auckland city home loan, "
         "central Auckland mortgage broker, NZ mortgage broker Auckland"
     ),
 
     "blog/mortgage-broker-east-auckland.html": (
         "mortgage broker East Auckland, East Auckland home loan, "
-        "Howick mortgage broker, Botany mortgage advisor, "
+        "Howick mortgage broker, Botany mortgage adviser, "
         "Pakuranga home loan broker, Flatbush mortgage broker NZ, "
         "East Auckland first home buyer, Manukau mortgage broker"
     ),
 
     "blog/mortgage-broker-north-shore.html": (
         "mortgage broker North Shore Auckland, North Shore home loan, "
-        "Takapuna mortgage broker, Albany mortgage advisor, "
+        "Takapuna mortgage broker, Albany mortgage adviser, "
         "Glenfield home loan broker, Devonport mortgage NZ, "
         "North Shore first home buyer, Browns Bay mortgage broker"
     ),
@@ -530,14 +530,14 @@ KEYWORDS = {
     "blog/mortgage-broker-south-auckland.html": (
         "mortgage broker South Auckland, South Auckland home loan, "
         "Manukau mortgage broker, Papakura home loan broker, "
-        "Pukekohe mortgage advisor, Otahuhu mortgage NZ, "
+        "Pukekohe mortgage adviser, Otahuhu mortgage NZ, "
         "South Auckland first home buyer, Counties Manukau mortgage"
     ),
 
     "blog/mortgage-broker-west-auckland.html": (
         "mortgage broker West Auckland, West Auckland home loan, "
         "Henderson mortgage broker, Waitakere home loan broker, "
-        "New Lynn mortgage advisor, Titirangi mortgage NZ, "
+        "New Lynn mortgage adviser, Titirangi mortgage NZ, "
         "West Auckland first home buyer, Massey mortgage broker"
     ),
 

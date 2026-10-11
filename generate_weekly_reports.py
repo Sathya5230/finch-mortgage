@@ -105,7 +105,7 @@ REPORTS = [
         "excerpt": "Following last week's dovish signals from the Reserve Bank, major lenders have dropped their 1-year and 2-year special fixed rates by a further 15 basis points.",
         "stat_label": "Best 1-yr Fixed", "stat_val": "5.64%", "author": "Sarah Jenkins",
         "city": "Wellington", "region": "Wellington Region",
-        "intro": "Following last week's dovish signals from the Reserve Bank, major lenders including Westpac and BNZ have aggressively moved to capture market share, dropping their 1-year and 2-year special fixed rates by a further 15 basis points. The 1-year special rate has now touched 5.64% at select institutions, while the widely favored 2-year fixed term is settling around 5.49%. This competitive positioning by the banks reflects their internal forecasts that the Best 1-yr Fixed will be cut to 3.00% or lower in the coming quarter. For borrowers, this sudden wave of out-of-cycle rate cuts presents immediate refinancing opportunities and significantly larger borrowing capacities for buyers currently in the pre-approval phase."
+        "intro": "Following last week's dovish signals from the Reserve Bank, major lenders including Westpac and BNZ have aggressively moved to capture market share, dropping their 1-year and 2-year special fixed rates by a further 15 basis points. The 1-year special rate has now touched 5.64% at select institutions, while the widely favoured 2-year fixed term is settling around 5.49%. This competitive positioning by the banks reflects their internal forecasts that the Best 1-yr Fixed will be cut to 3.00% or lower in the coming quarter. For borrowers, this sudden wave of out-of-cycle rate cuts presents immediate refinancing opportunities and significantly larger borrowing capacities for buyers currently in the pre-approval phase."
     },
     {
         "week": 15, "slug": "week-15-ocr-hold", "date": "14 April 2026", "badge": "Rates", "icon": "trending-down",
@@ -113,7 +113,7 @@ REPORTS = [
         "excerpt": "The RBNZ held the OCR at 3.25%. We look at why banks are pricing in a June cut anyway.",
         "stat_label": "OCR", "stat_val": "3.25% (Hold)", "author": "Sarah Jenkins",
         "city": "Wellington", "region": "Wellington Region",
-        "intro": "The Reserve Bank of New Zealand (RBNZ) held the Official Cash Rate (OCR) at 3.25% at its April monetary policy meeting. While this was widely expected by wholesale markets, Governor Adrian Orr’s commentary struck a noticeably softer, more dovish tone than in previous quarters. The central bank acknowledged that disinflation is firmly entrenched, and labor market cooling has accelerated past primary model forecasts. What does this mean for retail mortgage rates? Swap rates — the wholesale cost of money for banks — immediately dropped by 8 basis points across the 2-year curve, signaling that market makers are pricing in near-certainty of a 25 basis point cut at the upcoming June meeting."
+        "intro": "The Reserve Bank of New Zealand (RBNZ) held the Official Cash Rate (OCR) at 3.25% at its April monetary policy meeting. While this was widely expected by wholesale markets, Governor Adrian Orr’s commentary struck a noticeably softer, more dovish tone than in previous quarters. The central bank acknowledged that disinflation is firmly entrenched, and labour market cooling has accelerated past primary model forecasts. What does this mean for retail mortgage rates? Swap rates — the wholesale cost of money for banks — immediately dropped by 8 basis points across the 2-year curve, signaling that market makers are pricing in near-certainty of a 25 basis point cut at the upcoming June meeting."
     },
     {
         "week": 14, "slug": "week-14-anz-rates", "date": "7 April 2026", "badge": "Rates", "icon": "percent",
@@ -129,7 +129,7 @@ REPORTS = [
         "excerpt": "Canterbury is outperforming every other region in NZ. We look at the South Island boom.",
         "stat_label": "Chch Growth", "stat_val": "+6.8% YoY", "author": "Liam O'Connor",
         "city": "Christchurch", "region": "Canterbury",
-        "intro": "The Garden City has officially decoupled from the broader national housing trend. According to the latest REINZ data, Canterbury has recorded an astonishing 6.8% year-on-year house price growth, fundamentally outperforming Auckland (-1.2%) and Wellington (+1.8%). The median house price in Christchurch now sits at a robust $645,000. This localized surge is fundamentally driven by internal migration, highly favorable affordability metrics relative to northern centers, and a massive influx of post-quake infrastructure projects finally reaching maturity. First home buyers in particular are viewing Christchurch as the last remaining tier-one city where a median joint income can comfortably service a standalone dwelling."
+        "intro": "The Garden City has officially decoupled from the broader national housing trend. According to the latest REINZ data, Canterbury has recorded an astonishing 6.8% year-on-year house price growth, fundamentally outperforming Auckland (-1.2%) and Wellington (+1.8%). The median house price in Christchurch now sits at a robust $645,000. This localised surge is fundamentally driven by internal migration, highly favourable affordability metrics relative to northern centers, and a massive influx of post-quake infrastructure projects finally reaching maturity. First home buyers in particular are viewing Christchurch as the last remaining tier-one city where a median joint income can comfortably service a standalone dwelling."
     },
     {
         "week": 12, "slug": "week-12-rental-yields", "date": "24 March 2026", "badge": "Investors", "icon": "building-2",
@@ -137,7 +137,7 @@ REPORTS = [
         "excerpt": "Wellington gross yields hit 5.2%. With rates falling, the investor case is strengthening.",
         "stat_label": "Wgtn Yield", "stat_val": "5.2% Gross", "author": "Mia Rossi",
         "city": "Palmerston North", "region": "Manawatu-Whanganui",
-        "intro": "Property investors operating in the Manawatu and wider Wellington regions are seeing a perfect storm of favorable metrics: rising gross rental yields colliding with rapidly falling debt servicing costs. In Palmerston North and greater Wellington, gross yields have breached the 5.2% threshold for the first time since the height of the pandemic in 2020. This is largely the result of constrained new build supply intersecting with robust tenant demand, particularly in the student and government contracting sectors. As 2-year fixed wholesale rates compress toward the mid-5s, the cashflow calculations for leveraged property investment are turning positive much earlier in the hold cycle than models predicted just six months ago."
+        "intro": "Property investors operating in the Manawatu and wider Wellington regions are seeing a perfect storm of favourable metrics: rising gross rental yields colliding with rapidly falling debt servicing costs. In Palmerston North and greater Wellington, gross yields have breached the 5.2% threshold for the first time since the height of the pandemic in 2020. This is largely the result of constrained new build supply intersecting with robust tenant demand, particularly in the student and government contracting sectors. As 2-year fixed wholesale rates compress toward the mid-5s, the cashflow calculations for leveraged property investment are turning positive much earlier in the hold cycle than models predicted just six months ago."
     },
     {
         "week": 10, "slug": "week-10-ocr-cut-march", "date": "10 March 2026", "badge": "Rates", "icon": "percent",
@@ -153,7 +153,7 @@ REPORTS = [
         "excerpt": "Tauranga volumes are up 22%. Lower rates and lifestyle demand attract buyers back.",
         "stat_label": "BoP Median", "stat_val": "$820,000", "author": "Liam O'Connor",
         "city": "Rotorua", "region": "Bay of Plenty",
-        "intro": "The Bay of Plenty is currently pacing the entire North Island in post-correction recovery metrics. Sales volumes across Tauranga and Rotorua have spiked an impressive 22% quarter-on-quarter. The regional median price has solidified at $820,000, representing a 6.3% year-on-year expansion. This resurgence is being fueled by a two-pronged demographic shift: Auckland equity-rich retirees executing delayed downsizes, and a newly energized cohort of remote-working professionals drawn to the lifestyle premium of the Bay. Rotorua, in particular, has seen a surge in investor activity targeting high-yield, short-term rental conversions to service recovering international tourism arrivals."
+        "intro": "The Bay of Plenty is currently pacing the entire North Island in post-correction recovery metrics. Sales volumes across Tauranga and Rotorua have spiked an impressive 22% quarter-on-quarter. The regional median price has solidified at $820,000, representing a 6.3% year-on-year expansion. This resurgence is being fueled by a two-pronged demographic shift: Auckland equity-rich retirees executing delayed downsizes, and a newly energised cohort of remote-working professionals drawn to the lifestyle premium of the Bay. Rotorua, in particular, has seen a surge in investor activity targeting high-yield, short-term rental conversions to service recovering international tourism arrivals."
     },
     {
         "week": 8, "slug": "week-8-interest-deductibility", "date": "24 Feb 2026", "badge": "Investors", "icon": "building-2",
@@ -169,7 +169,7 @@ REPORTS = [
         "excerpt": "Contribution thresholds, withdrawal timing, and government matching broken down.",
         "stat_label": "Govt Top-up", "stat_val": "Up to $1,043/yr", "author": "Sarah Jenkins",
         "city": "Invercargill", "region": "Southland",
-        "intro": "Optimizing KiwiSaver architecture remains the single most critical leverage point for first home buyers attempting to bridge the deposit gap in 2026. In highly affordable regional centers like Invercargill and Southland, where entry-level housing sits comfortably below $480,000, combined couple KiwiSaver withdrawals often constitute 80% to 100% of the required capital for a 10% deposit structure. However, regulatory shifts in fund allocation rules mean that buyers must be highly strategic about withdrawal timing. Ensuring maximum utilization of the annual $1,043 government contribution before executing a withdrawal is a subtle but vital timing maneuver that our advisors are prioritizing this quarter."
+        "intro": "Optimising KiwiSaver architecture remains the single most critical leverage point for first home buyers attempting to bridge the deposit gap in 2026. In highly affordable regional centers like Invercargill and Southland, where entry-level housing sits comfortably below $480,000, combined couple KiwiSaver withdrawals often constitute 80% to 100% of the required capital for a 10% deposit structure. However, regulatory shifts in fund allocation rules mean that buyers must be highly strategic about withdrawal timing. Ensuring maximum utilisation of the annual $1,043 government contribution before executing a withdrawal is a subtle but vital timing maneuver that our advisers are prioritising this quarter."
     },
     {
         "week": 6, "slug": "week-6-floating-vs-fixed", "date": "10 Feb 2026", "badge": "Rates", "icon": "trending-down",
@@ -177,7 +177,7 @@ REPORTS = [
         "excerpt": "With OCR cuts expected, many borrowers are torn. We model out four interest rate scenarios.",
         "stat_label": "Spread", "stat_val": "Float 7.1% / Fix 5.8%", "author": "James Chen",
         "city": "Napier", "region": "Hawke's Bay",
-        "intro": "The yield curve is currently heavily inverted, presenting a complex psychological puzzle for borrowers reviewing their tranches. With floating rates hovering stubbornly around 7.19% and 1-year fixed specials dropping to 5.89%, the gap—the 'cost of flexibility'—is an agonizing 130 basis points. In markets like Napier and the Hawke's Bay, where post-cyclone rebuild fatigue has made household cashflow paramount, borrowers are questioning whether paying the floating premium today is worth the potential access to lower rates tomorrow. Our econometric modeling, factoring in the RBNZ's projected median OCR track, suggests that waiting on floating rates is currently a statistically losing bet against simply locking in 12, 18, or 24 months."
+        "intro": "The yield curve is currently heavily inverted, presenting a complex psychological puzzle for borrowers reviewing their tranches. With floating rates hovering stubbornly around 7.19% and 1-year fixed specials dropping to 5.89%, the gap—the 'cost of flexibility'—is an agonising 130 basis points. In markets like Napier and the Hawke's Bay, where post-cyclone rebuild fatigue has made household cashflow paramount, borrowers are questioning whether paying the floating premium today is worth the potential access to lower rates tomorrow. Our econometric modelling, factoring in the RBNZ's projected median OCR track, suggests that waiting on floating rates is currently a statistically losing bet against simply locking in 12, 18, or 24 months."
     },
     {
         "week": 5, "slug": "week-5-new-build-exemptions", "date": "3 Feb 2026", "badge": "Specialist", "icon": "hammer",
@@ -185,7 +185,7 @@ REPORTS = [
         "excerpt": "Why LVR exemptions on new builds are keeping the construction sector alive.",
         "stat_label": "LVR Exempt", "stat_val": "Up to 90%", "author": "Liam O'Connor",
         "city": "Whangarei", "region": "Northland",
-        "intro": "The Reserve Bank's continued exemption of new builds from strict Loan-to-Value Ratio (LVR) restrictions remains the primary lifeline for the residential construction sector in 2026. In expansive growth corridors like Whangarei and broader Northland, developers are leaning heavily into turnkey townhouse and master-planned subdivision deliveries. Because banks can legally bypass systemic LVR speed limits for new construction, first home buyers are able to secure 90% financing (requiring just a 10% deposit) with minimal friction. This structural advantage has effectively created a two-tier property market, heavily incentivizing capital flow toward housing stock creation rather than the trading of existing inventory."
+        "intro": "The Reserve Bank's continued exemption of new builds from strict Loan-to-Value Ratio (LVR) restrictions remains the primary lifeline for the residential construction sector in 2026. In expansive growth corridors like Whangarei and broader Northland, developers are leaning heavily into turnkey townhouse and master-planned subdivision deliveries. Because banks can legally bypass systemic LVR speed limits for new construction, first home buyers are able to secure 90% financing (requiring just a 10% deposit) with minimal friction. This structural advantage has effectively created a two-tier property market, heavily incentivising capital flow toward housing stock creation rather than the trading of existing inventory."
     },
     {
         "week": 4, "slug": "week-4-dti-caps-bite", "date": "27 Jan 2026", "badge": "Regulations", "icon": "alert-circle",
@@ -201,7 +201,7 @@ REPORTS = [
         "excerpt": "Volumes dipped sharply over January. We analyze the traditional holiday slowdown.",
         "stat_label": "Sales Vol", "stat_val": "-12% MoM", "author": "James Chen",
         "city": "New Plymouth", "region": "Taranaki",
-        "intro": "The traditional New Zealand summer shutdown resulted in a much sharper contraction in transactional volume this January than historical averages dictate. Nationally, listings sat stagnant, and executed sales dropped by twelve percent month-on-month. In robust provincial centers like New Plymouth and Taranaki, however, this data must be interpreted carefully. Vendor fatigue is high, but listing withdrawals outpaced price reductions. This indicates a 'standoff' market rather than a capitulation event. Buyers utilizing January to negotiate unconditionally prior to the February listing rush secured exceptional discounts, executing on the localized illiquidity before major bank lending teams returned at full capacity."
+        "intro": "The traditional New Zealand summer shutdown resulted in a much sharper contraction in transactional volume this January than historical averages dictate. Nationally, listings sat stagnant, and executed sales dropped by twelve percent month-on-month. In robust provincial centers like New Plymouth and Taranaki, however, this data must be interpreted carefully. Vendor fatigue is high, but listing withdrawals outpaced price reductions. This indicates a 'standoff' market rather than a capitulation event. Buyers utilising January to negotiate unconditionally prior to the February listing rush secured exceptional discounts, executing on the localised illiquidity before major bank lending teams returned at full capacity."
     },
     {
         "week": 2, "slug": "week-2-mortgage-stress-testing", "date": "13 Jan 2026", "badge": "Rates", "icon": "shield-alert",
@@ -217,7 +217,7 @@ REPORTS = [
         "excerpt": "Our comprehensive outlook for the NZ property market and interest rate curve for 2026.",
         "stat_label": "Forecast", "stat_val": "Rates Flattening", "author": "Liam O'Connor",
         "city": "Wellington", "region": "Wellington Region",
-        "intro": "As we initiate our coverage for the 2026 calendar year, the macroeconomic consensus is characterized by cautious optimism. The severe inflationary pressures that defined the preceding three years have decisively broken. Looking out from Wellington, the bureaucratic engine of the nation, the prevailing sentiment is that public sector stability will anchor the national recovery vector. We forecast a steady, albeit shallow, downward trajectory for wholesale swap rates throughout Q1 and Q2, ultimately delivering a sub-5.5% two-year fixed rate environment by mid-winter. Total housing stock remains structurally deficit-bound against net migration inflows, guaranteeing a floor under national valuations and projecting a modest 4% aggregate capital growth by Q4."
+        "intro": "As we initiate our coverage for the 2026 calendar year, the macroeconomic consensus is characterised by cautious optimism. The severe inflationary pressures that defined the preceding three years have decisively broken. Looking out from Wellington, the bureaucratic engine of the nation, the prevailing sentiment is that public sector stability will anchor the national recovery vector. We forecast a steady, albeit shallow, downward trajectory for wholesale swap rates throughout Q1 and Q2, ultimately delivering a sub-5.5% two-year fixed rate environment by mid-winter. Total housing stock remains structurally deficit-bound against net migration inflows, guaranteeing a floor under national valuations and projecting a modest 4% aggregate capital growth by Q4."
     }
 ]
 
@@ -294,7 +294,7 @@ def make_weekly_report_schema(r):
         "@context": "https://schema.org",
         "@graph": [
             {
-                "@type": "MortgageBroker",
+                "@type": "FinancialService",
                 "@id": "https://www.finchmortgages.co.nz/#organization",
                 "name": "Finch Mortgages",
                 "url": "https://www.finchmortgages.co.nz/",
@@ -305,7 +305,7 @@ def make_weekly_report_schema(r):
             },
             {
                 "@type": "Person",
-                "@id": "https://www.finchmortgages.co.nz/about.html#mukhtar-kiyani",
+                "@id": "https://www.finchmortgages.co.nz/#mukhtar-kiyani",
                 "name": "Mukhtar Kiyani",
                 "jobTitle": "Director & Financial Adviser",
                 "url": "https://www.finchmortgages.co.nz/about.html",
@@ -350,7 +350,7 @@ def make_weekly_report_schema(r):
                 "datePublished": published_date,
                 "dateModified": "2026-06-15",
                 "author": {
-                    "@id": "https://www.finchmortgages.co.nz/about.html#mukhtar-kiyani"
+                    "@id": "https://www.finchmortgages.co.nz/#mukhtar-kiyani"
                 },
                 "publisher": {
                     "@id": "https://www.finchmortgages.co.nz/#organization"
@@ -516,7 +516,7 @@ def make_report_page(r):
         <!-- CTA Box -->
         <div style="background:white;border-radius:1rem;padding:2rem;border:1px solid rgba(181,206,176,0.3);margin-bottom:2rem;">
           <h3 style="font-size:1.1rem;font-weight:700;margin-bottom:1rem;color:var(--neutral-black);">Act on this report.</h3>
-          <p style="font-size:0.85rem;color:var(--neutral-medGray);line-height:1.6;margin-bottom:1.5rem;">Don't let market shifts catch you off guard. Speak to an advisor to review your rate or calculate your new borrowing power.</p>
+          <p style="font-size:0.85rem;color:var(--neutral-medGray);line-height:1.6;margin-bottom:1.5rem;">Don't let market shifts catch you off guard. Speak to an adviser to review your rate or calculate your new borrowing power.</p>
           <div style="display:flex;flex-direction:column;gap:0.75rem;">
             <a href="../services/pre-approval.html" style="background:var(--finch-forest);color:white;text-decoration:none;padding:0.75rem;border-radius:0.5rem;text-align:center;font-size:0.85rem;font-weight:800;">Get Pre-Approved</a>
             <a href="../calculators/mortgage-calculator.html" style="background:rgba(181,206,176,0.15);color:var(--finch-forest);text-decoration:none;padding:0.75rem;border-radius:0.5rem;text-align:center;font-size:0.85rem;font-weight:800;border:1px solid rgba(181,206,176,0.5);">Use Calculator</a>

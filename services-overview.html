@@ -31,11 +31,12 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/><link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" onload="this.onload=null;this.rel='stylesheet'"/><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"/></noscript><link href="style.css" rel="stylesheet"/>
 <link href="tailwind.css" rel="stylesheet"/>
-<script type="application/ld+json">{
+<script type="application/ld+json">
+{
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "MortgageBroker",
+      "@type": "FinancialService",
       "@id": "https://www.finchmortgages.co.nz/#organization",
       "name": "Finch Mortgages",
       "alternateName": "Finch Mortgages",
@@ -59,7 +60,8 @@
       },
       "founder": {
         "@type": "Person",
-        "name": "Mukhtar Kiyani"
+        "name": "Mukhtar Kiyani",
+        "@id": "https://www.finchmortgages.co.nz/#mukhtar-kiyani"
       },
       "foundingDate": "2010",
       "sameAs": [
@@ -75,15 +77,7 @@
       "publisher": {
         "@id": "https://www.finchmortgages.co.nz/#organization"
       },
-      "inLanguage": "en-NZ",
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": {
-          "@type": "EntryPoint",
-          "urlTemplate": "https://www.finchmortgages.co.nz/blog.html?q={search_term_string}"
-        },
-        "query-input": "required name=search_term_string"
-      }
+      "inLanguage": "en-NZ"
     },
     {
       "@type": "BreadcrumbList",
@@ -110,7 +104,7 @@
       ],
       "@id": "https://www.finchmortgages.co.nz/services-overview.html#webpage",
       "url": "https://www.finchmortgages.co.nz/services-overview.html",
-      "name": "NZ Mortgage Services \u2014 Home Loans, Refinance & More",
+      "name": "NZ Mortgage Services — Home Loans, Refinance & More",
       "description": "Every mortgage solution under one roof: home loans, first home buyer loans, refinancing, investment property, construction, commercial, asset finance, and self-employed lending.",
       "inLanguage": "en-NZ",
       "isPartOf": {
@@ -133,7 +127,8 @@
       }
     }
   ]
-}</script>
+}
+</script>
 <!-- Meta Pixel Code -->
 <script>!function(){var e=!1;function n(){var n,t,o,c,a,s;e||(e=!0,n=window,t=document,o="script",n.fbq||(c=n.fbq=function(){c.callMethod?c.callMethod.apply(c,arguments):c.queue.push(arguments)},n._fbq||(n._fbq=c),c.push=c,c.loaded=!0,c.version="2.0",c.queue=[],(a=t.createElement(o)).async=!0,a.src="https://connect.facebook.net/en_US/fbevents.js",(s=t.getElementsByTagName(o)[0]).parentNode.insertBefore(a,s)),fbq("init","984298931136124"),fbq("track","PageView"))}["pointerdown","scroll","keydown","touchstart"].forEach(function(e){window.addEventListener(e,n,{passive:!0,once:!0})}),setTimeout(n,4e3)}();</script>
 <noscript><img alt="Facebook Pixel" height="1" width="1" style="display:none"
@@ -230,7 +225,7 @@ src="https://www.facebook.com/tr?id=984298931136124&ev=PageView&noscript=1"
 <p style="max-width:600px;">Whether you're buying your first home, growing your investment portfolio, refinancing, or building from scratch — Finch has a tailored solution for you. Explore all 10 of our mortgage services below.</p>
 <div style="display:flex;gap:1rem;flex-wrap:wrap;margin-top:1.5rem;">
 <a class="btn-primary" href="contact.html">Get Pre-Approved</a>
-<a class="btn-secondary" href="contact.html">Talk to an Advisor</a>
+<a class="btn-secondary" href="contact.html">Talk to an Adviser</a>
 </div>
 </section>
 <!-- Services Grid -->
@@ -404,7 +399,7 @@ src="https://www.facebook.com/tr?id=984298931136124&ev=PageView&noscript=1"
 <section style="padding:5rem 0;background:var(--finch-forest);text-align:center;">
 <div class="container">
 <h2 style="color:white;font-size:clamp(1.75rem,3.5vw,2.75rem);font-weight:700;margin-bottom:1rem;">Not sure which service is right for you?</h2>
-<p style="color:rgba(255,255,255,0.75);max-width:500px;margin:0 auto 2rem;line-height:1.7;">Book a free, no-obligation consultation and our advisors will match you with the perfect mortgage solution for your situation.</p>
+<p style="color:rgba(255,255,255,0.75);max-width:500px;margin:0 auto 2rem;line-height:1.7;">Book a free, no-obligation consultation and our advisers will match you with the perfect mortgage solution for your situation.</p>
 <a class="btn-primary" href="contact.html" style="background:white;color:var(--finch-forest);font-size:1rem;padding:0.9rem 2rem;">Book Free Consultation →</a>
 </div>
 </section>
@@ -419,7 +414,7 @@ src="https://www.facebook.com/tr?id=984298931136124&ev=PageView&noscript=1"
 <div class="footer-col"><h4>Company</h4><a href="about.html">About Us</a><a href="contact.html">Contact</a><a href="map.html">Our Location</a><a href="locations/index.html">Service Locations</a></div>
 </div>
 <!-- FINCH-NAP:START -->
-<div class="footer-nap" itemscope itemtype="https://schema.org/MortgageBroker" style="border-top:1px solid rgba(255,255,255,0.12);margin-top:2rem;padding-top:1.75rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1.5rem;font-size:0.88rem;line-height:1.7;">
+<div class="footer-nap" itemscope itemtype="https://schema.org/FinancialService" style="border-top:1px solid rgba(255,255,255,0.12);margin-top:2rem;padding-top:1.75rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1.5rem;font-size:0.88rem;line-height:1.7;">
 <div>
 <strong itemprop="name" style="display:block;font-size:0.95rem;margin-bottom:0.35rem;">Finch Mortgages Limited</strong>
 <span itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">

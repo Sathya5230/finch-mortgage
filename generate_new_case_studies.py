@@ -790,7 +790,7 @@ def schema_for(c: dict) -> str:
             "url": f"{BASE_URL}/about.html",
         },
         "publisher": {
-            "@type": "MortgageBroker",
+            "@type": "FinancialService",
             "@id": f"{BASE_URL}/#organization",
             "name": "Finch Mortgages",
             "url": f"{BASE_URL}/",

@@ -41,7 +41,7 @@ SERVICES = [
         "slug": "home-loan",
         "name": "Home Loan",
         "title": "Home Loans & Buying a Home",
-        "tagline": "Secure your next residential property with NZ's best lending structures.",
+        "tagline": "Compare 20+ NZ lenders and get a home loan structured around you.",
     },
     {
         "slug": "first-home-buyer",
@@ -59,19 +59,19 @@ SERVICES = [
         "slug": "investment-property",
         "name": "Investment Property",
         "title": "Investment Property Loans",
-        "tagline": "Maximize leverage and structure portfolio lending tax-effectively.",
+        "tagline": "Structure investment lending around your equity, rental income and DTI limits.",
     },
     {
         "slug": "self-employed",
         "name": "Self-Employed Mortgage",
         "title": "Self-Employed Home Loans",
-        "tagline": "Secure finance using smart profit declarations and low-doc pathways.",
+        "tagline": "Get finance using your business financials, or low-doc options if you're newer to business.",
     },
     {
         "slug": "pre-approval",
         "name": "Pre-Approval",
         "title": "Mortgage Pre-Approvals",
-        "tagline": "Know your borrowing capacity and bid at auction with absolute confidence.",
+        "tagline": "Know what you can borrow before you bid at auction.",
     },
 ]
 
@@ -83,7 +83,7 @@ def get_service_prose(service_slug: str, city_name: str, suburbs: str, price_ban
         return {
             "intro": f"Buying a residential home in {clean_city} is a major milestone, but navigating bank scorecards requires a strategic approach. With the Reserve Bank of New Zealand (RBNZ) defining strict lending limits and interest rates shifting, securing a competitive mortgage requires matching your unique financial profile to the right lender. At Finch, we compare your application across 20+ NZ bank and non-bank lenders to construct the sharpest pricing and structure for your new home.",
             "market_angle": f"The local property market in {clean_city} requires a tailored approach depending on the property type. {market_note} Because banks assess older homes, new builds, cross-leases, and lifestyle blocks under completely different policies, securing an independent review of your contract and the property's lendability is essential before making an offer.",
-            "eligibility_process": f"To secure a home loan in {clean_city}, banks typically require a 20% deposit, though deposit options as low as 10% (or even 5% for first home buyers) are possible. We analyze your monthly servicing capacity at current bank 'test rates' (often 1.5% to 2% above actual rates) to confirm what you can borrow. The process is straightforward: we complete a discovery call, organize your documents (payslips, tax portals, and bank statement downloads), select the matching lenders, and secure your pre-approval so you can shop with confidence across suburbs like {suburbs}.",
+            "eligibility_process": f"To secure a home loan in {clean_city}, banks typically require a 20% deposit, though deposit options as low as 10% (or even 5% for first home buyers) are possible. We analyze your monthly servicing capacity at current bank 'test rates' (often 1.5% to 2% above actual rates) to confirm what you can borrow. The process is straightforward: we complete a discovery call, organise your documents (payslips, tax portals, and bank statement downloads), select the matching lenders, and secure your pre-approval so you can shop with confidence across suburbs like {suburbs}.",
             "extra_sections_html": f"""
             <h2 style="font-size:1.75rem;font-weight:700;color:var(--neutral-black);margin-bottom:1.25rem;margin-top:2.5rem;font-family:var(--font-display);letter-spacing:-0.02em;">Understanding Mortgage Structures in {clean_city}</h2>
             <p style="margin-bottom:1rem;">Choosing the right mortgage structure is just as important as securing a low interest rate. A poorly structured home loan can cost you tens of thousands of dollars in unnecessary interest over the life of the loan. When we design your loan, we assess several options:</p>
@@ -102,7 +102,7 @@ def get_service_prose(service_slug: str, city_name: str, suburbs: str, price_ban
               <li style="margin-bottom:1rem;"><strong>Lender Selection &amp; Submission:</strong> We compare your scenario against 20+ NZ bank and non-bank lenders, package your application to highlight its strengths, and submit it to the lenders offering the best terms.</li>
               <li style="margin-bottom:1rem;"><strong>Pre-Approval Secured:</strong> Once the bank issues a pre-approval, you know your exact buying limits, allowing you to bid at auctions or make conditional offers with confidence.</li>
               <li style="margin-bottom:1rem;"><strong>Property Due Diligence:</strong> Before you sign a sale and purchase agreement, we check that the bank accepts the specific property type (e.g. cross-lease, plaster finish, or townhouse zoning).</li>
-              <li style="margin-bottom:1rem;"><strong>Loan Structuring &amp; Settlement:</strong> We customize your fixed and floating splits, arrange bank cashbacks, coordinate with your solicitor, and finalize the draw-down on settlement day.</li>
+              <li style="margin-bottom:1rem;"><strong>Loan Structuring &amp; Settlement:</strong> We customise your fixed and floating splits, arrange bank cashbacks, coordinate with your solicitor, and finalise the draw-down on settlement day.</li>
             </ol>
             """,
             "faqs": [
@@ -123,7 +123,7 @@ def get_service_prose(service_slug: str, city_name: str, suburbs: str, price_ban
         
     elif service_slug == "first-home-buyer":
         return {
-            "intro": f"Getting onto the property ladder as a first home buyer in {clean_city} can feel daunting with entry-level prices at historical highs. However, Kiwi buyers have access to unique support systems — including KiwiSaver first-home withdrawals, Kāinga Ora First Home Loans, and parental guarantee options. Finch specializes in linking these pathways together, helping first-home buyers secure pre-approvals even with smaller deposits.",
+            "intro": f"Getting onto the property ladder as a first home buyer in {clean_city} can feel daunting with entry-level prices at historical highs. However, Kiwi buyers have access to unique support systems — including KiwiSaver first-home withdrawals, Kāinga Ora First Home Loans, and parental guarantee options. Finch specialises in linking these pathways together, helping first-home buyers secure pre-approvals even with smaller deposits.",
             "market_angle": f"In {clean_city}, entry-level price points vary widely, but new-build townhouses and apartments offer excellent entry opportunities due to lower deposit requirements. {market_note} Understanding how new-build LVR exemptions apply to local developments is a critical shortcut to buying your first home.",
             "eligibility_process": f"First home buyers in {clean_city} should target a minimum 5% deposit for a First Home Loan (available through select lenders like Westpac or SBS) or a 10% deposit for new builds. You must have contributed to KiwiSaver for at least 3 years to withdraw your funds, and any parental guarantee must be backed by equity in a NZ residential property. We'll guide you step-by-step: checking your KiwiSaver balances, structuring a family guarantee if needed, packaging your application to demonstrate clean account conduct, and securing a pre-approval so you can negotiate actively.",
             "extra_sections_html": f"""
@@ -147,7 +147,7 @@ def get_service_prose(service_slug: str, city_name: str, suburbs: str, price_ban
             <p style="margin-bottom:1.5rem;">To give yourself the absolute best chance of bank approval, we recommend implementing the following checklist 3 to 6 months before applying:</p>
             <ol style="margin-bottom:2rem;padding-left:1.5rem;list-style-type:decimal;color:var(--neutral-medGray);">
               <li style="margin-bottom:1rem;"><strong>Eliminate Short-Term Debt:</strong> Pay off any hire purchases, credit cards, buy-now-pay-later accounts (like Afterpay), and personal loans. Banks subtract these limits directly from your borrowing capacity.</li>
-              <li style="margin-bottom:1rem;"><strong>Show Clean Account Conduct:</strong> Avoid unauthorized overdrafts or unarranged bank fees. Lenders scrutinize every transaction on your last 3 months of bank statements.</li>
+              <li style="margin-bottom:1rem;"><strong>Show Clean Account Conduct:</strong> Avoid unauthorised overdrafts or unarranged bank fees. Lenders scrutinise every transaction on your last 3 months of bank statements.</li>
               <li style="margin-bottom:1rem;"><strong>Establish a Savings Record:</strong> Regular deposits into a savings account demonstrate to the lender that you have the financial discipline to manage future mortgage repayments.</li>
             </ol>
             """,
@@ -217,16 +217,16 @@ def get_service_prose(service_slug: str, city_name: str, suburbs: str, price_ban
         
     elif service_slug == "investment-property":
         return {
-            "intro": f"Building a residential property portfolio in {clean_city} requires a deep understanding of tax structures, equity release, and credit policy. NZ lending rules for investment property are dynamic, with the Reserve Bank's LVR guidelines applying differently depending on whether you are buying an existing rental or a brand-new build. Finch helps investors design optimal multi-lender structures to maximize borrowing capacity and keep investments separate from home equity.",
+            "intro": f"Building a residential property portfolio in {clean_city} requires a deep understanding of tax structures, equity release, and credit policy. NZ lending rules for investment property are dynamic, with the Reserve Bank's LVR guidelines applying differently depending on whether you are buying an existing rental or a brand-new build. Finch helps investors design optimal multi-lender structures to maximise borrowing capacity and keep investments separate from home equity.",
             "market_angle": f"The local investment environment in {clean_city} highlights unique suburb yields and capital growth profiles. {market_note} Understanding which property types attract rental premiums and how local zoning rules apply is the foundation of a successful investment strategy.",
-            "eligibility_process": f"For existing residential investments, NZ banks typically require a 35% or 40% deposit (LVR of 60-65%), whereas new-build investments only require a 20% deposit. Banks assess servicing by applying a 'haircut' (usually counting 70% to 75% of gross rental income) and stress-testing it at current test rates. We help you unlock equity in your owner-occupied home to fund the deposit, set up interest-only terms to optimize tax deductibility, and select lenders that don't cross-collateralize your family home.",
+            "eligibility_process": f"For existing residential investments, NZ banks typically require a 35% or 40% deposit (LVR of 60-65%), whereas new-build investments only require a 20% deposit. Banks assess servicing by applying a 'haircut' (usually counting 70% to 75% of gross rental income) and stress-testing it at current test rates. We help you unlock equity in your owner-occupied home to fund the deposit, set up interest-only terms to optimise tax deductibility, and select lenders that don't cross-collateralise your family home.",
             "extra_sections_html": f"""
             <h2 style="font-size:1.75rem;font-weight:700;color:var(--neutral-black);margin-bottom:1.25rem;margin-top:2.5rem;font-family:var(--font-display);letter-spacing:-0.02em;">Structuring Investment Loans for Long-Term Success</h2>
             <p style="margin-bottom:1rem;">How your investment loans are structured is far more important than just interest rates. Proper structuring protects your personal home and ensures your investment is tax-effective:</p>
             <ul style="margin-bottom:2rem;padding-left:1.5rem;list-style-type:disc;color:var(--neutral-medGray);">
               <li style="margin-bottom:0.75rem;"><strong>Avoiding Cross-Collateralisation:</strong> Lenders prefer to secure all your properties under a single mortgage. We structure your loans across different banks so that a sale or valuation change on one property does not freeze funds on the other.</li>
-              <li style="margin-bottom:0.75rem;"><strong>Interest-Only Terms:</strong> Paying only the interest portion on your investment properties maximizes tax deductions (where applicable) and frees up cashflow to pay down your non-deductible personal home mortgage.</li>
-              <li style="margin-bottom:0.75rem;"><strong>Entity Selection:</strong> We coordinate with your accountant to structure loans under Look-Through Companies (LTCs), family trusts, or partnership entities to optimize tax efficiency and asset protection.</li>
+              <li style="margin-bottom:0.75rem;"><strong>Interest-Only Terms:</strong> Paying only the interest portion on your investment properties maximises tax deductions (where applicable) and frees up cashflow to pay down your non-deductible personal home mortgage.</li>
+              <li style="margin-bottom:0.75rem;"><strong>Entity Selection:</strong> We coordinate with your accountant to structure loans under Look-Through Companies (LTCs), family trusts, or partnership entities to optimise tax efficiency and asset protection.</li>
             </ul>
 
             <h2 style="font-size:1.75rem;font-weight:700;color:var(--neutral-black);margin-bottom:1.25rem;margin-top:2.5rem;font-family:var(--font-display);letter-spacing:-0.02em;">Releasing Equity to Fund Your Deposit</h2>
@@ -238,7 +238,7 @@ def get_service_prose(service_slug: str, city_name: str, suburbs: str, price_ban
             </div>
 
             <h2 style="font-size:1.75rem;font-weight:700;color:var(--neutral-black);margin-bottom:1.25rem;margin-top:2.5rem;font-family:var(--font-display);letter-spacing:-0.02em;">Managing Servicing &amp; LVR Rules in {clean_city}</h2>
-            <p style="margin-bottom:1.5rem;">NZ banks analyze your portfolio servicing stringently. We help you package your servicing calculations by optimizing the variables lenders look at:</p>
+            <p style="margin-bottom:1.5rem;">NZ banks analyze your portfolio servicing stringently. We help you package your servicing calculations by optimising the variables lenders look at:</p>
             <ol style="margin-bottom:2rem;padding-left:1.5rem;list-style-type:decimal;color:var(--neutral-medGray);">
               <li style="margin-bottom:1rem;"><strong>Rental Income Haircuts:</strong> Banks discount your rental income by 25-30% to account for rates, insurance, maintenance, and vacancy. We select lenders that apply the lowest discount.</li>
               <li style="margin-bottom:1rem;"><strong>New Build LVR Exemptions:</strong> Purchasing new-build investment properties exempts you from the strict RBNZ 60-65% LVR limit on existing homes, allowing you to secure investment properties with only a 20% deposit.</li>
@@ -263,9 +263,9 @@ def get_service_prose(service_slug: str, city_name: str, suburbs: str, price_ban
         
     elif service_slug == "self-employed":
         return {
-            "intro": f"Being self-employed in {clean_city} comes with business freedom, but securing a home loan can be notoriously difficult. Mainstream banks favor standard PAYE payslips and often struggle to interpret self-employed income statements, shareholder salaries, or company trusts. Finch specializes in self-employed mortgages, packaging complex financials to present the cleanest possible income profile to both main-bank and specialist lenders.",
-            "market_angle": f"The self-employed business community in {clean_city} spans construction trades, professional contractors, and retail operators. {market_note} Understanding which NZ lenders assess your business structure favorably is the key to unlocking the borrowing power you've earned.",
-            "eligibility_process": f"To secure a standard main-bank loan, you generally need 1 to 2 years of accountant-prepared financial statements, including profit and loss accounts, balance sheets, and personal tax returns (IR3s). However, if you have been trading for less than a year or have complex income splits, we can utilize 'low-doc' pathways with select non-bank lenders who accept GST returns or 6 months of business bank statements. We package your business tax portals, explain any one-off expenses that artificially lower your net profit, and secure pre-approval without forcing you to wait for another financial year.",
+            "intro": f"Being self-employed in {clean_city} comes with business freedom, but securing a home loan can be notoriously difficult. Mainstream banks favour standard PAYE payslips and often struggle to interpret self-employed income statements, shareholder salaries, or company trusts. Finch specialises in self-employed mortgages, packaging complex financials to present the cleanest possible income profile to both main-bank and specialist lenders.",
+            "market_angle": f"The self-employed business community in {clean_city} spans construction trades, professional contractors, and retail operators. {market_note} Understanding which NZ lenders assess your business structure favourably is the key to unlocking the borrowing power you've earned.",
+            "eligibility_process": f"To secure a standard main-bank loan, you generally need 1 to 2 years of accountant-prepared financial statements, including profit and loss accounts, balance sheets, and personal tax returns (IR3s). However, if you have been trading for less than a year or have complex income splits, we can utilise 'low-doc' pathways with select non-bank lenders who accept GST returns or 6 months of business bank statements. We package your business tax portals, explain any one-off expenses that artificially lower your net profit, and secure pre-approval without forcing you to wait for another financial year.",
             "extra_sections_html": f"""
             <h2 style="font-size:1.75rem;font-weight:700;color:var(--neutral-black);margin-bottom:1.25rem;margin-top:2.5rem;font-family:var(--font-display);letter-spacing:-0.02em;">How NZ Banks Assess Self-Employed Income</h2>
             <p style="margin-bottom:1rem;">Underwriters look at self-employed files with caution because business income can fluctuate. We package your accounts using advanced techniques to ensure banks understand your true earning capacity:</p>
@@ -276,7 +276,7 @@ def get_service_prose(service_slug: str, city_name: str, suburbs: str, price_ban
             </ul>
 
             <h2 style="font-size:1.75rem;font-weight:700;color:var(--neutral-black);margin-bottom:1.25rem;margin-top:2.5rem;font-family:var(--font-display);letter-spacing:-0.02em;">Alternative/Low-Doc Home Loan Options</h2>
-            <p style="margin-bottom:1.25rem;">If your tax accounts are not finalized, or you have optimized your business profit to minimize tax, a standard main-bank loan may not be viable. In these scenarios, we utilize low-doc (low-documentation) lending options:</p>
+            <p style="margin-bottom:1.25rem;">If your tax accounts are not finalised, or you have optimised your business profit to minimise tax, a standard main-bank loan may not be viable. In these scenarios, we utilise low-doc (low-documentation) lending options:</p>
             <ul style="margin-bottom:2rem;padding-left:1.5rem;list-style-type:disc;color:var(--neutral-medGray);">
               <li style="margin-bottom:0.75rem;"><strong>Accountant Declarations:</strong> Select non-bank lenders accept a simple certificate signed by your chartered accountant confirming your business's turnover and estimated profit margin.</li>
               <li style="margin-bottom:0.75rem;"><strong>GST Return Verification:</strong> We can verify your income by submitting your last 12 months of GST returns to the lender, establishing a reliable trend of business activity.</li>
@@ -284,7 +284,7 @@ def get_service_prose(service_slug: str, city_name: str, suburbs: str, price_ban
             </ul>
 
             <h2 style="font-size:1.75rem;font-weight:700;color:var(--neutral-black);margin-bottom:1.25rem;margin-top:2.5rem;font-family:var(--font-display);letter-spacing:-0.02em;">Document Checklist for Self-Employed Borrowers</h2>
-            <p style="margin-bottom:1.5rem;">To speed up your application, we recommend organizing the following financial documents before our consultation:</p>
+            <p style="margin-bottom:1.5rem;">To speed up your application, we recommend organising the following financial documents before our consultation:</p>
             <ol style="margin-bottom:2rem;padding-left:1.5rem;list-style-type:decimal;color:var(--neutral-medGray);">
               <li style="margin-bottom:1rem;"><strong>Company Financials:</strong> Last 2 years of Company Profit &amp; Loss Statements and Balance Sheets (prepared by a qualified accountant).</li>
               <li style="margin-bottom:1rem;"><strong>Tax Portals:</strong> Last 2 years of personal IR3 tax returns and your IRD income summaries.</li>
@@ -294,7 +294,7 @@ def get_service_prose(service_slug: str, city_name: str, suburbs: str, price_ban
             "faqs": [
                 {
                     "q": "What financial records do I need if I'm self-employed?",
-                    "a": "Generally, you need the last 2 years of company financial accounts, tax returns (IR3 for individuals, IR4 for companies), and personal tax summaries. However, if these aren't finalized, we can work with interim accounts or GST returns depending on the lender."
+                    "a": "Generally, you need the last 2 years of company financial accounts, tax returns (IR3 for individuals, IR4 for companies), and personal tax summaries. However, if these aren't finalised, we can work with interim accounts or GST returns depending on the lender."
                 },
                 {
                     "q": "Can I get a home loan if I've only been self-employed for one year?",
@@ -309,9 +309,9 @@ def get_service_prose(service_slug: str, city_name: str, suburbs: str, price_ban
         
     elif service_slug == "pre-approval":
         return {
-            "intro": f"Entering the {clean_city} real estate market without a binding mortgage pre-approval is like bidding at an auction blindfolded. In a fast-paced market where conditional offers are routinely rejected in favor of unconditional buyers, having a pre-approval gives you the leverage to negotiate with certainty. Finch coordinates with 20+ NZ lenders to secure pre-approvals quickly, keeping you ahead of the competition.",
+            "intro": f"Entering the {clean_city} real estate market without a binding mortgage pre-approval is like bidding at an auction blindfolded. In a fast-paced market where conditional offers are routinely rejected in favour of unconditional buyers, having a pre-approval gives you the leverage to negotiate with certainty. Finch coordinates with 20+ NZ lenders to secure pre-approvals quickly, keeping you ahead of the competition.",
             "market_angle": f"With auctions and quick tenders dominating the {clean_city} sales landscape, a pre-approval is your ticket to participate. {market_note} Knowing your buying capacity and deposit rules before you start visiting open homes is the best way to avoid missing out.",
-            "eligibility_process": f"To qualify for a pre-approval, you must submit a complete financial profile demonstrating servicing capacity and a verified deposit source (cash, KiwiSaver, or equity). Pre-approvals are generally valid for 90 days, allowing you to bid at auction or make unconditional offers. The process involves organizing your checklist, matching your files to the right bank's scorecard, and securing the approval letter. We will review any property you want to offer on to ensure the bank accepts that specific property type.",
+            "eligibility_process": f"To qualify for a pre-approval, you must submit a complete financial profile demonstrating servicing capacity and a verified deposit source (cash, KiwiSaver, or equity). Pre-approvals are generally valid for 90 days, allowing you to bid at auction or make unconditional offers. The process involves organising your checklist, matching your files to the right bank's scorecard, and securing the approval letter. We will review any property you want to offer on to ensure the bank accepts that specific property type.",
             "extra_sections_html": f"""
             <h2 style="font-size:1.75rem;font-weight:700;color:var(--neutral-black);margin-bottom:1.25rem;margin-top:2.5rem;font-family:var(--font-display);letter-spacing:-0.02em;">Why Pre-Approval is Critical in {clean_city}</h2>
             <p style="margin-bottom:1rem;">In New Zealand, many properties are sold via auction or deadline sale. If you bid at auction, your bid is legally binding and completely unconditional. Without pre-approval, bidding is extremely risky:</p>
@@ -439,7 +439,7 @@ def build_page_html(c: dict, s: dict, template_text: str) -> str:
         "@type": "Service",
         "name": f"{service_name} Brokerage in {city.replace('&amp;', '&')}",
         "provider": {
-            "@type": "MortgageBroker",
+            "@type": "FinancialService",
             "name": "Finch Mortgages",
             "url": f"{BASE_URL}/",
             "logo": f"{BASE_URL}/images/finch-logo.png",
@@ -522,7 +522,7 @@ def build_page_html(c: dict, s: dict, template_text: str) -> str:
           <p>{s['tagline']}</p>
           <div style="display:flex;gap:1rem;flex-wrap:wrap;margin-top:1.5rem;">
             <a class="btn-primary" href="../contact.html">Book a Free 15-Minute Call</a>
-            <a class="btn-secondary" href="../mortgage-rates.html">View Live NZ Rates</a>
+            <a class="btn-secondary" href="../mortgage-rates.html">View NZ Rates</a>
           </div>
         </div>
       </section>
@@ -579,7 +579,7 @@ def build_page_html(c: dict, s: dict, template_text: str) -> str:
             <p>Book a free, no-obligation call with our advisers to discuss {service_name} solutions in {city.replace('&amp;', '&')}.</p>
             <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
               <a class="btn-cta-white" href="../contact.html">Book a Free Call →</a>
-              <a class="btn-cta-outline" href="../mortgage-rates.html">View Live NZ Rates</a>
+              <a class="btn-cta-outline" href="../mortgage-rates.html">View NZ Rates</a>
             </div>
           </div>
         </div>
@@ -590,8 +590,8 @@ def build_page_html(c: dict, s: dict, template_text: str) -> str:
     return head + "\n" + body_open + body_html + footer
 
 def generate_hub_html(template_text: str) -> str:
-    title = "Our Service Locations | Finch Mortgages NZ"
-    description = "Browse Finch Mortgages local home loan and advisory services across major New Zealand cities. $0 fee, independent advice."
+    title = "Mortgage Brokers Across NZ by City | Finch Mortgages"
+    description = "Local mortgage broker pages for Auckland, Wellington, Christchurch, Hamilton, Tauranga, Dunedin and more. Independent advice, no fee on NZ home loans."
     canonical = f"{BASE_URL}/locations/index.html"
     
     # Update Head
@@ -692,8 +692,8 @@ def generate_hub_html(template_text: str) -> str:
         <div class="reveal" style="max-width:800px;">
           <nav class="breadcrumb"><a href="../index.html">Home</a><span class="breadcrumb-sep">/</span><span>Locations</span></nav>
           <div class="page-hero-tag">NZ-Wide Expertise</div>
-          <h1>Finch Service Locations</h1>
-          <p style="font-size:1.15rem;color:var(--neutral-medGray);margin-top:1rem;line-height:1.7;">Independent, $0-fee mortgage advice blended with local market insights. Choose your service and city combination below to view detailed criteria, price bands, and local processes.</p>
+          <h1>Mortgage Brokers Across New Zealand</h1>
+          <p style="font-size:1.15rem;color:var(--neutral-medGray);margin-top:1rem;line-height:1.7;">Finch Mortgages arranges home loans across New Zealand from our Auckland office, by phone, video or in person. Pick your city and what you need below to see how lending works locally.</p>
         </div>
       </section>
 

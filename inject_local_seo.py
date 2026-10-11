@@ -167,7 +167,7 @@ def footer_nap_block():
             f'font-size:0.82rem;font-weight:700;color:#b29361;">'
             f'<span>★★★★★</span><span>{GBP_RATING}/5 from {GBP_REVIEW_COUNT} Google reviews</span></a>'
         )
-    return f"""<div class="footer-nap" itemscope itemtype="https://schema.org/MortgageBroker" style="border-top:1px solid rgba(255,255,255,0.12);margin-top:2rem;padding-top:1.75rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1.5rem;font-size:0.88rem;line-height:1.7;">
+    return f"""<div class="footer-nap" itemscope itemtype="https://schema.org/FinancialService" style="border-top:1px solid rgba(255,255,255,0.12);margin-top:2rem;padding-top:1.75rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1.5rem;font-size:0.88rem;line-height:1.7;">
 <div>
 <strong itemprop="name" style="display:block;font-size:0.95rem;margin-bottom:0.35rem;">{BIZ['legal_name']}</strong>
 <span itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
@@ -223,7 +223,7 @@ Call {BIZ['phone_display']} now
 <ul style="list-style:none;padding:0;margin:0;color:rgba(255,255,255,0.78);font-size:0.9rem;line-height:2;">
 <li>✓ We compare 20+ NZ banks and non-bank lenders</li>
 <li>✓ The lender pays us — our advice costs you nothing</li>
-<li>✓ Registered financial adviser, FSP {BIZ['fsp']}</li>
+<li>✓ Registered financial adviser ({BIZ['fsp']})</li>
 <li>✓ Same-day reply on weekdays</li>
 </ul>
 </div>
@@ -266,10 +266,20 @@ Call {BIZ['phone_display']} now
 
 def org_node():
     node = {
-        "@type": ["MortgageBroker", "FinancialService"],
+        "@type": "FinancialService",
         "@id": f"{SITE}/#organization",
         "name": BIZ["name"],
         "legalName": BIZ["legal_name"],
+        # People search for the brand in several forms; list them so the entity matches all of them.
+        "alternateName": ["Finch Mortgage", "Finch Mortgages NZ", "Finch Mortgage NZ", "finchmortgages.co.nz"],
+        "description": ("Independent New Zealand mortgage broker based in Te Atatu South, Auckland. "
+                        "Compares 23 lenders for home loans, first home buyers, refinancing and investment "
+                        "property, with no broker fee on residential home loans."),
+        "founder": {"@id": f"{SITE}/#mukhtar-kiyani"},
+        "areaServed": {"@type": "Country", "name": "New Zealand"},
+        "knowsAbout": ["Home loans", "First home buyer mortgages", "KiwiSaver first home withdrawal",
+                       "Kāinga Ora First Home Loan", "Mortgage refinancing", "Mortgage pre-approval",
+                       "Investment property lending", "Self-employed mortgages"],
         "url": f"{SITE}/",
         "logo": f"{SITE}/images/finch-logo.png",
         "image": f"{SITE}/images/finch-logo.png",
@@ -790,6 +800,81 @@ def pass_location_local_content():
     return count, sorted(missing)
 
 
+# --------------------------------------------------------------------------
+# Answer-first summary under each location page's H1. Answer engines and AI
+# Overviews lift the first plain-language passage that answers the query; the old
+# one-line tagline said the same thing in all 12 cities. The local points are the
+# first three factor headings the page already shows, so each summary is unique
+# and nothing new is asserted.
+# --------------------------------------------------------------------------
+ANSWER_LEAD = {
+    "home-loan": "Home loans in {city}",
+    "first-home-buyer": "Buying your first home in {city}",
+    "investment-property": "Investment property loans in {city}",
+    "pre-approval": "Mortgage pre-approval in {city}",
+    "refinance": "Refinancing in {city}",
+    "self-employed": "Self-employed mortgages in {city}",
+}
+
+SERVICE_ANSWER = {
+    "home-loan": "Finch compares 23 NZ lenders to find a home loan that fits your income, your deposit and the property you want.",
+    "first-home-buyer": "We work out your real deposit, including KiwiSaver and First Home Loan eligibility, then match you with lenders that suit first home buyers.",
+    "investment-property": "We model your equity, rental income and debt-to-income (DTI) limits across 23 lenders, so each purchase supports the next one.",
+    "pre-approval": "A pre-approval tells you how much a lender will lend before you bid. We gather your documents once and approach the lender most likely to say yes.",
+    "refinance": "Refinancing can cut your interest costs, but break fees and cashback clawbacks can eat into the gain. We compare your bank's offer with other lenders and only recommend a switch when the numbers work.",
+    "self-employed": "Being self-employed doesn't rule you out. We present your business income the way each lender assesses it and approach the lender most likely to approve you.",
+}
+
+HERO_TAGLINE = re.compile(r'<p class="freshness-signal"[^>]*>[^<]*</p>\s*(?P<tagline><p>[^<]*</p>)')
+FRESHNESS = re.compile(r'(<p class="freshness-signal"[^>]*>Last updated: )[^<]*(</p>)')
+
+
+def location_answer_block(svc, city_slug, city):
+    from html import escape
+    from location_content import LOCAL, SERVICE_KEYS
+    factors = pick_specific(LOCAL[city_slug]["factors"], SERVICE_KEYS[svc], 4)[:3]
+    points = "".join(f"<li>{escape(h, False)}</li>" for h, _ in factors)
+    return (
+        '<div class="answer-first" style="margin-top:1.25rem;padding:1.1rem 1.25rem;'
+        'border-left:4px solid var(--finch-forest);background:var(--finch-mist);border-radius:0.75rem;">'
+        f'<p style="margin:0 0 0.6rem;line-height:1.7;"><strong>{ANSWER_LEAD[svc].format(city=city)}, in short:</strong> '
+        f'{SERVICE_ANSWER[svc]} For residential home loans our advice is free, because the lender pays us when your loan settles.</p>'
+        f'<p style="margin:0 0 0.35rem;font-weight:700;font-size:0.9rem;color:var(--finch-forest);">What matters locally in {city}</p>'
+        f'<ul style="margin:0;padding-left:1.2rem;list-style:disc;line-height:1.7;">{points}</ul></div>'
+    )
+
+
+def pass_location_answers():
+    import datetime
+    updated = datetime.date.today().strftime("%B %Y")
+    rows = _city_lookup()
+    loc_dir = os.path.join(ROOT, "locations")
+    count = 0
+    for fn in sorted(os.listdir(loc_dir)):
+        if not fn.endswith(".html") or fn == "index.html":
+            continue
+        svc, city = parse_location_slug(fn)
+        if not svc or city not in rows:
+            continue
+        fp = os.path.join(loc_dir, fn)
+        html = open(fp, encoding="utf-8").read()
+        block = location_answer_block(svc, city, rows[city]["city"])
+        new, did = marker_replace(html, "ANSWER", block)
+        if new is None:
+            m = HERO_TAGLINE.search(html)
+            if not m:
+                continue
+            new = (html[:m.start("tagline")] + "<!-- FINCH-ANSWER:START -->\n" + block
+                   + "\n<!-- FINCH-ANSWER:END -->" + html[m.end("tagline"):])
+            did = True
+        if did:
+            # The visible date only moves when the summary itself changes.
+            new = FRESHNESS.sub(rf"\g<1>{updated}\g<2>", new, count=1)
+            open(fp, "w", encoding="utf-8").write(new)
+            count += 1
+    return count
+
+
 # "mortgage broker {place}" is the highest commercial-intent local query on the
 # site, but these pages shipped as plain BlogPosting with no areaServed at all.
 # Topic posts that merely match the filename prefix are excluded.
@@ -965,6 +1050,7 @@ def main():
     print(f"  location city-specific body .. {lc:>3} pages")
     if lc_missing:
         print(f"  ! no city content for: {lc_missing}")
+    print(f"  location answer-first summary  {pass_location_answers():>3} pages")
     loc = pass_locations()
     print(f"  location JSON-LD ............. {loc['schema']:>3} pages")
     print(f"  location per-city geo meta ... {loc['geo']:>3} pages")

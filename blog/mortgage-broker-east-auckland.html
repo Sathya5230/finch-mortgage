@@ -66,7 +66,7 @@
   "inLanguage": "en-NZ",
   "author": {
     "@type": "Person",
-    "@id": "https://www.finchmortgages.co.nz/about.html#mukhtar",
+    "@id": "https://www.finchmortgages.co.nz/#mukhtar-kiyani",
     "name": "Mukhtar Kiyani",
     "jobTitle": "Mortgage Adviser & Founder",
     "url": "https://www.finchmortgages.co.nz/about.html",
@@ -75,7 +75,7 @@
     }
   },
   "publisher": {
-    "@type": "MortgageBroker",
+    "@type": "FinancialService",
     "@id": "https://www.finchmortgages.co.nz/#organization",
     "name": "Finch Mortgages",
     "url": "https://www.finchmortgages.co.nz/",
@@ -111,7 +111,7 @@
       "name": "How does a local mortgage broker help me in my region?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "A local broker understands regional market conditions, localized bank valuation hurdles (like seismic registers or land classifications), and coordinates with local real estate agents and solicitors to speed up pre-approval."
+        "text": "A local broker knows how lenders view your area, including valuation issues such as earthquake-prone buildings or land classifications, and works with local agents and lawyers to keep your purchase on track."
       }
     },
     {
@@ -127,7 +127,7 @@
       "name": "Can a broker negotiate a better interest rate than a bank direct?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Banks reserve their sharpest rate discounts and cashback contributions for the broker channel. A broker compares 20+ lenders side-by-side to construct a competitive rate package you won't get walking in direct."
+        "text": "Often, yes. A broker can compare offers from many lenders at once and ask them to sharpen their pricing. Sometimes your own bank's offer is the best one, and a good broker will tell you so."
       }
     },
     {
@@ -135,7 +135,7 @@
       "name": "How does a family guarantee work to buy a home?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "A family guarantee allows parents to secure up to 20% of your home loan against the equity in their own property. This bridges your deposit gap without requiring parents to give you cash, avoiding low-equity bank premiums."
+        "text": "A family guarantee lets a family member use the equity in their own home as extra security for part of your loan. It can cover a deposit gap without them handing over cash, and may help you avoid low-equity charges."
       }
     }
   ]
@@ -148,13 +148,34 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": [
-        "MortgageBroker",
-        "FinancialService"
-      ],
+      "@type": "FinancialService",
       "@id": "https://www.finchmortgages.co.nz/#organization",
       "name": "Finch Mortgages",
       "legalName": "Finch Mortgages Limited",
+      "alternateName": [
+        "Finch Mortgage",
+        "Finch Mortgages NZ",
+        "Finch Mortgage NZ",
+        "finchmortgages.co.nz"
+      ],
+      "description": "Independent New Zealand mortgage broker based in Te Atatu South, Auckland. Compares 23 lenders for home loans, first home buyers, refinancing and investment property, with no broker fee on residential home loans.",
+      "founder": {
+        "@id": "https://www.finchmortgages.co.nz/#mukhtar-kiyani"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "New Zealand"
+      },
+      "knowsAbout": [
+        "Home loans",
+        "First home buyer mortgages",
+        "KiwiSaver first home withdrawal",
+        "Kāinga Ora First Home Loan",
+        "Mortgage refinancing",
+        "Mortgage pre-approval",
+        "Investment property lending",
+        "Self-employed mortgages"
+      ],
       "url": "https://www.finchmortgages.co.nz/",
       "logo": "https://www.finchmortgages.co.nz/images/finch-logo.png",
       "image": "https://www.finchmortgages.co.nz/images/finch-logo.png",
@@ -343,15 +364,15 @@
 <div class="container" style="padding-bottom:6rem;">
 <div class="article-layout">
 <div class="article-body blog-article-body">
-<p>East Auckland offers an exceptionally robust, stable, and highly desirable suburban lifestyle. Dominated geographically by the sprawling commercial and retail might of Botany and the established, deeply affluent, coastal communities of Howick and Half Moon Bay, the Eastern suburbs operate almost as an independent, self-sustaining micro-economy within the broader Auckland super-city. Lending here is a distinctly different game, heavily revolving around capitalizing on existing equity and navigating major infrastructure overhauls.</p>
+<p>East Auckland offers an exceptionally robust, stable, and highly desirable suburban lifestyle. Dominated geographically by the sprawling commercial and retail might of Botany and the established, deeply affluent, coastal communities of Howick and Half Moon Bay, the Eastern suburbs operate almost as an independent, self-sustaining micro-economy within the broader Auckland super-city. Lending here is a distinctly different game, heavily revolving around capitalising on existing equity and navigating major infrastructure overhauls.</p>
 <h2 id="howick">The Established Howick &amp; Eastern Bays Market</h2>
 <p>Howick, alongside neighboring suburbs like Bucklands Beach and Farm Cove, is defined by large, established family homes, substantial freehold sections, and deep generational wealth. Because this property stock represents the absolute pinnacle of low-risk residential lending, banks enthusiastically compete for Howick mortgages with minimal resistance.</p>
-<p>The primary lending challenge in the East is not simply securing a loan, but managing the logistics of upgrading. If you are attempting to upgrade from a smaller home to a large Howick family estate, timing the settlement of two massive assets is incredibly stressful. Finch specializes in structuring <strong>Open and Closed Bridging Finance</strong>. This highly advanced lending facility allows a client to unconditionally secure and move into their new Howick dream home immediately, while providing them with up to a year to sell their existing property on the open market without the desperately stressful requirement to align settlement dates.</p>
+<p>The primary lending challenge in the East is not simply securing a loan, but managing the logistics of upgrading. If you are attempting to upgrade from a smaller home to a large Howick family estate, timing the settlement of two massive assets is incredibly stressful. Finch specialises in structuring <strong>Open and Closed Bridging Finance</strong>. This highly advanced lending facility allows a client to unconditionally secure and move into their new Howick dream home immediately, while providing them with up to a year to sell their existing property on the open market without the desperately stressful requirement to align settlement dates.</p>
 <h2 id="botany">Botany and the Eastern Transport Corridor</h2>
 <p>With the forthcoming and massively extensive Eastern Busway fundamentally rewiring the region's transport infrastructure, the fringes of Botany and Pakuranga are experiencing intense, focused re-zoning. Buying a property along these corridors isn't just about securing shelter; it represents heavily strategic land-banking.</p>
-<p>When assessing mortgages in Botany, specialized brokers heavily factor in the potential for future subdivision, infill housing, or the erection of minor dwellings. We actively work with investors and homeowners to structure their lending in 'tranches'. Instead of locking the entire mortgage into a rigid 5-year fixed term, we keep portions of the facility floating or on short-term rates. This allows homeowners the immediate, penalty-free flexibility to access their equity to fund the construction of a townhouse on their back lawn as zoning laws loosen, wildly inflating their property yield without triggering agonizing bank break fees.</p>
+<p>When assessing mortgages in Botany, specialised brokers heavily factor in the potential for future subdivision, infill housing, or the erection of minor dwellings. We actively work with investors and homeowners to structure their lending in 'tranches'. Instead of locking the entire mortgage into a rigid 5-year fixed term, we keep portions of the facility floating or on short-term rates. This allows homeowners the immediate, penalty-free flexibility to access their equity to fund the construction of a townhouse on their back lawn as zoning laws loosen, wildly inflating their property yield without triggering agonising bank break fees.</p>
 <h2 id="cross-lease">Conquering the Eastern Cross-Lease</h2>
-<p>Because much of East Auckland was developed rapidly in the late 1960s and 70s, the region is highly saturated with 'Cross-Lease' properties. Instead of owning the land outright, you own a share of the land and lease the footprint of your house. Banks scrutinize Cross-Leases intensely. If a previous owner enclosed a carport or bumped out a conservatory without updating the 'Flats Plan' on the legal title, the bank will deem the title defective and halt your mortgage settlement. Finch and our network of local solicitors expertly detect these invisible flaws before our clients commit, negotiating retentions or compelling vendors to rectify titles before a single dollar changes hands.</p>
+<p>Because much of East Auckland was developed rapidly in the late 1960s and 70s, the region is highly saturated with 'Cross-Lease' properties. Instead of owning the land outright, you own a share of the land and lease the footprint of your house. Banks scrutinise Cross-Leases intensely. If a previous owner enclosed a carport or bumped out a conservatory without updating the 'Flats Plan' on the legal title, the bank will deem the title defective and halt your mortgage settlement. Finch and our network of local solicitors expertly detect these invisible flaws before our clients commit, negotiating retentions or compelling vendors to rectify titles before a single dollar changes hands.</p>
 </div>
 <div class="toc-sidebar">
 <h4>In This Article</h4>
@@ -376,7 +397,7 @@
 <svg fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" style="transition:transform 0.3s;" viewbox="0 0 24 24" width="16"><polyline points="6 9 12 15 18 9"></polyline></svg>
 </button>
 <div class="faq-content" style="display:none;padding:0 1.5rem 1.25rem 1.5rem;color:var(--neutral-medGray);line-height:1.7;font-size:0.95rem;border-top:1px solid rgba(180,178,169,0.1);padding-top:1rem;">
-<p>A local broker understands regional market conditions, localized bank valuation hurdles (like seismic registers or land classifications), and coordinates with local real estate agents and solicitors to speed up pre-approval.</p>
+<p>A local broker knows how lenders view your area, including valuation issues such as earthquake-prone buildings or land classifications, and works with local agents and lawyers to keep your purchase on track.</p>
 </div>
 </div>
 <div class="faq-item" style="border:1px solid rgba(180,178,169,0.2);border-radius:1rem;background:white;overflow:hidden;">
@@ -394,7 +415,7 @@
 <svg fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" style="transition:transform 0.3s;" viewbox="0 0 24 24" width="16"><polyline points="6 9 12 15 18 9"></polyline></svg>
 </button>
 <div class="faq-content" style="display:none;padding:0 1.5rem 1.25rem 1.5rem;color:var(--neutral-medGray);line-height:1.7;font-size:0.95rem;border-top:1px solid rgba(180,178,169,0.1);padding-top:1rem;">
-<p>Yes. Banks reserve their sharpest rate discounts and cashback contributions for the broker channel. A broker compares 20+ lenders side-by-side to construct a competitive rate package you won't get walking in direct.</p>
+<p>Often, yes. A broker can compare offers from many lenders at once and ask them to sharpen their pricing. Sometimes your own bank's offer is the best one, and a good broker will tell you so.</p>
 </div>
 </div>
 <div class="faq-item" style="border:1px solid rgba(180,178,169,0.2);border-radius:1rem;background:white;overflow:hidden;">
@@ -403,7 +424,7 @@
 <svg fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" style="transition:transform 0.3s;" viewbox="0 0 24 24" width="16"><polyline points="6 9 12 15 18 9"></polyline></svg>
 </button>
 <div class="faq-content" style="display:none;padding:0 1.5rem 1.25rem 1.5rem;color:var(--neutral-medGray);line-height:1.7;font-size:0.95rem;border-top:1px solid rgba(180,178,169,0.1);padding-top:1rem;">
-<p>A family guarantee allows parents to secure up to 20% of your home loan against the equity in their own property. This bridges your deposit gap without requiring parents to give you cash, avoiding low-equity bank premiums.</p>
+<p>A family guarantee lets a family member use the equity in their own home as extra security for part of your loan. It can cover a deposit gap without them handing over cash, and may help you avoid low-equity charges.</p>
 </div>
 </div>
 </div>
@@ -430,7 +451,7 @@
 <a href="../calculators/mortgage-calculator.html" style="display:block;padding:1.5rem;background:var(--finch-mist);border-radius:1rem;text-decoration:none;color:var(--neutral-black);"><strong style="display:block;color:var(--finch-forest);margin-bottom:0.5rem;">NZ Mortgage Calculator</strong><span style="font-size:0.9rem;color:var(--neutral-medGray);">Estimate repayments at current NZ rates.</span></a>
 <a href="../calculators/borrowing-power.html" style="display:block;padding:1.5rem;background:var(--finch-mist);border-radius:1rem;text-decoration:none;color:var(--neutral-black);"><strong style="display:block;color:var(--finch-forest);margin-bottom:0.5rem;">Borrowing Power</strong><span style="font-size:0.9rem;color:var(--neutral-medGray);">See how much NZ banks will lend.</span></a>
 <a href="../guides/first-home-guide.html" style="display:block;padding:1.5rem;background:var(--finch-mist);border-radius:1rem;text-decoration:none;color:var(--neutral-black);"><strong style="display:block;color:var(--finch-forest);margin-bottom:0.5rem;">NZ First Home Buyer Guide</strong><span style="font-size:0.9rem;color:var(--neutral-medGray);">Complete NZ FHB playbook.</span></a>
-<a href="../mortgage-rates.html" style="display:block;padding:1.5rem;background:var(--finch-mist);border-radius:1rem;text-decoration:none;color:var(--neutral-black);"><strong style="display:block;color:var(--finch-forest);margin-bottom:0.5rem;">Live NZ Mortgage Rates</strong><span style="font-size:0.9rem;color:var(--neutral-medGray);">Current carded and broker rates.</span></a>
+<a href="../mortgage-rates.html" style="display:block;padding:1.5rem;background:var(--finch-mist);border-radius:1rem;text-decoration:none;color:var(--neutral-black);"><strong style="display:block;color:var(--finch-forest);margin-bottom:0.5rem;">NZ Mortgage Rates</strong><span style="font-size:0.9rem;color:var(--neutral-medGray);">Current carded and broker rates.</span></a>
 <a href="../market-report.html" style="display:block;padding:1.5rem;background:var(--finch-mist);border-radius:1rem;text-decoration:none;color:var(--neutral-black);"><strong style="display:block;color:var(--finch-forest);margin-bottom:0.5rem;">NZ Market Report</strong><span style="font-size:0.9rem;color:var(--neutral-medGray);">OCR &amp; rate movements.</span></a>
 </div>
 </div>
@@ -452,7 +473,7 @@ Call 027 343 3293 now
 <ul style="list-style:none;padding:0;margin:0;color:rgba(255,255,255,0.78);font-size:0.9rem;line-height:2;">
 <li>✓ We compare 20+ NZ banks and non-bank lenders</li>
 <li>✓ The lender pays us — our advice costs you nothing</li>
-<li>✓ Registered financial adviser, FSP FSP1011206</li>
+<li>✓ Registered financial adviser (FSP1011206)</li>
 <li>✓ Same-day reply on weekdays</li>
 </ul>
 </div>
@@ -508,7 +529,7 @@ Call 027 343 3293 now
 <div class="footer-col"><h4>Company</h4><a href="../about.html">About Us</a><a href="../contact.html">Contact</a><a href="../map.html">Our Location</a><a href="../locations/index.html">Service Locations</a></div>
 </div>
 <!-- FINCH-NAP:START -->
-<div class="footer-nap" itemscope itemtype="https://schema.org/MortgageBroker" style="border-top:1px solid rgba(255,255,255,0.12);margin-top:2rem;padding-top:1.75rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1.5rem;font-size:0.88rem;line-height:1.7;">
+<div class="footer-nap" itemscope itemtype="https://schema.org/FinancialService" style="border-top:1px solid rgba(255,255,255,0.12);margin-top:2rem;padding-top:1.75rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1.5rem;font-size:0.88rem;line-height:1.7;">
 <div>
 <strong itemprop="name" style="display:block;font-size:0.95rem;margin-bottom:0.35rem;">Finch Mortgages Limited</strong>
 <span itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">

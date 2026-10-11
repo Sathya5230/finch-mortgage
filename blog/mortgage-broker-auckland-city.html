@@ -66,7 +66,7 @@
   "inLanguage": "en-NZ",
   "author": {
     "@type": "Person",
-    "@id": "https://www.finchmortgages.co.nz/about.html#mukhtar",
+    "@id": "https://www.finchmortgages.co.nz/#mukhtar-kiyani",
     "name": "Mukhtar Kiyani",
     "jobTitle": "Mortgage Adviser & Founder",
     "url": "https://www.finchmortgages.co.nz/about.html",
@@ -75,7 +75,7 @@
     }
   },
   "publisher": {
-    "@type": "MortgageBroker",
+    "@type": "FinancialService",
     "@id": "https://www.finchmortgages.co.nz/#organization",
     "name": "Finch Mortgages",
     "url": "https://www.finchmortgages.co.nz/",
@@ -111,7 +111,7 @@
       "name": "How does a local mortgage broker help me in my region?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "A local broker understands regional market conditions, localized bank valuation hurdles (like seismic registers or land classifications), and coordinates with local real estate agents and solicitors to speed up pre-approval."
+        "text": "A local broker knows how lenders view your area, including valuation issues such as earthquake-prone buildings or land classifications, and works with local agents and lawyers to keep your purchase on track."
       }
     },
     {
@@ -127,7 +127,7 @@
       "name": "Can a broker negotiate a better interest rate than a bank direct?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Banks reserve their sharpest rate discounts and cashback contributions for the broker channel. A broker compares 20+ lenders side-by-side to construct a competitive rate package you won't get walking in direct."
+        "text": "Often, yes. A broker can compare offers from many lenders at once and ask them to sharpen their pricing. Sometimes your own bank's offer is the best one, and a good broker will tell you so."
       }
     },
     {
@@ -135,7 +135,7 @@
       "name": "How does a family guarantee work to buy a home?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "A family guarantee allows parents to secure up to 20% of your home loan against the equity in their own property. This bridges your deposit gap without requiring parents to give you cash, avoiding low-equity bank premiums."
+        "text": "A family guarantee lets a family member use the equity in their own home as extra security for part of your loan. It can cover a deposit gap without them handing over cash, and may help you avoid low-equity charges."
       }
     }
   ]
@@ -148,13 +148,34 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": [
-        "MortgageBroker",
-        "FinancialService"
-      ],
+      "@type": "FinancialService",
       "@id": "https://www.finchmortgages.co.nz/#organization",
       "name": "Finch Mortgages",
       "legalName": "Finch Mortgages Limited",
+      "alternateName": [
+        "Finch Mortgage",
+        "Finch Mortgages NZ",
+        "Finch Mortgage NZ",
+        "finchmortgages.co.nz"
+      ],
+      "description": "Independent New Zealand mortgage broker based in Te Atatu South, Auckland. Compares 23 lenders for home loans, first home buyers, refinancing and investment property, with no broker fee on residential home loans.",
+      "founder": {
+        "@id": "https://www.finchmortgages.co.nz/#mukhtar-kiyani"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "New Zealand"
+      },
+      "knowsAbout": [
+        "Home loans",
+        "First home buyer mortgages",
+        "KiwiSaver first home withdrawal",
+        "Kāinga Ora First Home Loan",
+        "Mortgage refinancing",
+        "Mortgage pre-approval",
+        "Investment property lending",
+        "Self-employed mortgages"
+      ],
       "url": "https://www.finchmortgages.co.nz/",
       "logo": "https://www.finchmortgages.co.nz/images/finch-logo.png",
       "image": "https://www.finchmortgages.co.nz/images/finch-logo.png",
@@ -348,20 +369,20 @@
 <p>Auckland is not a monolith; it is a tapestry of wildly diverse micro-markets. From the ultra-high-density apartments blanketing the CBD skyline to the affluent, leafy heritage streets of inner-fringe suburbs like Ponsonby, Parnell, and Grey Lynn, lending policies shift unpredictably from street to street.</p>
 <p>When assessing a property in Central Auckland, retail banks deploy rigorous scrutiny on the specific property type:</p>
 <ul>
-<li><strong>Studio &amp; Small Apartments:</strong> Apartments under 40 square meters frequently trigger 'commercial' risk profiles. Many banks categorically refuse to lend against them with less than a staggering 40% to 50% deposit. A specialized broker is required to locate the specific non-bank or tier-two lenders who tolerate this high-density risk.</li>
+<li><strong>Studio &amp; Small Apartments:</strong> Apartments under 40 square meters frequently trigger 'commercial' risk profiles. Many banks categorically refuse to lend against them with less than a staggering 40% to 50% deposit. A specialised broker is required to locate the specific non-bank or tier-two lenders who tolerate this high-density risk.</li>
 <li><strong>Leasehold Titles:</strong> A significant portion of prime waterfront real estate (particularly around the Viaduct and Wynyard Quarter) sits on leasehold land. Because the land is not owned by the buyer, banks will heavily restrict lending. Ground rent reviews can cripple unanchored budgets, meaning borrowing power is aggressively stress-tested compared to a standard freehold home.</li>
-<li><strong>City-Fringe Townhouses:</strong> As the city centralizes, newly built terraced townhouses in suburbs like Mount Eden or Sandringham represent the gold rush for modern buyers. Because they are classified as 'New Builds', they are exempt from standard RBNZ LVR restrictions, allowing buyers to secure them with deposits as low as 5% or 10%.</li>
+<li><strong>City-Fringe Townhouses:</strong> As the city centralises, newly built terraced townhouses in suburbs like Mount Eden or Sandringham represent the gold rush for modern buyers. Because they are classified as 'New Builds', they are exempt from standard RBNZ LVR restrictions, allowing buyers to secure them with deposits as low as 5% or 10%.</li>
 </ul>
 <h2 id="affordability">Overcoming the Central Affordability Crisis</h2>
 <p>With median price tags routinely eclipsing the $1 million mark within the inner ring, sheer capital is no longer the sole barrier to entry. For many young professionals, the insurmountable hurdle is 'servicing'—proving to the bank that your monthly income can sustain a monolithic mortgage at test rates hovering around 8%.</p>
-<p>To combat this, Finch Mortgages specializes in engineering multi-party lending structures:</p>
+<p>To combat this, Finch Mortgages specialises in engineering multi-party lending structures:</p>
 <ul>
-<li><strong>Co-Ownership Agreements (Property Sharing):</strong> Friends, siblings, or even colleagues legally pool their incomes to purchase a single large property as tenants in common. This artificially inflates the 'household income', allowing all parties access to standard 20% LVR interest rates, bypassing the agonizing Low Equity Premium entirely.</li>
-<li><strong>Boarder Income Utilization:</strong> When applying for a loan, standard salaries often aren't enough. We actively locate lenders who permit us to add projected "boarder income" to your application. If buying a 3-bedroom house, proving you will rent out two rooms can add $15,000+ to your serviceable income on paper, unlocking the final $100,000 of borrowing capacity needed to secure the house.</li>
+<li><strong>Co-Ownership Agreements (Property Sharing):</strong> Friends, siblings, or even colleagues legally pool their incomes to purchase a single large property as tenants in common. This artificially inflates the 'household income', allowing all parties access to standard 20% LVR interest rates, bypassing the agonising Low Equity Premium entirely.</li>
+<li><strong>Boarder Income Utilisation:</strong> When applying for a loan, standard salaries often aren't enough. We actively locate lenders who permit us to add projected "boarder income" to your application. If buying a 3-bedroom house, proving you will rent out two rooms can add $15,000+ to your serviceable income on paper, unlocking the final $100,000 of borrowing capacity needed to secure the house.</li>
 </ul>
-<h2 id="why-finch">Why Choose a Specialized Regional Broker?</h2>
+<h2 id="why-finch">Why Choose a Specialised Regional Broker?</h2>
 <p>Central Auckland's intense, hyper-competitive auction environment means you simply cannot afford to rely on a generic, sluggish 2-week bank turnaround. By the time a high-street teller processes your application, the property has already been sold unconditionally under the hammer.</p>
-<p>A specialized, geographically tuned mortgage broker completely bypasses front-line bureaucracy. Finch fast-tracks applications directly to senior credit assessors, securing binding unconditional approvals in environments where speed directly dictates success. We understand exactly which lender currently possesses an appetite for a Parnell heritage villa versus an Eden Terrace townhouse, saving you weeks of frustrating rejections.</p>
+<p>A specialised, geographically tuned mortgage broker completely bypasses front-line bureaucracy. Finch fast-tracks applications directly to senior credit assessors, securing binding unconditional approvals in environments where speed directly dictates success. We understand exactly which lender currently possesses an appetite for a Parnell heritage villa versus an Eden Terrace townhouse, saving you weeks of frustrating rejections.</p>
 </div>
 <div class="toc-sidebar">
 <h4>In This Article</h4>
@@ -386,7 +407,7 @@
 <svg fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" style="transition:transform 0.3s;" viewbox="0 0 24 24" width="16"><polyline points="6 9 12 15 18 9"></polyline></svg>
 </button>
 <div class="faq-content" style="display:none;padding:0 1.5rem 1.25rem 1.5rem;color:var(--neutral-medGray);line-height:1.7;font-size:0.95rem;border-top:1px solid rgba(180,178,169,0.1);padding-top:1rem;">
-<p>A local broker understands regional market conditions, localized bank valuation hurdles (like seismic registers or land classifications), and coordinates with local real estate agents and solicitors to speed up pre-approval.</p>
+<p>A local broker knows how lenders view your area, including valuation issues such as earthquake-prone buildings or land classifications, and works with local agents and lawyers to keep your purchase on track.</p>
 </div>
 </div>
 <div class="faq-item" style="border:1px solid rgba(180,178,169,0.2);border-radius:1rem;background:white;overflow:hidden;">
@@ -404,7 +425,7 @@
 <svg fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" style="transition:transform 0.3s;" viewbox="0 0 24 24" width="16"><polyline points="6 9 12 15 18 9"></polyline></svg>
 </button>
 <div class="faq-content" style="display:none;padding:0 1.5rem 1.25rem 1.5rem;color:var(--neutral-medGray);line-height:1.7;font-size:0.95rem;border-top:1px solid rgba(180,178,169,0.1);padding-top:1rem;">
-<p>Yes. Banks reserve their sharpest rate discounts and cashback contributions for the broker channel. A broker compares 20+ lenders side-by-side to construct a competitive rate package you won't get walking in direct.</p>
+<p>Often, yes. A broker can compare offers from many lenders at once and ask them to sharpen their pricing. Sometimes your own bank's offer is the best one, and a good broker will tell you so.</p>
 </div>
 </div>
 <div class="faq-item" style="border:1px solid rgba(180,178,169,0.2);border-radius:1rem;background:white;overflow:hidden;">
@@ -413,7 +434,7 @@
 <svg fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" style="transition:transform 0.3s;" viewbox="0 0 24 24" width="16"><polyline points="6 9 12 15 18 9"></polyline></svg>
 </button>
 <div class="faq-content" style="display:none;padding:0 1.5rem 1.25rem 1.5rem;color:var(--neutral-medGray);line-height:1.7;font-size:0.95rem;border-top:1px solid rgba(180,178,169,0.1);padding-top:1rem;">
-<p>A family guarantee allows parents to secure up to 20% of your home loan against the equity in their own property. This bridges your deposit gap without requiring parents to give you cash, avoiding low-equity bank premiums.</p>
+<p>A family guarantee lets a family member use the equity in their own home as extra security for part of your loan. It can cover a deposit gap without them handing over cash, and may help you avoid low-equity charges.</p>
 </div>
 </div>
 </div>
@@ -440,7 +461,7 @@
 <a href="../calculators/mortgage-calculator.html" style="display:block;padding:1.5rem;background:var(--finch-mist);border-radius:1rem;text-decoration:none;color:var(--neutral-black);"><strong style="display:block;color:var(--finch-forest);margin-bottom:0.5rem;">NZ Mortgage Calculator</strong><span style="font-size:0.9rem;color:var(--neutral-medGray);">Estimate repayments at current NZ rates.</span></a>
 <a href="../calculators/borrowing-power.html" style="display:block;padding:1.5rem;background:var(--finch-mist);border-radius:1rem;text-decoration:none;color:var(--neutral-black);"><strong style="display:block;color:var(--finch-forest);margin-bottom:0.5rem;">Borrowing Power</strong><span style="font-size:0.9rem;color:var(--neutral-medGray);">See how much NZ banks will lend.</span></a>
 <a href="../guides/first-home-guide.html" style="display:block;padding:1.5rem;background:var(--finch-mist);border-radius:1rem;text-decoration:none;color:var(--neutral-black);"><strong style="display:block;color:var(--finch-forest);margin-bottom:0.5rem;">NZ First Home Buyer Guide</strong><span style="font-size:0.9rem;color:var(--neutral-medGray);">Complete NZ FHB playbook.</span></a>
-<a href="../mortgage-rates.html" style="display:block;padding:1.5rem;background:var(--finch-mist);border-radius:1rem;text-decoration:none;color:var(--neutral-black);"><strong style="display:block;color:var(--finch-forest);margin-bottom:0.5rem;">Live NZ Mortgage Rates</strong><span style="font-size:0.9rem;color:var(--neutral-medGray);">Current carded and broker rates.</span></a>
+<a href="../mortgage-rates.html" style="display:block;padding:1.5rem;background:var(--finch-mist);border-radius:1rem;text-decoration:none;color:var(--neutral-black);"><strong style="display:block;color:var(--finch-forest);margin-bottom:0.5rem;">NZ Mortgage Rates</strong><span style="font-size:0.9rem;color:var(--neutral-medGray);">Current carded and broker rates.</span></a>
 <a href="../market-report.html" style="display:block;padding:1.5rem;background:var(--finch-mist);border-radius:1rem;text-decoration:none;color:var(--neutral-black);"><strong style="display:block;color:var(--finch-forest);margin-bottom:0.5rem;">NZ Market Report</strong><span style="font-size:0.9rem;color:var(--neutral-medGray);">OCR &amp; rate movements.</span></a>
 </div>
 </div>
@@ -462,7 +483,7 @@ Call 027 343 3293 now
 <ul style="list-style:none;padding:0;margin:0;color:rgba(255,255,255,0.78);font-size:0.9rem;line-height:2;">
 <li>✓ We compare 20+ NZ banks and non-bank lenders</li>
 <li>✓ The lender pays us — our advice costs you nothing</li>
-<li>✓ Registered financial adviser, FSP FSP1011206</li>
+<li>✓ Registered financial adviser (FSP1011206)</li>
 <li>✓ Same-day reply on weekdays</li>
 </ul>
 </div>
@@ -518,7 +539,7 @@ Call 027 343 3293 now
 <div class="footer-col"><h4>Company</h4><a href="../about.html">About Us</a><a href="../contact.html">Contact</a><a href="../map.html">Our Location</a><a href="../locations/index.html">Service Locations</a></div>
 </div>
 <!-- FINCH-NAP:START -->
-<div class="footer-nap" itemscope itemtype="https://schema.org/MortgageBroker" style="border-top:1px solid rgba(255,255,255,0.12);margin-top:2rem;padding-top:1.75rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1.5rem;font-size:0.88rem;line-height:1.7;">
+<div class="footer-nap" itemscope itemtype="https://schema.org/FinancialService" style="border-top:1px solid rgba(255,255,255,0.12);margin-top:2rem;padding-top:1.75rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1.5rem;font-size:0.88rem;line-height:1.7;">
 <div>
 <strong itemprop="name" style="display:block;font-size:0.95rem;margin-bottom:0.35rem;">Finch Mortgages Limited</strong>
 <span itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">

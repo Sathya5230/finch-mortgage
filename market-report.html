@@ -32,7 +32,7 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "MortgageBroker",
+      "@type": "FinancialService",
       "@id": "https://www.finchmortgages.co.nz/#organization",
       "name": "Finch Mortgages",
       "alternateName": "Finch Mortgages",
@@ -56,7 +56,8 @@
       },
       "founder": {
         "@type": "Person",
-        "name": "Mukhtar Kiyani"
+        "name": "Mukhtar Kiyani",
+        "@id": "https://www.finchmortgages.co.nz/#mukhtar-kiyani"
       },
       "foundingDate": "2010",
       "sameAs": [
@@ -72,15 +73,7 @@
       "publisher": {
         "@id": "https://www.finchmortgages.co.nz/#organization"
       },
-      "inLanguage": "en-NZ",
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": {
-          "@type": "EntryPoint",
-          "urlTemplate": "https://www.finchmortgages.co.nz/blog.html?q={search_term_string}"
-        },
-        "query-input": "required name=search_term_string"
-      }
+      "inLanguage": "en-NZ"
     },
     {
       "@type": "BreadcrumbList",
@@ -133,7 +126,7 @@
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "NZ Mortgage Market Report 2026 | Latest Rate Insights | E...",
-  "description": "OCR currently at 3.25%. Will fixed mortgage rates drop further in 2026? Read our expert NZ interest rate analysis and forecasts. Compare rates \u2192",
+  "description": "OCR currently at 3.25%. Will fixed mortgage rates drop further in 2026? Read our expert NZ interest rate analysis and forecasts. Compare rates →",
   "image": "https://www.finchmortgages.co.nz/images/finch-logo.png",
   "author": {
     "@type": "Person",
@@ -142,8 +135,10 @@
     "worksFor": {
       "@type": "Organization",
       "name": "Finch Mortgages",
-      "url": "https://www.finchmortgages.co.nz"
-    }
+      "url": "https://www.finchmortgages.co.nz",
+      "@id": "https://www.finchmortgages.co.nz/#organization"
+    },
+    "@id": "https://www.finchmortgages.co.nz/#mukhtar-kiyani"
   },
   "publisher": {
     "@type": "Organization",
@@ -151,7 +146,8 @@
     "logo": {
       "@type": "ImageObject",
       "url": "https://www.finchmortgages.co.nz/images/finch-logo.png"
-    }
+    },
+    "@id": "https://www.finchmortgages.co.nz/#organization"
   },
   "datePublished": "2026-01-15",
   "dateModified": "2026-06-13",
@@ -544,7 +540,7 @@
 <div>
 <div class="section-label"><span>Weekly Reports</span></div>
 <h2 class="section-heading" style="margin-top:0.75rem;margin-bottom:0.25rem;">Latest &amp; Past<br/><em>Weekly Market Updates.</em></h2>
-<p style="color:var(--neutral-medGray);font-size:0.85rem;">Published every Monday by Finch's advisors — plain-English analysis of NZ mortgage &amp; property news.</p>
+<p style="color:var(--neutral-medGray);font-size:0.85rem;">Published every Monday by Finch's advisers — plain-English analysis of NZ mortgage &amp; property news.</p>
 </div>
 <span style="font-size:0.78rem;font-weight:700;color:var(--neutral-warmGray);white-space:nowrap;">Week 17 · 28 April 2026</span>
 </div>
@@ -572,7 +568,7 @@
 </div>
 </div>
 <div style="background:rgba(255,255,255,0.08);border:1px solid rgba(98,162,154,0.2);border-radius:1rem;padding:1.25rem;">
-<div style="font-size:0.62rem;font-weight:800;text-transform:uppercase;letter-spacing:0.12em;color:var(--finch-sage);margin-bottom:0.6rem;">Advisor Take</div>
+<div style="font-size:0.62rem;font-weight:800;text-transform:uppercase;letter-spacing:0.12em;color:var(--finch-sage);margin-bottom:0.6rem;">Adviser Take</div>
 <p style="color:rgba(255,255,255,0.8);font-size:0.82rem;line-height:1.65;font-style:italic;">"Don't accept the first renewal rate in your app. With banks focusing heavily on retention, significant discounts are available for existing customers if you negotiate or use a broker."</p>
 </div>
 </div>
@@ -686,7 +682,7 @@
 <div style="max-width:820px;margin:0 auto;">
 <div class="section-label" style="margin-bottom:1rem;"><span>FAQ</span></div>
 <h2 class="section-heading" style="margin-bottom:0.5rem;">Frequently Asked<br/><em>Questions.</em></h2>
-<p style="color:var(--neutral-medGray);margin-bottom:3rem;line-height:1.75;">Your questions about the NZ mortgage market, our reports, and how to use this information — answered by Finch's advisors.</p>
+<p style="color:var(--neutral-medGray);margin-bottom:3rem;line-height:1.75;">Your questions about the NZ mortgage market, our reports, and how to use this information — answered by Finch's advisers.</p>
 <style>.faq2-item{background:#fff;border-radius:1rem;margin-bottom:.625rem;border:1.5px solid rgba(98,162,154,.15);overflow:hidden;transition:border-color .2s,box-shadow .2s}.faq2-item:hover{border-color:rgba(98,162,154,.45);box-shadow:0 4px 20px rgba(16,68,62,.07)}.faq2-item.faq2-open{border-color:rgba(98,162,154,.5);box-shadow:0 6px 28px rgba(16,68,62,.1)}.faq2-btn{width:100%;text-align:left;background:0 0;border:none;padding:1.25rem 1.5rem;display:flex;align-items:center;gap:1rem;cursor:pointer}.faq2-num{font-size:.65rem;font-weight:800;text-transform:uppercase;letter-spacing:.1em;color:var(--finch-sage);flex-shrink:0;width:1.75rem;line-height:1}.faq2-q{font-size:.975rem;font-weight:700;color:var(--neutral-black);line-height:1.4;flex:1}.faq2-chevron{flex-shrink:0;transition:transform .3s cubic-bezier(.23,1,.32,1);color:var(--finch-forest)}.faq2-open .faq2-chevron{transform:rotate(180deg)}.faq2-open .faq2-num{color:var(--finch-forest)}.faq2-body{max-height:0;overflow:hidden;transition:max-height .4s cubic-bezier(.23,1,.32,1)}.faq2-inner{padding:0 1.5rem 1.5rem 4.25rem;color:var(--neutral-medGray);line-height:1.8;font-size:.95rem}.faq2-inner p+p{margin-top:.75rem}.faq2-inner ul{margin:.75rem 0 .75rem 1.25rem}.faq2-inner li{margin-bottom:.3rem}.faq2-inner a{color:var(--finch-forest);font-weight:700}</style>
 <div id="faq-list">
 <div class="faq2-item">
@@ -749,7 +745,7 @@
 <div class="faq2-body">
 <div class="faq2-inner">
 <p>Debt-to-Income (DTI) ratio is your total debt divided by gross annual income. The RBNZ's DTI caps are now fully in force: for owner-occupiers, no more than 20% of new lending above a 6x DTI; investors are capped at 6x across the entire portfolio.</p>
-<p>Example: if you earn $150,000/year, the maximum most banks will approve is $900,000 (6×). A Finch advisor can structure your application to present your financials in the most favourable way within these limits.</p>
+<p>Example: if you earn $150,000/year, the maximum most banks will approve is $900,000 (6×). A Finch adviser can structure your application to present your financials in the most favourable way within these limits.</p>
 </div>
 </div>
 </div>
@@ -761,7 +757,7 @@
 </button>
 <div class="faq2-body">
 <div class="faq2-inner">
-<p>Based on gross rental yield, price growth momentum, and finance accessibility, our advisors currently favour:</p>
+<p>Based on gross rental yield, price growth momentum, and finance accessibility, our advisers currently favour:</p>
 <ul>
 <li><strong>Wellington</strong> — 5.2% gross yield, improving demand, government sector employment base</li>
 <li><strong>Canterbury</strong> — Strong +6.8% price growth, 4.8% gross yield, infrastructure momentum</li>
@@ -805,7 +801,7 @@
 <div class="container">
 <div style="text-align:center;margin-bottom:3rem;">
 <div class="section-label"><span>Expert View</span></div>
-<h2 class="section-heading" style="margin-top:1.5rem;">What Our Advisors<br/><em>Are Saying.</em></h2>
+<h2 class="section-heading" style="margin-top:1.5rem;">What Our Advisers<br/><em>Are Saying.</em></h2>
 </div>
 <div style="max-width:780px;margin:0 auto;background:var(--finch-mist);border:1px solid rgba(98,162,154,0.4);border-radius:1.5rem;padding:3rem;">
 <blockquote style="color:var(--neutral-black);font-size:1.1rem;line-height:1.8;font-style:italic;margin-bottom:2rem;">"2026 is proving to be the best borrowing environment NZ has seen in half a decade. The OCR is at a multi-year low, banks are competing hard on rates, and property values are on an upward trajectory. Whether you're buying, refinancing, or investing — the window is open right now."</blockquote>
@@ -813,7 +809,7 @@
 <img alt="Founder" loading="lazy" src="images/slide4.webp" style="width:52px;height:52px;border-radius:50%;object-fit:cover;border:2px solid var(--finch-sage);" width="1024" height="1024"/>
 <div>
 <div style="color:var(--neutral-black);font-weight:700;font-size:0.9rem;">Finch Mortgages</div>
-<div style="color:var(--neutral-warmGray);font-size:0.75rem;">Principal Advisor · Auckland, NZ · April 2026</div>
+<div style="color:var(--neutral-warmGray);font-size:0.75rem;">Principal Adviser · Auckland, NZ · April 2026</div>
 </div>
 </div>
 </div>
@@ -824,7 +820,7 @@
 <div class="container">
 <div style="max-width:580px;margin:0 auto;">
 <h2 style="color:white;font-size:clamp(1.75rem,3.5vw,2.5rem);font-weight:700;margin-bottom:1rem;">Ready to make your move<br/>in 2026's market?</h2>
-<p style="color:rgba(255,255,255,0.75);line-height:1.75;margin-bottom:2rem;">Our advisors monitor the market daily. Book a free consultation and we'll tell you exactly what today's rates mean for your situation.</p>
+<p style="color:rgba(255,255,255,0.75);line-height:1.75;margin-bottom:2rem;">Our advisers monitor the market daily. Book a free consultation and we'll tell you exactly what today's rates mean for your situation.</p>
 <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
 <a class="btn-primary" href="contact.html" style="background:white;color:var(--finch-forest);">Get Pre-Approved →</a>
 <a class="btn-cta-outline" href="calculators.html">Calculate Repayments</a>
@@ -895,7 +891,7 @@
 <div class="footer-col"><h4>Company</h4><a href="about.html">About Us</a><a href="contact.html">Contact</a><a href="map.html">Our Location</a><a href="locations/index.html">Service Locations</a></div>
 </div>
 <!-- FINCH-NAP:START -->
-<div class="footer-nap" itemscope itemtype="https://schema.org/MortgageBroker" style="border-top:1px solid rgba(255,255,255,0.12);margin-top:2rem;padding-top:1.75rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1.5rem;font-size:0.88rem;line-height:1.7;">
+<div class="footer-nap" itemscope itemtype="https://schema.org/FinancialService" style="border-top:1px solid rgba(255,255,255,0.12);margin-top:2rem;padding-top:1.75rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1.5rem;font-size:0.88rem;line-height:1.7;">
 <div>
 <strong itemprop="name" style="display:block;font-size:0.95rem;margin-bottom:0.35rem;">Finch Mortgages Limited</strong>
 <span itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
