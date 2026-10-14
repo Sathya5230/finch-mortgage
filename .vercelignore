@@ -1,0 +1,27 @@
+# Vercel serves every uploaded file, so the repo's scripts, internal strategy
+# docs and seomachine workspace were publicly reachable on the live site
+# (e.g. /CLAUDE.md, /context/target-keywords.md, /output/*.md). Keep them out
+# of the deployment. Site pages, assets, llms.txt/llms.md, robots.txt,
+# sitemap.xml and rss.xml are unaffected.
+*.py
+__pycache__
+/.claude
+/.vscode
+/CLAUDE.md
+/README.md
+/seo-machine-README.md
+/seo-machine-QUICK-START.md
+/data-sources-setup.md
+/context
+/data_sources
+/config
+/docs
+/drafts
+/examples
+/output
+/published
+/research
+/rewrites
+/scratch
+/topics
+/wordpress

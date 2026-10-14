@@ -18,6 +18,10 @@ testimonials/           # Testimonial pages
 weekly-reports/         # Weekly market report pages
 generate_lender_pages.py
 generate_weekly_reports.py
+generate_town_pages.py  # 125 town + 7 region pages in locations/, built from town_data.py
+town_data.py            # town/region content, councils, coordinates; edit this, not the town HTML
+fix_refinance_claims.py # idempotent fix script; part of the post-generation pipeline
+refiform.js             # two-step refinance form (form built by inject_local_seo.refinance_form_block)
 inject_lenders.py
 inject_market_report.py
 update_calculator_links.py

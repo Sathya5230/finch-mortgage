@@ -33,7 +33,13 @@ BIZ = {
     "lng": "174.64830",
     "fsp": "FSP1011206",
     "fspr": "FSP1011125",
+    # Licensing facts as worded on disclosure.html; keep the two in step.
+    "fap_licensee": "Finsure New Zealand Limited",
+    "fap_fsp": "FSP1005389",
+    "drs": "Financial Services Complaints Ltd (FSCL)",
 }
+
+FSP_REGISTER_URL = "https://fsp-register.companiesoffice.govt.nz/"
 
 # --------------------------------------------------------------------------
 # Google Business Profile — FILL THESE IN, then re-run this script.
@@ -189,10 +195,11 @@ def footer_nap_block():
 <span>Sunday: Closed</span>
 </div>
 <div>
-<strong style="display:block;font-size:0.95rem;margin-bottom:0.35rem;">Registered adviser</strong>
-<span>FSP {BIZ['fsp']}</span><br/>
-<span>FSPR {BIZ['fspr']}</span><br/>
-<span>Serving all of New Zealand</span>
+<strong style="display:block;font-size:0.95rem;margin-bottom:0.35rem;">Licensed financial advice</strong>
+<span>Authorised Body ({BIZ['fspr']}) under {BIZ['fap_licensee']}'s financial advice provider licence ({BIZ['fap_fsp']})</span><br/>
+<span>Registered adviser: {BIZ['fsp']}</span><br/>
+<span>Complaints: {BIZ['drs']}, free and independent</span><br/>
+<a href="{FSP_REGISTER_URL}" rel="noopener" target="_blank" style="font-weight:700;">Check the FSP Register ↗</a>
 </div>
 </div>"""
 
@@ -256,6 +263,166 @@ Call {BIZ['phone_display']} now
 </div>
 
 </div>
+</div>
+</section>"""
+
+
+# ==========================================================================
+# 2b. Refinance lead form and trust strip
+# Refinance enquiries need the fixed-rate end date, balance and current lender
+# to be worth a call back; the generic form asked for none of them. Two steps
+# (the mortgage, then contact details) keep the first screen short. Without
+# JavaScript every field shows and the form posts as normal.
+# ==========================================================================
+
+REFI_ENQUIRY = "Refinancing / better rate"
+FIXED_ENDS = ["Already floating", "In the next 3 months", "In 3–6 months", "In 6–12 months",
+              "More than 12 months away", "Not sure"]
+BALANCES = ["Under $300k", "$300k–$500k", "$500k–$750k", "$750k–$1m", "Over $1m", "Prefer not to say"]
+CURRENT_LENDERS = ["ANZ", "ASB", "BNZ", "Westpac", "TSB", "SBS Bank", "The Co-operative Bank",
+                   "Heartland Bank", "Another bank", "A non-bank lender", "Not sure"]
+REFI_GOALS = ["Lower my repayments", "A cash contribution for switching", "Consolidate other debts",
+              "Borrow more (renovation, investment or other)", "Restructure (split, offset or revolving)",
+              "Not sure yet, I want advice"]
+
+LABEL = ('style="display:block;font-size:0.72rem;font-weight:800;text-transform:uppercase;'
+         'letter-spacing:0.08em;color:#7a9490;margin-bottom:0.4rem;"')
+PHONE_SVG = ('<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" '
+             'stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 '
+             '19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 '
+             '0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>')
+
+
+def _select(name, options, selected=None, placeholder=None):
+    from html import escape
+    opts = f'<option value="">{placeholder}</option>' if placeholder else ""
+    opts += "".join(f'<option value="{escape(o)}"{" selected" if o == selected else ""}>{escape(o, False)}</option>'
+                    for o in options)
+    return f'<select class="contact-input-box" name="{name}" style="margin-bottom:1rem;">{opts}</select>'
+
+
+def refinance_form_block(heading, sub, city_label, form_id):
+    from html import escape
+    where = f" in {city_label}" if city_label else ""
+    city = escape(city_label or "")
+    return f"""<section id="enquire" class="refi-lead" style="padding:4.5rem 0;background:linear-gradient(135deg,#10443e 0%,#1a5c54 100%);">
+<style>.refi-lead [hidden]{{display:none!important}}.refi-lead fieldset{{border:0;padding:0;margin:0;min-width:0}}</style>
+<div class="container" style="max-width:1040px;">
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2.5rem;align-items:start;">
+
+<div style="color:#fff;">
+<div style="font-size:0.7rem;font-weight:800;text-transform:uppercase;letter-spacing:0.1em;color:#b5ceb0;margin-bottom:0.75rem;">Free refinance check · No obligation</div>
+<h2 style="color:#fff;font-size:clamp(1.6rem,3.2vw,2.2rem);margin-bottom:0.9rem;">{heading}</h2>
+<p style="color:rgba(255,255,255,0.82);line-height:1.75;margin-bottom:1.5rem;">{sub}</p>
+<ul style="list-style:none;padding:0;margin:0 0 1.5rem;color:rgba(255,255,255,0.85);font-size:0.92rem;line-height:1.9;">
+<li>✓ Your bank's offer compared with the 23 lenders on our panel</li>
+<li>✓ Break fees, legal costs and any cashback clawback worked out first</li>
+<li>✓ We only recommend switching when the numbers work</li>
+<li>✓ No fee on residential home loans: the lender pays us</li>
+</ul>
+<a href="tel:{BIZ['phone_e164']}" data-cta="refiform-call" style="display:inline-flex;align-items:center;gap:0.6rem;background:#b29361;color:#10443e;font-weight:800;padding:0.95rem 1.6rem;border-radius:999px;margin-bottom:1.25rem;">{PHONE_SVG} Call {BIZ['phone_display']}</a>
+<p style="color:rgba(255,255,255,0.68);font-size:0.78rem;line-height:1.6;margin:0;">Finch Mortgages Limited ({BIZ['fspr']}) is an Authorised Body under {BIZ['fap_licensee']}'s financial advice provider licence ({BIZ['fap_fsp']}). <a href="/disclosure.html" style="color:#b5ceb0;text-decoration:underline;">Disclosure statement</a></p>
+</div>
+
+<div style="background:#fff;border-radius:1.25rem;padding:2rem;box-shadow:0 12px 40px rgba(0,0,0,0.18);">
+<form action="https://api.web3forms.com/submit" method="POST" data-form-id="{form_id}" data-refi-form="">
+<input type="hidden" name="access_key" value="{WEB3FORMS_KEY}"/>
+<input type="hidden" name="subject" value="Refinance check{where} | Finch Mortgages"/>
+<input type="hidden" name="from_name" value="Finch Mortgages Website"/>
+<input type="hidden" name="service" value="Mortgage Refinance"/>
+<input type="hidden" name="city" value="{city}"/>
+<input type="hidden" name="redirect" value="{SITE}/thank-you.html"/>
+<input type="checkbox" name="botcheck" style="display:none;" tabindex="-1" autocomplete="off"/>
+
+<p data-step-label="" style="font-size:0.75rem;font-weight:800;color:#10443e;margin:0 0 1rem;">Your mortgage</p>
+<fieldset data-step="1">
+<label {LABEL}>What do you need?</label>
+{_select("enquiry_type", ENQUIRY_OPTIONS, selected=REFI_ENQUIRY)}
+<div data-refi-only="">
+<label {LABEL}>When does your fixed rate end?</label>
+{_select("fixed_rate_ends", FIXED_ENDS, placeholder="Choose one")}
+<label {LABEL}>Roughly how much do you owe?</label>
+{_select("loan_balance", BALANCES, placeholder="Choose one")}
+<label {LABEL}>Who is your current lender?</label>
+{_select("current_lender", CURRENT_LENDERS, placeholder="Choose one")}
+<label {LABEL}>What matters most to you?</label>
+{_select("refi_goal", REFI_GOALS, placeholder="Choose one")}
+</div>
+<button class="contact-submit-btn" type="button" data-step-next="" hidden="" style="width:100%;">NEXT: WHERE SHOULD WE REPLY? →</button>
+</fieldset>
+<fieldset data-step="2">
+<label {LABEL}>Your name</label>
+<input class="contact-input-box" name="name" type="text" autocomplete="name" placeholder="Sarah" required="" style="margin-bottom:1rem;"/>
+<label {LABEL}>Mobile</label>
+<input class="contact-input-box" name="phone" type="tel" autocomplete="tel" placeholder="021 000 0000" required="" style="margin-bottom:1rem;"/>
+<label {LABEL}>Email</label>
+<input class="contact-input-box" name="email" type="email" autocomplete="email" placeholder="sarah@example.com" required="" style="margin-bottom:1rem;"/>
+<label {LABEL}>Town or suburb</label>
+<input class="contact-input-box" name="property_location" type="text" value="{city}" placeholder="Where's the property?" style="margin-bottom:1.5rem;"/>
+<button class="contact-submit-btn" type="submit" data-cta="refiform-submit" style="width:100%;">GET MY FREE REFINANCE CHECK →</button>
+<button type="button" data-step-back="" hidden="" style="background:none;border:none;color:#7a9490;font-size:0.8rem;font-weight:700;margin-top:0.75rem;cursor:pointer;width:100%;">← Back</button>
+</fieldset>
+<p style="font-size:0.72rem;color:#7a9490;text-align:center;margin:1rem 0 0;">Asking costs nothing and doesn't affect your credit score. <a href="/privacy.html" style="color:#7a9490;text-decoration:underline;">Privacy policy</a></p>
+</form>
+<script defer src="/refiform.js"></script>
+</div>
+
+</div>
+</div>
+</section>"""
+
+
+# Only claims that disclosure.html and about.html already state.
+TRUST_ITEMS = [
+    ("Licensed financial advice",
+     f"Finch Mortgages Limited ({BIZ['fspr']}) is an Authorised Body under {BIZ['fap_licensee']}'s "
+     f"FMA-issued financial advice provider licence ({BIZ['fap_fsp']}).",
+     FSP_REGISTER_URL, "Check the FSP Register ↗"),
+    ("Free, independent complaints scheme",
+     "If we can't resolve a complaint, you can take it to Financial Services Complaints Ltd (FSCL) at no cost.",
+     "/disclosure.html", "Read our disclosure statement"),
+    ("23 lenders on our panel",
+     "Banks, non-bank lenders and a credit union, every one named in our disclosure statement.",
+     "/lenders.html", "See the lenders"),
+    ("Clear about how we're paid",
+     "No fee on residential home loans. Lenders pay us commission, which we disclose in writing before you proceed.",
+     "/disclosure.html", "How we're paid"),
+    ("15+ years in bank lending",
+     "Your adviser, Mukhtar Kiyani, has over 15 years of lending experience across ASB, Westpac and BNZ.",
+     "/about.html", "Meet Mukhtar"),
+]
+
+
+def trust_strip_block():
+    cards = []
+    for h, p, url, label in TRUST_ITEMS:
+        ext = ' rel="noopener" target="_blank"' if url.startswith("http") else ""
+        cards.append(
+            f'<div style="background:white;border:1px solid rgba(181,206,176,0.45);border-radius:1rem;padding:1.15rem 1.2rem;">'
+            f'<strong style="display:block;color:var(--finch-forest);font-size:0.95rem;margin-bottom:0.35rem;">✓ {h}</strong>'
+            f'<span style="display:block;color:var(--neutral-medGray);font-size:0.86rem;line-height:1.6;margin-bottom:0.5rem;">{p}</span>'
+            f'<a href="{url}"{ext} style="font-size:0.82rem;font-weight:700;color:var(--finch-forest);'
+            f'text-decoration:underline;">{label}</a></div>')
+    cards = "\n".join(cards)
+    return f"""<section aria-label="Why you can trust Finch Mortgages" style="padding:2.5rem 0;background:var(--finch-mist);">
+<div class="container" style="max-width:1100px;">
+<p style="font-size:0.72rem;font-weight:800;text-transform:uppercase;letter-spacing:0.1em;color:var(--finch-forest);margin:0 0 1rem;">Why you can trust us with your mortgage</p>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1rem;">
+{cards}
+</div>
+</div>
+</section>"""
+
+
+def trust_badges_block():
+    """One-line version of the trust strip for pages repeated at scale (town pages)."""
+    return f"""<section aria-label="Licensing and how we're paid" style="padding:1.1rem 0;background:var(--finch-mist);border-top:1px solid rgba(181,206,176,0.4);border-bottom:1px solid rgba(181,206,176,0.4);">
+<div class="container" style="display:flex;flex-wrap:wrap;gap:0.5rem 1.5rem;justify-content:center;font-size:0.85rem;color:var(--neutral-medGray);line-height:1.6;">
+<span>✓ <strong>Licensed:</strong> Authorised Body under {BIZ['fap_licensee']}'s FAP licence ({BIZ['fap_fsp']})</span>
+<span>✓ <strong>Free complaints scheme:</strong> FSCL</span>
+<span>✓ <strong>23 lenders</strong> on our panel</span>
+<span>✓ <strong>No fee</strong> on residential home loans</span>
+<a href="{FSP_REGISTER_URL}" rel="noopener" target="_blank" style="font-weight:700;color:var(--finch-forest);text-decoration:underline;">Check the FSP Register ↗</a>
 </div>
 </section>"""
 
@@ -458,6 +625,8 @@ def pass_locations():
     for fn in sorted(os.listdir(loc_dir)):
         if not fn.endswith(".html") or fn == "index.html":
             continue
+        if fn.startswith(TOWN_PREFIX):
+            continue  # town and region pages are built by generate_town_pages.py
         svc, city = parse_location_slug(fn)
         if not svc:
             stats["skipped"].append(fn)
@@ -512,9 +681,13 @@ def pass_locations():
 
         # --- inline lead form ---
         head, sub = SERVICE_PITCH[svc]
-        form = lead_form_block(head.format(city=city_name), sub,
-                               service_label, city_name,
-                               f"loc-{svc}-{city}")
+        if svc == "refinance":
+            form = refinance_form_block(head.format(city=city_name), sub, city_name,
+                                        f"loc-{svc}-{city}")
+        else:
+            form = lead_form_block(head.format(city=city_name), sub,
+                                   service_label, city_name,
+                                   f"loc-{svc}-{city}")
         anchor = "</main>" if "</main>" in html else '<footer class="site-footer">'
         new, did = insert_before(html, anchor, "LEADFORM", form)
         if did:
@@ -523,6 +696,116 @@ def pass_locations():
 
         open(fp, "w", encoding="utf-8").write(html)
     return stats
+
+
+TOWN_PREFIX = "mortgage-broker-"
+
+# Refinance-intent pages that had no lead form at all. The calculator and guide
+# are the site's highest-intent refinance pages; the posts rank for refix,
+# break-fee and cashback searches. Headings follow each page's intent.
+REFI_RESOURCE_PAGES = {
+    "calculators/refinance-savings.html": (
+        "Want these numbers checked against real offers?",
+        "The calculator shows the effect of a lower rate. We'll compare what lenders will actually offer you, then net off break fees, legal costs and any cashback clawback."),
+    "guides/refinance-guide.html": (
+        "Ready to see what refinancing would save you?",
+        "Tell us when your fixed rate ends and roughly what you owe. We'll compare your bank's offer with other lenders and show you the numbers."),
+    "blog/break-fixed-mortgage-break-fees-nz.html": (
+        "Thinking of breaking your fixed rate?",
+        "We'll work out whether the saving beats the break fee before you do anything, and compare what other lenders would offer."),
+    "blog/fixed-rate-ending-refix-guide-nz.html": (
+        "Is your fixed rate ending soon?",
+        "Start four to six weeks out. Tell us your rollover date and balance, and we'll compare your bank's offer with other lenders before you refix."),
+    "blog/mortgage-cashback-offers-nz.html": (
+        "Want to know what cash contribution you could get?",
+        "Offers change often and come with clawback periods. We'll check current offers from the lenders on our panel and whether a switch makes sense for you."),
+    "blog/mortgage-top-up-nz.html": (
+        "Need to borrow a bit more?",
+        "Whether it's a renovation, a car or consolidating debt, we'll compare a top-up with your bank against refinancing to a lender that suits you better."),
+    "blog/offset-vs-revolving-credit-mortgage-nz.html": (
+        "Want a loan structure that saves interest?",
+        "We'll look at your income, savings and spending and suggest an offset, revolving credit or split structure from lenders that offer it."),
+    "blog/current-mortgage-rates-nz-explained.html": (
+        "Advertised rates are only a starting point",
+        "What you're actually offered depends on your equity, income and lender. Tell us about your loan and we'll show you what's realistic."),
+    "blog/interest-rates-guide.html": (
+        "Rates moving? Check where you stand",
+        "Tell us when your fixed rate ends and roughly what you owe, and we'll compare your bank's offer with other lenders."),
+    "blog/how-ocr-affects-mortgages-nz.html": (
+        "Wondering what rate changes mean for your mortgage?",
+        "We'll look at your fixed-rate end date and loan, and show you your options across our lender panel."),
+    "blog/nz-mortgage-rates-history.html": (
+        "Fixing soon? Get advice before you lock in",
+        "Past rates won't tell you what to fix for, but your circumstances can. We'll compare options across our panel before your rate rolls over."),
+    "blog/using-home-equity-investment-property-nz.html": (
+        "Want to use your equity?",
+        "We'll work out how much equity lenders will let you use, and whether a top-up or refinance is the better way to fund your next step."),
+}
+
+CALC_REVIEW_LINK = re.compile(r'href="[^"#]*"(?=[^>]*>\s*Start Free Refinance Review)')
+
+
+def pass_refinance_resources():
+    count = 0
+    for rel, (heading, sub) in REFI_RESOURCE_PAGES.items():
+        fp = os.path.join(ROOT, rel)
+        if not os.path.exists(fp):
+            continue
+        html = open(fp, encoding="utf-8").read()
+        form = refinance_form_block(heading, sub, "", f"refi-{os.path.basename(rel)[:-5]}")
+        anchor = "</main>" if "</main>" in html else '<footer class="site-footer">'
+        new, did = insert_before(html, anchor, "LEADFORM", form)
+        if rel.startswith("calculators/"):
+            # The result card's CTA sent people to another page instead of the form below it.
+            new = CALC_REVIEW_LINK.sub('href="#enquire"', new)
+            did = did or new != html
+        if did:
+            open(fp, "w", encoding="utf-8").write(new)
+            count += 1
+    return count
+
+
+# Verified trust strip where it does the most work: under the homepage hero, and
+# directly above the form on the two highest-intent refinance pages.
+TRUST_PLACEMENTS = {
+    "index.html": "<!-- ═══ SERVICES GRID ═══ -->",
+    "services/refinance.html": "<!-- FINCH-LEADFORM:START -->",
+    "calculators/refinance-savings.html": "<!-- FINCH-LEADFORM:START -->",
+}
+HOME_LOCATIONS_ANCHOR = '<p style="margin-top:1.5rem;"><a href="locations/index.html"'
+
+
+def pass_trust_strips():
+    count = 0
+    for rel, anchor in TRUST_PLACEMENTS.items():
+        fp = os.path.join(ROOT, rel)
+        html = open(fp, encoding="utf-8").read()
+        new, did = insert_before(html, anchor, "TRUST", trust_strip_block())
+        if did:
+            open(fp, "w", encoding="utf-8").write(new)
+            count += 1
+    return count
+
+
+def pass_home_regions():
+    """Link the region hubs and the full town directory from the homepage."""
+    import town_data
+    chip = ('<a href="{href}" style="display:inline-block;background:white;border:1px solid rgba(181,206,176,0.5);'
+            'border-radius:999px;padding:0.5rem 1rem;font-size:0.85rem;font-weight:600;color:var(--finch-forest);'
+            'text-decoration:none;">{text}</a>')
+    links = [chip.format(href=f"locations/{r['hub_page']}.html", text=f"Mortgage Broker {r['name']}")
+             for r in town_data.REGIONS.values() if r["hub_page"]]
+    links.append(chip.format(href="locations/index.html#all-towns",
+                             text=f"All {len(town_data.TOWNS)} towns we cover →"))
+    block = ('<div style="font-size:0.7rem;font-weight:800;text-transform:uppercase;letter-spacing:0.08em;'
+             'color:var(--finch-forest);margin:1.25rem 0 0.5rem;">By region and town</div>'
+             f'<div style="display:flex;flex-wrap:wrap;gap:0.6rem;">{"".join(links)}</div>')
+    fp = os.path.join(ROOT, "index.html")
+    html = open(fp, encoding="utf-8").read()
+    new, did = insert_before(html, HOME_LOCATIONS_ANCHOR, "REGIONS", block)
+    if did:
+        open(fp, "w", encoding="utf-8").write(new)
+    return int(did)
 
 
 SERVICE_PAGE_CITY = ""  # service pages are national, not city-scoped
@@ -554,8 +837,12 @@ def pass_services():
         label = SERVICES.get(pitch_key, ("Mortgage", ""))[0]
         fp = os.path.join(svc_dir, fn)
         html = open(fp, encoding="utf-8").read()
-        form = lead_form_block(heading, sub.format(city="New Zealand"),
-                               label, SERVICE_PAGE_CITY, f"svc-{slug}")
+        if slug == "refinance":
+            form = refinance_form_block(heading, sub.format(city="New Zealand"),
+                                        SERVICE_PAGE_CITY, f"svc-{slug}")
+        else:
+            form = lead_form_block(heading, sub.format(city="New Zealand"),
+                                   label, SERVICE_PAGE_CITY, f"svc-{slug}")
         anchor = "</main>" if "</main>" in html else '<footer class="site-footer">'
         new, did = insert_before(html, anchor, "LEADFORM", form)
         if did:
@@ -1001,6 +1288,15 @@ def pass_locations_hub():
                 "url": f"{SITE}/locations/{fn}",
             })
 
+    import town_data
+    places = [(f"{r['hub_page']}.html", r["name"]) for r in town_data.REGIONS.values() if r["hub_page"]]
+    places += [(f"{TOWN_PREFIX}{t['slug']}.html", t["name"]) for t in town_data.TOWNS]
+    for fn, name in places:
+        if os.path.exists(os.path.join(ROOT, "locations", fn)):
+            pos += 1
+            items.append({"@type": "ListItem", "position": pos,
+                          "name": f"Mortgage broker in {name}", "url": f"{SITE}/locations/{fn}"})
+
     graph = [org_node(), {
         "@type": "CollectionPage",
         "@id": f"{url}#webpage",
@@ -1058,6 +1354,9 @@ def main():
     if loc["skipped"]:
         print(f"  ! unparsed location slugs: {loc['skipped']}")
     print(f"  service lead forms ........... {pass_services():>3} pages")
+    print(f"  refinance forms on resources . {pass_refinance_resources():>3} pages")
+    print(f"  trust strips ................. {pass_trust_strips():>3} pages")
+    print(f"  homepage region links ........ {pass_home_regions():>3} pages")
     print(f"  lender hub JSON-LD ........... {pass_lender_schema():>3} pages")
     print(f"  city hub ItemList ............ {pass_locations_hub():>3} locations listed")
     brk = pass_broker_city_pages()

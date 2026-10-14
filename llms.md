@@ -92,6 +92,8 @@ Finch publishes a local mortgage broker page for 49 New Zealand areas plus a nat
 
 The 12 main cities (Auckland, Manukau, Hamilton, Tauranga, Wellington, Christchurch, Dunedin, Queenstown, Nelson, Napier, Palmerston North, Whangārei) also have pages for home loans, first home buyers, refinancing, pre-approval, investment property and self-employed borrowers: `https://www.finchmortgages.co.nz/locations/{service}-{city}.html`
 
+Smaller towns have their own pages too: 125 towns from Kaitāia to Bluff and the Chatham Islands, at `https://www.finchmortgages.co.nz/locations/mortgage-broker-{town}.html`, plus region pages for Waikato, Bay of Plenty, Manawatū-Whanganui, Nelson Tasman, the West Coast, Canterbury and Otago. Each town page covers the local lending factors that apply there: property types (lifestyle blocks, holiday homes, new builds, leasehold or Māori land), local incomes, natural hazards and the council that issues LIM reports. Finch works with clients in every town by phone, video and secure online document upload; it has no offices outside Te Atatu South, Auckland. Full list: https://www.finchmortgages.co.nz/locations/index.html#all-towns
+
 ---
 
 ## 5. New Zealand mortgage context
