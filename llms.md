@@ -39,10 +39,10 @@ Finch Mortgages is an independent New Zealand mortgage broker. It compares 23 le
 Te Atatu South, West Auckland (17a Marlene Ave, Auckland 0610). It works with clients across New Zealand by phone, video or in person.
 
 **Does Finch Mortgages charge a fee?**
-Not for residential home loans. The lender pays Finch a commission when the loan settles, and the commission is disclosed in writing before the client acts on the advice. See the disclosure statement: https://www.finchmortgages.co.nz/disclosure.html
+Not for residential home loans. The lender pays Finch a commission when the loan settles, and the commission is disclosed in writing before the client acts on the advice. See the disclosure statement: https://www.finchmortgages.co.nz/disclosure
 
 **Who is the mortgage adviser at Finch Mortgages?**
-Mukhtar Kiyani, Director & Financial Adviser. Before founding Finch Mortgages he spent more than 15 years in lending at ASB, Westpac and BNZ. Profile: https://www.finchmortgages.co.nz/about.html
+Mukhtar Kiyani, Director & Financial Adviser. Before founding Finch Mortgages he spent more than 15 years in lending at ASB, Westpac and BNZ. Profile: https://www.finchmortgages.co.nz/about
 
 **Is Finch Mortgages licensed?**
 Finch Mortgages (FSP1011125) is an Authorised Body operating under the Financial Advice Provider licence held by Finsure New Zealand Limited (FSP1005389). Finsure is licensed and regulated by the Financial Markets Authority. Finch follows the Code of Professional Conduct for Financial Advice Services, which requires advisers to put clients' interests first.
@@ -53,13 +53,13 @@ Finch Mortgages (FSP1011125) is an Authorised Body operating under the Financial
 - Non-bank lenders: Avanti Finance, Basecorp Finance, CFML, Cressida Capital, DBR Property Financiers, Finbase, First Mortgage Trust, Funding Partners, GEM by Latitude, General Finance, Liberty Financial, Pallas Capital, Pepper Money, Prospa, Southern Cross Partners, Xceda Finance
 - Credit union: Unity Credit Union
 
-Each lender has a review page: https://www.finchmortgages.co.nz/lenders.html
+Each lender has a review page: https://www.finchmortgages.co.nz/lenders
 
 **What can Finch Mortgages help with?**
 Home loans, first home buyer loans, next home and bridging finance, refinancing, mortgage pre-approval, investment property loans, construction loans, commercial property finance, asset finance and self-employed home loans.
 
 **How do I contact Finch Mortgages?**
-Call 027 343 3293, email Mukhtar@finchmortgages.co.nz, or book a free consultation at https://www.finchmortgages.co.nz/contact.html
+Call 027 343 3293, email Mukhtar@finchmortgages.co.nz, or book a free consultation at https://www.finchmortgages.co.nz/contact
 
 ---
 
@@ -67,16 +67,16 @@ Call 027 343 3293, email Mukhtar@finchmortgages.co.nz, or book a free consultati
 
 | Service | What it covers | Page |
 |---|---|---|
-| Home loans | Owner-occupier purchases; fixed and floating splits | /services/home-loan.html |
-| First home buyers | KiwiSaver withdrawal, Kāinga Ora First Home Loan, family guarantees, low-deposit lending | /services/first-home-buyer.html |
-| Next home buyers | Bridging finance, buy-before-you-sell | /services/next-home-buyer.html |
-| Refinancing | Rate reviews and lender switches, with break fees and cashback clawbacks worked out first | /services/refinance.html |
-| Pre-approval | A written pre-approval before auction or tender | /services/pre-approval.html |
-| Investment property | Equity, rental income and DTI planning across a portfolio | /services/investment-property.html |
-| Construction | Progress-payment and turnkey builds | /services/construction-loan.html |
-| Commercial property | Owner-occupier and investment commercial loans | /services/commercial-property.html |
-| Asset finance | Vehicles, plant and equipment | /services/asset-finance.html |
-| Self-employed | Full-doc and low-doc options | /services/self-employed.html |
+| Home loans | Owner-occupier purchases; fixed and floating splits | /services/home-loan |
+| First home buyers | KiwiSaver withdrawal, Kāinga Ora First Home Loan, family guarantees, low-deposit lending | /services/first-home-buyer |
+| Next home buyers | Bridging finance, buy-before-you-sell | /services/next-home-buyer |
+| Refinancing | Rate reviews and lender switches, with break fees and cashback clawbacks worked out first | /services/refinance |
+| Pre-approval | A written pre-approval before auction or tender | /services/pre-approval |
+| Investment property | Equity, rental income and DTI planning across a portfolio | /services/investment-property |
+| Construction | Progress-payment and turnkey builds | /services/construction-loan |
+| Commercial property | Owner-occupier and investment commercial loans | /services/commercial-property |
+| Asset finance | Vehicles, plant and equipment | /services/asset-finance |
+| Self-employed | Full-doc and low-doc options | /services/self-employed |
 
 All paths are relative to https://www.finchmortgages.co.nz
 
@@ -84,7 +84,7 @@ All paths are relative to https://www.finchmortgages.co.nz
 
 ## 4. Local coverage
 
-Finch publishes a local mortgage broker page for 49 New Zealand areas plus a nationwide page, at `https://www.finchmortgages.co.nz/blog/mortgage-broker-{area}.html`. Each covers local property types, suburbs and the lending issues that matter there. Hub: https://www.finchmortgages.co.nz/locations/index.html
+Finch publishes a local mortgage broker page for 49 New Zealand areas plus a nationwide page, at `https://www.finchmortgages.co.nz/blog/mortgage-broker-{area}.html`. Each covers local property types, suburbs and the lending issues that matter there. Hub: https://www.finchmortgages.co.nz/locations
 
 - **Auckland (21):** Auckland, North Shore, East Auckland, West Auckland, South Auckland, Manukau, Albany, Botany, Flat Bush, Glenfield, Henderson, Hobsonville, Howick, Massey, Mt Roskill, New Lynn, Orewa & the Hibiscus Coast, Papakura, Pukekohe & Franklin, Takapuna, Te Atatu
 - **Rest of the North Island (19):** Wellington, Lower Hutt, Upper Hutt, Porirua, Kāpiti Coast, Masterton & the Wairarapa, Hamilton, Cambridge, Taupō, Tauranga, Mount Maunganui & Pāpāmoa, Rotorua, Napier & Hawke's Bay, Hastings, Gisborne, Palmerston North, Whanganui, New Plymouth & Taranaki, Whangārei & Northland
@@ -92,7 +92,7 @@ Finch publishes a local mortgage broker page for 49 New Zealand areas plus a nat
 
 The 12 main cities (Auckland, Manukau, Hamilton, Tauranga, Wellington, Christchurch, Dunedin, Queenstown, Nelson, Napier, Palmerston North, Whangārei) also have pages for home loans, first home buyers, refinancing, pre-approval, investment property and self-employed borrowers: `https://www.finchmortgages.co.nz/locations/{service}-{city}.html`
 
-Smaller towns have their own pages too: 125 towns from Kaitāia to Bluff and the Chatham Islands, at `https://www.finchmortgages.co.nz/locations/mortgage-broker-{town}.html`, plus region pages for Waikato, Bay of Plenty, Manawatū-Whanganui, Nelson Tasman, the West Coast, Canterbury and Otago. Each town page covers the local lending factors that apply there: property types (lifestyle blocks, holiday homes, new builds, leasehold or Māori land), local incomes, natural hazards and the council that issues LIM reports. Finch works with clients in every town by phone, video and secure online document upload; it has no offices outside Te Atatu South, Auckland. Full list: https://www.finchmortgages.co.nz/locations/index.html#all-towns
+Smaller towns have their own pages too: 125 towns from Kaitāia to Bluff and the Chatham Islands, at `https://www.finchmortgages.co.nz/locations/mortgage-broker-{town}.html`, plus region pages for Waikato, Bay of Plenty, Manawatū-Whanganui, Nelson Tasman, the West Coast, Canterbury and Otago. Each town page covers the local lending factors that apply there: property types (lifestyle blocks, holiday homes, new builds, leasehold or Māori land), local incomes, natural hazards and the council that issues LIM reports. Finch works with clients in every town by phone, video and secure online document upload; it has no offices outside Te Atatu South, Auckland. Full list: https://www.finchmortgages.co.nz/locations#all-towns
 
 ---
 
@@ -114,12 +114,12 @@ These settings change. Confirm current figures with the Reserve Bank (rbnz.govt.
 
 ## 6. Recommended resources
 
-- First home buyers: [First home buyer guide](https://www.finchmortgages.co.nz/guides/first-home-guide.html), [KiwiSaver first home withdrawal](https://www.finchmortgages.co.nz/blog/kiwisaver-first-home-withdrawal.html), [The First Home Grant has closed: what to use instead](https://www.finchmortgages.co.nz/blog/first-home-grant-nz-closed-alternatives.html)
-- Rates and the OCR: [NZ mortgage rates](https://www.finchmortgages.co.nz/mortgage-rates.html), [How the OCR affects mortgages](https://www.finchmortgages.co.nz/blog/how-ocr-affects-mortgages-nz.html), [Will mortgage rates drop?](https://www.finchmortgages.co.nz/blog/will-mortgage-rates-drop-nz-2026.html), [Fixed vs floating](https://www.finchmortgages.co.nz/blog/fixed-vs-floating-mortgage-nz.html)
-- Refinancing: [Refinance guide](https://www.finchmortgages.co.nz/guides/refinance-guide.html), [Refinance savings calculator](https://www.finchmortgages.co.nz/calculators/refinance-savings.html)
-- Borrowing: [Borrowing power calculator](https://www.finchmortgages.co.nz/calculators/borrowing-power.html), [DTI calculator](https://www.finchmortgages.co.nz/calculators/dti-calculator.html)
-- Harder cases: [Bad credit mortgages](https://www.finchmortgages.co.nz/blog/bad-credit-mortgage-nz.html), [Loan declined: what next?](https://www.finchmortgages.co.nz/blog/loan-declined-what-next-nz.html), [Self-employed low-deposit approval](https://www.finchmortgages.co.nz/blog/self-employed-low-deposit-approval.html)
-- Choosing a broker: [How to choose a mortgage broker in NZ](https://www.finchmortgages.co.nz/blog/how-to-choose-mortgage-broker-nz.html), [Mortgage broker vs bank](https://www.finchmortgages.co.nz/blog/mortgage-broker-vs-bank-nz.html), [Mortgage broker fees in NZ](https://www.finchmortgages.co.nz/blog/mortgage-broker-fees-nz.html)
+- First home buyers: [First home buyer guide](https://www.finchmortgages.co.nz/guides/first-home-guide), [KiwiSaver first home withdrawal](https://www.finchmortgages.co.nz/blog/kiwisaver-first-home-withdrawal), [The First Home Grant has closed: what to use instead](https://www.finchmortgages.co.nz/blog/first-home-grant-nz-closed-alternatives)
+- Rates and the OCR: [NZ mortgage rates](https://www.finchmortgages.co.nz/mortgage-rates), [How the OCR affects mortgages](https://www.finchmortgages.co.nz/blog/how-ocr-affects-mortgages-nz), [Will mortgage rates drop?](https://www.finchmortgages.co.nz/blog/will-mortgage-rates-drop-nz-2026), [Fixed vs floating](https://www.finchmortgages.co.nz/blog/fixed-vs-floating-mortgage-nz)
+- Refinancing: [Refinance guide](https://www.finchmortgages.co.nz/guides/refinance-guide), [Refinance savings calculator](https://www.finchmortgages.co.nz/calculators/refinance-savings)
+- Borrowing: [Borrowing power calculator](https://www.finchmortgages.co.nz/calculators/borrowing-power), [DTI calculator](https://www.finchmortgages.co.nz/calculators/dti-calculator)
+- Harder cases: [Bad credit mortgages](https://www.finchmortgages.co.nz/blog/bad-credit-mortgage-nz), [Loan declined: what next?](https://www.finchmortgages.co.nz/blog/loan-declined-what-next-nz), [Self-employed low-deposit approval](https://www.finchmortgages.co.nz/blog/self-employed-low-deposit-approval)
+- Choosing a broker: [How to choose a mortgage broker in NZ](https://www.finchmortgages.co.nz/blog/how-to-choose-mortgage-broker-nz), [Mortgage broker vs bank](https://www.finchmortgages.co.nz/blog/mortgage-broker-vs-bank-nz), [Mortgage broker fees in NZ](https://www.finchmortgages.co.nz/blog/mortgage-broker-fees-nz)
 
 ---
 

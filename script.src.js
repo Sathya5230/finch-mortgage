@@ -1,11 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
 
   // --- Active Nav State ---
-  const currentPath = window.location.pathname.replace(/\/$/, '') || '/index.html';
+  const currentPath = window.location.pathname.replace(/\.html$/, '').replace(/\/$/, '');
   document.querySelectorAll('nav a.nav-link, nav .dropdown-item').forEach(link => {
     try {
-      const linkPath = new URL(link.href, window.location.href).pathname.replace(/\/$/, '');
-      if (linkPath === currentPath || (currentPath.endsWith('/index.html') && linkPath.endsWith('/index.html'))) {
+      const linkPath = new URL(link.href, window.location.href).pathname.replace(/\.html$/, '').replace(/\/$/, '');
+      if (linkPath === currentPath) {
         link.classList.add('active');
         const parentItem = link.closest('.nav-item');
         if (parentItem) parentItem.classList.add('active');
@@ -296,9 +296,9 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // --- Floating Free Consultation CTA ---
-  if (!window.location.pathname.includes('thank-you.html')) {
+  if (!window.location.pathname.includes('thank-you')) {
     // Root-absolute: relative paths 404'd on /locations/* which was missing from the old subdir list.
-    const contactHref = '/contact.html';
+    const contactHref = '/contact';
     const floatBtn = document.createElement('a');
     floatBtn.href = contactHref;
     floatBtn.className = 'floating-consult';

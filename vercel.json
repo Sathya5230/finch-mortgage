@@ -1,5 +1,6 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
+  "cleanUrls": true,
   "trailingSlash": false,
   "redirects": [
     {
@@ -15,93 +16,93 @@
       "permanent": true
     },
     {
-      "source": "/weekly-reports/week-11-first-home-grant.html",
-      "destination": "/blog/first-home-grant-nz-closed-alternatives.html",
+      "source": "/weekly-reports/week-11-first-home-grant",
+      "destination": "/blog/first-home-grant-nz-closed-alternatives",
       "permanent": true
     },
     {
-      "source": "/testimonials.html",
-      "destination": "/testimonials/reviews.html",
+      "source": "/testimonials",
+      "destination": "/testimonials/reviews",
       "permanent": true
     },
     {
-      "source": "/refinance.html",
-      "destination": "/calculators/refinance-savings.html",
+      "source": "/refinance",
+      "destination": "/calculators/refinance-savings",
       "permanent": true
     },
     {
-      "source": "/lenders/kiwibank-home-loan-review.html",
-      "destination": "/lenders/major-banks.html",
+      "source": "/lenders/kiwibank-home-loan-review",
+      "destination": "/lenders/major-banks",
       "permanent": true
     },
     {
-      "source": "/lenders/asb-mortgage-review.html",
-      "destination": "/lenders/major-banks.html",
+      "source": "/lenders/asb-mortgage-review",
+      "destination": "/lenders/major-banks",
       "permanent": true
     },
     {
-      "source": "/lenders/westpac-mortgage-review.html",
-      "destination": "/lenders/major-banks.html",
+      "source": "/lenders/westpac-mortgage-review",
+      "destination": "/lenders/major-banks",
       "permanent": true
     },
     {
-      "source": "/lenders/tsb-mortgage-review.html",
-      "destination": "/lenders/major-banks.html",
+      "source": "/lenders/tsb-mortgage-review",
+      "destination": "/lenders/major-banks",
       "permanent": true
     },
     {
-      "source": "/lenders/hsbc-nz-mortgage-review.html",
-      "destination": "/lenders/major-banks.html",
+      "source": "/lenders/hsbc-nz-mortgage-review",
+      "destination": "/lenders/major-banks",
       "permanent": true
     },
     {
-      "source": "/lenders/icbc-nz-mortgage-review.html",
-      "destination": "/lenders/major-banks.html",
+      "source": "/lenders/icbc-nz-mortgage-review",
+      "destination": "/lenders/major-banks",
       "permanent": true
     },
     {
-      "source": "/lenders/resimac-mortgage-review.html",
-      "destination": "/lenders/non-bank-lenders.html",
+      "source": "/lenders/resimac-mortgage-review",
+      "destination": "/lenders/non-bank-lenders",
       "permanent": true
     },
     {
-      "source": "/lenders/bluestone-mortgage-review.html",
-      "destination": "/lenders/non-bank-lenders.html",
+      "source": "/lenders/bluestone-mortgage-review",
+      "destination": "/lenders/non-bank-lenders",
       "permanent": true
     },
     {
-      "source": "/lenders/asap-finance-mortgage-review.html",
-      "destination": "/lenders/specialist-lenders.html",
+      "source": "/lenders/asap-finance-mortgage-review",
+      "destination": "/lenders/specialist-lenders",
       "permanent": true
     },
     {
-      "source": "/lenders/finance-now-asset-review.html",
-      "destination": "/lenders/specialist-lenders.html",
+      "source": "/lenders/finance-now-asset-review",
+      "destination": "/lenders/specialist-lenders",
       "permanent": true
     },
     {
-      "source": "/lenders/marac-asset-finance-review.html",
-      "destination": "/lenders/specialist-lenders.html",
+      "source": "/lenders/marac-asset-finance-review",
+      "destination": "/lenders/specialist-lenders",
       "permanent": true
     },
     {
-      "source": "/lenders/mitsubishi-hc-capital-review.html",
-      "destination": "/lenders/specialist-lenders.html",
+      "source": "/lenders/mitsubishi-hc-capital-review",
+      "destination": "/lenders/specialist-lenders",
       "permanent": true
     },
     {
-      "source": "/lenders/udc-finance-asset-review.html",
-      "destination": "/lenders/specialist-lenders.html",
+      "source": "/lenders/udc-finance-asset-review",
+      "destination": "/lenders/specialist-lenders",
       "permanent": true
     },
     {
-      "source": "/lenders/first-credit-union-mortgage-review.html",
-      "destination": "/lenders/credit-unions.html",
+      "source": "/lenders/first-credit-union-mortgage-review",
+      "destination": "/lenders/credit-unions",
       "permanent": true
     },
     {
-      "source": "/lenders/police-credit-union-mortgage-review.html",
-      "destination": "/lenders/credit-unions.html",
+      "source": "/lenders/police-credit-union-mortgage-review",
+      "destination": "/lenders/credit-unions",
       "permanent": true
     }
   ],

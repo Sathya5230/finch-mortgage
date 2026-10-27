@@ -12,31 +12,31 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/about.html</loc>
+    <loc>https://www.finchmortgages.co.nz/about</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/contact.html</loc>
+    <loc>https://www.finchmortgages.co.nz/contact</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/faq.html</loc>
+    <loc>https://www.finchmortgages.co.nz/faq</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/map.html</loc>
+    <loc>https://www.finchmortgages.co.nz/map</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/first-home-buyers.html</loc>
+    <loc>https://www.finchmortgages.co.nz/first-home-buyers</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -46,67 +46,67 @@
   <!-- SERVICES                      -->
   <!-- ============================ -->
   <url>
-    <loc>https://www.finchmortgages.co.nz/services-overview.html</loc>
+    <loc>https://www.finchmortgages.co.nz/services-overview</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/services/home-loan.html</loc>
+    <loc>https://www.finchmortgages.co.nz/services/home-loan</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/services/first-home-buyer.html</loc>
+    <loc>https://www.finchmortgages.co.nz/services/first-home-buyer</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/services/next-home-buyer.html</loc>
+    <loc>https://www.finchmortgages.co.nz/services/next-home-buyer</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/services/refinance.html</loc>
+    <loc>https://www.finchmortgages.co.nz/services/refinance</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/services/pre-approval.html</loc>
+    <loc>https://www.finchmortgages.co.nz/services/pre-approval</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/services/investment-property.html</loc>
+    <loc>https://www.finchmortgages.co.nz/services/investment-property</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/services/construction-loan.html</loc>
+    <loc>https://www.finchmortgages.co.nz/services/construction-loan</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/services/commercial-property.html</loc>
+    <loc>https://www.finchmortgages.co.nz/services/commercial-property</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/services/asset-finance.html</loc>
+    <loc>https://www.finchmortgages.co.nz/services/asset-finance</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/services/self-employed.html</loc>
+    <loc>https://www.finchmortgages.co.nz/services/self-employed</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -116,13 +116,13 @@
   <!-- RATES & MARKET                -->
   <!-- ============================ -->
   <url>
-    <loc>https://www.finchmortgages.co.nz/mortgage-rates.html</loc>
+    <loc>https://www.finchmortgages.co.nz/mortgage-rates</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/market-report.html</loc>
+    <loc>https://www.finchmortgages.co.nz/market-report</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -132,31 +132,31 @@
   <!-- LENDERS                       -->
   <!-- ============================ -->
   <url>
-    <loc>https://www.finchmortgages.co.nz/lenders.html</loc>
+    <loc>https://www.finchmortgages.co.nz/lenders</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/lenders/major-banks.html</loc>
+    <loc>https://www.finchmortgages.co.nz/lenders/major-banks</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/lenders/non-bank-lenders.html</loc>
+    <loc>https://www.finchmortgages.co.nz/lenders/non-bank-lenders</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/lenders/specialist-lenders.html</loc>
+    <loc>https://www.finchmortgages.co.nz/lenders/specialist-lenders</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/lenders/credit-unions.html</loc>
+    <loc>https://www.finchmortgages.co.nz/lenders/credit-unions</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -166,31 +166,31 @@
   <!-- CALCULATORS                   -->
   <!-- ============================ -->
   <url>
-    <loc>https://www.finchmortgages.co.nz/calculators.html</loc>
+    <loc>https://www.finchmortgages.co.nz/calculators</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/calculators/mortgage-calculator.html</loc>
+    <loc>https://www.finchmortgages.co.nz/calculators/mortgage-calculator</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/calculators/borrowing-power.html</loc>
+    <loc>https://www.finchmortgages.co.nz/calculators/borrowing-power</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/calculators/refinance-savings.html</loc>
+    <loc>https://www.finchmortgages.co.nz/calculators/refinance-savings</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/calculators/extra-repayment.html</loc>
+    <loc>https://www.finchmortgages.co.nz/calculators/extra-repayment</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -200,31 +200,31 @@
   <!-- GUIDES                        -->
   <!-- ============================ -->
   <url>
-    <loc>https://www.finchmortgages.co.nz/guides/first-home-guide.html</loc>
+    <loc>https://www.finchmortgages.co.nz/guides/first-home-guide</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/guides/how-mortgage-works.html</loc>
+    <loc>https://www.finchmortgages.co.nz/guides/how-mortgage-works</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/guides/refinance-guide.html</loc>
+    <loc>https://www.finchmortgages.co.nz/guides/refinance-guide</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/guides/mortgage-glossary-nz.html</loc>
+    <loc>https://www.finchmortgages.co.nz/guides/mortgage-glossary-nz</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/guides/step-by-step.html</loc>
+    <loc>https://www.finchmortgages.co.nz/guides/step-by-step</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -234,163 +234,163 @@
   <!-- BLOG                          -->
   <!-- ============================ -->
   <url>
-    <loc>https://www.finchmortgages.co.nz/blog.html</loc>
+    <loc>https://www.finchmortgages.co.nz/blog</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/blog/first-home-buyer-guide-nz.html</loc>
+    <loc>https://www.finchmortgages.co.nz/blog/first-home-buyer-guide-nz</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/blog/deposit-needed-home-loan-nz.html</loc>
+    <loc>https://www.finchmortgages.co.nz/blog/deposit-needed-home-loan-nz</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/blog/deposit-requirements-nz.html</loc>
+    <loc>https://www.finchmortgages.co.nz/blog/deposit-requirements-nz</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/blog/how-much-can-i-borrow.html</loc>
+    <loc>https://www.finchmortgages.co.nz/blog/how-much-can-i-borrow</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/blog/current-mortgage-rates-nz-explained.html</loc>
+    <loc>https://www.finchmortgages.co.nz/blog/current-mortgage-rates-nz-explained</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/blog/interest-rates-guide.html</loc>
+    <loc>https://www.finchmortgages.co.nz/blog/interest-rates-guide</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/blog/best-time-to-fix-mortgage-nz.html</loc>
+    <loc>https://www.finchmortgages.co.nz/blog/best-time-to-fix-mortgage-nz</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/blog/fixed-vs-floating-mortgage-nz.html</loc>
+    <loc>https://www.finchmortgages.co.nz/blog/fixed-vs-floating-mortgage-nz</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/blog/how-ocr-affects-mortgages-nz.html</loc>
+    <loc>https://www.finchmortgages.co.nz/blog/how-ocr-affects-mortgages-nz</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/blog/will-mortgage-rates-drop-nz-2026.html</loc>
+    <loc>https://www.finchmortgages.co.nz/blog/will-mortgage-rates-drop-nz-2026</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/blog/mortgage-tips.html</loc>
+    <loc>https://www.finchmortgages.co.nz/blog/mortgage-tips</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/blog/mortgage-pre-approval-timeline.html</loc>
+    <loc>https://www.finchmortgages.co.nz/blog/mortgage-pre-approval-timeline</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/blog/kiwisaver-first-home-withdrawal.html</loc>
+    <loc>https://www.finchmortgages.co.nz/blog/kiwisaver-first-home-withdrawal</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/blog/bad-credit-mortgage-nz.html</loc>
+    <loc>https://www.finchmortgages.co.nz/blog/bad-credit-mortgage-nz</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/blog/improve-credit-score-mortgage-nz.html</loc>
+    <loc>https://www.finchmortgages.co.nz/blog/improve-credit-score-mortgage-nz</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/blog/loan-declined-what-next-nz.html</loc>
+    <loc>https://www.finchmortgages.co.nz/blog/loan-declined-what-next-nz</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/blog/missed-payments-mortgage-rejection.html</loc>
+    <loc>https://www.finchmortgages.co.nz/blog/missed-payments-mortgage-rejection</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/blog/self-employed-low-deposit-approval.html</loc>
+    <loc>https://www.finchmortgages.co.nz/blog/self-employed-low-deposit-approval</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/blog/renting-to-owning-journey.html</loc>
+    <loc>https://www.finchmortgages.co.nz/blog/renting-to-owning-journey</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/blog/25-year-old-home-buyer-case-study.html</loc>
+    <loc>https://www.finchmortgages.co.nz/blog/25-year-old-home-buyer-case-study</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-auckland-city.html</loc>
+    <loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-auckland-city</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-north-shore.html</loc>
+    <loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-north-shore</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-east-auckland.html</loc>
+    <loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-east-auckland</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-west-auckland.html</loc>
+    <loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-west-auckland</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-south-auckland.html</loc>
+    <loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-south-auckland</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-te-atatu.html</loc>
+    <loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-te-atatu</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -400,109 +400,109 @@
   <!-- WEEKLY MARKET REPORTS         -->
   <!-- ============================ -->
   <url>
-    <loc>https://www.finchmortgages.co.nz/weekly-reports.html</loc>
+    <loc>https://www.finchmortgages.co.nz/weekly-reports</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/weekly-reports/week-18-winter-strategies.html</loc>
+    <loc>https://www.finchmortgages.co.nz/weekly-reports/week-18-winter-strategies</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/weekly-reports/week-17-autumn-update.html</loc>
+    <loc>https://www.finchmortgages.co.nz/weekly-reports/week-17-autumn-update</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/weekly-reports/week-16-major-banks-cut-rates.html</loc>
+    <loc>https://www.finchmortgages.co.nz/weekly-reports/week-16-major-banks-cut-rates</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/weekly-reports/week-15-ocr-hold.html</loc>
+    <loc>https://www.finchmortgages.co.nz/weekly-reports/week-15-ocr-hold</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/weekly-reports/week-14-anz-rates.html</loc>
+    <loc>https://www.finchmortgages.co.nz/weekly-reports/week-14-anz-rates</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/weekly-reports/week-13-canterbury-surge.html</loc>
+    <loc>https://www.finchmortgages.co.nz/weekly-reports/week-13-canterbury-surge</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/weekly-reports/week-12-rental-yields.html</loc>
+    <loc>https://www.finchmortgages.co.nz/weekly-reports/week-12-rental-yields</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/weekly-reports/week-10-ocr-cut-march.html</loc>
+    <loc>https://www.finchmortgages.co.nz/weekly-reports/week-10-ocr-cut-march</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/weekly-reports/week-9-bay-of-plenty.html</loc>
+    <loc>https://www.finchmortgages.co.nz/weekly-reports/week-9-bay-of-plenty</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/weekly-reports/week-8-interest-deductibility.html</loc>
+    <loc>https://www.finchmortgages.co.nz/weekly-reports/week-8-interest-deductibility</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/weekly-reports/week-7-kiwisaver-tips.html</loc>
+    <loc>https://www.finchmortgages.co.nz/weekly-reports/week-7-kiwisaver-tips</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/weekly-reports/week-6-floating-vs-fixed.html</loc>
+    <loc>https://www.finchmortgages.co.nz/weekly-reports/week-6-floating-vs-fixed</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/weekly-reports/week-5-new-build-exemptions.html</loc>
+    <loc>https://www.finchmortgages.co.nz/weekly-reports/week-5-new-build-exemptions</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/weekly-reports/week-4-dti-caps-bite.html</loc>
+    <loc>https://www.finchmortgages.co.nz/weekly-reports/week-4-dti-caps-bite</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/weekly-reports/week-3-summer-sales-slump.html</loc>
+    <loc>https://www.finchmortgages.co.nz/weekly-reports/week-3-summer-sales-slump</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/weekly-reports/week-2-mortgage-stress-testing.html</loc>
+    <loc>https://www.finchmortgages.co.nz/weekly-reports/week-2-mortgage-stress-testing</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/weekly-reports/week-1-year-ahead-2026.html</loc>
+    <loc>https://www.finchmortgages.co.nz/weekly-reports/week-1-year-ahead-2026</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -512,73 +512,73 @@
   <!-- CASE STUDIES & TESTIMONIALS   -->
   <!-- ============================ -->
   <url>
-    <loc>https://www.finchmortgages.co.nz/case-studies.html</loc>
+    <loc>https://www.finchmortgages.co.nz/case-studies</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/case-studies/first-home-approval.html</loc>
+    <loc>https://www.finchmortgages.co.nz/case-studies/first-home-approval</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/case-studies/refinance-savings.html</loc>
+    <loc>https://www.finchmortgages.co.nz/case-studies/refinance-savings</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/case-studies/self-employed-approval.html</loc>
+    <loc>https://www.finchmortgages.co.nz/case-studies/self-employed-approval</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/case-studies/construction-loan-turnkey.html</loc>
+    <loc>https://www.finchmortgages.co.nz/case-studies/construction-loan-turnkey</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/case-studies/portfolio-growth.html</loc>
+    <loc>https://www.finchmortgages.co.nz/case-studies/portfolio-growth</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/case-studies/asset-finance-machinery.html</loc>
+    <loc>https://www.finchmortgages.co.nz/case-studies/asset-finance-machinery</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/case-studies/bridging-finance-lifestyle.html</loc>
+    <loc>https://www.finchmortgages.co.nz/case-studies/bridging-finance-lifestyle</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/case-studies/commercial-warehouse.html</loc>
+    <loc>https://www.finchmortgages.co.nz/case-studies/commercial-warehouse</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/case-studies/debt-consolidation.html</loc>
+    <loc>https://www.finchmortgages.co.nz/case-studies/debt-consolidation</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/testimonials/reviews.html</loc>
+    <loc>https://www.finchmortgages.co.nz/testimonials/reviews</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/testimonials/success-stories.html</loc>
+    <loc>https://www.finchmortgages.co.nz/testimonials/success-stories</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -589,25 +589,25 @@
   <!-- fhb-* duplicates intentionally excluded; they canonicalize to these -->
   <!-- ============================ -->
   <url>
-    <loc>https://www.finchmortgages.co.nz/privacy.html</loc>
+    <loc>https://www.finchmortgages.co.nz/privacy</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/terms.html</loc>
+    <loc>https://www.finchmortgages.co.nz/terms</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/disclaimer.html</loc>
+    <loc>https://www.finchmortgages.co.nz/disclaimer</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/disclosure.html</loc>
+    <loc>https://www.finchmortgages.co.nz/disclosure</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
@@ -617,1064 +617,1064 @@
   <!-- PER-LENDER REVIEW PAGES       -->
   <!-- 23 Approved Lender Reviews   -->
   <!-- ============================ -->
-  <url><loc>https://www.finchmortgages.co.nz/lenders/anz-home-loan-review.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/lenders/avanti-finance-mortgage-review.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/lenders/basecorp-mortgage-review.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/lenders/bnz-home-loan-review.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/lenders/cfml-mortgage-review.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/lenders/china-construction-bank-mortgage-review.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/lenders/co-operative-bank-mortgage-review.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/lenders/cressida-capital-mortgage-review.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/lenders/dbr-property-financiers-review.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/lenders/finbase-mortgage-review.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/lenders/first-mortgage-trust-review.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/lenders/funding-partners-review.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/lenders/gem-by-latitude-review.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/lenders/general-finance-mortgage-review.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/lenders/heartland-bank-mortgage-review.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/lenders/liberty-financial-mortgage-review.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/lenders/pallas-capital-mortgage-review.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/lenders/pepper-money-mortgage-review.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/lenders/prospa-finance-review.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/lenders/sbs-mortgage-review.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/lenders/southern-cross-partners-review.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/lenders/unity-credit-union-review.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/lenders/xceda-finance-review.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/lenders/anz-home-loan-review</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/lenders/avanti-finance-mortgage-review</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/lenders/basecorp-mortgage-review</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/lenders/bnz-home-loan-review</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/lenders/cfml-mortgage-review</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/lenders/china-construction-bank-mortgage-review</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/lenders/co-operative-bank-mortgage-review</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/lenders/cressida-capital-mortgage-review</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/lenders/dbr-property-financiers-review</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/lenders/finbase-mortgage-review</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/lenders/first-mortgage-trust-review</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/lenders/funding-partners-review</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/lenders/gem-by-latitude-review</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/lenders/general-finance-mortgage-review</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/lenders/heartland-bank-mortgage-review</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/lenders/liberty-financial-mortgage-review</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/lenders/pallas-capital-mortgage-review</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/lenders/pepper-money-mortgage-review</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/lenders/prospa-finance-review</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/lenders/sbs-mortgage-review</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/lenders/southern-cross-partners-review</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/lenders/unity-credit-union-review</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/lenders/xceda-finance-review</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
 
   <!-- ============================ -->
   <!-- CITY-BASED BROKER PAGES       -->
   <!-- ============================ -->
-  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-nz.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-wellington.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-christchurch.html</loc><lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-hamilton.html</loc><lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-tauranga.html</loc><lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-dunedin.html</loc><lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-queenstown.html</loc><lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-napier-hawkes-bay.html</loc><lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-palmerston-north.html</loc><lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-nelson.html</loc><lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-whangarei-northland.html</loc><lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-nz</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-wellington</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-christchurch</loc><lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-hamilton</loc><lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-tauranga</loc><lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-dunedin</loc><lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-queenstown</loc><lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-napier-hawkes-bay</loc><lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-palmerston-north</loc><lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-nelson</loc><lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-whangarei-northland</loc><lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
 
   <!-- ============================ -->
   <!-- TOPICAL NZ MORTGAGE BLOG      -->
   <!-- ============================ -->
-  <url><loc>https://www.finchmortgages.co.nz/blog/how-long-mortgage-approval-takes-nz.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/blog/how-much-can-i-borrow-100k-salary-nz.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-vs-bank-nz.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/blog/what-is-lvr-nz-mortgage.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-fees-nz.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/blog/how-to-choose-mortgage-broker-nz.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/how-long-mortgage-approval-takes-nz</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/how-much-can-i-borrow-100k-salary-nz</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-vs-bank-nz</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/what-is-lvr-nz-mortgage</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-fees-nz</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/how-to-choose-mortgage-broker-nz</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 
   <!-- ============================ -->
   <!-- NEW NZ CASE STUDIES           -->
   <!-- ============================ -->
-  <url><loc>https://www.finchmortgages.co.nz/case-studies/new-migrant-first-mortgage.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/case-studies/single-parent-rebuilds.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/case-studies/apartment-investor-scaling.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/case-studies/family-guarantee-first-home.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/case-studies/new-migrant-first-mortgage</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/case-studies/single-parent-rebuilds</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/case-studies/apartment-investor-scaling</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/case-studies/family-guarantee-first-home</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
 
   <!-- ============================ -->
   <!-- NEW SITUATIONAL CASE STUDIES  -->
   <!-- ============================ -->
-  <url><loc>https://www.finchmortgages.co.nz/case-studies/loan-declined-second-opinion.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/case-studies/bad-credit-defaults-approved.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/case-studies/contractor-fixed-term-income.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/case-studies/gifted-deposit-no-savings.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/case-studies/trust-structure-investment-purchase.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/case-studies/lifestyle-block-rural-purchase.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/case-studies/new-job-probation-period-approval.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/case-studies/non-bank-to-bank-refinance-credit-repair.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/case-studies/leaky-home-remediation-finance.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/case-studies/returning-kiwi-overseas-income.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/case-studies/buy-out-ex-partner-separation.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/case-studies/redundancy-income-recovery-approval.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/case-studies/second-home-holiday-home-purchase.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/case-studies/mortgagee-sale-purchase-finance.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/case-studies/high-dti-young-professional-approved.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/blog/reverse-mortgage-nz.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/case-studies/loan-declined-second-opinion</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/case-studies/bad-credit-defaults-approved</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/case-studies/contractor-fixed-term-income</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/case-studies/gifted-deposit-no-savings</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/case-studies/trust-structure-investment-purchase</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/case-studies/lifestyle-block-rural-purchase</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/case-studies/new-job-probation-period-approval</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/case-studies/non-bank-to-bank-refinance-credit-repair</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/case-studies/leaky-home-remediation-finance</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/case-studies/returning-kiwi-overseas-income</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/case-studies/buy-out-ex-partner-separation</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/case-studies/redundancy-income-recovery-approval</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/case-studies/second-home-holiday-home-purchase</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/case-studies/mortgagee-sale-purchase-finance</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/case-studies/high-dti-young-professional-approved</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/reverse-mortgage-nz</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
 
   <!-- ============================ -->
   <!-- PREVIOUSLY MISSING PAGES     -->
   <!-- ============================ -->
-  <url><loc>https://www.finchmortgages.co.nz/blog/first-home-buying-nz-main-cities.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/blog/property-investment-auckland-hamilton-tauranga.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/weekly-reports/week-19-spring-market-prep.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/weekly-reports/week-20-fixed-rates-dip.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/first-home-buying-nz-main-cities</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/property-investment-auckland-hamilton-tauranga</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/weekly-reports/week-19-spring-market-prep</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/weekly-reports/week-20-fixed-rates-dip</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
 
   <!-- ============================ -->
   <!-- TOPIC BLOG POSTS (previously missing from sitemap) -->
   <!-- ============================ -->
-  <url><loc>https://www.finchmortgages.co.nz/blog/anz-vs-asb-vs-bnz-vs-westpac-home-loans.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/blog/break-fixed-mortgage-break-fees-nz.html</loc><lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/blog/bright-line-test-nz-2026.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/blog/build-vs-buy-nz.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/blog/buying-at-auction-nz-finance-ready.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/blog/co-owning-home-friends-family-nz.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/blog/dti-calculator-debt-to-income-nz.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/blog/first-home-buyer-mistakes-nz.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/blog/first-home-partner-scheme-explained.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/blog/fixed-rate-ending-refix-guide-nz.html</loc><lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/blog/granny-flats-minor-dwellings-finance-nz.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/blog/hidden-costs-buying-house-nz.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/blog/income-needed-500k-700k-1m-mortgage-nz.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-cashback-offers-nz.html</loc><lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-document-checklist-nz.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-vs-rent-auckland.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/blog/nz-mortgage-rates-history.html</loc><lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/blog/offset-vs-revolving-credit-mortgage-nz.html</loc><lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/blog/using-home-equity-investment-property-nz.html</loc><lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/blog/work-visa-home-loan-nz.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-top-up-nz.html</loc><lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/blog/bridging-finance-guide-nz.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/anz-vs-asb-vs-bnz-vs-westpac-home-loans</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/break-fixed-mortgage-break-fees-nz</loc><lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/bright-line-test-nz-2026</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/build-vs-buy-nz</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/buying-at-auction-nz-finance-ready</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/co-owning-home-friends-family-nz</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/dti-calculator-debt-to-income-nz</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/first-home-buyer-mistakes-nz</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/first-home-partner-scheme-explained</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/fixed-rate-ending-refix-guide-nz</loc><lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/granny-flats-minor-dwellings-finance-nz</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/hidden-costs-buying-house-nz</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/income-needed-500k-700k-1m-mortgage-nz</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-cashback-offers-nz</loc><lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-document-checklist-nz</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-vs-rent-auckland</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/nz-mortgage-rates-history</loc><lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/offset-vs-revolving-credit-mortgage-nz</loc><lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/using-home-equity-investment-property-nz</loc><lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/work-visa-home-loan-nz</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-top-up-nz</loc><lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/bridging-finance-guide-nz</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
 
   <!-- ============================ -->
   <!-- NEW REGIONAL CITY PAGES       -->
   <!-- ============================ -->
-  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-rotorua.html</loc><lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-lower-hutt.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-upper-hutt.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-porirua.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-kapiti-coast.html</loc><lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-hastings.html</loc><lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-mount-maunganui-papamoa.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-taupo.html</loc><lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-timaru.html</loc><lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-blenheim-marlborough.html</loc><lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-cambridge.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-rolleston-selwyn.html</loc><lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-rangiora-kaiapoi.html</loc><lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-new-plymouth-taranaki.html</loc><lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-invercargill-southland.html</loc><lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-whanganui.html</loc><lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-gisborne.html</loc><lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-masterton-wairarapa.html</loc><lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-pukekohe-franklin.html</loc><lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-orewa-hibiscus-coast.html</loc><lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-rotorua</loc><lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-lower-hutt</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-upper-hutt</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-porirua</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-kapiti-coast</loc><lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-hastings</loc><lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-mount-maunganui-papamoa</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-taupo</loc><lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-timaru</loc><lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-blenheim-marlborough</loc><lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-cambridge</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-rolleston-selwyn</loc><lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-rangiora-kaiapoi</loc><lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-new-plymouth-taranaki</loc><lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-invercargill-southland</loc><lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-whanganui</loc><lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-gisborne</loc><lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-masterton-wairarapa</loc><lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-pukekohe-franklin</loc><lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-orewa-hibiscus-coast</loc><lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
 
   <!-- ============================ -->
   <!-- NEW TOOLS                    -->
   <!-- ============================ -->
-  <url><loc>https://www.finchmortgages.co.nz/calculators/dti-calculator.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/calculators/rental-yield-calculator.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/calculators/dti-calculator</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/calculators/rental-yield-calculator</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
 
   <!-- ============================ -->
   <!-- NEW AUCKLAND SUBURB PAGES    -->
   <!-- ============================ -->
-  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-henderson.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-glenfield.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-flat-bush.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-albany.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-massey.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-hobsonville.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-new-lynn.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-mt-roskill.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-manukau.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-papakura.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-botany.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-howick.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-takapuna.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-henderson</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-glenfield</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-flat-bush</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-albany</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-massey</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-hobsonville</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-new-lynn</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-mt-roskill</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-manukau</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-papakura</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-botany</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-howick</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-broker-takapuna</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
 
   <!-- ============================ -->
   <!-- SERVICE LOCATIONS & INDEX    -->
   <!-- ============================ -->
-  <url><loc>https://www.finchmortgages.co.nz/locations/index.html</loc><lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/locations/home-loan-auckland-city.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/locations/home-loan-wellington.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/locations/home-loan-christchurch.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/locations/home-loan-hamilton.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/locations/home-loan-tauranga.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/locations/home-loan-dunedin.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/locations/home-loan-queenstown.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/locations/home-loan-napier-hawkes-bay.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/locations/home-loan-palmerston-north.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/locations/home-loan-nelson.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/locations/home-loan-whangarei-northland.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/locations/home-loan-manukau.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/locations/first-home-buyer-auckland-city.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/locations/first-home-buyer-wellington.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/locations/first-home-buyer-christchurch.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/locations/first-home-buyer-hamilton.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/locations/first-home-buyer-tauranga.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/locations/first-home-buyer-dunedin.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/locations/first-home-buyer-queenstown.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/locations/first-home-buyer-napier-hawkes-bay.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/locations/first-home-buyer-palmerston-north.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/locations/first-home-buyer-nelson.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/locations/first-home-buyer-whangarei-northland.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/locations/first-home-buyer-manukau.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/locations/refinance-auckland-city.html</loc><lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/locations/refinance-wellington.html</loc><lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/locations/refinance-christchurch.html</loc><lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/locations/refinance-hamilton.html</loc><lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/locations/refinance-tauranga.html</loc><lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/locations/refinance-dunedin.html</loc><lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/locations/refinance-queenstown.html</loc><lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/locations/refinance-napier-hawkes-bay.html</loc><lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/locations/refinance-palmerston-north.html</loc><lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/locations/refinance-nelson.html</loc><lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/locations/refinance-whangarei-northland.html</loc><lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/locations/refinance-manukau.html</loc><lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/locations/investment-property-auckland-city.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/locations/investment-property-wellington.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/locations/investment-property-christchurch.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/locations/investment-property-hamilton.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/locations/investment-property-tauranga.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/locations/investment-property-dunedin.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/locations/investment-property-queenstown.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/locations/investment-property-napier-hawkes-bay.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/locations/investment-property-palmerston-north.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/locations/investment-property-nelson.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/locations/investment-property-whangarei-northland.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/locations/investment-property-manukau.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/locations/self-employed-auckland-city.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/locations/self-employed-wellington.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/locations/self-employed-christchurch.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/locations/self-employed-hamilton.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/locations/self-employed-tauranga.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/locations/self-employed-dunedin.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/locations/self-employed-queenstown.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/locations/self-employed-napier-hawkes-bay.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/locations/self-employed-palmerston-north.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/locations/self-employed-nelson.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/locations/self-employed-whangarei-northland.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/locations/self-employed-manukau.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/locations/pre-approval-auckland-city.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/locations/pre-approval-wellington.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/locations/pre-approval-christchurch.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/locations/pre-approval-hamilton.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/locations/pre-approval-tauranga.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/locations/pre-approval-dunedin.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/locations/pre-approval-queenstown.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/locations/pre-approval-napier-hawkes-bay.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/locations/pre-approval-palmerston-north.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/locations/pre-approval-nelson.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/locations/pre-approval-whangarei-northland.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/locations/pre-approval-manukau.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/locations</loc><lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/locations/home-loan-auckland-city</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/locations/home-loan-wellington</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/locations/home-loan-christchurch</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/locations/home-loan-hamilton</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/locations/home-loan-tauranga</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/locations/home-loan-dunedin</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/locations/home-loan-queenstown</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/locations/home-loan-napier-hawkes-bay</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/locations/home-loan-palmerston-north</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/locations/home-loan-nelson</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/locations/home-loan-whangarei-northland</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/locations/home-loan-manukau</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/locations/first-home-buyer-auckland-city</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/locations/first-home-buyer-wellington</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/locations/first-home-buyer-christchurch</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/locations/first-home-buyer-hamilton</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/locations/first-home-buyer-tauranga</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/locations/first-home-buyer-dunedin</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/locations/first-home-buyer-queenstown</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/locations/first-home-buyer-napier-hawkes-bay</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/locations/first-home-buyer-palmerston-north</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/locations/first-home-buyer-nelson</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/locations/first-home-buyer-whangarei-northland</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/locations/first-home-buyer-manukau</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/locations/refinance-auckland-city</loc><lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/locations/refinance-wellington</loc><lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/locations/refinance-christchurch</loc><lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/locations/refinance-hamilton</loc><lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/locations/refinance-tauranga</loc><lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/locations/refinance-dunedin</loc><lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/locations/refinance-queenstown</loc><lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/locations/refinance-napier-hawkes-bay</loc><lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/locations/refinance-palmerston-north</loc><lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/locations/refinance-nelson</loc><lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/locations/refinance-whangarei-northland</loc><lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/locations/refinance-manukau</loc><lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/locations/investment-property-auckland-city</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/locations/investment-property-wellington</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/locations/investment-property-christchurch</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/locations/investment-property-hamilton</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/locations/investment-property-tauranga</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/locations/investment-property-dunedin</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/locations/investment-property-queenstown</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/locations/investment-property-napier-hawkes-bay</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/locations/investment-property-palmerston-north</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/locations/investment-property-nelson</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/locations/investment-property-whangarei-northland</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/locations/investment-property-manukau</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/locations/self-employed-auckland-city</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/locations/self-employed-wellington</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/locations/self-employed-christchurch</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/locations/self-employed-hamilton</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/locations/self-employed-tauranga</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/locations/self-employed-dunedin</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/locations/self-employed-queenstown</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/locations/self-employed-napier-hawkes-bay</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/locations/self-employed-palmerston-north</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/locations/self-employed-nelson</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/locations/self-employed-whangarei-northland</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/locations/self-employed-manukau</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/locations/pre-approval-auckland-city</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/locations/pre-approval-wellington</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/locations/pre-approval-christchurch</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/locations/pre-approval-hamilton</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/locations/pre-approval-tauranga</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/locations/pre-approval-dunedin</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/locations/pre-approval-queenstown</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/locations/pre-approval-napier-hawkes-bay</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/locations/pre-approval-palmerston-north</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/locations/pre-approval-nelson</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/locations/pre-approval-whangarei-northland</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/locations/pre-approval-manukau</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
 
 
   <!-- ============================ -->
   <!-- HIGH-INTENT LOCAL SEO POSTS  -->
   <!-- ============================ -->
-  <url><loc>https://www.finchmortgages.co.nz/blog/leasehold-apartment-mortgage-auckland.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/blog/cross-lease-unit-title-freehold-nz.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/blog/earthquake-prone-building-mortgage-wellington.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/blog/tc2-tc3-land-christchurch-mortgage.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/blog/flood-zone-insurance-mortgage-decline-nz.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/blog/lifestyle-block-rural-lending-waikato.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/blog/queenstown-holiday-home-short-stay-income-mortgage.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/blog/healthy-homes-standards-lending-nz.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/blog/student-loan-mortgage-borrowing-power-nz.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/blog/afterpay-bnpl-mortgage-application-nz.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/blog/car-loan-personal-debt-borrowing-power-nz.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-on-parental-leave-nz.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/blog/casual-part-time-seasonal-income-mortgage-nz.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/blog/non-resident-offshore-income-mortgage-nz.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/blog/one-year-self-employed-mortgage-nz.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/blog/finance-condition-sale-purchase-nz.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/blog/pre-approval-expired-nz.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/blog/buying-off-the-plans-finance-nz.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/blog/lim-builders-report-finance-nz.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/blog/buying-house-from-family-below-market-value-nz.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/leasehold-apartment-mortgage-auckland</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/cross-lease-unit-title-freehold-nz</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/earthquake-prone-building-mortgage-wellington</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/tc2-tc3-land-christchurch-mortgage</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/flood-zone-insurance-mortgage-decline-nz</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/lifestyle-block-rural-lending-waikato</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/queenstown-holiday-home-short-stay-income-mortgage</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/healthy-homes-standards-lending-nz</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/student-loan-mortgage-borrowing-power-nz</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/afterpay-bnpl-mortgage-application-nz</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/car-loan-personal-debt-borrowing-power-nz</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/mortgage-on-parental-leave-nz</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/casual-part-time-seasonal-income-mortgage-nz</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/non-resident-offshore-income-mortgage-nz</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/one-year-self-employed-mortgage-nz</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/finance-condition-sale-purchase-nz</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/pre-approval-expired-nz</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/buying-off-the-plans-finance-nz</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/lim-builders-report-finance-nz</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/buying-house-from-family-below-market-value-nz</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
 
-  <url><loc>https://www.finchmortgages.co.nz/blog/finch-finance-loans-nz.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/blog/asset-finance-chattel-mortgage-lease-hire-purchase-nz.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/blog/commercial-property-loan-nz-how-lenders-assess.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/blog/construction-loan-progress-payments-nz.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/blog/finch-refinance-mortgage-review-nz.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/blog/refinance-after-separation-buy-out-partner-nz.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/blog/new-bank-wont-refinance-mortgage-nz.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/blog/refinance-rental-property-investment-loans-nz.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.finchmortgages.co.nz/blog/first-home-grant-nz-closed-alternatives.html</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/finch-finance-loans-nz</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/asset-finance-chattel-mortgage-lease-hire-purchase-nz</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/commercial-property-loan-nz-how-lenders-assess</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/construction-loan-progress-payments-nz</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/finch-refinance-mortgage-review-nz</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/refinance-after-separation-buy-out-partner-nz</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/new-bank-wont-refinance-mortgage-nz</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/refinance-rental-property-investment-loans-nz</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.finchmortgages.co.nz/blog/first-home-grant-nz-closed-alternatives</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <!-- FINCH-TOWNS:START -->
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-waikato.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-waikato</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-bay-of-plenty.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-bay-of-plenty</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-manawatu-whanganui.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-manawatu-whanganui</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-nelson-tasman.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-nelson-tasman</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-west-coast.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-west-coast</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-canterbury.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-canterbury</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-otago.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-otago</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-warkworth.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-warkworth</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-wellsford.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-wellsford</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-helensville.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-helensville</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-waiuku.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-waiuku</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-kerikeri.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-kerikeri</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-kaitaia.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-kaitaia</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-dargaville.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-dargaville</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-kaikohe.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-kaikohe</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-paihia.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-paihia</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-kawakawa.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-kawakawa</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-russell.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-russell</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-mangawhai.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-mangawhai</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-waipu.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-waipu</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-ruakaka.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-ruakaka</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-te-awamutu.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-te-awamutu</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-matamata.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-matamata</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-morrinsville.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-morrinsville</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-huntly.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-huntly</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-te-kuiti.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-te-kuiti</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-otorohanga.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-otorohanga</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-thames.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-thames</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-tokoroa.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-tokoroa</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-pokeno.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-pokeno</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-ngaruawahia.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-ngaruawahia</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-raglan.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-raglan</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-te-kauwhata.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-te-kauwhata</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-tuakau.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-tuakau</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-waihi.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-waihi</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-paeroa.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-paeroa</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-te-aroha.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-te-aroha</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-whitianga.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-whitianga</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-whangamata.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-whangamata</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-putaruru.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-putaruru</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-turangi.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-turangi</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-whakatane.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-whakatane</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-opotiki.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-opotiki</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-te-puke.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-te-puke</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-katikati.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-katikati</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-kawerau.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-kawerau</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-ohope.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-ohope</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-omokoroa.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-omokoroa</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-waihi-beach.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-waihi-beach</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-edgecumbe.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-edgecumbe</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-murupara.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-murupara</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-tolaga-bay.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-tolaga-bay</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-ruatoria.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-ruatoria</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-te-karaka.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-te-karaka</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-havelock-north.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-havelock-north</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-waipawa.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-waipawa</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-waipukurau.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-waipukurau</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-wairoa.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-wairoa</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-waitara.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-waitara</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-inglewood.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-inglewood</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-stratford.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-stratford</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-hawera.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-hawera</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-opunake.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-opunake</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-eltham.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-eltham</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-patea.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-patea</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-feilding.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-feilding</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-levin.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-levin</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-marton.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-marton</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-dannevirke.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-dannevirke</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-taumarunui.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-taumarunui</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-taihape.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-taihape</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-ohakune.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-ohakune</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-foxton.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-foxton</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-bulls.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-bulls</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-pahiatua.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-pahiatua</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-carterton.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-carterton</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-greytown.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-greytown</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-featherston.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-featherston</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-otaki.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-otaki</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-martinborough.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-martinborough</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-richmond.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-richmond</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-motueka.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-motueka</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-takaka.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-takaka</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-murchison.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-murchison</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-brightwater.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-brightwater</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-wakefield.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-wakefield</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-mapua.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-mapua</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-picton.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-picton</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-havelock.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-havelock</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-seddon.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-seddon</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-greymouth.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-greymouth</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-hokitika.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-hokitika</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-westport.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-westport</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-reefton.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-reefton</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-runanga.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-runanga</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-franz-josef.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-franz-josef</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-fox-glacier.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-fox-glacier</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-ashburton.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-ashburton</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-waimate.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-waimate</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-geraldine.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-geraldine</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-darfield.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-darfield</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-hanmer-springs.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-hanmer-springs</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-lincoln.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-lincoln</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-prebbleton.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-prebbleton</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-woodend.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-woodend</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-oxford.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-oxford</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-amberley.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-amberley</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-leeston.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-leeston</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-methven.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-methven</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-temuka.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-temuka</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-fairlie.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-fairlie</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-twizel.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-twizel</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-kaikoura.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-kaikoura</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-akaroa.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-akaroa</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-wanaka.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-wanaka</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-oamaru.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-oamaru</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-cromwell.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-cromwell</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-alexandra.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-alexandra</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-balclutha.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-balclutha</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-mosgiel.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-mosgiel</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-ranfurly.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-ranfurly</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-arrowtown.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-arrowtown</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-clyde.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-clyde</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-milton.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-milton</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-roxburgh.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-roxburgh</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-gore.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-gore</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-winton.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-winton</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-te-anau.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-te-anau</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-riverton.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-riverton</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-bluff.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-bluff</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-mataura.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-mataura</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-chatham-islands.html</loc>
+    <loc>https://www.finchmortgages.co.nz/locations/mortgage-broker-chatham-islands</loc>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>

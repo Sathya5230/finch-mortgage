@@ -12,12 +12,12 @@ Disallow: /docs/
 Disallow: /.git/
 Disallow: /.vscode/
 Disallow: /.claude/
-Disallow: /thank-you.html
-Disallow: /fhb-thank-you.html
-Disallow: /fhb-disclaimer.html
-Disallow: /fhb-disclosure.html
-Disallow: /fhb-privacy.html
-Disallow: /fhb-terms.html
+Disallow: /thank-you
+Disallow: /fhb-thank-you
+Disallow: /fhb-disclaimer
+Disallow: /fhb-disclosure
+Disallow: /fhb-privacy
+Disallow: /fhb-terms
 
 # ---------------------------------------------
 # Search engine crawlers
