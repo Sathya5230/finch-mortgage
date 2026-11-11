@@ -41,7 +41,7 @@ SERVICES = [
         "slug": "home-loan",
         "name": "Home Loan",
         "title": "Home Loans & Buying a Home",
-        "tagline": "Compare 20+ NZ lenders and get a home loan structured around you.",
+        "tagline": "Compare 23 NZ lenders and get a home loan structured around you.",
     },
     {
         "slug": "first-home-buyer",
@@ -81,7 +81,7 @@ def get_service_prose(service_slug: str, city_name: str, suburbs: str, price_ban
     
     if service_slug == "home-loan":
         return {
-            "intro": f"Buying a residential home in {clean_city} is a major milestone, but navigating bank scorecards requires a strategic approach. With the Reserve Bank of New Zealand (RBNZ) defining strict lending limits and interest rates shifting, securing a competitive mortgage requires matching your unique financial profile to the right lender. At Finch, we compare your application across 20+ NZ bank and non-bank lenders to construct the sharpest pricing and structure for your new home.",
+            "intro": f"Buying a residential home in {clean_city} is a major milestone, but navigating bank scorecards requires a strategic approach. With the Reserve Bank of New Zealand (RBNZ) defining strict lending limits and interest rates shifting, securing a competitive mortgage requires matching your unique financial profile to the right lender. At Finch, we compare your application across 23 NZ bank and non-bank lenders to construct the sharpest pricing and structure for your new home.",
             "market_angle": f"The local property market in {clean_city} requires a tailored approach depending on the property type. {market_note} Because banks assess older homes, new builds, cross-leases, and lifestyle blocks under completely different policies, securing an independent review of your contract and the property's lendability is essential before making an offer.",
             "eligibility_process": f"To secure a home loan in {clean_city}, banks typically require a 20% deposit, though deposit options as low as 10% (or even 5% for first home buyers) are possible. We analyze your monthly servicing capacity at current bank 'test rates' (often 1.5% to 2% above actual rates) to confirm what you can borrow. The process is straightforward: we complete a discovery call, organise your documents (payslips, tax portals, and bank statement downloads), select the matching lenders, and secure your pre-approval so you can shop with confidence across suburbs like {suburbs}.",
             "extra_sections_html": f"""
@@ -99,7 +99,7 @@ def get_service_prose(service_slug: str, city_name: str, suburbs: str, price_ban
             <ol style="margin-bottom:2rem;padding-left:1.5rem;list-style-type:decimal;color:var(--neutral-medGray);">
               <li style="margin-bottom:1rem;"><strong>Financial Review &amp; Strategy:</strong> We analyze your current income, expenses, debts, and assets to determine your maximum borrowing capacity under current bank stress-testing criteria.</li>
               <li style="margin-bottom:1rem;"><strong>Document Collection:</strong> We help you gather the standard checklist required by lenders: 3 months of bank statements, proof of deposit (KiwiSaver, savings, or gift letters), photo ID, and employment contracts.</li>
-              <li style="margin-bottom:1rem;"><strong>Lender Selection &amp; Submission:</strong> We compare your scenario against 20+ NZ bank and non-bank lenders, package your application to highlight its strengths, and submit it to the lenders offering the best terms.</li>
+              <li style="margin-bottom:1rem;"><strong>Lender Selection &amp; Submission:</strong> We compare your scenario against 23 NZ bank and non-bank lenders, package your application to highlight its strengths, and submit it to the lenders offering the best terms.</li>
               <li style="margin-bottom:1rem;"><strong>Pre-Approval Secured:</strong> Once the bank issues a pre-approval, you know your exact buying limits, allowing you to bid at auctions or make conditional offers with confidence.</li>
               <li style="margin-bottom:1rem;"><strong>Property Due Diligence:</strong> Before you sign a sale and purchase agreement, we check that the bank accepts the specific property type (e.g. cross-lease, plaster finish, or townhouse zoning).</li>
               <li style="margin-bottom:1rem;"><strong>Loan Structuring &amp; Settlement:</strong> We customise your fixed and floating splits, arrange bank cashbacks, coordinate with your solicitor, and finalise the draw-down on settlement day.</li>
@@ -202,7 +202,7 @@ def get_service_prose(service_slug: str, city_name: str, suburbs: str, price_ban
             "faqs": [
                 {
                     "q": "Should I refinance if my fixed term is ending?",
-                    "a": f"Absolutely. You should check your refinancing options at least 60 days before your fixed rate rolls off. This gives you time to compare rates across 20+ lenders and negotiate a competitive deal, rather than simply accepting the bank's default roll-over rate."
+                    "a": f"Absolutely. You should check your refinancing options at least 60 days before your fixed rate rolls off. This gives you time to compare rates across 23 lenders and negotiate a competitive deal, rather than simply accepting the bank's default roll-over rate."
                 },
                 {
                     "q": "What is a bank cashback clawback?",
@@ -309,7 +309,7 @@ def get_service_prose(service_slug: str, city_name: str, suburbs: str, price_ban
         
     elif service_slug == "pre-approval":
         return {
-            "intro": f"Entering the {clean_city} real estate market without a binding mortgage pre-approval is like bidding at an auction blindfolded. In a fast-paced market where conditional offers are routinely rejected in favour of unconditional buyers, having a pre-approval gives you the leverage to negotiate with certainty. Finch coordinates with 20+ NZ lenders to secure pre-approvals quickly, keeping you ahead of the competition.",
+            "intro": f"Entering the {clean_city} real estate market without a binding mortgage pre-approval is like bidding at an auction blindfolded. In a fast-paced market where conditional offers are routinely rejected in favour of unconditional buyers, having a pre-approval gives you the leverage to negotiate with certainty. Finch coordinates with 23 NZ lenders to secure pre-approvals quickly, keeping you ahead of the competition.",
             "market_angle": f"With auctions and quick tenders dominating the {clean_city} sales landscape, a pre-approval is your ticket to participate. {market_note} Knowing your buying capacity and deposit rules before you start visiting open homes is the best way to avoid missing out.",
             "eligibility_process": f"To qualify for a pre-approval, you must submit a complete financial profile demonstrating servicing capacity and a verified deposit source (cash, KiwiSaver, or equity). Pre-approvals are generally valid for 90 days, allowing you to bid at auction or make unconditional offers. The process involves organising your checklist, matching your files to the right bank's scorecard, and securing the approval letter. We will review any property you want to offer on to ensure the bank accepts that specific property type.",
             "extra_sections_html": f"""
@@ -366,7 +366,7 @@ def build_page_html(c: dict, s: dict, template_text: str) -> str:
     
     article = "an" if service_name[0] in "AEIOU" else "a"
     title = f"{service_name} in {city.replace('&amp;', '&')} | Finch Mortgages NZ"
-    description = f"Looking for {article} {service_name} in {city.replace('&amp;', '&')}? Finch compares 20+ NZ lenders to get you approved fast. $0 broker fee. Secure your loan →"
+    description = f"Looking for {article} {service_name} in {city.replace('&amp;', '&')}? Finch compares 23 NZ lenders to get you approved fast. $0 broker fee. Secure your loan →"
     
     prose = get_service_prose(s["slug"], city, c["suburbs"], c["price_band"], c["market_note"])
     
@@ -564,7 +564,7 @@ def build_page_html(c: dict, s: dict, template_text: str) -> str:
           <div class="section-label"><span>Keep Reading</span></div>
           <h2 class="section-heading" style="margin-bottom:2.5rem;">Related NZ mortgage resources</h2>
           <div class="cols-3" style="gap:1.5rem;">
-            <a href="../services/home-loan.html" style="display:block;padding:1.5rem;background:var(--finch-mist);border-radius:1rem;text-decoration:none;color:var(--neutral-black);"><strong style="display:block;color:var(--finch-forest);margin-bottom:0.5rem;">NZ Home Loan Service</strong><span style="font-size:0.9rem;color:var(--neutral-medGray);">Independent advice across 20+ NZ lenders.</span></a>
+            <a href="../services/home-loan.html" style="display:block;padding:1.5rem;background:var(--finch-mist);border-radius:1rem;text-decoration:none;color:var(--neutral-black);"><strong style="display:block;color:var(--finch-forest);margin-bottom:0.5rem;">NZ Home Loan Service</strong><span style="font-size:0.9rem;color:var(--neutral-medGray);">Independent advice across 23 NZ lenders.</span></a>
             <a href="../calculators/borrowing-power.html" style="display:block;padding:1.5rem;background:var(--finch-mist);border-radius:1rem;text-decoration:none;color:var(--neutral-black);"><strong style="display:block;color:var(--finch-forest);margin-bottom:0.5rem;">Borrowing Power</strong><span style="font-size:0.9rem;color:var(--neutral-medGray);">See how much NZ banks will lend you.</span></a>
             <a href="../calculators/mortgage-calculator.html" style="display:block;padding:1.5rem;background:var(--finch-mist);border-radius:1rem;text-decoration:none;color:var(--neutral-black);"><strong style="display:block;color:var(--finch-forest);margin-bottom:0.5rem;">NZ Mortgage Calculator</strong><span style="font-size:0.9rem;color:var(--neutral-medGray);">Estimate repayments at NZ rates.</span></a>
           </div>

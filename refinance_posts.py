@@ -17,7 +17,7 @@ PUBLISHED = "2026-10-06"
 
 REL_REFI = [
     ("../services/refinance.html", "Refinance Your Mortgage",
-     "Independent refinance advice across 20+ NZ lenders."),
+     "Independent refinance advice across 23 NZ lenders."),
     ("../calculators/refinance-savings.html", "Refinance Savings Calculator",
      "Estimate what switching could save."),
     ("../guides/refinance-guide.html", "NZ Refinance Guide",
@@ -326,7 +326,7 @@ POSTS = [
             ("../services/investment-property.html", "Investment Property Loans",
              "Structure and lender matching for investors."),
             ("../services/refinance.html", "Refinance Your Mortgage",
-             "Independent refinance advice across 20+ NZ lenders."),
+             "Independent refinance advice across 23 NZ lenders."),
             ("bright-line-test-nz-2026.html", "Bright-Line Test NZ",
              "When selling triggers tax."),
         ],

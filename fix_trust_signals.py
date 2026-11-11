@@ -20,7 +20,7 @@ LINK = 'style="color:var(--finch-forest);font-weight:600;"'
 PAIRS = {
     # Location-page taglines (also shown on the locations hub and homepage cards).
     "Secure your next residential property with NZ's best lending structures.":
-        "Compare 20+ NZ lenders and get a home loan structured around you.",
+        "Compare 23 NZ lenders and get a home loan structured around you.",
     "Maximize leverage and structure portfolio lending tax-effectively.":
         "Structure investment lending around your equity, rental income and DTI limits.",
     "Know your borrowing capacity and bid at auction with absolute confidence.":
@@ -33,8 +33,8 @@ PAIRS = {
     "Compare NZ's lowest home loan rates.": "Compare NZ home loan rates.",
     "Why check 5 different bank websites? We aggregate the latest advertised interest rates from New Zealand's top-tier banks weekly.":
         "Why check five different bank websites? See advertised rates from NZ banks in one place, then ask us what you could actually be offered.",
-    "Finch searches 20+ banks and non-bank lenders simultaneously, finding the lowest rate and best structure for your specific situation.":
-        "Finch compares 20+ banks and non-bank lenders to find a rate and loan structure that suit your situation.",
+    "Finch searches 23 banks and non-bank lenders simultaneously, finding the lowest rate and best structure for your specific situation.":
+        "Finch compares 23 banks and non-bank lenders to find a rate and loan structure that suit your situation.",
     "Visualize how extra payments aggressively reduce your loan term.":
         "See how extra repayments can shorten your loan term.",
 

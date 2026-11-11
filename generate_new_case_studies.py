@@ -385,7 +385,7 @@ CASE_STUDIES = [
         "related": [
             ("blog/mortgage-broker-hamilton.html", "Mortgage Broker Hamilton", "Local advice across the wider Waikato region."),
             ("blog/build-vs-buy-nz.html", "Build vs Buy NZ", "Weighing a lifestyle build against buying existing."),
-            ("services/home-loan.html", "NZ Home Loan Service", "Independent advice across 20+ NZ lenders."),
+            ("services/home-loan.html", "NZ Home Loan Service", "Independent advice across 23 NZ lenders."),
             ("services/construction-loan.html", "Construction Loan", "For lifestyle blocks needing a future build."),
             ("calculators/mortgage-calculator.html", "Mortgage Calculator", "Estimate repayments on a larger rural-residential loan."),
             ("contact.html", "Book a Free Call", "15-min discovery, no obligation."),
@@ -424,7 +424,7 @@ CASE_STUDIES = [
         "related": [
             ("blog/how-long-mortgage-approval-takes-nz.html", "Mortgage Approval Timeline", "What lenders check and how long it takes."),
             ("calculators/borrowing-power.html", "Borrowing Power Calculator", "Estimate your capacity on a new salary."),
-            ("services/home-loan.html", "NZ Home Loan Service", "Independent advice across 20+ NZ lenders."),
+            ("services/home-loan.html", "NZ Home Loan Service", "Independent advice across 23 NZ lenders."),
             ("blog/mortgage-broker-christchurch.html", "Mortgage Broker Christchurch", "Local Canterbury market advice."),
             ("services/pre-approval.html", "Mortgage Pre-Approval", "Know your ceiling before you make an offer."),
             ("contact.html", "Book a Free Call", "15-min discovery, no obligation."),
@@ -502,7 +502,7 @@ CASE_STUDIES = [
         "related": [
             ("guides/how-mortgage-works.html", "How Mortgages Work", "Understanding lender risk assessment on older builds."),
             ("blog/mortgage-document-checklist-nz.html", "Mortgage Document Checklist", "What lenders need for a complex purchase."),
-            ("services/home-loan.html", "NZ Home Loan Service", "Independent advice across 20+ NZ lenders."),
+            ("services/home-loan.html", "NZ Home Loan Service", "Independent advice across 23 NZ lenders."),
             ("services/construction-loan.html", "Construction Loan", "For remediation and renovation-linked finance."),
             ("blog/hidden-costs-buying-house-nz.html", "Hidden Costs of Buying a House", "What else to budget for beyond the purchase price."),
             ("contact.html", "Book a Free Call", "15-min discovery, no obligation."),
@@ -619,7 +619,7 @@ CASE_STUDIES = [
         "related": [
             ("blog/loan-declined-what-next-nz.html", "Loan Declined? What Next", "Rebuilding a case after an income interruption."),
             ("calculators/borrowing-power.html", "Borrowing Power Calculator", "Check your capacity on a new salary."),
-            ("services/home-loan.html", "NZ Home Loan Service", "Independent advice across 20+ NZ lenders."),
+            ("services/home-loan.html", "NZ Home Loan Service", "Independent advice across 23 NZ lenders."),
             ("blog/how-long-mortgage-approval-takes-nz.html", "Mortgage Approval Timeline", "What to expect after a recent job change."),
             ("services/pre-approval.html", "Mortgage Pre-Approval", "Know your ceiling before you make an offer."),
             ("contact.html", "Book a Free Call", "15-min discovery, no obligation."),
@@ -921,7 +921,7 @@ def main_body(c: dict) -> str:
       <div class="container">
         <div class="cta-section reveal">
           <h2>Could we help you<br/>get the same result?</h2>
-          <p>Book a free 15-minute consultation. We compare your scenario across 20+ NZ lenders and structure the loan for the best outcome.</p>
+          <p>Book a free 15-minute consultation. We compare your scenario across 23 NZ lenders and structure the loan for the best outcome.</p>
           <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
             <a class="btn-cta-white" href="../contact.html">Book a Free Call →</a>
             <a class="btn-cta-outline" href="../case-studies.html">More NZ Case Studies</a>

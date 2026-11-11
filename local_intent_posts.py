@@ -13,7 +13,7 @@ from generate_local_intent_blogs import callout, link, ol, p, table, ul
 # Shared "related reading" sets. Paths are relative to /blog/.
 REL_CORE = [
     ("../services/home-loan.html", "NZ Home Loan Service",
-     "Independent advice across 20+ NZ lenders."),
+     "Independent advice across 23 NZ lenders."),
     ("../calculators/borrowing-power.html", "Borrowing Power Calculator",
      "See what NZ banks will actually lend you."),
     ("../mortgage-rates.html", "Live NZ Mortgage Rates",

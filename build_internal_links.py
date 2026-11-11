@@ -212,14 +212,51 @@ guide_links = [
     ("../lenders/anz-home-loan-review.html", "ANZ Review"),
     ("../lenders/heartland-bank-mortgage-review.html", "Heartland Bank Review"),
 ]
+# Topic clusters added November 2026: each hub page links to every post in its cluster.
+import home_loan_intent_posts as _hl
+import refinance_intent_posts as _rf
+
+REFI_CLUSTER = [(f"../blog/{x['slug']}.html", x["h1"]) for x in _rf.POSTS]
+HOME_CLUSTER = [(f"../blog/{x['slug']}.html", x["h1"]) for x in _hl.POSTS]
+FIRST_HOME_SLUGS = {"low-deposit-home-loan-nz", "first-home-loan-kainga-ora-nz", "low-equity-margin-fee-nz",
+                    "guarantor-home-loan-nz", "gifted-deposit-home-loan-nz", "buying-a-house-on-one-income-nz",
+                    "home-loan-new-job-probation-nz", "mortgage-stress-test-rate-nz", "turnkey-home-loan-nz",
+                    "apartment-home-loan-nz", "boarder-flatmate-income-mortgage-nz"}
+INVESTOR_SLUGS = {"interest-only-home-loan-nz", "mortgage-interest-tax-deductible-nz", "family-trust-home-loan-nz",
+                  "apartment-home-loan-nz", "how-to-structure-your-mortgage-nz", "interest-only-ending-refinance-nz",
+                  "cash-out-refinance-nz", "refinance-valuation-nz"}
+
+
+def _pick(slugs):
+    return [(h, t) for h, t in HOME_CLUSTER + REFI_CLUSTER if h.split("/")[-1][:-5] in slugs]
+
+
+GUIDE_CLUSTERS = {
+    "refinance-guide.html": ("Refinancing questions answered", REFI_CLUSTER),
+    "first-home-guide.html": ("First home buyer questions answered", _pick(FIRST_HOME_SLUGS)),
+    "how-mortgage-works.html": ("Home loan questions answered", HOME_CLUSTER),
+}
 for p in sorted(glob.glob(os.path.join(ROOT, "guides", "*.html"))):
+    groups = [(None, guide_links)]
+    if os.path.basename(p) in GUIDE_CLUSTERS:
+        groups.append(GUIDE_CLUSTERS[os.path.basename(p)])
     block = section(
         "Helpful Tools & Lender Reviews",
         "Put these guides into action with our free calculators and independent lender reviews.",
-        [(None, guide_links)],
+        groups,
         bg="white",
     )
     inject(p, block)
+
+SERVICE_CLUSTERS = {
+    "refinance.html": ("Refinancing guides", "Specific answers on costs, timing and the situations that complicate a switch.", REFI_CLUSTER),
+    "home-loan.html": ("Home loan guides", "How lenders assess deposits, income and different kinds of property.", HOME_CLUSTER),
+    "first-home-buyer.html": ("First home buyer guides", "Low deposits, family help and how lenders test what you can afford.", _pick(FIRST_HOME_SLUGS)),
+    "investment-property.html": ("Guides for property investors", "Structure, tax treatment and equity for rental property lending.", _pick(INVESTOR_SLUGS)),
+}
+for fn, (heading, sub, links) in SERVICE_CLUSTERS.items():
+    inject(os.path.join(ROOT, "services", fn), section(heading, sub, [(None, links)], bg="white"))
+print(f"service hubs: linked {len(SERVICE_CLUSTERS)} topic clusters")
 print(f"guides: added tool/review links")
 
 # ---------------------------------------------------------------- 6. case studies

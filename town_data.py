@@ -124,6 +124,9 @@ COUNCILS = {
 CITY_PAGES = {
     "auckland-city": ("Central Auckland", "auckland"),
     "west-auckland": ("West Auckland", "auckland"),
+    "north-shore": ("the North Shore", "auckland"),
+    "east-auckland": ("East Auckland", "auckland"),
+    "south-auckland": ("South Auckland", "auckland"),
     "orewa-hibiscus-coast": ("Orewa & the Hibiscus Coast", "auckland"),
     "pukekohe-franklin": ("Pukekohe & Franklin", "auckland"),
     "whangarei-northland": ("Whangārei & Northland", "northland"),
@@ -1818,3 +1821,9 @@ COORDS = {
     "mataura": ("-46.19273", "168.86427"),
     "chatham-islands": ("-43.95120", "-176.56103"),
 }
+
+# Auckland suburbs (November 2026) live in their own module to keep this file readable.
+from suburb_data import SUBURBS, SUBURB_COORDS  # noqa: E402
+
+TOWNS += SUBURBS
+COORDS.update(SUBURB_COORDS)

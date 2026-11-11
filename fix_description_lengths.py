@@ -9,8 +9,8 @@ Run once.
 
 FIXES = {
     "index.html": (
-        "NZ's trusted mortgage broker — compare 20+ lenders, get expert home loan advice, and secure pre-approval. $0 broker fee. First home buyers welcome. Free consultation.",
-        "NZ's trusted mortgage broker — compare 20+ lenders, get expert home loan advice, and secure pre-approval. $0 broker fee. Free consultation.",
+        "NZ's trusted mortgage broker — compare 23 lenders, get expert home loan advice, and secure pre-approval. $0 broker fee. First home buyers welcome. Free consultation.",
+        "NZ's trusted mortgage broker — compare 23 lenders, get expert home loan advice, and secure pre-approval. $0 broker fee. Free consultation.",
     ),
     "case-studies/family-guarantee-first-home.html": (
         "A young Christchurch couple bought their first home with just 8% saved, using a family guarantee from her parents to bridge the deposit gap without injecting fresh cash.",

@@ -38,7 +38,7 @@ POSTS = [
         "lead_service": "Home Loan",
         "about": ["Finch Mortgages", "Home loans", "Business finance", "New Zealand lending"],
         "intro_pull": "Searching for Finch Finance or Finch Loans? You are in the right place. Finch Mortgages is an independent NZ broker, and this page sets out every type of lending we arrange — and where to start for each one.",
-        "description": "Finch Finance &amp; Loans: home loans, construction, bridging, commercial property and asset finance arranged across 20+ NZ lenders. $0 broker fee.",
+        "description": "Finch Finance &amp; Loans: home loans, construction, bridging, commercial property and asset finance arranged across 23 NZ lenders. $0 broker fee.",
         "keywords": [
             "Finch finance",
             "Finch loans",
@@ -75,7 +75,7 @@ POSTS = [
                 )
             )),
             ("Why a broker rather than going straight to a bank", (
-                p("A bank can only offer you its own products, assessed against its own policy. We compare your situation across a panel of more than 20 lenders — the main banks, smaller banks and specialist non-bank lenders — and recommend the ones whose policy actually fits your situation.")
+                p("A bank can only offer you its own products, assessed against its own policy. We compare your situation across a panel of 23 lenders — the main banks, smaller banks and specialist non-bank lenders — and recommend the ones whose policy actually fits your situation.")
                 + p("That matters most when your situation is not perfectly standard: self-employed income, a small deposit, a property type some lenders avoid, a past credit issue, or a mix of home and business borrowing. The same application can be declined by one lender and approved by another, and every unnecessary application leaves a mark on your credit file. Checking which lenders are a fit before applying is a large part of what we do.")
                 + ul([
                     "<strong>One conversation, many lenders.</strong> You don't repeat your story to five banks.",

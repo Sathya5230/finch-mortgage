@@ -26,7 +26,7 @@ import json
 import re
 from pathlib import Path
 
-from inject_local_seo import BIZ, lead_form_block
+from inject_local_seo import BIZ, lead_form_block, refinance_form_block
 
 ROOT = Path(__file__).parent
 TEMPLATE = ROOT / "blog/mortgage-tips.html"
@@ -246,13 +246,19 @@ def main_body(post: dict) -> str:
             f'margin-top:2.5rem;font-family:var(--font-display);">{heading}</h2>\n{body}\n'
         )
 
-    form = lead_form_block(
-        post["cta_heading"],
-        post["cta_sub"],
-        post["lead_service"],
-        post.get("region") or "",
-        f"blog-{post['slug']}",
-    )
+    if post.get("refi_form"):
+        # Same marker inject_local_seo uses, so a later injector run replaces rather than duplicates.
+        form = ("<!-- FINCH-LEADFORM:START -->\n"
+                + refinance_form_block(post["cta_heading"], post["cta_sub"], "", f"refi-{post['slug']}")
+                + "\n<!-- FINCH-LEADFORM:END -->")
+    else:
+        form = lead_form_block(
+            post["cta_heading"],
+            post["cta_sub"],
+            post["lead_service"],
+            post.get("region") or "",
+            f"blog-{post['slug']}",
+        )
 
     return f"""
 <main style="padding-top:80px;">

@@ -71,7 +71,7 @@ PAIRS = {
     "refinance savings calculator</a> to ballpark the benefit.": "refinance savings calculator</a> for a quick estimate.",
 
     # Shared FAQ answers (visible accordion and FAQPage JSON-LD).
-    "Yes. Banks reserve their sharpest rate discounts and cashback contributions for the broker channel. A broker compares 20+ lenders side-by-side to construct a competitive rate package you won't get walking in direct.":
+    "Yes. Banks reserve their sharpest rate discounts and cashback contributions for the broker channel. A broker compares 23 lenders side-by-side to construct a competitive rate package you won't get walking in direct.":
         "Often, yes. A broker can compare offers from many lenders at once and ask them to sharpen their pricing. Sometimes your own bank's offer is the best one, and a good broker will tell you so.",
     "A local broker understands regional market conditions, localized bank valuation hurdles (like seismic registers or land classifications), and coordinates with local real estate agents and solicitors to speed up pre-approval.":
         "A local broker knows how lenders view your area, including valuation issues such as earthquake-prone buildings or land classifications, and works with local agents and lawyers to keep your purchase on track.",

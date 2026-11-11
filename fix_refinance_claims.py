@@ -21,11 +21,11 @@ APPLY = "--apply" in sys.argv
 
 PAIRS = {
     # services/refinance.html hero and stats strip.
-    "<p>Is your mortgage rate still stuck from 2–3 years ago? Most Kiwi homeowners are overpaying by $200–$500/month. Finch compares 20+ lenders at no cost to you and handles the entire switch.</p>":
+    "<p>Is your mortgage rate still stuck from 2–3 years ago? Most Kiwi homeowners are overpaying by $200–$500/month. Finch compares 23 lenders at no cost to you and handles the entire switch.</p>":
         "<p>Fixed rate ending, or rolled onto a higher rate? Finch compares your bank's offer with the 23 lenders on our panel, works out break fees and any cashback clawback, and handles the switch. For residential home loans our advice costs you nothing.</p>",
     '<div class="stat-item"><div class="stat-number">$340</div><div class="stat-label">Avg Monthly Saving</div></div>\n'
     '<div class="stat-item"><div class="stat-number">2 wks</div><div class="stat-label">Avg Refinance Time</div></div>\n'
-    '<div class="stat-item"><div class="stat-number">20+</div><div class="stat-label">Lenders Compared</div></div>':
+    '<div class="stat-item"><div class="stat-number">23</div><div class="stat-label">Lenders Compared</div></div>':
         '<div class="stat-item"><div class="stat-number">23</div><div class="stat-label">Lenders on Our Panel</div></div>\n'
         '<div class="stat-item"><div class="stat-number">15+ yrs</div><div class="stat-label">Bank Lending Experience</div></div>\n'
         '<div class="stat-item"><div class="stat-number">FSCL</div><div class="stat-label">Independent Complaints Scheme</div></div>',
@@ -60,13 +60,13 @@ PAIRS = {
     "East Auckland Mortgage Broker | $0 Fee, 24hr Approval": "East Auckland Mortgage Broker | $0 Fee, 23 Lenders | Finch",
     "South Auckland Mortgage Broker | $0 Fee, 24hr Approval": "South Auckland Mortgage Broker | $0 Fee, 23 Lenders | Finch",
     "West Auckland Mortgage Broker | $0 Fee, 24hr Approval": "West Auckland Mortgage Broker | $0 Fee, 23 Lenders | Finch",
-    "Looking for the best home loan in North Shore? Finch compares 20+ NZ lenders to get you pre-approved in 24 hours. $0 broker fee. Compare rates →":
+    "Looking for the best home loan in North Shore? Finch compares 23 NZ lenders to get you pre-approved before you bid. $0 broker fee. Compare rates →":
         "Buying or refinancing on the North Shore? Finch compares 23 NZ lenders to find a home loan that fits, with no fee on residential home loans. Book a free chat →",
-    "Looking for the best home loan in East Auckland? Finch compares 20+ NZ lenders to get you pre-approved in 24 hours. $0 broker fee. Compare rates →":
+    "Looking for the best home loan in East Auckland? Finch compares 23 NZ lenders to get you pre-approved before you bid. $0 broker fee. Compare rates →":
         "Buying or refinancing in East Auckland? Finch compares 23 NZ lenders to find a home loan that fits, with no fee on residential home loans. Book a free chat →",
-    "Looking for the best home loan in South Auckland? Finch compares 20+ NZ lenders to get you pre-approved in 24 hours. $0 broker fee. Compare rates →":
+    "Looking for the best home loan in South Auckland? Finch compares 23 NZ lenders to get you pre-approved before you bid. $0 broker fee. Compare rates →":
         "Buying or refinancing in South Auckland? Finch compares 23 NZ lenders to find a home loan that fits, with no fee on residential home loans. Book a free chat →",
-    "Looking for the best home loan in West Auckland? Finch compares 20+ NZ lenders to get you pre-approved in 24 hours. $0 broker fee. Compare rates →":
+    "Looking for the best home loan in West Auckland? Finch compares 23 NZ lenders to get you pre-approved before you bid. $0 broker fee. Compare rates →":
         "Buying or refinancing in West Auckland? Finch compares 23 NZ lenders to find a home loan that fits, with no fee on residential home loans. Book a free chat →",
 }
 

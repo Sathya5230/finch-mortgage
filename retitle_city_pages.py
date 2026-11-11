@@ -14,27 +14,27 @@ ROOT = Path(__file__).parent
 APPLY = "--apply" in sys.argv
 
 SERVICE_TITLES = {
-    "home-loan": ["Home Loans {c} | Compare 20+ NZ Lenders | Finch", "Home Loans {c} | Compare 20+ Lenders", "Home Loans {c} | Finch"],
+    "home-loan": ["Home Loans {c} | Compare 23 NZ Lenders | Finch", "Home Loans {c} | Compare 23 Lenders", "Home Loans {c} | Finch"],
     "first-home-buyer": ["First Home Buyer {c} | KiwiSaver & Low Deposit | Finch", "First Home Buyer {c} | KiwiSaver & Low Deposit", "First Home Buyer {c} | Finch"],
-    "refinance": ["Refinance Mortgage {c} | Compare 20+ Lenders | Finch", "Refinance Mortgage {c} | 20+ Lenders", "Refinance {c} | Finch"],
+    "refinance": ["Refinance Mortgage {c} | Compare 23 Lenders | Finch", "Refinance Mortgage {c} | 23 Lenders", "Refinance {c} | Finch"],
     "investment-property": ["Investment Property Loans {c} | Finch Mortgages", "Investment Property Loans {c} | Finch", "Investment Loans {c} | Finch"],
     "self-employed": ["Self-Employed Home Loans {c} | Low-Doc | Finch", "Self-Employed Home Loans {c} | Finch", "Self-Employed Loans {c} | Finch"],
     "pre-approval": ["Mortgage Pre-Approval {c} | $0 Broker Fee | Finch", "Mortgage Pre-Approval {c} | Finch", "Pre-Approval {c} | Finch"],
 }
 
 SERVICE_DESC = {
-    "home-loan": "Buying in {c}? Finch compares 20+ NZ lenders for a home loan that suits buyers in {s}. Free advice, $0 broker fee.",
-    "first-home-buyer": "First home in {c}? Finch explains KiwiSaver, First Home Loan and deposit options in {s}. Compare 20+ NZ lenders, $0 broker fee.",
-    "refinance": "Refinancing in {c}? Finch compares 20+ NZ lenders to cut your rate, for homeowners in {s}. Free review, $0 broker fee.",
-    "investment-property": "Investing in {c}? Finch structures rental and portfolio lending across 20+ NZ lenders for {s}. Free advice, $0 broker fee.",
+    "home-loan": "Buying in {c}? Finch compares 23 NZ lenders for a home loan that suits buyers in {s}. Free advice, $0 broker fee.",
+    "first-home-buyer": "First home in {c}? Finch explains KiwiSaver, First Home Loan and deposit options in {s}. Compare 23 NZ lenders, $0 broker fee.",
+    "refinance": "Refinancing in {c}? Finch compares 23 NZ lenders to cut your rate, for homeowners in {s}. Free review, $0 broker fee.",
+    "investment-property": "Investing in {c}? Finch structures rental and portfolio lending across 23 NZ lenders for {s}. Free advice, $0 broker fee.",
     "self-employed": "Self-employed in {c}? Finch finds lenders who assess business owners fairly, from {s}. Low-doc options, $0 broker fee.",
-    "pre-approval": "Get mortgage pre-approval in {c} before you bid. Finch compares 20+ NZ lenders for buyers in {s}. Free advice, $0 broker fee.",
+    "pre-approval": "Get mortgage pre-approval in {c} before you bid. Finch compares 23 NZ lenders for buyers in {s}. Free advice, $0 broker fee.",
 }
 
 # "Mortgage adviser {city}" is searched separately from "mortgage broker {city}" in NZ, so titles carry both.
 BROKER_TITLES = ["Mortgage Broker {c} | $0 Fee Mortgage Adviser | Finch", "Mortgage Broker {c} | Mortgage Adviser | Finch", "Mortgage Broker {c} | $0 Fee | Finch", "Mortgage Broker {c} | Finch"]
-BROKER_DESC = "Independent {c} mortgage broker and adviser covering {s}. Compare 20+ NZ lenders with Finch. $0 broker fee."
-BROKER_DESC_NZ = "Online NZ mortgage broker and adviser. Finch arranges home loans by phone and video for buyers anywhere in New Zealand across 20+ lenders. $0 broker fee."
+BROKER_DESC = "Independent {c} mortgage broker and adviser covering {s}. Compare 23 NZ lenders with Finch. $0 broker fee."
+BROKER_DESC_NZ = "Online NZ mortgage broker and adviser. Finch arranges home loans by phone and video for buyers anywhere in New Zealand across 23 lenders. $0 broker fee."
 # The homepage targets "mortgage broker Auckland & NZ"; these pages take distinct angles so they don't compete with it.
 CITY_LABEL = {"mortgage-broker-auckland-city": "Central Auckland"}
 

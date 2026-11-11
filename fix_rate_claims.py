@@ -17,7 +17,7 @@ ROOT = Path(__file__).parent
 APPLY = "--apply" in sys.argv
 
 BANNER_OLD = "Current OCR at 3.25% · 1-Year Fixed Special from 5.85%"
-BANNER_NEW = "Rates are moving — compare 20+ lenders before you fix"
+BANNER_NEW = "Rates are moving — compare 23 lenders before you fix"
 
 ANSWERS = {
     "Yes, with the OCR currently at 3.25% and further RBNZ cuts forecast for late 2026, retail interest rates are expected to fall. Fixed 1-year terms are sitting around 5.85% special rates, with wholesale swap rates trending down.":

@@ -59,7 +59,7 @@ NAV = """<header id="main-header">
 FOOTER = """<footer class="site-footer">
   <div class="container">
     <div class="footer-grid">
-      <div class="footer-brand"><a href="../index.html">Finch<span>.</span></a><p>New Zealand's trusted independent mortgage broker. Expert advice, 20+ lenders, fast approvals.</p></div>
+      <div class="footer-brand"><a href="../index.html">Finch<span>.</span></a><p>New Zealand's trusted independent mortgage broker. Expert advice, 23 lenders, fast approvals.</p></div>
       <div class="footer-col"><h4>Services</h4><a href="../services/home-loan.html">Home Loan</a><a href="../services/investment-property.html">Investment Property</a><a href="../services/refinance.html">Refinance</a><a href="../services/pre-approval.html">Pre-Approval</a><a href="../services/first-home-buyer.html">First Home Buyer</a><a href="../services/self-employed.html">Self Employed</a></div>
       <div class="footer-col"><h4>Resources</h4><a href="../market-report.html">Market Report</a><a href="../lenders.html">Lenders</a><a href="../guides/how-mortgage-works.html">How Mortgages Work</a><a href="../guides/first-home-guide.html">First Home Guide</a><a href="../faq.html">FAQ</a><a href="../blog.html">Blog</a></div>
       <div class="footer-col"><h4>Company</h4><a href="../about.html">About Us</a><a href="../contact.html">Contact</a><a href="../privacy.html">Privacy</a><a href="../terms.html">Terms</a></div>
@@ -115,7 +115,7 @@ CATEGORIES = [
         ],
         "faqs": [
             {"q": "What is bridging finance?", "a": "Bridging finance is a short-term loan used to cover the gap when buying a new property before your existing property has sold. Specialist lenders are often much more accommodating with bridging loans than major banks."},
-            {"q": "How fast can a specialist lender approve a loan?", "a": "Because they don't rely heavily on automated scoring and have flatter management structures, some specialist lenders can grant conditional approval within 24-48 hours if the property asset is strong."},
+            {"q": "How fast can a specialist lender approve a loan?", "a": "Because they don't rely heavily on automated scoring and have flatter management structures, some specialist lenders can give a conditional answer faster than a bank, particularly when the property security is strong. Timing still depends on the lender and your documents."},
             {"q": "Do I need proof of income for specialist lenders?", "a": "While you must still demonstrate borrowing capacity under the CCCFA, specialist lenders offer 'asset-lend' or 'low-doc' products. This means if you have substantial equity in a property, the income verification requirements are significantly lower."}
         ]
     },

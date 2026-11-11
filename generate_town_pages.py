@@ -73,6 +73,14 @@ FACTORS = {
                       "{v} These areas show in council hazard information and on LIM reports, and lenders and insurers look at them closely."),
     "defence": ("Defence force incomes and postings",
                 "{v} Lenders regard NZDF pay well, but if a posting could turn your home into a rental, we structure the loan with that in mind."),
+    "apartments": ("Apartments and units",
+                   "{v} Lenders set their own minimum sizes for apartments and read the body corporate's accounts, so the building matters as much as your income."),
+    "townhouses": ("Terraces and townhouses",
+                   "{v} Check whether the title is freehold or a unit title, because body corporate or residents' society levies count as a cost when lenders work out what you can borrow."),
+    "crosslease": ("Cross-lease titles",
+                   "{v} Lenders accept cross-leases, but alterations that don't match the flats plan on the title can hold up a purchase or refinance until they're fixed."),
+    "subdivide": ("Adding a second dwelling",
+                  "{v} Building at the back is construction lending, paid out in stages, and lenders want consented plans and a fixed-price contract first."),
     "heritage": ("Heritage and character homes",
                  "{v} Heritage rules can limit changes and older construction can cost more to insure, so get an insurance quote early."),
 }
@@ -95,6 +103,10 @@ REFI_ANGLES = {
     "geothermal": "A new lender reads the LIM again when you refinance, so have any geothermal reports to hand.",
     "mining_ground": "A new lender looks at mine-workings notations again when you refinance, so confirm your insurer's position first.",
     "defence": "If a posting means your home becomes a rental, tell your lender; it can be a good moment to restructure or move to a lender that handles the switch well.",
+    "apartments": "Refinancing an apartment means the new lender reviews the body corporate records afresh, so have the latest minutes, levies and insurance certificate ready.",
+    "townhouses": "If you bought a new terrace off the plans, your first refix is a good time to check its value and whether you now qualify for standard pricing.",
+    "crosslease": "A new lender's lawyer rechecks the cross-lease when you refinance, so sort out any alterations that aren't on the flats plan before you start.",
+    "subdivide": "If you plan to build a second dwelling, refinance to a lender that does construction lending well before you need the first progress payment.",
     "heritage": "Refinancing a heritage home means a fresh valuation and confirming insurance, which can cost more for older construction.",
 }
 
@@ -127,6 +139,14 @@ TAG_FAQS = {
                    "It can add steps. If the LIM shows a geothermal hazard note, lenders and insurers may ask questions or want a report. Most homes are financed without problems, but read the LIM early."),
     "coastal": ("Will a lender finance a beachfront home in {town}?",
                 "Usually, but coastal-hazard notations can narrow the lender list and affect insurance. We check the LIM and insurance position first, then approach lenders comfortable with the property."),
+    "apartments": ("What deposit do I need for an apartment in {town}?",
+                   "For a standard-size freehold apartment in a sound building, the same as for a house: usually 20%, or less through a low-deposit route. Small apartments, leasehold titles and buildings with unresolved defects need more, and some lenders won't consider them."),
+    "townhouses": ("Is a new terraced house in {town} treated as a new build by lenders?",
+                   "Yes, if you're the first buyer and it was completed recently. New builds are exempt from the Reserve Bank's loan-to-value restrictions, so more lenders accept a 10% deposit. Lenders also count any body corporate or residents' society levies in your budget."),
+    "crosslease": ("Can I get a mortgage on a cross-lease property in {town}?",
+                   "Yes. Lenders treat cross-leases as normal security. The check that matters is whether the buildings match the flats plan on the title. Unrecorded additions can be fixed, but it takes time and legal work, so find out before you go unconditional."),
+    "subdivide": ("Can I borrow to build a second house on my {town} section?",
+                  "Yes, with a construction loan. Lenders want resource and building consent, a fixed-price contract and a valuation of the finished project. They'll check you can afford the lending, and most will count part of the expected rent."),
     "heritage": ("Can I get a mortgage on a heritage home in {town}?",
                  "Usually, yes. Lenders lend on older and heritage homes; they'll want a satisfactory valuation and full replacement insurance, which can cost more for heritage buildings. Get an insurance quote before you go unconditional."),
 }
@@ -152,7 +172,8 @@ REFI_STEPS = [
 PROPERTY_WORDS = [("newbuild", "new builds"), ("lifestyle", "lifestyle blocks"),
                   ("holiday", "holiday homes and baches"), ("older_homes", "older villas and cottages"),
                   ("coastal", "coastal homes"), ("heritage", "character and heritage homes"),
-                  ("investor", "rental properties"), ("leasehold", "leasehold and freehold sections"),
+                  ("apartments", "apartments and units"), ("townhouses", "terraces and townhouses"),
+                  ("crosslease", "cross-lease homes"), ("investor", "rental properties"), ("leasehold", "leasehold and freehold sections"),
                   ("maori_land", "homes on whenua Māori")]
 
 
@@ -200,7 +221,7 @@ def refi_angles(town, limit=2):
 
 
 def property_mix(town):
-    words = ["town sections"] + [w for k, w in PROPERTY_WORDS if k in town["tags"]]
+    words = ["standalone houses" if town.get("kind") == "suburb" else "town sections"] + [w for k, w in PROPERTY_WORDS if k in town["tags"]]
     return ", ".join(words[:-1]) + " and " + words[-1] if len(words) > 1 else words[0]
 
 
@@ -429,13 +450,15 @@ def town_page(town, shell):
               ("District", f'<a href="{council_url}" {EXT} {LINK}>{escape(council_name, False)}</a>'),
               ("Areas around {0}".format(escape(name, False)), escape(town["near"], False)),
               ("Property you'll find here", escape(property_mix(town), False)),
-              ("How we work with you", "Phone, video call and secure online document upload. No need to travel.")]
+              ("How we work with you", ("In person in Te Atatu South, West Auckland, or by phone and video call."
+                                       if town.get("kind") == "suburb" else
+                                       "Phone, video call and secure online document upload. No need to travel."))]
     if hub:
         glance.insert(2, ("Nearest Finch city guide",
                           f'<a href="../blog/mortgage-broker-{town["hub"]}.html" {LINK}>Mortgage broker {escape(hub[0], False)}</a>'))
     near = nearest(town)
     if near:
-        glance.append(("Closest towns we cover",
+        glance.append(("Closest areas we cover",
                        escape(", ".join(f"{t['name']} (about {round(km(slug, t['slug']))} km)" for t in near[:3]), False)))
     glance_rows = "".join(
         f'<tr><th scope="row" style="text-align:left;padding:0.8rem 1rem;border-bottom:1px solid rgba(180,178,169,0.25);'
@@ -539,7 +562,7 @@ def town_page(town, shell):
 
   <section style="padding:3.5rem 0;background:var(--finch-mist);">
     <div class="container">
-      <h2 style="font-family:var(--font-display);font-size:clamp(1.4rem,3vw,1.8rem);margin-bottom:0.5rem;">Nearby towns we also cover</h2>
+      <h2 style="font-family:var(--font-display);font-size:clamp(1.4rem,3vw,1.8rem);margin-bottom:0.5rem;">Nearby areas we also cover</h2>
       <p style="color:var(--neutral-medGray);max-width:680px;line-height:1.7;margin-bottom:1.25rem;">Closest to {escape(prose, False)}:</p>
       <div style="display:flex;flex-wrap:wrap;gap:0.6rem;margin-bottom:1rem;">{''.join(near_chips)}</div>
       <div style="display:flex;flex-wrap:wrap;gap:0.6rem;">{''.join(up_chips)}</div>

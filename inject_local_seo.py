@@ -94,7 +94,7 @@ SERVICE_PITCH = {
     "first-home-buyer":    ("Buying your first home in {city}?",
                             "We'll check your KiwiSaver withdrawal, First Home Loan eligibility and real deposit gap before you talk to any bank."),
     "investment-property": ("Grow your {city} property portfolio",
-                            "Send us your current position and we'll model the equity, DTI headroom and structure across 20+ lenders."),
+                            "Send us your current position and we'll model the equity, DTI headroom and structure across 23 lenders."),
     "pre-approval":        ("Get pre-approved before you bid in {city}",
                             "Auction-ready pre-approval, usually back within days. Tell us your situation and we'll start today."),
     "refinance":           ("See what refinancing saves you in {city}",
@@ -228,7 +228,7 @@ def lead_form_block(heading, sub, service_label, city_label, form_id):
 Call {BIZ['phone_display']} now
 </a>
 <ul style="list-style:none;padding:0;margin:0;color:rgba(255,255,255,0.78);font-size:0.9rem;line-height:2;">
-<li>✓ We compare 20+ NZ banks and non-bank lenders</li>
+<li>✓ We compare 23 NZ banks and non-bank lenders</li>
 <li>✓ The lender pays us — our advice costs you nothing</li>
 <li>✓ Registered financial adviser ({BIZ['fsp']})</li>
 <li>✓ Same-day reply on weekdays</li>

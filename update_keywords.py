@@ -219,7 +219,7 @@ KEYWORDS = {
         "mortgage approval NZ, how to get pre-approved NZ, "
         "pre-approval Auckland, pre-approval Wellington, "
         "auction bidding pre-approval NZ, bidding at auction NZ pre-approval, "
-        "mortgage pre-approval 24 hours NZ, NZ borrowing power assessment, "
+        "NZ borrowing power assessment, "
         "home loan pre-approval online NZ, fast mortgage pre-approval NZ"
     ),
 
@@ -543,7 +543,7 @@ KEYWORDS = {
 
     "blog/mortgage-pre-approval-timeline.html": (
         "mortgage pre-approval timeline NZ, how long does pre-approval take NZ, "
-        "NZ pre-approval process time, 24 hour pre-approval NZ, "
+        "NZ pre-approval process time, "
         "mortgage pre-approval steps NZ, conditional approval timeline NZ, "
         "how quickly can I get mortgage approval NZ, NZ pre-approval valid how long"
     ),

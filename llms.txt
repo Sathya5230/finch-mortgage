@@ -43,6 +43,7 @@ Finch has a local mortgage broker page for each area below. Hub: https://www.fin
 - **Rest of the North Island:** [Wellington](https://www.finchmortgages.co.nz/blog/mortgage-broker-wellington), [Hamilton](https://www.finchmortgages.co.nz/blog/mortgage-broker-hamilton), [Tauranga](https://www.finchmortgages.co.nz/blog/mortgage-broker-tauranga), [Napier & Hawke's Bay](https://www.finchmortgages.co.nz/blog/mortgage-broker-napier-hawkes-bay), [Palmerston North](https://www.finchmortgages.co.nz/blog/mortgage-broker-palmerston-north), [Whangārei & Northland](https://www.finchmortgages.co.nz/blog/mortgage-broker-whangarei-northland), Cambridge, Gisborne, Hastings, Kāpiti Coast, Lower Hutt, Masterton & the Wairarapa, Mount Maunganui & Pāpāmoa, New Plymouth & Taranaki, Porirua, Rotorua, Taupō, Upper Hutt, Whanganui
 - **South Island:** [Christchurch](https://www.finchmortgages.co.nz/blog/mortgage-broker-christchurch), [Dunedin](https://www.finchmortgages.co.nz/blog/mortgage-broker-dunedin), [Queenstown](https://www.finchmortgages.co.nz/blog/mortgage-broker-queenstown), [Nelson](https://www.finchmortgages.co.nz/blog/mortgage-broker-nelson), Blenheim & Marlborough, Invercargill & Southland, Rangiora & Kaiapoi, Rolleston & Selwyn, Timaru
 - **Regions:** [Waikato](https://www.finchmortgages.co.nz/locations/mortgage-broker-waikato), [Bay of Plenty](https://www.finchmortgages.co.nz/locations/mortgage-broker-bay-of-plenty), [Manawatū-Whanganui](https://www.finchmortgages.co.nz/locations/mortgage-broker-manawatu-whanganui), [Nelson Tasman](https://www.finchmortgages.co.nz/locations/mortgage-broker-nelson-tasman), [West Coast](https://www.finchmortgages.co.nz/locations/mortgage-broker-west-coast), [Canterbury](https://www.finchmortgages.co.nz/locations/mortgage-broker-canterbury), [Otago](https://www.finchmortgages.co.nz/locations/mortgage-broker-otago)
+- **Auckland suburbs:** 30 suburb pages, including Avondale, Glen Eden, Kumeū, Mt Eden, Remuera, Onehunga, Māngere, Papatoetoe, Devonport and Whangaparāoa, at the same URL pattern as the town pages.
 - **Towns:** 125 town pages, from Kaitāia to Bluff and the Chatham Islands, each covering local lending factors (property types, incomes, hazards, council links). Full list: https://www.finchmortgages.co.nz/locations#all-towns. Each URL follows `https://www.finchmortgages.co.nz/locations/mortgage-broker-{town}.html`.
 - **Nationwide (online):** [Mortgage broker NZ](https://www.finchmortgages.co.nz/blog/mortgage-broker-nz)
 - Each URL follows `https://www.finchmortgages.co.nz/blog/mortgage-broker-{area}.html`. The 12 main cities also have service pages (home loans, first home buyers, refinancing, pre-approval, investment property, self-employed) at `https://www.finchmortgages.co.nz/locations/{service}-{city}.html`.
@@ -74,6 +75,52 @@ Finch has a local mortgage broker page for each area below. Hub: https://www.fin
 - [Refinance guide](https://www.finchmortgages.co.nz/guides/refinance-guide)
 - [Step-by-step home buying process](https://www.finchmortgages.co.nz/guides/step-by-step)
 - [NZ mortgage glossary](https://www.finchmortgages.co.nz/guides/mortgage-glossary-nz)
+
+## Refinancing answers
+
+- [What It Costs to Refinance a Mortgage in NZ](https://www.finchmortgages.co.nz/blog/refinance-costs-nz)
+- [Refinance Legal Fees in NZ: What You're Paying a Lawyer For](https://www.finchmortgages.co.nz/blog/refinance-legal-fees-nz)
+- [Is It Worth Refinancing Your Mortgage?](https://www.finchmortgages.co.nz/blog/is-it-worth-refinancing-mortgage-nz)
+- [How Long Does It Take to Refinance a Mortgage in NZ?](https://www.finchmortgages.co.nz/blog/how-long-does-refinancing-take-nz)
+- [Cash-Out Refinancing in NZ: How Releasing Equity Works](https://www.finchmortgages.co.nz/blog/cash-out-refinance-nz)
+- [Dollar-for-Dollar Refinancing: What It Is and Who It Helps](https://www.finchmortgages.co.nz/blog/dollar-for-dollar-refinance-nz)
+- [Refinancing to Consolidate Debt: When It Helps and When It Hurts](https://www.finchmortgages.co.nz/blog/refinance-to-consolidate-debt-nz)
+- [Refinancing a Mortgage With Bad Credit](https://www.finchmortgages.co.nz/blog/refinance-with-bad-credit-nz)
+- [Refinancing When You're Self-Employed](https://www.finchmortgages.co.nz/blog/refinance-self-employed-nz)
+- [What Documents Do You Need to Refinance a Mortgage?](https://www.finchmortgages.co.nz/blog/refinance-documents-checklist-nz)
+- [Can You Refinance With the Same Bank?](https://www.finchmortgages.co.nz/blog/refinance-with-same-bank-nz)
+- [How Soon and How Often Can You Refinance a Mortgage?](https://www.finchmortgages.co.nz/blog/how-often-can-you-refinance-nz)
+- [Mortgage Discharge in NZ: What It Costs and How It Works](https://www.finchmortgages.co.nz/blog/mortgage-discharge-fee-nz)
+- [Refinancing to Pay for Renovations](https://www.finchmortgages.co.nz/blog/refinance-for-renovations-nz)
+- [Moving Your Mortgage From a Non-Bank Lender to a Bank](https://www.finchmortgages.co.nz/blog/non-bank-to-bank-refinance-nz)
+- [Interest-Only Period Ending? What Happens and What You Can Do](https://www.finchmortgages.co.nz/blog/interest-only-ending-refinance-nz)
+- [Do You Need a Valuation to Refinance?](https://www.finchmortgages.co.nz/blog/refinance-valuation-nz)
+- [Cashback Clawback: What You Repay if You Leave Your Lender Early](https://www.finchmortgages.co.nz/blog/mortgage-cashback-clawback-nz)
+- [Mortgage Repayments Too High? Your Options, in Order](https://www.finchmortgages.co.nz/blog/mortgage-repayments-too-high-options-nz)
+- [Adding or Removing a Name From a Mortgage](https://www.finchmortgages.co.nz/blog/add-or-remove-name-from-mortgage-nz)
+
+## Home loan answers
+
+- [Low Deposit Home Loans in NZ: Buying With 5% or 10%](https://www.finchmortgages.co.nz/blog/low-deposit-home-loan-nz)
+- [The Kāinga Ora First Home Loan: Buying With a 5% Deposit](https://www.finchmortgages.co.nz/blog/first-home-loan-kainga-ora-nz)
+- [Low Equity Margins and Fees: What They Are and How to Get Rid of Them](https://www.finchmortgages.co.nz/blog/low-equity-margin-fee-nz)
+- [Guarantor Home Loans: Using Your Parents' Equity to Buy](https://www.finchmortgages.co.nz/blog/guarantor-home-loan-nz)
+- [Gifted Deposits: What Lenders Need When Family Helps You Buy](https://www.finchmortgages.co.nz/blog/gifted-deposit-home-loan-nz)
+- [Buying a House on One Income](https://www.finchmortgages.co.nz/blog/buying-a-house-on-one-income-nz)
+- [Getting a Home Loan When You've Just Started a New Job](https://www.finchmortgages.co.nz/blog/home-loan-new-job-probation-nz)
+- [Can You Get a Home Loan on a Benefit?](https://www.finchmortgages.co.nz/blog/home-loan-on-a-benefit-nz)
+- [Can Boarder or Flatmate Income Help You Get a Mortgage?](https://www.finchmortgages.co.nz/blog/boarder-flatmate-income-mortgage-nz)
+- [The Mortgage Stress Test: Why Banks Assess You at a Higher Rate](https://www.finchmortgages.co.nz/blog/mortgage-stress-test-rate-nz)
+- [Can a Family Trust Get a Mortgage?](https://www.finchmortgages.co.nz/blog/family-trust-home-loan-nz)
+- [Can You Get a Mortgage to Buy Land?](https://www.finchmortgages.co.nz/blog/home-loan-for-land-section-nz)
+- [Turnkey Home Loans: How Finance Works When You Buy a New Build](https://www.finchmortgages.co.nz/blog/turnkey-home-loan-nz)
+- [Getting a Home Loan for an Apartment](https://www.finchmortgages.co.nz/blog/apartment-home-loan-nz)
+- [Interest-Only Home Loans: How They Work and Who They Suit](https://www.finchmortgages.co.nz/blog/interest-only-home-loan-nz)
+- [Getting a Home Loan Over 50](https://www.finchmortgages.co.nz/blog/home-loan-over-50-nz)
+- [What Happens to a Mortgage When Someone Dies?](https://www.finchmortgages.co.nz/blog/what-happens-to-mortgage-when-you-die-nz)
+- [How to Pay Off Your Mortgage Faster](https://www.finchmortgages.co.nz/blog/how-to-pay-off-mortgage-faster-nz)
+- [How to Structure Your Mortgage](https://www.finchmortgages.co.nz/blog/how-to-structure-your-mortgage-nz)
+- [Is Mortgage Interest Tax Deductible in NZ?](https://www.finchmortgages.co.nz/blog/mortgage-interest-tax-deductible-nz)
 
 ## Crawl guidance
 
