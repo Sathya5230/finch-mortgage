@@ -199,6 +199,8 @@ def main():
         if f.endswith(".py") and (Path(f).name.startswith("fix_") or "/" in f):
             continue
         p = ROOT / f
+        if not p.exists():
+            continue
         src = p.read_text(encoding="utf-8")
         out = nz_python(src) if f.endswith(".py") else nz_html(src)
         if out != src:

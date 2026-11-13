@@ -213,33 +213,68 @@ guide_links = [
     ("../lenders/heartland-bank-mortgage-review.html", "Heartland Bank Review"),
 ]
 # Topic clusters added November 2026: each hub page links to every post in its cluster.
+import buying_process_posts as _bp
+import eligibility_intent_posts as _el
+import equity_investor_intent_posts as _eq
 import home_loan_intent_posts as _hl
+import rates_market_intent_posts as _rm
 import refinance_intent_posts as _rf
+import repayment_intent_posts as _rp
 
-REFI_CLUSTER = [(f"../blog/{x['slug']}.html", x["h1"]) for x in _rf.POSTS]
-HOME_CLUSTER = [(f"../blog/{x['slug']}.html", x["h1"]) for x in _hl.POSTS]
+
+def _cluster(mod):
+    return [(f"../blog/{x['slug']}.html", x["h1"]) for x in mod.POSTS]
+
+
+REFI_CLUSTER = _cluster(_rf)
+HOME_CLUSTER = _cluster(_hl)
+BUY_CLUSTER = _cluster(_bp)
+ELIG_CLUSTER = _cluster(_el)
+REPAY_CLUSTER = _cluster(_rp)
+EQUITY_CLUSTER = _cluster(_eq)
+RATES_CLUSTER = _cluster(_rm)
+ALL_CLUSTERS = HOME_CLUSTER + REFI_CLUSTER + BUY_CLUSTER + ELIG_CLUSTER + REPAY_CLUSTER + EQUITY_CLUSTER + RATES_CLUSTER
 FIRST_HOME_SLUGS = {"low-deposit-home-loan-nz", "first-home-loan-kainga-ora-nz", "low-equity-margin-fee-nz",
                     "guarantor-home-loan-nz", "gifted-deposit-home-loan-nz", "buying-a-house-on-one-income-nz",
                     "home-loan-new-job-probation-nz", "mortgage-stress-test-rate-nz", "turnkey-home-loan-nz",
-                    "apartment-home-loan-nz", "boarder-flatmate-income-mortgage-nz"}
+                    "apartment-home-loan-nz", "boarder-flatmate-income-mortgage-nz",
+                    "can-you-borrow-a-deposit-nz", "kiwisaver-second-chance-withdrawal-nz", "rent-to-own-homes-nz",
+                    "bank-statements-mortgage-nz", "conditional-vs-unconditional-offer-nz", "settlement-day-nz",
+                    "conveyancing-fees-buying-house-nz", "buying-a-house-with-partner-nz",
+                    "mortgage-repayments-500k-600k-700k-nz", "buy-now-or-wait-nz",
+                    "how-much-house-can-i-afford-nz", "best-time-of-year-to-buy-a-house-nz",
+                    "new-build-home-loan-deposit-nz"}
 INVESTOR_SLUGS = {"interest-only-home-loan-nz", "mortgage-interest-tax-deductible-nz", "family-trust-home-loan-nz",
                   "apartment-home-loan-nz", "how-to-structure-your-mortgage-nz", "interest-only-ending-refinance-nz",
-                  "cash-out-refinance-nz", "refinance-valuation-nz"}
+                  "cash-out-refinance-nz", "refinance-valuation-nz",
+                  "usable-equity-nz", "turn-home-into-rental-nz", "rental-income-mortgage-assessment-nz",
+                  "new-build-investment-property-nz", "buying-property-through-company-nz",
+                  "bach-holiday-home-mortgage-nz", "subdivision-finance-nz", "good-rental-yield-nz"}
+NEXT_HOME_SLUGS = {"sell-or-buy-first-nz", "mortgage-portability-nz", "selling-house-with-mortgage-nz",
+                   "turn-home-into-rental-nz", "usable-equity-nz", "low-valuation-house-purchase-nz",
+                   "buying-by-tender-deadline-sale-nz", "bach-holiday-home-mortgage-nz"}
+BUILD_SLUGS = {"owner-builder-construction-loan-nz", "subdivision-finance-nz", "relocatable-house-finance-nz",
+               "tiny-home-finance-nz", "turnkey-home-loan-nz", "home-loan-for-land-section-nz",
+               "new-build-investment-property-nz", "new-build-home-loan-deposit-nz"}
+SELF_EMPLOYED_SLUGS = {"contractor-home-loan-nz", "commission-bonus-overtime-income-mortgage-nz",
+                       "bank-statements-mortgage-nz", "refinance-self-employed-nz",
+                       "buying-property-through-company-nz", "home-loan-after-bankruptcy-nz"}
 
 
 def _pick(slugs):
-    return [(h, t) for h, t in HOME_CLUSTER + REFI_CLUSTER if h.split("/")[-1][:-5] in slugs]
+    return [(h, t) for h, t in ALL_CLUSTERS if h.split("/")[-1][:-5] in slugs]
 
 
 GUIDE_CLUSTERS = {
-    "refinance-guide.html": ("Refinancing questions answered", REFI_CLUSTER),
-    "first-home-guide.html": ("First home buyer questions answered", _pick(FIRST_HOME_SLUGS)),
-    "how-mortgage-works.html": ("Home loan questions answered", HOME_CLUSTER),
+    "refinance-guide.html": [("Refinancing questions answered", REFI_CLUSTER)],
+    "first-home-guide.html": [("First home buyer questions answered", _pick(FIRST_HOME_SLUGS))],
+    "how-mortgage-works.html": [("Home loan questions answered", HOME_CLUSTER),
+                                ("Repayments and managing your mortgage", REPAY_CLUSTER),
+                                ("Rates and timing", RATES_CLUSTER)],
+    "step-by-step.html": [("From offer to settlement", BUY_CLUSTER)],
 }
 for p in sorted(glob.glob(os.path.join(ROOT, "guides", "*.html"))):
-    groups = [(None, guide_links)]
-    if os.path.basename(p) in GUIDE_CLUSTERS:
-        groups.append(GUIDE_CLUSTERS[os.path.basename(p)])
+    groups = [(None, guide_links)] + GUIDE_CLUSTERS.get(os.path.basename(p), [])
     block = section(
         "Helpful Tools & Lender Reviews",
         "Put these guides into action with our free calculators and independent lender reviews.",
@@ -249,13 +284,26 @@ for p in sorted(glob.glob(os.path.join(ROOT, "guides", "*.html"))):
     inject(p, block)
 
 SERVICE_CLUSTERS = {
-    "refinance.html": ("Refinancing guides", "Specific answers on costs, timing and the situations that complicate a switch.", REFI_CLUSTER),
-    "home-loan.html": ("Home loan guides", "How lenders assess deposits, income and different kinds of property.", HOME_CLUSTER),
-    "first-home-buyer.html": ("First home buyer guides", "Low deposits, family help and how lenders test what you can afford.", _pick(FIRST_HOME_SLUGS)),
-    "investment-property.html": ("Guides for property investors", "Structure, tax treatment and equity for rental property lending.", _pick(INVESTOR_SLUGS)),
+    "refinance.html": ("Refinancing guides", "Specific answers on costs, timing and the situations that complicate a switch.",
+                       [(None, REFI_CLUSTER), ("Managing the loan you have", REPAY_CLUSTER),
+                        ("Rates and timing", RATES_CLUSTER)]),
+    "home-loan.html": ("Home loan guides", "How lenders assess deposits, income and different kinds of property.",
+                       [(None, HOME_CLUSTER), ("Income, deposit and property questions", ELIG_CLUSTER)]),
+    "first-home-buyer.html": ("First home buyer guides", "Low deposits, family help and how lenders test what you can afford.",
+                              [(None, _pick(FIRST_HOME_SLUGS))]),
+    "investment-property.html": ("Guides for property investors", "Structure, tax treatment and equity for rental property lending.",
+                                 [(None, _pick(INVESTOR_SLUGS))]),
+    "pre-approval.html": ("From offer to settlement", "What happens after pre-approval, and how to keep your finance safe at each step.",
+                          [(None, BUY_CLUSTER)]),
+    "next-home-buyer.html": ("Guides for your next move", "Selling, buying and moving your mortgage without paying more than you need to.",
+                             [(None, _pick(NEXT_HOME_SLUGS))]),
+    "construction-loan.html": ("Building and land guides", "How lenders fund builds, sections, subdivisions and homes built off site.",
+                               [(None, _pick(BUILD_SLUGS))]),
+    "self-employed.html": ("Guides for contractors and the self-employed", "How lenders read variable income, statements and business structures.",
+                           [(None, _pick(SELF_EMPLOYED_SLUGS))]),
 }
-for fn, (heading, sub, links) in SERVICE_CLUSTERS.items():
-    inject(os.path.join(ROOT, "services", fn), section(heading, sub, [(None, links)], bg="white"))
+for fn, (heading, sub, groups) in SERVICE_CLUSTERS.items():
+    inject(os.path.join(ROOT, "services", fn), section(heading, sub, groups, bg="white"))
 print(f"service hubs: linked {len(SERVICE_CLUSTERS)} topic clusters")
 print(f"guides: added tool/review links")
 

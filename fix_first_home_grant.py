@@ -112,6 +112,8 @@ def main():
         if f.startswith(SKIP_PREFIX) or f in ("weekly-reports.html", "market-report.html"):
             continue
         p = ROOT / f
+        if not p.exists():
+            continue
         src = p.read_text(encoding="utf-8")
         out = fix(src)
         if out != src:

@@ -47,7 +47,7 @@ Each cluster maps to an existing pillar page (guide, service, or hub) plus suppo
 3. ANZ / ASB / BNZ / Westpac home loan rates — `/mortgage-rates.html`, `/lenders/[bank]-*-review.html`
 4. fixed vs floating mortgage NZ — `/blog/fixed-vs-floating-mortgage-nz.html`
 5. best time to fix mortgage NZ — `/blog/best-time-to-fix-mortgage-nz.html`
-6. OCR NZ / RBNZ interest rate — `/blog/how-ocr-affects-mortgages-nz.html`, weekly reports
+6. OCR NZ / RBNZ interest rate — `/blog/how-ocr-affects-mortgages-nz.html`
 
 ### Known Cannibalization Risk
 `mortgage rates` / `mortgage rates nz` / `home loan rates` currently split across `/mortgage-rates.html`, `/blog/interest-rates-guide.html`, and `/blog/current-mortgage-rates-nz-explained.html`. `/mortgage-rates.html` should be the canonical target for the head terms; the two blog posts should target more specific long-tail angles (rate history/explainer vs. live comparison) and link into the pillar rather than duplicate its H1/title intent.
@@ -125,7 +125,7 @@ The blog post and the calculator page target near-identical query variants ("how
 1. rental property mortgage NZ / investor loan NZ
 2. NZ DTI rules investor / LVR rules investor
 3. rental yield calculator NZ
-4. interest deductibility NZ — weekly reports, blog
+4. interest deductibility NZ — `/blog/mortgage-interest-tax-deductible-nz.html`
 
 ---
 
@@ -136,7 +136,7 @@ The blog post and the calculator page target near-identical query variants ("how
 
 ### Cluster Keywords
 1. new build loan NZ / progressive drawdown loan NZ
-2. new build LVR exemption NZ — `/weekly-reports/week-5-new-build-exemptions.html`
+2. new build LVR exemption NZ — `/blog/new-build-home-loan-deposit-nz.html`
 3. Kainga Ora new build NZ
 
 ---

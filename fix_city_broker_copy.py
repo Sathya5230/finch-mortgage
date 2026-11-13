@@ -94,7 +94,7 @@ def fix(src, hits):
 def main():
     files = subprocess.run(["git", "ls-files", "*.html"], cwd=ROOT,
                            capture_output=True, text=True).stdout.split()
-    targets = [ROOT / f for f in files] + [ROOT / "generate_city_broker_pages.py"]
+    targets = [ROOT / f for f in files if (ROOT / f).exists()] + [ROOT / "generate_city_broker_pages.py"]
     hits = {name: 0 for name, _, _ in REGEX} | {old[:60]: 0 for old in PAIRS}
     changed = 0
     for p in targets:

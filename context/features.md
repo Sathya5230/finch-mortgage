@@ -79,7 +79,7 @@ This document outlines Finch Mortgages' key services, benefits, and differentiat
 
 ### vs. Generic/Directory-Style Broker Sites
 - **Named, credentialed adviser** (Mukhtar Kiyani, FSPR-registered) — not an anonymous form-to-lead-gen funnel
-- **NZ-specific content depth** — dedicated guides, calculators, and weekly market reporting rather than generic templated content
+- **NZ-specific content depth** — dedicated guides and calculators rather than generic templated content
 - **Real service breadth** — from first home buyer through to commercial/construction/asset finance, not just residential
 
 ## Use Cases by Customer Segment

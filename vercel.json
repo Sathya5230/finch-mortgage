@@ -5,19 +5,134 @@
   "redirects": [
     {
       "source": "/",
-      "has": [{ "type": "host", "value": "finchmortgages.co.nz" }],
+      "has": [
+        {
+          "type": "host",
+          "value": "finchmortgages.co.nz"
+        }
+      ],
       "destination": "https://www.finchmortgages.co.nz/",
       "permanent": true
     },
     {
       "source": "/:path*",
-      "has": [{ "type": "host", "value": "finchmortgages.co.nz" }],
+      "has": [
+        {
+          "type": "host",
+          "value": "finchmortgages.co.nz"
+        }
+      ],
       "destination": "https://www.finchmortgages.co.nz/:path*",
       "permanent": true
     },
     {
       "source": "/weekly-reports/week-11-first-home-grant",
       "destination": "/blog/first-home-grant-nz-closed-alternatives",
+      "permanent": true
+    },
+    {
+      "source": "/weekly-reports/week-1-year-ahead-2026",
+      "destination": "/blog/will-mortgage-rates-drop-nz-2026",
+      "permanent": true
+    },
+    {
+      "source": "/weekly-reports/week-2-mortgage-stress-testing",
+      "destination": "/blog/mortgage-stress-test-rate-nz",
+      "permanent": true
+    },
+    {
+      "source": "/weekly-reports/week-3-summer-sales-slump",
+      "destination": "/blog/best-time-of-year-to-buy-a-house-nz",
+      "permanent": true
+    },
+    {
+      "source": "/weekly-reports/week-4-dti-caps-bite",
+      "destination": "/blog/how-much-house-can-i-afford-nz",
+      "permanent": true
+    },
+    {
+      "source": "/weekly-reports/week-5-new-build-exemptions",
+      "destination": "/blog/new-build-home-loan-deposit-nz",
+      "permanent": true
+    },
+    {
+      "source": "/weekly-reports/week-6-floating-vs-fixed",
+      "destination": "/blog/fixed-vs-floating-mortgage-nz",
+      "permanent": true
+    },
+    {
+      "source": "/weekly-reports/week-7-kiwisaver-tips",
+      "destination": "/blog/kiwisaver-first-home-withdrawal",
+      "permanent": true
+    },
+    {
+      "source": "/weekly-reports/week-8-interest-deductibility",
+      "destination": "/blog/mortgage-interest-tax-deductible-nz",
+      "permanent": true
+    },
+    {
+      "source": "/weekly-reports/week-9-bay-of-plenty",
+      "destination": "/locations/mortgage-broker-bay-of-plenty",
+      "permanent": true
+    },
+    {
+      "source": "/weekly-reports/week-10-ocr-cut-march",
+      "destination": "/blog/how-ocr-affects-mortgages-nz",
+      "permanent": true
+    },
+    {
+      "source": "/weekly-reports/week-12-rental-yields",
+      "destination": "/blog/good-rental-yield-nz",
+      "permanent": true
+    },
+    {
+      "source": "/weekly-reports/week-13-canterbury-surge",
+      "destination": "/locations/mortgage-broker-canterbury",
+      "permanent": true
+    },
+    {
+      "source": "/weekly-reports/week-14-anz-rates",
+      "destination": "/blog/special-vs-standard-mortgage-rates-nz",
+      "permanent": true
+    },
+    {
+      "source": "/weekly-reports/week-15-ocr-hold",
+      "destination": "/blog/rate-rise-mortgage-repayments-nz",
+      "permanent": true
+    },
+    {
+      "source": "/weekly-reports/week-16-major-banks-cut-rates",
+      "destination": "/blog/how-to-negotiate-mortgage-rate-nz",
+      "permanent": true
+    },
+    {
+      "source": "/weekly-reports/week-17-autumn-update",
+      "destination": "/blog/buy-now-or-wait-nz",
+      "permanent": true
+    },
+    {
+      "source": "/weekly-reports/week-18-winter-strategies",
+      "destination": "/blog/best-time-of-year-to-buy-a-house-nz",
+      "permanent": true
+    },
+    {
+      "source": "/weekly-reports/week-19-spring-market-prep",
+      "destination": "/blog/buy-now-or-wait-nz",
+      "permanent": true
+    },
+    {
+      "source": "/weekly-reports/week-20-fixed-rates-dip",
+      "destination": "/blog/mortgage-rate-lock-nz",
+      "permanent": true
+    },
+    {
+      "source": "/weekly-reports",
+      "destination": "/blog",
+      "permanent": true
+    },
+    {
+      "source": "/weekly-reports/:slug",
+      "destination": "/blog",
       "permanent": true
     },
     {
@@ -109,19 +224,39 @@
   "headers": [
     {
       "source": "/images/(.*)",
-      "headers": [{ "key": "Cache-Control", "value": "public, max-age=604800, stale-while-revalidate=86400" }]
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=604800, stale-while-revalidate=86400"
+        }
+      ]
     },
     {
       "source": "/logos/(.*)",
-      "headers": [{ "key": "Cache-Control", "value": "public, max-age=604800, stale-while-revalidate=86400" }]
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=604800, stale-while-revalidate=86400"
+        }
+      ]
     },
     {
       "source": "/(.*)\\.(css|js)",
-      "headers": [{ "key": "Cache-Control", "value": "public, max-age=3600, stale-while-revalidate=86400" }]
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600, stale-while-revalidate=86400"
+        }
+      ]
     },
     {
       "source": "/finch.mp4",
-      "headers": [{ "key": "Cache-Control", "value": "public, max-age=2592000" }]
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=2592000"
+        }
+      ]
     }
   ]
 }

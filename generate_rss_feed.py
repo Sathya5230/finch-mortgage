@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
-"""Generates rss.xml from every blog/*.html and weekly-reports/*.html page.
+"""Generates rss.xml from every blog/*.html page.
 
 Reads title, meta description, and JSON-LD datePublished directly from each
 generated page, so it stays in sync with whatever the various blog/report
 generator scripts produced -- no separate content to maintain by hand.
 
-Run after adding new blog posts or weekly reports: python3 generate_rss_feed.py
+Run after adding new blog posts: python3 generate_rss_feed.py
 """
 import glob
 import os
@@ -66,10 +66,6 @@ def main():
         item = extract(path, "blog")
         if item:
             items.append(item)
-    for path in glob.glob(os.path.join(ROOT, "weekly-reports", "*.html")):
-        item = extract(path, "weekly-reports")
-        if item:
-            items.append(item)
     for path in glob.glob(os.path.join(ROOT, "case-studies", "*.html")):
         item = extract(path, "case-studies")
         if item:
@@ -97,7 +93,7 @@ def main():
     <title>Finch Mortgages — NZ Mortgage Blog &amp; Weekly Rate Reports</title>
     <link>{BASE_URL}/blog.html</link>
     <atom:link href="{BASE_URL}/rss.xml" rel="self" type="application/rss+xml"/>
-    <description>Independent NZ mortgage broker Finch Mortgages — first home buyer guides, lender comparisons, rate forecasts, and weekly NZ mortgage market reports.</description>
+    <description>Independent NZ mortgage broker Finch Mortgages — first home buyer guides, lender comparisons, and plain-English guides to rates, refinancing and lending rules.</description>
     <language>en-nz</language>
     <lastBuildDate>{now}</lastBuildDate>
     <generator>generate_rss_feed.py</generator>

@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-Static HTML/CSS/JS mortgage website with Python scripts for programmatic page generation (lenders, market reports, calculators, guides).
+Static HTML/CSS/JS mortgage website with Python scripts for programmatic page generation (lenders, calculators, guides, blog posts). The weekly market reports were retired in November 2026 (see fix_remove_weekly_reports.py); do not recreate them.
 
 ## Project Structure
 
@@ -15,9 +15,7 @@ guides/                 # Mortgage guide pages
 lenders/                # Lender pages (programmatically generated)
 services/               # Service pages
 testimonials/           # Testimonial pages
-weekly-reports/         # Weekly market report pages
 generate_lender_pages.py
-generate_weekly_reports.py
 generate_town_pages.py  # 125 town + 7 region pages in locations/, built from town_data.py
 town_data.py            # town/region content, councils, coordinates; edit this, not the town HTML
 fix_refinance_claims.py # idempotent fix script; part of the post-generation pipeline
@@ -25,7 +23,6 @@ refiform.js             # two-step refinance form (form built by inject_local_se
 inject_lenders.py
 inject_market_report.py
 update_calculator_links.py
-update_grids.py
 ```
 
 ## Installed Skills

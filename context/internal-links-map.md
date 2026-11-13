@@ -91,7 +91,7 @@ Key clusters and pillar-adjacent posts:
 ## Market & Weekly Reports
 
 - `/market-report.html` — market analysis hub
-- `/weekly-reports.html` — weekly reports hub, plus individual `/weekly-reports/week-N-*.html` posts
+- Weekly reports were retired in November 2026. Link to the rate and timing guides instead (`/blog/rate-rise-mortgage-repayments-nz.html`, `/blog/how-to-negotiate-mortgage-rate-nz.html`, `/blog/buy-now-or-wait-nz.html`)
 - **When to Link**: When blog content references current rates, OCR decisions, or market conditions — link to the most recent relevant weekly report
 - **Anchor Text Examples**: "this week's market report", "latest OCR update"
 
@@ -117,7 +117,7 @@ Key clusters and pillar-adjacent posts:
 
 **Refinancing** → `/guides/refinance-guide.html` (pillar), `/services/refinance.html`, `/calculators/refinance-savings.html`
 
-**Current rates / OCR** → `/mortgage-rates.html`, latest `/weekly-reports/week-N-*.html`, `/blog/interest-rates-guide.html`
+**Current rates / OCR** → `/mortgage-rates.html`, `/blog/rate-rise-mortgage-repayments-nz.html`, `/blog/interest-rates-guide.html`
 
 **Self-employed** → `/services/self-employed.html`, `/blog/self-employed-low-deposit-approval.html`, `/lenders/specialist-lenders.html`
 

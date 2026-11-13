@@ -4,10 +4,360 @@
     <title>Finch Mortgages — NZ Mortgage Blog &amp; Weekly Rate Reports</title>
     <link>https://www.finchmortgages.co.nz/blog</link>
     <atom:link href="https://www.finchmortgages.co.nz/rss.xml" rel="self" type="application/rss+xml"/>
-    <description>Independent NZ mortgage broker Finch Mortgages — first home buyer guides, lender comparisons, rate forecasts, and weekly NZ mortgage market reports.</description>
+    <description>Independent NZ mortgage broker Finch Mortgages — first home buyer guides, lender comparisons, and plain-English guides to rates, refinancing and lending rules.</description>
     <language>en-nz</language>
-    <lastBuildDate>Wed, 11 Nov 2026 05:20:02 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2026 14:57:50 +0000</lastBuildDate>
     <generator>generate_rss_feed.py</generator>
+    <item>
+      <title>Conveyancing Fees When Buying a House in NZ | Finch</title>
+      <link>https://www.finchmortgages.co.nz/blog/conveyancing-fees-buying-house-nz</link>
+      <guid isPermaLink="true">https://www.finchmortgages.co.nz/blog/conveyancing-fees-buying-house-nz</guid>
+      <description>What conveyancing costs when buying a house in NZ, what the fee covers, what adds to it, and how to compare quotes from lawyers and conveyancers.</description>
+      <pubDate>Thu, 12 Nov 2026 09:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Buying Property Through a Company in NZ: The Mortgage</title>
+      <link>https://www.finchmortgages.co.nz/blog/buying-property-through-company-nz</link>
+      <guid isPermaLink="true">https://www.finchmortgages.co.nz/blog/buying-property-through-company-nz</guid>
+      <description>Buying property through a company in NZ: how lenders assess a company borrower, personal guarantees, look-through companies and the extra costs.</description>
+      <pubDate>Thu, 12 Nov 2026 09:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Second Mortgages in NZ: How They Work and the Cost</title>
+      <link>https://www.finchmortgages.co.nz/blog/second-mortgage-nz</link>
+      <guid isPermaLink="true">https://www.finchmortgages.co.nz/blog/second-mortgage-nz</guid>
+      <description>How second mortgages work in NZ, why they cost more than a home loan, when they're used, the risks, and the cheaper options to check first.</description>
+      <pubDate>Thu, 12 Nov 2026 09:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Usable Equity in NZ: How to Work Out Yours | Finch</title>
+      <link>https://www.finchmortgages.co.nz/blog/usable-equity-nz</link>
+      <guid isPermaLink="true">https://www.finchmortgages.co.nz/blog/usable-equity-nz</guid>
+      <description>How to calculate usable equity in NZ, with a worked example. What lenders count, how valuations affect it, and why your income still sets the limit.</description>
+      <pubDate>Thu, 12 Nov 2026 09:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>How to Negotiate a Mortgage Rate in NZ | Finch</title>
+      <link>https://www.finchmortgages.co.nz/blog/how-to-negotiate-mortgage-rate-nz</link>
+      <guid isPermaLink="true">https://www.finchmortgages.co.nz/blog/how-to-negotiate-mortgage-rate-nz</guid>
+      <description>How to negotiate a mortgage rate in NZ: when banks discount, what strengthens your position, what to say at refix time and what else you can ask for.</description>
+      <pubDate>Thu, 12 Nov 2026 09:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Applying to Multiple Banks for a Mortgage in NZ | Finch</title>
+      <link>https://www.finchmortgages.co.nz/blog/applying-to-multiple-banks-mortgage-nz</link>
+      <guid isPermaLink="true">https://www.finchmortgages.co.nz/blog/applying-to-multiple-banks-mortgage-nz</guid>
+      <description>Should you apply to several banks for a mortgage in NZ? How credit enquiries work, why multiple applications can backfire, and a better way to compare.</description>
+      <pubDate>Thu, 12 Nov 2026 09:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Can You Borrow a Deposit for a House in NZ? | Finch</title>
+      <link>https://www.finchmortgages.co.nz/blog/can-you-borrow-a-deposit-nz</link>
+      <guid isPermaLink="true">https://www.finchmortgages.co.nz/blog/can-you-borrow-a-deposit-nz</guid>
+      <description>Can you borrow a deposit for a house in NZ? Why lenders want genuine savings, what counts as your own money, and the legitimate ways to buy with less.</description>
+      <pubDate>Thu, 12 Nov 2026 09:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>25 vs 30 Year Mortgage in NZ: Which Term to Choose</title>
+      <link>https://www.finchmortgages.co.nz/blog/25-vs-30-year-mortgage-nz</link>
+      <guid isPermaLink="true">https://www.finchmortgages.co.nz/blog/25-vs-30-year-mortgage-nz</guid>
+      <description>25 vs 30 year mortgage in NZ: how the term changes repayments, total interest and borrowing power, with a worked example and a way to get both.</description>
+      <pubDate>Thu, 12 Nov 2026 09:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>New Build Home Loan Deposit in NZ: How Much You Need</title>
+      <link>https://www.finchmortgages.co.nz/blog/new-build-home-loan-deposit-nz</link>
+      <guid isPermaLink="true">https://www.finchmortgages.co.nz/blog/new-build-home-loan-deposit-nz</guid>
+      <description>How much deposit you need for a new build home loan in NZ: the Reserve Bank exemption, what lenders ask for, what counts as a new build and the costs.</description>
+      <pubDate>Thu, 12 Nov 2026 09:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Relocatable House Finance NZ: How Loans Work | Finch</title>
+      <link>https://www.finchmortgages.co.nz/blog/relocatable-house-finance-nz</link>
+      <guid isPermaLink="true">https://www.finchmortgages.co.nz/blog/relocatable-house-finance-nz</guid>
+      <description>How to finance a relocatable or removal house in NZ: why standard home loans don't fit, staged funding against your land, the costs and the consents.</description>
+      <pubDate>Thu, 12 Nov 2026 09:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Subdivision Finance in NZ: How to Fund It | Finch</title>
+      <link>https://www.finchmortgages.co.nz/blog/subdivision-finance-nz</link>
+      <guid isPermaLink="true">https://www.finchmortgages.co.nz/blog/subdivision-finance-nz</guid>
+      <description>How to finance a subdivision in NZ: using home equity, what lenders need to see, the costs to budget for, and how your mortgage is handled on new titles.</description>
+      <pubDate>Thu, 12 Nov 2026 09:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Mortgage for a Bach or Holiday Home in NZ | Finch</title>
+      <link>https://www.finchmortgages.co.nz/blog/bach-holiday-home-mortgage-nz</link>
+      <guid isPermaLink="true">https://www.finchmortgages.co.nz/blog/bach-holiday-home-mortgage-nz</guid>
+      <description>How to get a mortgage for a bach or holiday home in NZ: deposit rules, using equity in your main home, short-stay rental income and the extra costs.</description>
+      <pubDate>Thu, 12 Nov 2026 09:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Mortgage Rate Lock in NZ: How Locking a Rate Works</title>
+      <link>https://www.finchmortgages.co.nz/blog/mortgage-rate-lock-nz</link>
+      <guid isPermaLink="true">https://www.finchmortgages.co.nz/blog/mortgage-rate-lock-nz</guid>
+      <description>How a mortgage rate lock works in NZ: when you can lock, how long it lasts, whether there's a fee, and what happens if rates fall after you lock.</description>
+      <pubDate>Thu, 12 Nov 2026 09:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>How Much Will My Mortgage Go Up If Rates Rise? (NZ)</title>
+      <link>https://www.finchmortgages.co.nz/blog/rate-rise-mortgage-repayments-nz</link>
+      <guid isPermaLink="true">https://www.finchmortgages.co.nz/blog/rate-rise-mortgage-repayments-nz</guid>
+      <description>How much mortgage repayments rise when interest rates go up in NZ, with a table by loan size, when you'll feel it and how to prepare for a refix.</description>
+      <pubDate>Thu, 12 Nov 2026 09:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Moving Your Mortgage to a New House in NZ | Finch</title>
+      <link>https://www.finchmortgages.co.nz/blog/mortgage-portability-nz</link>
+      <guid isPermaLink="true">https://www.finchmortgages.co.nz/blog/mortgage-portability-nz</guid>
+      <description>Can you transfer your mortgage to a new house in NZ? How swapping security works, when it avoids a break fee, and what happens if you need to borrow more.</description>
+      <pubDate>Thu, 12 Nov 2026 09:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>How Much House Can I Afford in NZ? A Realistic Guide</title>
+      <link>https://www.finchmortgages.co.nz/blog/how-much-house-can-i-afford-nz</link>
+      <guid isPermaLink="true">https://www.finchmortgages.co.nz/blog/how-much-house-can-i-afford-nz</guid>
+      <description>How much house can you afford in NZ? How lenders set your limit, how to set your own budget, a worked example and the costs people leave out.</description>
+      <pubDate>Thu, 12 Nov 2026 09:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Pay Off the Mortgage or Invest? An NZ Guide | Finch</title>
+      <link>https://www.finchmortgages.co.nz/blog/pay-off-mortgage-or-invest-nz</link>
+      <guid isPermaLink="true">https://www.finchmortgages.co.nz/blog/pay-off-mortgage-or-invest-nz</guid>
+      <description>Pay off the mortgage or invest in NZ? Compare the guaranteed return on repayments with after-tax investment returns, KiwiSaver and risk. Plain guide.</description>
+      <pubDate>Thu, 12 Nov 2026 09:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Unconsented Work &amp; Mortgages in NZ: Will a Bank Lend?</title>
+      <link>https://www.finchmortgages.co.nz/blog/unconsented-work-mortgage-nz</link>
+      <guid isPermaLink="true">https://www.finchmortgages.co.nz/blog/unconsented-work-mortgage-nz</guid>
+      <description>Will a bank lend on a house with unconsented work in NZ? How lenders and insurers treat it, what a certificate of acceptance does, and your options.</description>
+      <pubDate>Thu, 12 Nov 2026 09:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Weekly, Fortnightly or Monthly Mortgage Payments NZ?</title>
+      <link>https://www.finchmortgages.co.nz/blog/weekly-fortnightly-monthly-mortgage-payments-nz</link>
+      <guid isPermaLink="true">https://www.finchmortgages.co.nz/blog/weekly-fortnightly-monthly-mortgage-payments-nz</guid>
+      <description>Weekly, fortnightly or monthly mortgage repayments in NZ: how much each saves, the half-monthly fortnightly method, and how to match payments to payday.</description>
+      <pubDate>Thu, 12 Nov 2026 09:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Mortgage on a Plaster House in NZ: Lender Rules | Finch</title>
+      <link>https://www.finchmortgages.co.nz/blog/plaster-house-monolithic-cladding-mortgage-nz</link>
+      <guid isPermaLink="true">https://www.finchmortgages.co.nz/blog/plaster-house-monolithic-cladding-mortgage-nz</guid>
+      <description>Getting a mortgage on a plaster or monolithic-clad house in NZ: why lenders are cautious, the reports they ask for, deposits and what a reclad changes.</description>
+      <pubDate>Thu, 12 Nov 2026 09:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Sell or Buy First in NZ? How to Decide | Finch</title>
+      <link>https://www.finchmortgages.co.nz/blog/sell-or-buy-first-nz</link>
+      <guid isPermaLink="true">https://www.finchmortgages.co.nz/blog/sell-or-buy-first-nz</guid>
+      <description>Sell first or buy first in NZ? Compare the risks and costs of each, how bridging finance and sale conditions work, and how to line up settlement dates.</description>
+      <pubDate>Thu, 12 Nov 2026 09:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Lump Sum Mortgage Repayment NZ: Rules and Savings</title>
+      <link>https://www.finchmortgages.co.nz/blog/lump-sum-mortgage-repayment-nz</link>
+      <guid isPermaLink="true">https://www.finchmortgages.co.nz/blog/lump-sum-mortgage-repayment-nz</guid>
+      <description>Paying a lump sum off your mortgage in NZ: fixed-rate limits and break fees, how much interest it saves, and whether to cut the term or the repayment.</description>
+      <pubDate>Thu, 12 Nov 2026 09:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Buying a Mortgagee Sale in NZ: Finance and Risks | Finch</title>
+      <link>https://www.finchmortgages.co.nz/blog/mortgagee-sale-finance-nz</link>
+      <guid isPermaLink="true">https://www.finchmortgages.co.nz/blog/mortgagee-sale-finance-nz</guid>
+      <description>How to finance a mortgagee sale in NZ: why offers are usually unconditional, what protections you lose, and what to check before you bid or tender.</description>
+      <pubDate>Thu, 12 Nov 2026 09:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Conditional vs Unconditional Offer NZ: Which to Make | Finch</title>
+      <link>https://www.finchmortgages.co.nz/blog/conditional-vs-unconditional-offer-nz</link>
+      <guid isPermaLink="true">https://www.finchmortgages.co.nz/blog/conditional-vs-unconditional-offer-nz</guid>
+      <description>Conditional vs unconditional offers in NZ: what each means, which conditions protect you, and when it's safe to go unconditional on a house.</description>
+      <pubDate>Thu, 12 Nov 2026 09:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Buying by Tender or Deadline Sale in NZ | Finch</title>
+      <link>https://www.finchmortgages.co.nz/blog/buying-by-tender-deadline-sale-nz</link>
+      <guid isPermaLink="true">https://www.finchmortgages.co.nz/blog/buying-by-tender-deadline-sale-nz</guid>
+      <description>How tenders and deadline sales work in NZ, whether you can add a finance condition, how to price your offer and how to get your mortgage ready.</description>
+      <pubDate>Thu, 12 Nov 2026 09:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>How Banks Assess Rental Income for a Mortgage in NZ</title>
+      <link>https://www.finchmortgages.co.nz/blog/rental-income-mortgage-assessment-nz</link>
+      <guid isPermaLink="true">https://www.finchmortgages.co.nz/blog/rental-income-mortgage-assessment-nz</guid>
+      <description>How NZ lenders assess rental income for a mortgage: why only part is counted, the proof they want, boarder and short-stay income, and how to borrow more.</description>
+      <pubDate>Thu, 12 Nov 2026 09:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>New Build Investment Property in NZ: Deposit &amp; Rules</title>
+      <link>https://www.finchmortgages.co.nz/blog/new-build-investment-property-nz</link>
+      <guid isPermaLink="true">https://www.finchmortgages.co.nz/blog/new-build-investment-property-nz</guid>
+      <description>Buying a new build investment property in NZ: the deposit exemption, debt-to-income rules, what counts as a new build, and the risks to check first.</description>
+      <pubDate>Thu, 12 Nov 2026 09:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Settlement Day NZ: What Happens and When | Finch</title>
+      <link>https://www.finchmortgages.co.nz/blog/settlement-day-nz</link>
+      <guid isPermaLink="true">https://www.finchmortgages.co.nz/blog/settlement-day-nz</guid>
+      <description>Settlement day in NZ explained: what your lawyer and lender do, what time you get the keys, and what can delay settlement on a house purchase.</description>
+      <pubDate>Thu, 12 Nov 2026 09:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Turning Your Home Into a Rental in NZ: Mortgage Rules</title>
+      <link>https://www.finchmortgages.co.nz/blog/turn-home-into-rental-nz</link>
+      <guid isPermaLink="true">https://www.finchmortgages.co.nz/blog/turn-home-into-rental-nz</guid>
+      <description>Turning your home into a rental in NZ: telling your lender and insurer, how the loan and deposit rules change, tax basics, and buying your next home.</description>
+      <pubDate>Thu, 12 Nov 2026 09:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>House Valued Below Purchase Price NZ: What to Do | Finch</title>
+      <link>https://www.finchmortgages.co.nz/blog/low-valuation-house-purchase-nz</link>
+      <guid isPermaLink="true">https://www.finchmortgages.co.nz/blog/low-valuation-house-purchase-nz</guid>
+      <description>What to do in NZ when a house valuation comes in below the purchase price: how it changes your loan, your options, and how to protect yourself.</description>
+      <pubDate>Thu, 12 Nov 2026 09:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>What Banks Look For in Bank Statements (NZ Mortgage)</title>
+      <link>https://www.finchmortgages.co.nz/blog/bank-statements-mortgage-nz</link>
+      <guid isPermaLink="true">https://www.finchmortgages.co.nz/blog/bank-statements-mortgage-nz</guid>
+      <description>What NZ lenders check in your bank statements for a mortgage: income, spending, undisclosed debts, gambling and overdrafts, and how to prepare.</description>
+      <pubDate>Thu, 12 Nov 2026 09:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Commission, Bonus &amp; Overtime Income for a Mortgage NZ</title>
+      <link>https://www.finchmortgages.co.nz/blog/commission-bonus-overtime-income-mortgage-nz</link>
+      <guid isPermaLink="true">https://www.finchmortgages.co.nz/blog/commission-bonus-overtime-income-mortgage-nz</guid>
+      <description>How NZ lenders assess commission, bonuses, overtime and allowances for a home loan: the history you need, how it's averaged and how to present it.</description>
+      <pubDate>Thu, 12 Nov 2026 09:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Should I Buy a House Now or Wait? An NZ Guide | Finch</title>
+      <link>https://www.finchmortgages.co.nz/blog/buy-now-or-wait-nz</link>
+      <guid isPermaLink="true">https://www.finchmortgages.co.nz/blog/buy-now-or-wait-nz</guid>
+      <description>Buy a house now or wait in NZ? Why timing the market rarely works, the costs of waiting and of rushing, and a checklist to tell if you're ready.</description>
+      <pubDate>Thu, 12 Nov 2026 09:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>KiwiSaver Second-Chance Withdrawal NZ: Who Qualifies</title>
+      <link>https://www.finchmortgages.co.nz/blog/kiwisaver-second-chance-withdrawal-nz</link>
+      <guid isPermaLink="true">https://www.finchmortgages.co.nz/blog/kiwisaver-second-chance-withdrawal-nz</guid>
+      <description>KiwiSaver second-chance withdrawal in NZ: who qualifies after owning a home before, the Kāinga Ora asset test, how to apply and how long it takes.</description>
+      <pubDate>Thu, 12 Nov 2026 09:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Tiny Home Finance NZ: Loans and How to Pay for One</title>
+      <link>https://www.finchmortgages.co.nz/blog/tiny-home-finance-nz</link>
+      <guid isPermaLink="true">https://www.finchmortgages.co.nz/blog/tiny-home-finance-nz</guid>
+      <description>How to finance a tiny home in NZ: why home loans rarely apply, mortgage top-ups, personal and asset loans, and what changes if it's fixed to your land.</description>
+      <pubDate>Thu, 12 Nov 2026 09:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Mortgage Repayments on $500k, $600k, $700k in NZ | Finch</title>
+      <link>https://www.finchmortgages.co.nz/blog/mortgage-repayments-500k-600k-700k-nz</link>
+      <guid isPermaLink="true">https://www.finchmortgages.co.nz/blog/mortgage-repayments-500k-600k-700k-nz</guid>
+      <description>Mortgage repayments on $500k, $600k, $700k, $800k and $1m loans in NZ at 5%, 6% and 7% over 30 years, weekly and monthly, plus what changes them.</description>
+      <pubDate>Thu, 12 Nov 2026 09:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Special vs Standard Mortgage Rates in NZ Explained</title>
+      <link>https://www.finchmortgages.co.nz/blog/special-vs-standard-mortgage-rates-nz</link>
+      <guid isPermaLink="true">https://www.finchmortgages.co.nz/blog/special-vs-standard-mortgage-rates-nz</guid>
+      <description>Special vs standard mortgage rates in NZ: who qualifies for specials, what the conditions are, how low-equity margins fit in, and how to move to a special.</description>
+      <pubDate>Thu, 12 Nov 2026 09:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Rent to Own Homes in NZ: How It Works and the Risks</title>
+      <link>https://www.finchmortgages.co.nz/blog/rent-to-own-homes-nz</link>
+      <guid isPermaLink="true">https://www.finchmortgages.co.nz/blog/rent-to-own-homes-nz</guid>
+      <description>How rent-to-own homes work in NZ, the difference between community and private schemes, the risks to check, and the alternatives if you can't get a loan.</description>
+      <pubDate>Thu, 12 Nov 2026 09:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Made Redundant With a Mortgage in NZ: What to Do</title>
+      <link>https://www.finchmortgages.co.nz/blog/redundancy-mortgage-nz</link>
+      <guid isPermaLink="true">https://www.finchmortgages.co.nz/blog/redundancy-mortgage-nz</guid>
+      <description>Made redundant with a mortgage in NZ? What to do first, how to ask your lender for hardship help, what to do with redundancy pay and what to avoid.</description>
+      <pubDate>Thu, 12 Nov 2026 09:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Owner Builder &amp; Labour-Only Construction Loans in NZ</title>
+      <link>https://www.finchmortgages.co.nz/blog/owner-builder-construction-loan-nz</link>
+      <guid isPermaLink="true">https://www.finchmortgages.co.nz/blog/owner-builder-construction-loan-nz</guid>
+      <description>Construction loans for owner-builders and labour-only builds in NZ: why lenders want fixed-price contracts, deposits, budgets and how drawdowns work.</description>
+      <pubDate>Thu, 12 Nov 2026 09:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>House Insurance for a Mortgage in NZ: Lender Rules | Finch</title>
+      <link>https://www.finchmortgages.co.nz/blog/house-insurance-mortgage-requirement-nz</link>
+      <guid isPermaLink="true">https://www.finchmortgages.co.nz/blog/house-insurance-mortgage-requirement-nz</guid>
+      <description>What NZ lenders require for house insurance on a mortgage, when to arrange cover, and what to do if an insurer won't cover the home you're buying.</description>
+      <pubDate>Thu, 12 Nov 2026 09:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Buying Out Siblings From an Inherited House in NZ</title>
+      <link>https://www.finchmortgages.co.nz/blog/buying-out-siblings-inherited-house-nz</link>
+      <guid isPermaLink="true">https://www.finchmortgages.co.nz/blog/buying-out-siblings-inherited-house-nz</guid>
+      <description>How to buy out siblings from an inherited house in NZ: agreeing a value, using your share as the deposit, the home loan you need and the legal steps.</description>
+      <pubDate>Thu, 12 Nov 2026 09:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Home Loan After Bankruptcy in NZ: How Long to Wait | Finch</title>
+      <link>https://www.finchmortgages.co.nz/blog/home-loan-after-bankruptcy-nz</link>
+      <guid isPermaLink="true">https://www.finchmortgages.co.nz/blog/home-loan-after-bankruptcy-nz</guid>
+      <description>Getting a home loan after bankruptcy or a no asset procedure in NZ: when lenders will consider you, what they look for and how to rebuild your record.</description>
+      <pubDate>Thu, 12 Nov 2026 09:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>5-Year Fixed Mortgage in NZ: Pros, Cons &amp; Who It Suits</title>
+      <link>https://www.finchmortgages.co.nz/blog/5-year-fixed-mortgage-nz</link>
+      <guid isPermaLink="true">https://www.finchmortgages.co.nz/blog/5-year-fixed-mortgage-nz</guid>
+      <description>Is a 5-year fixed mortgage worth it in NZ? The pros and cons of long fixed terms, break fee risk, who they suit and how to split your loan instead.</description>
+      <pubDate>Thu, 12 Nov 2026 09:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Buying a House With Your Partner in NZ | Finch</title>
+      <link>https://www.finchmortgages.co.nz/blog/buying-a-house-with-partner-nz</link>
+      <guid isPermaLink="true">https://www.finchmortgages.co.nz/blog/buying-a-house-with-partner-nz</guid>
+      <description>Buying a house with your partner in NZ: how joint home loans are assessed, joint tenants vs tenants in common, unequal deposits and what if you split.</description>
+      <pubDate>Thu, 12 Nov 2026 09:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Selling a House With a Mortgage in NZ: How It Works</title>
+      <link>https://www.finchmortgages.co.nz/blog/selling-house-with-mortgage-nz</link>
+      <guid isPermaLink="true">https://www.finchmortgages.co.nz/blog/selling-house-with-mortgage-nz</guid>
+      <description>Selling a house with a mortgage in NZ: how the loan is repaid at settlement, break fees and cashback clawback, and what to do if you're buying again.</description>
+      <pubDate>Thu, 12 Nov 2026 09:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Mortgage Holiday NZ: How Repayment Breaks Work | Finch</title>
+      <link>https://www.finchmortgages.co.nz/blog/mortgage-holiday-nz</link>
+      <guid isPermaLink="true">https://www.finchmortgages.co.nz/blog/mortgage-holiday-nz</guid>
+      <description>How a mortgage holiday works in NZ: who can get one, what it costs in extra interest, the effect on your loan, and the cheaper options to try first.</description>
+      <pubDate>Thu, 12 Nov 2026 09:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>What Is a Good Rental Yield in NZ? How to Work It Out</title>
+      <link>https://www.finchmortgages.co.nz/blog/good-rental-yield-nz</link>
+      <guid isPermaLink="true">https://www.finchmortgages.co.nz/blog/good-rental-yield-nz</guid>
+      <description>What is a good rental yield in NZ? How to calculate gross and net yield with a worked example, what affects it, and how lenders look at the numbers.</description>
+      <pubDate>Thu, 12 Nov 2026 09:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Best Time of Year to Buy a House in NZ | Finch</title>
+      <link>https://www.finchmortgages.co.nz/blog/best-time-of-year-to-buy-a-house-nz</link>
+      <guid isPermaLink="true">https://www.finchmortgages.co.nz/blog/best-time-of-year-to-buy-a-house-nz</guid>
+      <description>The best time of year to buy a house in NZ: how seasons affect listings and competition, what each season means for buyers, and how to be ready.</description>
+      <pubDate>Thu, 12 Nov 2026 09:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Home Loans for Contractors in NZ: What Lenders Want | Finch</title>
+      <link>https://www.finchmortgages.co.nz/blog/contractor-home-loan-nz</link>
+      <guid isPermaLink="true">https://www.finchmortgages.co.nz/blog/contractor-home-loan-nz</guid>
+      <description>How contractors get a home loan in NZ: fixed-term and hourly-rate contracts, how long you need to have been contracting, and the documents lenders ask for.</description>
+      <pubDate>Thu, 12 Nov 2026 09:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>How Long Does Refinancing Take in NZ? Timeline | Finch</title>
       <link>https://www.finchmortgages.co.nz/blog/how-long-does-refinancing-take-nz</link>
@@ -751,13 +1101,6 @@
       <pubDate>Tue, 19 May 2026 09:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Week 20: 1-Year Fixed Rates Dip Below 5.8% | Finch</title>
-      <link>https://www.finchmortgages.co.nz/weekly-reports/week-20-fixed-rates-dip</link>
-      <guid isPermaLink="true">https://www.finchmortgages.co.nz/weekly-reports/week-20-fixed-rates-dip</guid>
-      <description>Major lenders drop 1-year fixed mortgage rates below 5.8%. Discover how to leverage these new rates for your refinance or home loan.</description>
-      <pubDate>Tue, 19 May 2026 09:00:00 +0000</pubDate>
-    </item>
-    <item>
       <title>Self-Employed Low Deposit Home Loan Approval | Case Study</title>
       <link>https://www.finchmortgages.co.nz/blog/self-employed-low-deposit-approval</link>
       <guid isPermaLink="true">https://www.finchmortgages.co.nz/blog/self-employed-low-deposit-approval</guid>
@@ -765,25 +1108,11 @@
       <pubDate>Thu, 14 May 2026 09:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Week 19: Spring Market Prep: Get Pre-Approved Early | Finch</title>
-      <link>https://www.finchmortgages.co.nz/weekly-reports/week-19-spring-market-prep</link>
-      <guid isPermaLink="true">https://www.finchmortgages.co.nz/weekly-reports/week-19-spring-market-prep</guid>
-      <description>Prepare your finances now for the upcoming spring property flush in New Zealand. Expert advice on pre-approvals, rate locks, and securing the best home loan.</description>
-      <pubDate>Tue, 12 May 2026 09:00:00 +0000</pubDate>
-    </item>
-    <item>
       <title>Missed Payments &amp;amp; Mortgage Applications NZ | Finch</title>
       <link>https://www.finchmortgages.co.nz/blog/missed-payments-mortgage-rejection</link>
       <guid isPermaLink="true">https://www.finchmortgages.co.nz/blog/missed-payments-mortgage-rejection</guid>
       <description>Do missed payments mean automatic mortgage rejection in NZ? How banks assess arrears, and practical steps to strengthen your application. Finch explains.</description>
       <pubDate>Thu, 07 May 2026 09:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Week 18: Winter Mortgage Strategies for Pre-Approval | Finch</title>
-      <link>https://www.finchmortgages.co.nz/weekly-reports/week-18-winter-strategies</link>
-      <guid isPermaLink="true">https://www.finchmortgages.co.nz/weekly-reports/week-18-winter-strategies</guid>
-      <description>As the colder months approach, the New Zealand property market historically experiences a cooling in listing volumes. Discover essential strategies.</description>
-      <pubDate>Tue, 05 May 2026 09:00:00 +0000</pubDate>
     </item>
     <item>
       <title>South Auckland Mortgage Broker | $0 Fee, 23 Lenders | Finch</title>
@@ -800,25 +1129,11 @@
       <pubDate>Thu, 30 Apr 2026 09:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Week 17: Autumn Market Update: Banks Hold Steady | Finch</title>
-      <link>https://www.finchmortgages.co.nz/weekly-reports/week-17-autumn-update</link>
-      <guid isPermaLink="true">https://www.finchmortgages.co.nz/weekly-reports/week-17-autumn-update</guid>
-      <description>As we move deeper into the autumn season, the New Zealand mortgage market is experiencing a period of cautious stability. Read the full report.</description>
-      <pubDate>Tue, 28 Apr 2026 09:00:00 +0000</pubDate>
-    </item>
-    <item>
       <title>Improve Your Credit Score Before a Mortgage NZ | Finch</title>
       <link>https://www.finchmortgages.co.nz/blog/improve-credit-score-mortgage-nz</link>
       <guid isPermaLink="true">https://www.finchmortgages.co.nz/blog/improve-credit-score-mortgage-nz</guid>
       <description>How to improve your credit score before a mortgage application in NZ: realistic timelines, quick wins, and exactly what lenders check first. Finch guide.</description>
       <pubDate>Thu, 23 Apr 2026 09:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Week 16: Major Banks Cut Rates Further | Finch</title>
-      <link>https://www.finchmortgages.co.nz/weekly-reports/week-16-major-banks-cut-rates</link>
-      <guid isPermaLink="true">https://www.finchmortgages.co.nz/weekly-reports/week-16-major-banks-cut-rates</guid>
-      <description>Following last week's dovish signals from the Reserve Bank, major lenders have dropped their 1-year and 2-year special fixed rates by a further 15 basis points.</description>
-      <pubDate>Tue, 21 Apr 2026 09:00:00 +0000</pubDate>
     </item>
     <item>
       <title>Bad Credit Mortgage NZ: How to Still Get Approved | Finch</title>
@@ -835,25 +1150,11 @@
       <pubDate>Wed, 15 Apr 2026 09:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Week 15: OCR Holds at 3.25% — But June Cut Expected | Finch</title>
-      <link>https://www.finchmortgages.co.nz/weekly-reports/week-15-ocr-hold</link>
-      <guid isPermaLink="true">https://www.finchmortgages.co.nz/weekly-reports/week-15-ocr-hold</guid>
-      <description>The RBNZ held the OCR at 3.25%. We look at why banks are pricing in a June cut anyway.</description>
-      <pubDate>Tue, 14 Apr 2026 09:00:00 +0000</pubDate>
-    </item>
-    <item>
       <title>KiwiSaver First Home Withdrawal Guide NZ 2026 | Finch</title>
       <link>https://www.finchmortgages.co.nz/blog/kiwisaver-first-home-withdrawal</link>
       <guid isPermaLink="true">https://www.finchmortgages.co.nz/blog/kiwisaver-first-home-withdrawal</guid>
       <description>KiwiSaver first home withdrawal: eligibility, how much you can take out, timing and application steps. Complete NZ guide by Finch.</description>
       <pubDate>Thu, 09 Apr 2026 09:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Week 14: ANZ Slashes 2-Year Fixed to 5.69% | Finch</title>
-      <link>https://www.finchmortgages.co.nz/weekly-reports/week-14-anz-rates</link>
-      <guid isPermaLink="true">https://www.finchmortgages.co.nz/weekly-reports/week-14-anz-rates</guid>
-      <description>ANZ's surprise rate cut caught the market off guard. We break down the 2-year sweet spot.</description>
-      <pubDate>Tue, 07 Apr 2026 09:00:00 +0000</pubDate>
     </item>
     <item>
       <title>Mortgage Pre-Approval Timeline NZ: What Happens Next</title>
@@ -870,25 +1171,11 @@
       <pubDate>Wed, 01 Apr 2026 09:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Week 13: Canterbury Surges: +6.8% YoY Growth | Finch</title>
-      <link>https://www.finchmortgages.co.nz/weekly-reports/week-13-canterbury-surge</link>
-      <guid isPermaLink="true">https://www.finchmortgages.co.nz/weekly-reports/week-13-canterbury-surge</guid>
-      <description>Canterbury is outperforming every other region in NZ. We look at the South Island boom.</description>
-      <pubDate>Tue, 31 Mar 2026 09:00:00 +0000</pubDate>
-    </item>
-    <item>
       <title>10 Mortgage Tips Every NZ Homeowner Should Know | Finch</title>
       <link>https://www.finchmortgages.co.nz/blog/mortgage-tips</link>
       <guid isPermaLink="true">https://www.finchmortgages.co.nz/blog/mortgage-tips</guid>
       <description>10 practical mortgage tips every NZ homeowner should know — repayments, offset accounts, restructuring and rate reviews. Finch.</description>
       <pubDate>Thu, 26 Mar 2026 09:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Week 12: Rental Yields Rise: Portfolio Strategies | Finch</title>
-      <link>https://www.finchmortgages.co.nz/weekly-reports/week-12-rental-yields</link>
-      <guid isPermaLink="true">https://www.finchmortgages.co.nz/weekly-reports/week-12-rental-yields</guid>
-      <description>Wellington gross yields hit 5.2%. With rates falling, the investor case is strengthening.</description>
-      <pubDate>Tue, 24 Mar 2026 09:00:00 +0000</pubDate>
     </item>
     <item>
       <title>North Shore Mortgage Broker | $0 Fee, 23 Lenders | Finch</title>
@@ -905,25 +1192,11 @@
       <pubDate>Thu, 12 Mar 2026 09:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Week 10: RBNZ March OCR Cut Breakdown | Finch</title>
-      <link>https://www.finchmortgages.co.nz/weekly-reports/week-10-ocr-cut-march</link>
-      <guid isPermaLink="true">https://www.finchmortgages.co.nz/weekly-reports/week-10-ocr-cut-march</guid>
-      <description>The March 25bps cut was anticipated. We track which lenders moved and what's next.</description>
-      <pubDate>Tue, 10 Mar 2026 09:00:00 +0000</pubDate>
-    </item>
-    <item>
       <title>Fixed vs Floating Mortgage NZ: Which Is Better? | Finch</title>
       <link>https://www.finchmortgages.co.nz/blog/fixed-vs-floating-mortgage-nz</link>
       <guid isPermaLink="true">https://www.finchmortgages.co.nz/blog/fixed-vs-floating-mortgage-nz</guid>
       <description>Fixed vs floating mortgage in NZ: pros, cons, break fees and the hybrid split strategy. Which is better in 2026? Finch explains.</description>
       <pubDate>Thu, 05 Mar 2026 09:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Week 9: Bay of Plenty Leads North Island Growth | Finch</title>
-      <link>https://www.finchmortgages.co.nz/weekly-reports/week-9-bay-of-plenty</link>
-      <guid isPermaLink="true">https://www.finchmortgages.co.nz/weekly-reports/week-9-bay-of-plenty</guid>
-      <description>Tauranga volumes are up 22%. Lower rates and lifestyle demand attract buyers back.</description>
-      <pubDate>Tue, 03 Mar 2026 09:00:00 +0000</pubDate>
     </item>
     <item>
       <title>Mortgage Broker Central Auckland | Mortgage Adviser | Finch</title>
@@ -1133,279 +1406,6 @@
       <link>https://www.finchmortgages.co.nz/blog/how-long-mortgage-approval-takes-nz</link>
       <guid isPermaLink="true">https://www.finchmortgages.co.nz/blog/how-long-mortgage-approval-takes-nz</guid>
       <description>How long mortgage approval takes in NZ — full 2026 timeline from pre-approval (5-10 working days) to settlement (4-6 weeks). Bank-by-bank turnaround comparison.</description>
-      <pubDate>Thu, 15 Jan 2026 09:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Mortgage Broker Mt Roskill | $0 Fee Mortgage Adviser | Finch</title>
-      <link>https://www.finchmortgages.co.nz/blog/mortgage-broker-mt-roskill</link>
-      <guid isPermaLink="true">https://www.finchmortgages.co.nz/blog/mortgage-broker-mt-roskill</guid>
-      <description>Independent Mt Roskill mortgage broker and adviser covering Mt Roskill, Wesley and Three Kings. Compare 23 NZ lenders with Finch. $0 broker fee.</description>
-      <pubDate>Thu, 15 Jan 2026 09:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Mortgage Broker Pukekohe &amp;amp; Franklin | $0 Fee | Finch</title>
-      <link>https://www.finchmortgages.co.nz/blog/mortgage-broker-pukekohe-franklin</link>
-      <guid isPermaLink="true">https://www.finchmortgages.co.nz/blog/mortgage-broker-pukekohe-franklin</guid>
-      <description>Independent Pukekohe &amp;amp; Franklin mortgage broker and adviser covering Pukekohe CBD, Pukekohe East and Paerata. Compare 23 NZ lenders with Finch. $0 broker fee.</description>
-      <pubDate>Thu, 15 Jan 2026 09:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Mortgage Broker Napier &amp;amp; Hawke&amp;#x27;s Bay | $0 Fee | Finch</title>
-      <link>https://www.finchmortgages.co.nz/blog/mortgage-broker-napier-hawkes-bay</link>
-      <guid isPermaLink="true">https://www.finchmortgages.co.nz/blog/mortgage-broker-napier-hawkes-bay</guid>
-      <description>Independent Napier &amp;amp; Hawke&amp;#x27;s Bay mortgage broker and adviser covering Napier, Taradale and Bay View. Compare 23 NZ lenders with Finch. $0 broker fee.</description>
-      <pubDate>Thu, 15 Jan 2026 09:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Mortgage Broker Christchurch | Mortgage Adviser | Finch</title>
-      <link>https://www.finchmortgages.co.nz/blog/mortgage-broker-christchurch</link>
-      <guid isPermaLink="true">https://www.finchmortgages.co.nz/blog/mortgage-broker-christchurch</guid>
-      <description>Independent Christchurch mortgage broker and adviser covering Christchurch CBD, Merivale and Fendalton. Compare 23 NZ lenders with Finch. $0 broker fee.</description>
-      <pubDate>Thu, 15 Jan 2026 09:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Reverse Mortgage NZ: How It Works &amp; Who It Suits (2026)</title>
-      <link>https://www.finchmortgages.co.nz/blog/reverse-mortgage-nz</link>
-      <guid isPermaLink="true">https://www.finchmortgages.co.nz/blog/reverse-mortgage-nz</guid>
-      <description>How a reverse mortgage works in NZ — eligibility, how much equity you can release, what it costs over time, and the alternatives worth considering first.</description>
-      <pubDate>Thu, 15 Jan 2026 09:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>What is LVR in NZ? Loan-to-Value Ratio Explained for 2026</title>
-      <link>https://www.finchmortgages.co.nz/blog/what-is-lvr-nz-mortgage</link>
-      <guid isPermaLink="true">https://www.finchmortgages.co.nz/blog/what-is-lvr-nz-mortgage</guid>
-      <description>What is LVR in NZ mortgages? Full 2026 guide to Loan-to-Value Ratio, RBNZ speed limits, LVR tier pricing, and how to drop LVR bands to unlock sharper rates.</description>
-      <pubDate>Thu, 15 Jan 2026 09:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Mortgage Broker Nelson | $0 Fee Mortgage Adviser | Finch</title>
-      <link>https://www.finchmortgages.co.nz/blog/mortgage-broker-nelson</link>
-      <guid isPermaLink="true">https://www.finchmortgages.co.nz/blog/mortgage-broker-nelson</guid>
-      <description>Independent Nelson mortgage broker and adviser covering Nelson CBD, Tāhunanui and Wakapuaka. Compare 23 NZ lenders with Finch. $0 broker fee.</description>
-      <pubDate>Thu, 15 Jan 2026 09:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Mortgage Broker Takapuna | $0 Fee Mortgage Adviser | Finch</title>
-      <link>https://www.finchmortgages.co.nz/blog/mortgage-broker-takapuna</link>
-      <guid isPermaLink="true">https://www.finchmortgages.co.nz/blog/mortgage-broker-takapuna</guid>
-      <description>Independent Takapuna mortgage broker and adviser covering Takapuna, Hauraki and Milford. Compare 23 NZ lenders with Finch. $0 broker fee.</description>
-      <pubDate>Thu, 15 Jan 2026 09:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Mortgage Broker Queenstown | $0 Fee Mortgage Adviser | Finch</title>
-      <link>https://www.finchmortgages.co.nz/blog/mortgage-broker-queenstown</link>
-      <guid isPermaLink="true">https://www.finchmortgages.co.nz/blog/mortgage-broker-queenstown</guid>
-      <description>Independent Queenstown mortgage broker and adviser covering Queenstown CBD, Frankton and Arthurs Point. Compare 23 NZ lenders with Finch. $0 broker fee.</description>
-      <pubDate>Thu, 15 Jan 2026 09:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Mortgage Broker Orewa &amp;amp; the Hibiscus Coast | $0 Fee | Finch</title>
-      <link>https://www.finchmortgages.co.nz/blog/mortgage-broker-orewa-hibiscus-coast</link>
-      <guid isPermaLink="true">https://www.finchmortgages.co.nz/blog/mortgage-broker-orewa-hibiscus-coast</guid>
-      <description>Independent Orewa &amp;amp; the Hibiscus Coast mortgage broker and adviser covering Orewa, Silverdale and Millwater. Compare 23 NZ lenders with Finch. $0 broker fee.</description>
-      <pubDate>Thu, 15 Jan 2026 09:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Mortgage Broker Fees in NZ — Are Brokers Really Free? (2026)</title>
-      <link>https://www.finchmortgages.co.nz/blog/mortgage-broker-fees-nz</link>
-      <guid isPermaLink="true">https://www.finchmortgages.co.nz/blog/mortgage-broker-fees-nz</guid>
-      <description>Are NZ mortgage brokers free? How brokers get paid, when fees apply, conflict-of-interest disclosures, and what to ask before you sign up.</description>
-      <pubDate>Thu, 15 Jan 2026 09:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Mortgage Broker Dunedin | $0 Fee Mortgage Adviser | Finch</title>
-      <link>https://www.finchmortgages.co.nz/blog/mortgage-broker-dunedin</link>
-      <guid isPermaLink="true">https://www.finchmortgages.co.nz/blog/mortgage-broker-dunedin</guid>
-      <description>Independent Dunedin mortgage broker and adviser covering Dunedin CBD, North Dunedin and Roslyn. Compare 23 NZ lenders with Finch. $0 broker fee.</description>
-      <pubDate>Thu, 15 Jan 2026 09:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Mortgage Broker New Plymouth &amp;amp; Taranaki | $0 Fee | Finch</title>
-      <link>https://www.finchmortgages.co.nz/blog/mortgage-broker-new-plymouth-taranaki</link>
-      <guid isPermaLink="true">https://www.finchmortgages.co.nz/blog/mortgage-broker-new-plymouth-taranaki</guid>
-      <description>Independent New Plymouth &amp;amp; Taranaki mortgage broker and adviser covering New Plymouth CBD and Fitzroy. Compare 23 NZ lenders with Finch. $0 broker fee.</description>
-      <pubDate>Thu, 15 Jan 2026 09:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Mortgage Broker Albany | $0 Fee Mortgage Adviser | Finch</title>
-      <link>https://www.finchmortgages.co.nz/blog/mortgage-broker-albany</link>
-      <guid isPermaLink="true">https://www.finchmortgages.co.nz/blog/mortgage-broker-albany</guid>
-      <description>Independent Albany mortgage broker and adviser covering Albany, North Harbour and Rosedale. Compare 23 NZ lenders with Finch. $0 broker fee.</description>
-      <pubDate>Thu, 15 Jan 2026 09:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Mortgage Broker Wellington | $0 Fee Mortgage Adviser | Finch</title>
-      <link>https://www.finchmortgages.co.nz/blog/mortgage-broker-wellington</link>
-      <guid isPermaLink="true">https://www.finchmortgages.co.nz/blog/mortgage-broker-wellington</guid>
-      <description>Independent Wellington mortgage broker and adviser covering Wellington CBD, Te Aro and Mount Victoria. Compare 23 NZ lenders with Finch. $0 broker fee.</description>
-      <pubDate>Thu, 15 Jan 2026 09:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Bridging Finance NZ: How It Works &amp; When You Need It (2026)</title>
-      <link>https://www.finchmortgages.co.nz/blog/bridging-finance-guide-nz</link>
-      <guid isPermaLink="true">https://www.finchmortgages.co.nz/blog/bridging-finance-guide-nz</guid>
-      <description>How bridging finance works in NZ — open vs closed loans, when buyers use them, what they cost, and how Finch structures one against your existing equity.</description>
-      <pubDate>Thu, 15 Jan 2026 09:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Mortgage Broker Palmerston North | Mortgage Adviser | Finch</title>
-      <link>https://www.finchmortgages.co.nz/blog/mortgage-broker-palmerston-north</link>
-      <guid isPermaLink="true">https://www.finchmortgages.co.nz/blog/mortgage-broker-palmerston-north</guid>
-      <description>Independent Palmerston North mortgage broker and adviser covering Palmerston North CBD, Hokowhitu and Awapuni. Compare 23 NZ lenders with Finch. $0 broker fee.</description>
-      <pubDate>Thu, 15 Jan 2026 09:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Mortgage Broker Massey | $0 Fee Mortgage Adviser | Finch</title>
-      <link>https://www.finchmortgages.co.nz/blog/mortgage-broker-massey</link>
-      <guid isPermaLink="true">https://www.finchmortgages.co.nz/blog/mortgage-broker-massey</guid>
-      <description>Independent Massey mortgage broker and adviser covering Massey, Royal Heights and West Harbour. Compare 23 NZ lenders with Finch. $0 broker fee.</description>
-      <pubDate>Thu, 15 Jan 2026 09:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>How Much Can I Borrow on $100k Salary in NZ? (2026)</title>
-      <link>https://www.finchmortgages.co.nz/blog/how-much-can-i-borrow-100k-salary-nz</link>
-      <guid isPermaLink="true">https://www.finchmortgages.co.nz/blog/how-much-can-i-borrow-100k-salary-nz</guid>
-      <description>Earning $100k in NZ? See how much you could borrow for a home, what banks assess in the stress test, and how to boost your borrowing power. Finch guide.</description>
-      <pubDate>Thu, 15 Jan 2026 09:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Mortgage Broker Botany | $0 Fee Mortgage Adviser | Finch</title>
-      <link>https://www.finchmortgages.co.nz/blog/mortgage-broker-botany</link>
-      <guid isPermaLink="true">https://www.finchmortgages.co.nz/blog/mortgage-broker-botany</guid>
-      <description>Independent Botany mortgage broker and adviser covering Botany, Botany Downs and Golflands. Compare 23 NZ lenders with Finch. $0 broker fee.</description>
-      <pubDate>Thu, 15 Jan 2026 09:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Waikato Family Finances a 4-Hectare Lifestyle Block | Finch</title>
-      <link>https://www.finchmortgages.co.nz/case-studies/lifestyle-block-rural-purchase</link>
-      <guid isPermaLink="true">https://www.finchmortgages.co.nz/case-studies/lifestyle-block-rural-purchase</guid>
-      <description>A Hamilton family wanted to move to a 4-hectare lifestyle block near Cambridge. Finch matched them to a lender comfortable with larger rural-residential land.</description>
-      <pubDate>Thu, 15 Jan 2026 09:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Turnkey Construction Loan Secured | Finch Case Study</title>
-      <link>https://www.finchmortgages.co.nz/case-studies/construction-loan-turnkey</link>
-      <guid isPermaLink="true">https://www.finchmortgages.co.nz/case-studies/construction-loan-turnkey</guid>
-      <description>How Finch secured turnkey new-build finance with progress payments handled end-to-end. Real NZ construction loan case study.</description>
-      <pubDate>Thu, 15 Jan 2026 09:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Approved on a New Job, Still Inside the Trial Period | Finch</title>
-      <link>https://www.finchmortgages.co.nz/case-studies/new-job-probation-period-approval</link>
-      <guid isPermaLink="true">https://www.finchmortgages.co.nz/case-studies/new-job-probation-period-approval</guid>
-      <description>A Christchurch accountant who'd just started a new role was told to wait 6 months before applying. Finch found a lender that didn't require it.</description>
-      <pubDate>Thu, 15 Jan 2026 09:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>First Home With 8% Deposit Plus Family Guarantee | Finch</title>
-      <link>https://www.finchmortgages.co.nz/case-studies/family-guarantee-first-home</link>
-      <guid isPermaLink="true">https://www.finchmortgages.co.nz/case-studies/family-guarantee-first-home</guid>
-      <description>A young Christchurch couple bought their first home with 8% saved, using a family guarantee from her parents to bridge the deposit gap.</description>
-      <pubDate>Thu, 15 Jan 2026 09:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Single Parent Rebuilds After Divorce | Finch</title>
-      <link>https://www.finchmortgages.co.nz/case-studies/single-parent-rebuilds</link>
-      <guid isPermaLink="true">https://www.finchmortgages.co.nz/case-studies/single-parent-rebuilds</guid>
-      <description>A Wellington physiotherapist with two children sold the family home in divorce settlement. Finch helped her re-enter the market on a single income.</description>
-      <pubDate>Thu, 15 Jan 2026 09:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Financing a Leaky Home With Remediation Built In | Finch</title>
-      <link>https://www.finchmortgages.co.nz/case-studies/leaky-home-remediation-finance</link>
-      <guid isPermaLink="true">https://www.finchmortgages.co.nz/case-studies/leaky-home-remediation-finance</guid>
-      <description>An Auckland couple wanted a character 1990s home flagged for weathertightness risk. Finch structured finance covering both the purchase and the remediation.</description>
-      <pubDate>Thu, 15 Jan 2026 09:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Bank Declined, Second Opinion Gets Him Approved | Finch</title>
-      <link>https://www.finchmortgages.co.nz/case-studies/loan-declined-second-opinion</link>
-      <guid isPermaLink="true">https://www.finchmortgages.co.nz/case-studies/loan-declined-second-opinion</guid>
-      <description>An Auckland IT manager was declined by his own bank with no clear reason given. Finch identified the real issue and secured approval with a different lender.</description>
-      <pubDate>Thu, 15 Jan 2026 09:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Self-Employed Mortgage Approved in NZ | Finch Case Study</title>
-      <link>https://www.finchmortgages.co.nz/case-studies/self-employed-approval</link>
-      <guid isPermaLink="true">https://www.finchmortgages.co.nz/case-studies/self-employed-approval</guid>
-      <description>Self-employed with only 14 months trading history — how Finch got this NZ mortgage approved despite the bank's standard 2-year policy. Real client case study.</description>
-      <pubDate>Thu, 15 Jan 2026 09:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>From Non-Bank Lender Back to a Main Bank | Finch</title>
-      <link>https://www.finchmortgages.co.nz/case-studies/non-bank-to-bank-refinance-credit-repair</link>
-      <guid isPermaLink="true">https://www.finchmortgages.co.nz/case-studies/non-bank-to-bank-refinance-credit-repair</guid>
-      <description>A couple who'd needed a non-bank lender due to past credit issues rebuilt their file and refinanced to a main bank, saving significantly on their rate.</description>
-      <pubDate>Thu, 15 Jan 2026 09:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Bank Declined to Approved in 72 Hours | Finch Case Study</title>
-      <link>https://www.finchmortgages.co.nz/case-studies/first-home-approval</link>
-      <guid isPermaLink="true">https://www.finchmortgages.co.nz/case-studies/first-home-approval</guid>
-      <description>Declined by their bank, approved in 72 hours — how Finch turned a first home rejection around. Real NZ case study.</description>
-      <pubDate>Thu, 15 Jan 2026 09:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>100% Gifted Deposit, No Savings History Needed | Finch</title>
-      <link>https://www.finchmortgages.co.nz/case-studies/gifted-deposit-no-savings</link>
-      <guid isPermaLink="true">https://www.finchmortgages.co.nz/case-studies/gifted-deposit-no-savings</guid>
-      <description>A 26-year-old graduate with a strong income but no deposit savings used a fully gifted deposit from her parents to buy her first Auckland home.</description>
-      <pubDate>Thu, 15 Jan 2026 09:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Refinancing to Buy Out an Ex-Partner | Finch</title>
-      <link>https://www.finchmortgages.co.nz/case-studies/buy-out-ex-partner-separation</link>
-      <guid isPermaLink="true">https://www.finchmortgages.co.nz/case-studies/buy-out-ex-partner-separation</guid>
-      <description>A Dunedin teacher refinanced solo to buy out her ex-partner's share of the family home, keeping stability for her children without needing to sell.</description>
-      <pubDate>Thu, 15 Jan 2026 09:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Apartment Investor Scales to 5 Properties | Finch</title>
-      <link>https://www.finchmortgages.co.nz/case-studies/apartment-investor-scaling</link>
-      <guid isPermaLink="true">https://www.finchmortgages.co.nz/case-studies/apartment-investor-scaling</guid>
-      <description>A Hamilton-based investor used equity recycling, new-build LVR exemption, and a multi-lender structure to grow a portfolio of 5 income properties.</description>
-      <pubDate>Thu, 15 Jan 2026 09:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Bad Credit Debt Consolidation Mortgage | Finch Case Study</title>
-      <link>https://www.finchmortgages.co.nz/case-studies/debt-consolidation</link>
-      <guid isPermaLink="true">https://www.finchmortgages.co.nz/case-studies/debt-consolidation</guid>
-      <description>Bad credit and multiple debts consolidated into one mortgage — how Finch got it approved. Real NZ debt consolidation case study.</description>
-      <pubDate>Thu, 15 Jan 2026 09:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Bridging Loan for a Lifestyle Block | Finch Case Study</title>
-      <link>https://www.finchmortgages.co.nz/case-studies/bridging-finance-lifestyle</link>
-      <guid isPermaLink="true">https://www.finchmortgages.co.nz/case-studies/bridging-finance-lifestyle</guid>
-      <description>Bridging finance secured to buy a lifestyle block before selling — how Finch structured it. Real NZ bridging loan case study.</description>
-      <pubDate>Thu, 15 Jan 2026 09:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Approved 4 Months After Redundancy | Finch</title>
-      <link>https://www.finchmortgages.co.nz/case-studies/redundancy-income-recovery-approval</link>
-      <guid isPermaLink="true">https://www.finchmortgages.co.nz/case-studies/redundancy-income-recovery-approval</guid>
-      <description>An Auckland marketing manager made redundant re-entered the workforce quickly. Finch structured a strong case despite the recent income gap on his file.</description>
-      <pubDate>Thu, 15 Jan 2026 09:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Buyer With Two Defaults Still Gets Approved | Finch</title>
-      <link>https://www.finchmortgages.co.nz/case-studies/bad-credit-defaults-approved</link>
-      <guid isPermaLink="true">https://www.finchmortgages.co.nz/case-studies/bad-credit-defaults-approved</guid>
-      <description>A Hamilton nurse with two historic defaults from a difficult period was declined by three banks. A specialist non-bank lender approved her within weeks.</description>
-      <pubDate>Thu, 15 Jan 2026 09:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Returning Kiwi Buys Using Overseas Income | Finch</title>
-      <link>https://www.finchmortgages.co.nz/case-studies/returning-kiwi-overseas-income</link>
-      <guid isPermaLink="true">https://www.finchmortgages.co.nz/case-studies/returning-kiwi-overseas-income</guid>
-      <description>A New Zealander working in Australia wanted to secure a home loan before relocating home. Finch arranged approval based on her overseas employment income.</description>
-      <pubDate>Thu, 15 Jan 2026 09:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>$2.2M Commercial Warehouse Mortgage | Finch Case Study</title>
-      <link>https://www.finchmortgages.co.nz/case-studies/commercial-warehouse</link>
-      <guid isPermaLink="true">https://www.finchmortgages.co.nz/case-studies/commercial-warehouse</guid>
-      <description>How Finch arranged a $2.2M commercial mortgage for an industrial warehouse purchase. Real NZ commercial finance case study.</description>
       <pubDate>Thu, 15 Jan 2026 09:00:00 +0000</pubDate>
     </item>
   </channel>

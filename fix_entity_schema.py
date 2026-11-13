@@ -136,6 +136,8 @@ def main():
     changed = 0
     for f in files:
         p = ROOT / f
+        if not p.exists():
+            continue
         src = p.read_text(encoding="utf-8")
         out = fix(src, stats)
         if out != src:
