@@ -207,6 +207,8 @@ guide_links = [
     ("../calculators/mortgage-calculator.html", "Mortgage Calculator"),
     ("../calculators/borrowing-power.html", "Borrowing Power"),
     ("../calculators/extra-repayment.html", "Extra Repayment"),
+    ("../calculators/break-fee-calculator.html", "Break Fee Calculator"),
+    ("../calculators/lvr-calculator.html", "LVR Calculator"),
     ("../lenders.html", "Compare Lenders"),
     ("../lenders/bnz-home-loan-review.html", "BNZ Review"),
     ("../lenders/anz-home-loan-review.html", "ANZ Review"),

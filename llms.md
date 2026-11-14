@@ -101,10 +101,10 @@ Smaller towns have their own pages too: 125 towns from Kaitāia to Bluff and the
 These settings change. Confirm current figures with the Reserve Bank (rbnz.govt.nz), Inland Revenue (ird.govt.nz) or Kāinga Ora (kaingaora.govt.nz) before quoting.
 
 - **Official Cash Rate (OCR):** set by the Reserve Bank of New Zealand at scheduled reviews. It feeds into floating rates and, through wholesale rates, fixed rates.
-- **LVR restrictions:** the Reserve Bank limits how much high-LVR lending registered banks can do. New builds are generally exempt. Non-bank lenders are not bound by these restrictions.
+- **LVR restrictions:** the Reserve Bank limits how much high-LVR lending registered banks can do. Since 1 December 2025, up to 25% of a bank's new owner-occupier lending can be above 80% LVR and up to 10% of new investor lending can be above 70% LVR. New builds are generally exempt. Non-bank lenders are not bound by these restrictions.
 - **DTI restrictions:** debt-to-income limits have applied to bank lending since 1 July 2024.
 - **KiwiSaver first home withdrawal:** available after at least three years of membership; at least $1,000 must stay in the account.
-- **Kāinga Ora First Home Loan:** lets eligible first home buyers borrow with a 5% deposit through participating lenders. Income and price caps apply.
+- **Kāinga Ora First Home Loan:** lets eligible first home buyers borrow with a 5% deposit through participating lenders. Income caps apply.
 - **First Home Grant:** closed to new applications on 22 May 2024 and has not been replaced.
 - **Bright-line test:** two years for residential property sold on or after 1 July 2024.
 - **Interest deductibility:** fully restored for residential rental property from 1 April 2025.

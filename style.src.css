@@ -1956,3 +1956,53 @@ button:focus-visible {
   transform: translateY(-2px);
   box-shadow: 0 8px 24px rgba(16, 68, 62, 0.25);
 }
+
+/* ── Consistency layer (Nov 2026) ──────────────────────────────────────────
+   Templates were built at different times with their own inline sizes, so
+   page titles ranged from 41px to 64px and section headings from 17px to
+   48px. These rules give every template one type scale and one hero rhythm.
+   !important is needed because the old values are inline styles. */
+main h1:not(.lp-wrap *) {
+  font-size: clamp(2.1rem, 4.2vw, 3.25rem) !important;
+  line-height: 1.12 !important;
+  letter-spacing: -0.01em;
+}
+main h2:not(.lp-wrap *) {
+  font-size: clamp(1.6rem, 3vw, 2.25rem) !important;
+  line-height: 1.2 !important;
+}
+main .prose h2, main article h2, main .article-body h2, main .blog-content h2 {
+  font-size: clamp(1.35rem, 2.4vw, 1.6rem) !important;
+}
+main .calc-widget h2 { font-size: 1.5rem !important; }
+main h2[style*="font-size:1.1rem"], main h2[style*="font-size:1.125rem"] { font-size: 1.125rem !important; }
+main h2.text-xs { font-size: 0.75rem !important; line-height: 1rem !important; }
+
+.page-hero, .blog-article-header { padding-top: 4rem !important; }
+main > .reveal.py-24:first-child { padding-top: 4rem !important; padding-bottom: 3rem !important; }
+main > section.container:first-child { padding-top: 4rem !important; }
+
+/* Stat strips hold three or four tiles; spread whatever is there evenly. */
+.stats-strip .cols-4 { grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); }
+
+/* Decorative blobs and the lender ticker extend past the viewport by design. */
+html, body { overflow-x: clip; }
+
+/* Grid children default to min-width:auto, which lets long content push a
+   column wider than the screen. */
+main [style*="display:grid"] > *, main [style*="display: grid"] > * { min-width: 0; }
+
+@media (max-width: 860px) {
+  /* Inline two-, three- and four-column grids never collapsed on phones. */
+  main [style*="grid-template-columns:1fr 1fr"],
+  main [style*="grid-template-columns: 1fr 1fr"],
+  main [style*="grid-template-columns:repeat(2,1fr)"],
+  main [style*="grid-template-columns:repeat(3,1fr)"],
+  main [style*="grid-template-columns:repeat(4,1fr)"] {
+    grid-template-columns: 1fr !important;
+  }
+  main [style*="gap:3rem"] { gap: 2rem !important; }
+}
+@media (max-width: 640px) {
+  .stats-strip .cols-4 { grid-template-columns: repeat(2, 1fr); }
+}

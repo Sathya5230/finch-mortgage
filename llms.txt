@@ -67,6 +67,10 @@ Finch has a local mortgage broker page for each area below. Hub: https://www.fin
 - [Refinance savings calculator](https://www.finchmortgages.co.nz/calculators/refinance-savings)
 - [Extra repayment calculator](https://www.finchmortgages.co.nz/calculators/extra-repayment)
 - [Rental yield calculator](https://www.finchmortgages.co.nz/calculators/rental-yield-calculator)
+- [Mortgage break fee calculator](https://www.finchmortgages.co.nz/calculators/break-fee-calculator)
+- [LVR calculator](https://www.finchmortgages.co.nz/calculators/lvr-calculator)
+- [Interest-only mortgage calculator](https://www.finchmortgages.co.nz/calculators/interest-only-calculator)
+- [Cashback clawback calculator](https://www.finchmortgages.co.nz/calculators/cashback-clawback-calculator)
 
 ## Guides
 

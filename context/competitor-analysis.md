@@ -1,351 +1,66 @@
-# Competitor Analysis
+# Competitor Analysis: Finch Mortgages (NZ)
 
-This document tracks key competitors in the podcast hosting and podcasting content space, analyzing their content strategies to identify opportunities for Castos.
+Based on live Google NZ results checked on 13 November 2026 (google.co.nz, not geo-located to a suburb). No search volumes or backlink counts are included, because no paid keyword or backlink tool is connected. Re-check before relying on any position quoted here.
 
-## Instructions
-Fill in this template with your main competitors' information. Update quarterly or when significant competitive shifts occur.
+## Where Finch stands
 
----
+- Brand searches: Finch ranks first.
+- Non-brand searches checked: Finch was not in the top 8 to 10 for "mortgage broker auckland", "mortgage broker west auckland", "mortgage broker henderson", "mortgage broker te atatu", "refinance mortgage nz", "how much can i borrow nz", "self employed mortgage nz", or any calculator term.
+- Google lists roughly 680 Finch URLs. Some results still show titles from before October ("20+ lenders"), so recrawling is slow.
 
-## Primary Competitors
+The gap is authority and reputation, not on-page work: few sites link to Finch, the Google Business Profile isn't connected to the site, and the adviser has little presence off the site.
 
-### Competitor 1: [Name]
+## Who ranks, by search type
 
-**Company Overview**:
-- **Website**: [URL]
-- **Primary Offering**: [Podcast hosting / All-in-one / Specific niche]
-- **Target Audience**: [Beginners / Pro / Enterprise / etc.]
-- **Pricing**: [Brief pricing overview]
-- **Market Position**: [Leader / Challenger / Niche player]
+### Local broker searches ("mortgage broker auckland", "... west auckland", suburbs)
 
-**Content Strategy**:
-- **Blog URL**: [URL]
-- **Publishing Frequency**: [X posts per week/month]
-- **Content Types**: [How-tos, guides, news, case studies, etc.]
-- **Average Article Length**: [words]
-- **Content Quality**: [Assessment]
+| Competitor | What ranks | Why it works |
+|---|---|---|
+| Loan Market (adviser.loanmarket.co.nz) | One page per adviser and per suburb served | Large trusted domain, a named adviser with phone number and opening hours on every page |
+| Global Finance (globalfinance.co.nz) | Office pages such as "Mortgage Broker South Auckland & Manukau" | Physical office address in the title area, long-established domain |
+| Mortgage Managers, My Money, Mega Finance, Mortgages Online | Homepage or one Auckland page | Old domains, street address prominent |
+| nonbank.co.nz | "Mortgage Broker East & South Auckland" | Named adviser plus suburb list |
+| Orange Network (orangenetwork.co.nz) | Suburb pages for places it has no office in | Shows programmatic suburb pages can rank when competition is thin; states plainly that appointments are by video |
+| Directories (topbrokershub.com, financeadvisers.co.nz, cylex, finda) and Facebook group threads | "Best mortgage brokers in X" lists, recommendation threads | Google has few strong local pages to choose from |
 
-**Top Performing Content** (highest traffic/rankings):
-1. [Article Title] - [URL]
-   - Keyword: [primary keyword]
-   - Estimated Traffic: [monthly visitors]
-   - Why It Works: [brief analysis]
+Takeaways for Finch: suburb results are weak (directories, Facebook threads, even off-topic pages), so West Auckland terms are winnable. The pages that win show a named adviser, an address and reviews. Getting listed in the directories that already rank is a quick way onto page one.
 
-2. [Article Title] - [URL]
-   [Continue with top 5-10 articles]
+### Calculator searches
 
-**SEO Strengths**:
-- [Strength 1: e.g., "Strong domain authority (DR 75)"]
-- [Strength 2: e.g., "Comprehensive pillar content on all major topics"]
-- [Strength 3: e.g., "Regular content updates and freshness"]
+| Search | Who ranks | Gap |
+|---|---|---|
+| "how much can i borrow nz", "mortgage calculator nz" | Westpac, BNZ, ASB, ANZ, Sorted, mortgages.co.nz, MoneyHub | Not realistic to win; banks own these |
+| "mortgage break fee calculator nz" | Sorted (wrong tool), broker blog posts, homeloanfactory, calculate.co.nz, breakfeecalculator.co.nz | Weak results. Finch now has a break fee calculator |
+| "lvr calculator nz" | Mortgage Lab, Opes Partners, calculate.co.nz, MoneyHub | Broker sites rank. Finch now has an LVR calculator |
+| "interest only mortgage calculator nz" | Loan Market calculators hub, calculate.co.nz, Zen Mortgages | Weak results. Finch now has one |
+| "mortgage cashback clawback calculator nz" | No calculator ranks at all, only articles and Reddit | Finch's clawback calculator is the only dedicated tool found |
 
-**SEO Weaknesses**:
-- [Weakness 1: e.g., "Thin content on advanced topics"]
-- [Weakness 2: e.g., "Poor internal linking structure"]
-- [Weakness 3: e.g., "Outdated articles (1-2 years old)"]
+### Informational searches
 
-**Content Gaps** (Topics they don't cover well):
-- [Gap 1: Topic Castos could own]
-- [Gap 2: Underserved keyword area]
-- [Gap 3: Missing perspective or angle]
+| Search | Who ranks |
+|---|---|
+| "refinance mortgage nz" | Rapson, NZHL, Squirrel, BNZ, Mortgage Managers, MoneyHub, Tella, Capital Finance |
+| "self employed mortgage nz" | Haven, Global Finance, Gilligan Sheppard, Tella, Loan Market, Capital Finance |
 
-**Differentiation Opportunities**:
-- [How Castos can stand out vs. this competitor]
-- [Unique angle or approach to take]
-- [Topics to focus on to win against them]
+Several of these are small brokers with one focused, plainly written page, some of them years old. That is achievable for Finch once the domain has more authority.
 
----
+## What competitors have that Finch lacks
 
-### Competitor 2: [Name]
+1. Visible reviews: star ratings and review counts pulled from Google, on the homepage and local pages.
+2. Links from other sites: aggregator and group listings (Loan Market, NZHL, Mortgage Link), industry directories, local news.
+3. More than one named adviser, each with their own page.
+4. Published interest rate tables (Squirrel, mortgages.co.nz, Unity). Finch has chosen not to publish rates, which is safer for accuracy but gives up those searches.
 
-[Follow same format as above]
+## Where Finch is ahead
 
----
+- Coverage: 125 town pages, 30 Auckland suburb pages and 200+ guides, more than most broker sites.
+- Tools: ten calculators, including the only cashback clawback calculator found.
+- Accuracy: current Reserve Bank LVR settings (25% / 10% since December 2025). Some competing pages still show older figures.
+- Disclosure: licensing, complaints scheme and how Finch is paid are on every page.
 
-### Competitor 3: [Name]
+## Priorities that follow
 
-[Follow same format as above]
-
----
-
-### Competitor 4: [Name]
-
-[Follow same format as above]
-
----
-
-### Competitor 5: [Name]
-
-[Follow same format as above]
-
----
-
-## Secondary Competitors / Content Publishers
-
-These may not be direct product competitors but compete for content visibility:
-
-### Publisher 1: [Name]
-- **Website**: [URL]
-- **Focus**: [Podcast education / Industry news / etc.]
-- **Why They Matter**: [Authority in space, ranks for key terms, etc.]
-- **Content Approach**: [Brief description]
-- **Opportunity vs. Them**: [How to compete]
-
-### Publisher 2: [Name]
-[Continue]
-
----
-
-## Competitive Keyword Analysis
-
-### Keywords Competitors Dominate (Castos doesn't rank top 10):
-
-**Keyword**: [keyword]
-- **Difficulty**: [score]
-- **Volume**: [monthly searches]
-- **Who Ranks**:
-  1. [Competitor] - Position 1
-  2. [Competitor] - Position 2
-  3. [Competitor] - Position 3
-- **Castos Position**: [rank or "Not ranking"]
-- **Their Content Type**: [Guide / Comparison / How-to / etc.]
-- **What They Do Well**: [Analysis of why they rank]
-- **Castos Strategy**: [How to compete - new content, optimize existing, etc.]
-
-[List 10-15 high-priority competitive keywords]
-
----
-
-## Competitive Content Patterns
-
-### Common Topics All Competitors Cover:
-1. [Topic 1 - e.g., "How to start a podcast"]
-   - Standard approach: [How most competitors handle it]
-   - Castos differentiation: [How we can be different/better]
-
-2. [Topic 2]
-   [Continue]
-
-### Emerging Topics Some Competitors Cover:
-- [Topic]: Covered by [Competitor names]
-  - Opportunity: [Early adopter advantage / Wait and see / etc.]
-
-### Unique Topics Only One Competitor Covers:
-- [Topic]: Only [Competitor name]
-  - Why they own it: [Analysis]
-  - Should Castos pursue?: [Yes/No and why]
-
----
-
-## Content Quality Benchmarks
-
-### Word Count Analysis:
-- **Competitor Average**: [X words]
-- **Top Ranking Articles**: [X words]
-- **Castos Target**: [X words to compete]
-
-### Content Depth:
-- **Comprehensive Guides**: [Which competitors do this well]
-- **Tactical How-Tos**: [Who excels at this]
-- **Quick Tips**: [Who focuses here]
-- **Castos Sweet Spot**: [Where we should focus]
-
-### Visual Content:
-- **Screenshots**: [Who uses extensively]
-- **Custom Graphics**: [Who creates these]
-- **Videos**: [Who embeds video]
-- **Charts/Data Viz**: [Who visualizes data well]
-- **Castos Opportunity**: [Where we can excel]
-
-### Update Frequency:
-- **Regular Updates**: [Competitors who update old content]
-- **Publication Dates**: [Who shows dates prominently]
-- **Content Freshness**: [Who keeps content current]
-- **Castos Approach**: [Our update strategy]
-
----
-
-## Link Building & Authority
-
-### Domain Authority Comparison:
-- **Castos**: DR [score]
-- **[Competitor 1]**: DR [score]
-- **[Competitor 2]**: DR [score]
-- **[Competitor 3]**: DR [score]
-- **[Competitor 4]**: DR [score]
-
-### Backlink Strategies They Use:
-- **[Competitor]**: [Guest posting / Original research / Tools / etc.]
-- **[Competitor]**: [Their link building approach]
-- **Castos Opportunity**: [Link building tactics to pursue]
-
-### Content Formats That Earn Links:
-- [Format 1: e.g., "Original surveys and data"]
-  - Who does it: [Competitors]
-  - Castos potential: [Could we do this?]
-
-- [Format 2: e.g., "Free tools and calculators"]
-  - Who does it: [Competitors]
-  - Castos potential: [Assessment]
-
----
-
-## User Experience & Engagement
-
-### Content Presentation:
-- **Table of Contents**: [Who uses them well]
-- **Jump Links**: [Who implements]
-- **Formatting**: [Who has best readability]
-- **CTAs**: [Who has compelling calls-to-action]
-- **Castos Benchmark**: [What we should emulate/avoid]
-
-### On-Page Engagement:
-- **Comments**: [Who has active comment sections]
-- **Social Sharing**: [Who optimizes for shares]
-- **Related Content**: [Who does internal linking well]
-- **Castos Focus**: [Our engagement strategy]
-
----
-
-## Competitive SERP Features
-
-### Featured Snippets:
-**Keywords with Snippets**:
-- [Keyword]: Held by [Competitor]
-  - Format: [Paragraph / List / Table]
-  - Castos Strategy: [How to win it]
-
-### People Also Ask (PAA):
-- Common questions: [List questions that appear frequently]
-- Who answers them: [Which competitors appear in PAA]
-- Castos opportunities: [Questions we should target]
-
-### Video Results:
-- [Keyword]: [Competitor] has video
-  - Should Castos create video?: [Assessment]
-
----
-
-## Competitive Moats & Advantages
-
-### Their Unfair Advantages:
-**[Competitor 1]**:
-- [Advantage: e.g., "Market leader brand recognition"]
-- [Advantage: e.g., "10+ years of content and backlinks"]
-- [How Castos can compete anyway]: [Strategy]
-
-**[Competitor 2]**:
-- [Their advantages]
-- [Our counter-strategy]
-
-### Castos's Unique Advantages:
-- [Advantage 1: e.g., "WordPress integration expertise"]
-- [Advantage 2: e.g., "Focus on serious creators vs. hobbyists"]
-- [Advantage 3: e.g., "Private podcasting specialization"]
-- [How to leverage]: [Content strategy to amplify these]
-
----
-
-## Content Opportunity Matrix
-
-### High Opportunity (Low competition, high value):
-1. [Topic/Keyword]
-   - Why opportunity: [Competitors don't cover well]
-   - Business value: [Why it matters for Castos]
-   - Action: [Create priority content]
-
-[List top opportunities]
-
-### Medium Opportunity (Moderate competition, good value):
-[List opportunities]
-
-### Long-term Play (High competition, high value):
-[Topics to tackle with comprehensive, superior content over time]
-
----
-
-## Quarterly Competitive Review
-
-### Q[X] 20[XX] Review
-
-**Date**: [Date of review]
-
-**Major Competitive Shifts**:
-- [Change 1: New competitor emerged, competitor launched new feature, etc.]
-- [Change 2]
-
-**Content Strategy Changes Observed**:
-- [Change 1: Competitor increased publishing frequency, shifted focus, etc.]
-- [Change 2]
-
-**New Topics Competitors Are Covering**:
-- [Topic 1] - Should Castos cover?: [Yes/No]
-- [Topic 2]
-
-**Ranking Changes**:
-- Keywords Castos gained: [List]
-- Keywords Castos lost: [List]
-- Keywords competitors gained: [List]
-
-**Action Items from This Review**:
-1. [Action item]
-2. [Action item]
-3. [Action item]
-
----
-
-## Competitive Watching List
-
-### Monitor Regularly:
-- [ ] [Competitor 1] blog RSS feed
-- [ ] [Competitor 2] new content alerts
-- [ ] [Competitor 3] ranking changes for key terms
-- [ ] Industry news sites for competitive announcements
-
-### Tools for Monitoring:
-- **Rank Tracking**: [Tool name - track competitors' rankings]
-- **Content Alerts**: [Tool - get notified of new competitor content]
-- **Backlink Monitoring**: [Tool - see where competitors get links]
-- **Topic Discovery**: [Tool - find trending topics in space]
-
----
-
-## Usage Guidelines
-
-### When Planning Content:
-1. Check what competitors have already created on topic
-2. Identify gaps or weaknesses in their coverage
-3. Plan how to create superior, differentiated content
-4. Note their keyword strategy
-5. Assess competitive difficulty
-
-### When Writing Content:
-1. Reference competitor articles to ensure comprehensiveness
-2. Don't copy - identify what's missing and add it
-3. Find unique angle or perspective
-4. Aim to create the definitive resource on topic
-5. Differentiate with Castos-specific insights
-
-### When Analyzing Performance:
-1. Compare Castos rankings to competitor rankings
-2. Identify which competitors won rankings we wanted
-3. Analyze why their content outperformed ours
-4. Adapt strategy based on what's working for them
-5. Double down on areas where Castos has unique advantage
-
----
-
-## Maintenance Schedule
-
-- **Weekly**: Monitor top 3 competitors for new content
-- **Monthly**: Check ranking changes for key terms
-- **Quarterly**: Full competitive audit and strategy review
-- **Annually**: Comprehensive competitor landscape assessment
-
-**Last Updated**: [Date]
-**Next Review**: [Date]
-**Reviewer**: [Person responsible]
-
----
-
-**Note**: Competitive analysis isn't about copying - it's about understanding the landscape so Castos can create better, more differentiated content that serves podcast creators in unique ways. Always filter competitive insights through "What would best serve our audience?"
+1. Connect the Google Business Profile and show the real rating and review count.
+2. Get listed where Google already sends local searchers: topbrokershub.com, financeadvisers.co.nz, Finda, Cylex, the Finsure adviser directory.
+3. Earn links to the calculators (the clawback and break fee tools are the easiest to pitch to personal finance writers and r/PersonalFinanceNZ).
+4. Concentrate local effort on West Auckland, where Finch has a real address and the results are weakest.

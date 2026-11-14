@@ -219,7 +219,7 @@ def get_service_prose(service_slug: str, city_name: str, suburbs: str, price_ban
         return {
             "intro": f"Building a residential property portfolio in {clean_city} requires a deep understanding of tax structures, equity release, and credit policy. NZ lending rules for investment property are dynamic, with the Reserve Bank's LVR guidelines applying differently depending on whether you are buying an existing rental or a brand-new build. Finch helps investors design optimal multi-lender structures to maximise borrowing capacity and keep investments separate from home equity.",
             "market_angle": f"The local investment environment in {clean_city} highlights unique suburb yields and capital growth profiles. {market_note} Understanding which property types attract rental premiums and how local zoning rules apply is the foundation of a successful investment strategy.",
-            "eligibility_process": f"For existing residential investments, NZ banks typically require a 35% or 40% deposit (LVR of 60-65%), whereas new-build investments only require a 20% deposit. Banks assess servicing by applying a 'haircut' (usually counting 70% to 75% of gross rental income) and stress-testing it at current test rates. We help you unlock equity in your owner-occupied home to fund the deposit, set up interest-only terms to optimise tax deductibility, and select lenders that don't cross-collateralise your family home.",
+            "eligibility_process": f"For existing residential investments, NZ banks typically require a 30% deposit (LVR of 70%), whereas new-build investments are exempt from the Reserve Bank's limit and often need less. Banks assess servicing by applying a 'haircut' (usually counting 70% to 75% of gross rental income) and stress-testing it at current test rates. We help you unlock equity in your owner-occupied home to fund the deposit, set up interest-only terms to optimise tax deductibility, and select lenders that don't cross-collateralise your family home.",
             "extra_sections_html": f"""
             <h2 style="font-size:1.75rem;font-weight:700;color:var(--neutral-black);margin-bottom:1.25rem;margin-top:2.5rem;font-family:var(--font-display);letter-spacing:-0.02em;">Structuring Investment Loans for Long-Term Success</h2>
             <p style="margin-bottom:1rem;">How your investment loans are structured is far more important than just interest rates. Proper structuring protects your personal home and ensures your investment is tax-effective:</p>
@@ -241,14 +241,14 @@ def get_service_prose(service_slug: str, city_name: str, suburbs: str, price_ban
             <p style="margin-bottom:1.5rem;">NZ banks analyze your portfolio servicing stringently. We help you package your servicing calculations by optimising the variables lenders look at:</p>
             <ol style="margin-bottom:2rem;padding-left:1.5rem;list-style-type:decimal;color:var(--neutral-medGray);">
               <li style="margin-bottom:1rem;"><strong>Rental Income Haircuts:</strong> Banks discount your rental income by 25-30% to account for rates, insurance, maintenance, and vacancy. We select lenders that apply the lowest discount.</li>
-              <li style="margin-bottom:1rem;"><strong>New Build LVR Exemptions:</strong> Purchasing new-build investment properties exempts you from the strict RBNZ 60-65% LVR limit on existing homes, allowing you to secure investment properties with only a 20% deposit.</li>
+              <li style="margin-bottom:1rem;"><strong>New Build LVR Exemptions:</strong> Purchasing new-build investment properties exempts you from the Reserve Bank's 70% LVR limit on existing investment properties, allowing you to secure investment properties with only a 20% deposit.</li>
               <li style="margin-bottom:1rem;"><strong>Non-Bank Servicing Options:</strong> If main banks decline your application due to debt-to-income (DTI) caps, we access non-bank lenders who test servicing under more flexible parameters.</li>
             </ol>
             """,
             "faqs": [
                 {
                     "q": f"What deposit is required for an investment property in {clean_city}?",
-                    "a": "Existing houses require a 35% to 40% deposit. However, brand-new builds (including off-the-plan townhouses) are exempt from LVR restrictions, allowing you to secure an investment property with only a 20% deposit."
+                    "a": "Existing houses usually require a 30% deposit. However, brand-new builds (including off-the-plan townhouses) are exempt from LVR restrictions, allowing you to secure an investment property with only a 20% deposit."
                 },
                 {
                     "q": "How do banks calculate rental income for mortgage servicing?",

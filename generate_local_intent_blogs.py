@@ -126,7 +126,7 @@ def schema_for(post: dict) -> str:
             "inLanguage": "en-NZ",
             "image": f"{BASE_URL}/images/finch-logo.png",
             "datePublished": post.get("published", ARTICLE_PUBLISHED),
-            "dateModified": post.get("published", ARTICLE_MODIFIED),
+            "dateModified": post.get("modified", post.get("published", ARTICLE_MODIFIED)),
             "articleSection": post.get("section_label", "Mortgages"),
             "keywords": ", ".join(post["keywords"]),
             "author": {

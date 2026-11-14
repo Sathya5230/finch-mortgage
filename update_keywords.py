@@ -209,7 +209,7 @@ KEYWORDS = {
         "rental property loan rates NZ, investment property Auckland, "
         "NZ LVR rules investor, portfolio property loan NZ, "
         "investor home loan NZ, property investment financing NZ, "
-        "NZ rental property finance 2026, 40% deposit investor NZ, "
+        "NZ rental property finance 2026, 30% deposit investor NZ, "
         "multi-property mortgage NZ, landlord loan NZ"
     ),
 

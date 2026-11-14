@@ -20,6 +20,12 @@ generate_town_pages.py  # 125 town + 7 region pages in locations/, built from to
 town_data.py            # town/region content, councils, coordinates; edit this, not the town HTML
 fix_refinance_claims.py # idempotent fix script; part of the post-generation pipeline
 refiform.js             # two-step refinance form (form built by inject_local_seo.refinance_form_block)
+generate_calculator_pages.py # break fee, LVR, interest-only and cashback clawback calculators (edit copy here)
+legacy_rewrite_posts.py # Nov 2026 plain-English rewrites of 18 early posts (+ _b.py for Auckland area pages)
+inject_calculator_callouts.py # links topic posts to the matching calculator (FINCH-CALC marker)
+fix_lvr_settings.py     # current Reserve Bank LVR figures; re-check after each annual RBNZ review
+fix_ui_copy.py          # menu/footer/hero filler text, junk aria-labels, FAQ page (FAQS list lives here)
+fix_em_dashes.py        # rewrites em dashes as normal punctuation; run after all generators and fix scripts
 inject_lenders.py
 inject_market_report.py
 update_calculator_links.py
@@ -94,3 +100,5 @@ Until that's done, do not fabricate or assume GSC/GA4 data — a prior incident 
 - Mortgage content must remain accurate and compliant — do not invent rates, terms, or lender details.
 - Prefer editing existing files over creating new ones.
 - No comments unless the WHY is non-obvious.
+- Copy style: plain NZ English, no em dashes, no slogans ("dream home", "unlock", "navigate"), no unverifiable counts or turnaround promises.
+- Type scale and hero spacing are set once in the "Consistency layer" at the end of style.src.css; don't add inline font sizes to h1/h2. Rebuild with `npm run build:style`.
