@@ -380,16 +380,16 @@ TRUST_ITEMS = [
      FSP_REGISTER_URL, "Check the FSP Register ↗"),
     ("Free, independent complaints scheme",
      "If we can't resolve a complaint, you can take it to Financial Services Complaints Ltd (FSCL) at no cost.",
-     "/disclosure.html", "Read our disclosure statement"),
+     "/disclosure", "Read our disclosure statement"),
     ("23 lenders on our panel",
      "Banks, non-bank lenders and a credit union, every one named in our disclosure statement.",
-     "/lenders.html", "See the lenders"),
+     "/lenders", "See the lenders"),
     ("Clear about how we're paid",
      "No fee on residential home loans. Lenders pay us commission, which we disclose in writing before you proceed.",
-     "/disclosure.html", "How we're paid"),
+     "/disclosure", "How we're paid"),
     ("15+ years in bank lending",
      "Your adviser, Mukhtar Kiyani, has over 15 years of lending experience across ASB, Westpac and BNZ.",
-     "/about.html", "Meet Mukhtar"),
+     "/about", "Meet Mukhtar"),
 ]
 
 
@@ -398,14 +398,14 @@ def trust_strip_block():
     for h, p, url, label in TRUST_ITEMS:
         ext = ' rel="noopener" target="_blank"' if url.startswith("http") else ""
         cards.append(
-            f'<div style="background:white;border:1px solid rgba(181,206,176,0.45);border-radius:1rem;padding:1.15rem 1.2rem;">'
+            f'<div style="background:white;border:1px solid rgba(181,206,176,0.45);border-radius:1rem;padding:1.15rem 1.2rem;display:flex;flex-direction:column;">'
             f'<strong style="display:block;color:var(--finch-forest);font-size:0.95rem;margin-bottom:0.35rem;">✓ {h}</strong>'
-            f'<span style="display:block;color:var(--neutral-medGray);font-size:0.86rem;line-height:1.6;margin-bottom:0.5rem;">{p}</span>'
-            f'<a href="{url}"{ext} style="font-size:0.82rem;font-weight:700;color:var(--finch-forest);'
+            f'<span style="display:block;color:var(--neutral-medGray);font-size:0.86rem;line-height:1.6;margin-bottom:0.75rem;flex-grow:1;">{p}</span>'
+            f'<a href="{url}"{ext} style="font-size:0.82rem;font-weight:700;color:var(--finch-forest);white-space:nowrap;'
             f'text-decoration:underline;">{label}</a></div>')
     cards = "\n".join(cards)
     return f"""<section aria-label="Why you can trust Finch Mortgages" style="padding:2.5rem 0;background:var(--finch-mist);">
-<div class="container" style="max-width:1100px;">
+<div class="container">
 <p style="font-size:0.72rem;font-weight:800;text-transform:uppercase;letter-spacing:0.1em;color:var(--finch-forest);margin:0 0 1rem;">Why you can trust us with your mortgage</p>
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1rem;">
 {cards}
