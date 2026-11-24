@@ -2006,3 +2006,6 @@ main [style*="display:grid"] > *, main [style*="display: grid"] > * { min-width:
 @media (max-width: 640px) {
   .stats-strip .cols-4 { grid-template-columns: repeat(2, 1fr); }
 }
+
+/* Trustindex Google reviews: hand-copied cards stay visible until the live widget renders, so a blocked or failed widget never leaves a gap */
+.g-reviews:has(.ti-widget) .g-reviews-fallback { display: none; }

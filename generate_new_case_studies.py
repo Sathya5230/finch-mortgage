@@ -849,7 +849,7 @@ def main_body(c: dict) -> str:
 
     default_related = [
         ("../case-studies.html", "All NZ Case Studies", "Real client outcomes across scenarios."),
-        ("../testimonials/reviews.html", "NZ Client Reviews", "5.0 star Google rating."),
+        ("../testimonials/reviews.html", "NZ Client Reviews", "Live Google reviews from our clients."),
         ("../testimonials/success-stories.html", "NZ Success Stories", "In-depth client journeys."),
         ("../calculators/borrowing-power.html", "Borrowing Power", "See your NZ borrowing capacity."),
         ("../services/home-loan.html", "NZ Home Loan Service", "Start your own approval."),

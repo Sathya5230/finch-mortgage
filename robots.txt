@@ -102,11 +102,10 @@ Allow: /
 # ---------------------------------------------
 Sitemap: https://www.finchmortgages.co.nz/sitemap.xml
 
-# RSS feed — NZ mortgage blog & weekly rate reports
+# RSS feed: NZ mortgage blog
 # https://www.finchmortgages.co.nz/rss.xml
 
 # LLM / AI retrieval guidance:
 # https://www.finchmortgages.co.nz/llms.txt
 # https://www.finchmortgages.co.nz/llms.md
 
-Host: https://www.finchmortgages.co.nz
